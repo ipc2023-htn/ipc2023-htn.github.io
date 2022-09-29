@@ -1,0 +1,87 @@
+======================================================================
+              IPC 2023: International Planning Competition
+
+                        Call for Participation
+
+                     https://ipc2023-htn.github.io/
+======================================================================
+
+The International Planning Competition is organized in the context of
+the International Conference on Planning and Scheduling (ICAPS). It
+empirically evaluates state-of-the-art planning systems on a number of
+benchmark problems. The goals of the IPC are to promote planning
+research, highlight challenges in the planning community, and provide
+new and interesting problems as benchmarks for future research.
+
+This year, the IPC will contain a track for:
+
+-- Hierarchical Task Network (HTN) planning --
+
+The track will conclude together with ICAPS, in June 2020, in Nancy 
+(France). This time it is organized by Gregor Behnke, Daniel Höller,
+and Pascal Bercher.
+
+Based on a online poll we agreed on a quite basic feature set and the
+following three tracks:
+
+- Totally ordered HTN planning without recursive structures
+- Totally ordered HTN planning with recursive structures
+- Partially ordered HTN planning with recursive structures
+
+We use the agile metric, i.e., planners must find solutions as quickly
+as possible, regardless of their quality (see our website).
+
+A competing team may participate for any track, so competitors are
+strongly encouraged to participate in every track supported by their
+planners. Details regarding the rules and evaluation criteria of all
+tracks can be found at the competition website.
+
+As in other IPC parts, the competitors must submit the source code of
+their planners that will be run by the organizers on the actual
+competition domains/problems, unknown to the competitors until this
+time. This way no fine-tuning of the planners will be possible.
+
+All competitors must submit a 2-page short paper describing their 
+planners. After the competition we encourage the participants to 
+analyze the results of their planner and submit an extended version 
+of their paper (max. 4 pages). An important requirement for IPC 2020 
+competitors is to give the organizers the right to post their paper 
+and the source code of their planners on the IPC 2020 website.
+
+
+Registration
+------------
+
+Potential participants are requested to contact the IPC organizers. 
+Information on submitting the planner will be provided via mail.
+
+
+Tentative Schedule
+------------------
+
+Call for interest:                September 30th (passed)
+Announcement of Tracks:           October 18th (passed)
+Demo domains and problems 
+are available (including 
+a (J)SHOP2 translator)            October 22nd (passed)
+Output-format specification:      end of January
+Initial submission of planners:   end of February
+Deadline for domain submissions:  end of February
+Final submission of planners:     approx. end of April
+Planner abstract submission:      beginning of May
+Internal result announcement:     end of May
+Extended abstract submission:     beginning of June
+Presentation of Results:          June 14th-19th
+
+We are looking forward to an exciting competition!
+
+
+Organizers
+----------
+
+Gregor Behnke, Ulm University, Germany
+Daniel Höller, Saarland University, Germany
+Pascal Bercher, the Australian National University, Australia
+
+Contact & Website:
+ipc2020.hierarchical-task.net
