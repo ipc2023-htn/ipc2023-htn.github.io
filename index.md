@@ -2,7 +2,7 @@
 
 This is the website for the hierarchical (HTN) tracks of the
 [IPC 2023](https://ipc2023.github.io).
-This is the 2nd IPC containing hierarchical tracks, after its first occurance in [2020](https://ipc.hierarchical-task.net).
+It is the 2nd IPC containing hierarchical tracks, after its first occurance in [2020](https://ipc.hierarchical-task.net).
 
 
 ## Calls
@@ -30,17 +30,33 @@ Please forward the following calls to all interested parties.
 
 
 ## Tracks
+There will be (up to, provided sufficient interesst) six tracks in IPC's HTN track. These are:
+ - Total-Order Agile
+ - Total-Order Satisficing
+ - Total-Order Optimal
+ - Partial-Order Agile
+ - Partial-Order Satisficing
+ - Partial-Order Optimal
 
-### Optimal Track - Total-Order
+The semantics of these tracks is explained in the following.
+
+### Total-Order
+ - In the total-order tracks, all task networks will be totally-ordered sequences of tasks
+
+### Partial-Order
+ - In the partial-order tracks, task networks may contain any arbitrary partial order of tasks.
+
+
+### Agile Track
  - single CPU core
  - 8Gb memory limit
- - 30min time limit
- - Plans must be optimal
- - The score of a planner is the number of solved tasks
- - If a suboptimal or invalid plan is returned, all tasks in the domain are counted as unsolved.
+ - 5min time limit
+ - The cost of the discovered plan is ignored, only the CPU time to discover a plan is counted.
+ - The score of a planner on a solved task is 1 if the task was solved within 1 second and 0 if the task was not solved within the resource limits. If the task was solved in T seconds (1 ≤ T ≤ 300) then its score is 1 - log(T)/log(300). The score of a planner is the sum of its scores for all tasks.
+ - If an invalid plan is returned, all tasks in the domain are counted as unsolved.
  - If that happens in more than one domain, the entry is disqualified.
 
-### Satisficing Track - Total-Order
+### Satisficing Track
  - single CPU core
  - 8Gb memory limit
  - 30min time limit
@@ -50,13 +66,13 @@ Please forward the following calls to all interested parties.
  - If an invalid plan is returned, all tasks in the domain are counted as unsolved.
  - If that happens in more than one domain, the entry is disqualified.
 
-### Agile Track - Total-Order
+### Optimal Track
  - single CPU core
  - 8Gb memory limit
- - 5min time limit
- - The cost of the discovered plan is ignored, only the CPU time to discover a plan is counted.
- - The score of a planner on a solved task is 1 if the task was solved within 1 second and 0 if the task was not solved within the resource limits. If the task was solved in T seconds (1 ≤ T ≤ 300) then its score is 1 - log(T)/log(300). The score of a planner is the sum of its scores for all tasks.
- - If an invalid plan is returned, all tasks in the domain are counted as unsolved.
+ - 30min time limit
+ - Plans must be optimal
+ - The score of a planner is the number of solved tasks
+ - If a suboptimal or invalid plan is returned, all tasks in the domain are counted as unsolved.
  - If that happens in more than one domain, the entry is disqualified.
 
 
