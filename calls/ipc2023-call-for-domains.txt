@@ -1,0 +1,49 @@
+======================================================================
+                2023 International Planning Competition
+
+                        Call for HTN Domains
+
+                    https://ipc2023-htn.github.io
+======================================================================
+
+The IPC 2023 will contain a track on HTN planning. 
+
+
+There is only a limited set of benchmark domains available to 
+evaluate domain-independent HTN planning systems. If you have an 
+interesting domain or idea, please let us know!
+
+ - If you have a domain suitable for the competition or would be 
+   willing to design one, please let us know. We will collaborate 
+   in adapting the domains to suit the IPC.
+ - If you have an interesting idea, please let us also know, maybe 
+   we can help in modeling it.
+
+We ask you to think about:
+ - Why is that particular domain suitable to be modeled in HTN planning?
+ - Is it easily to scale the problem's difficulty?
+
+Even better than a single domain (plus a number of problem instances)
+would be a problem generator. But this is optional, of course. If a 
+domain-dependent planner for the submitted domain is available, please 
+include it in the submission.
+
+We will consider all submissions and select the highest quality subset
+to be included. We are aware that participants that submit a domain
+that is used have some advantage with respect to performance on that
+domain. We view this as a good incentive for teams to submit high
+quality proposals.
+
+For each submission domain that is selected, there will be the option 
+to submit a paper describing the domain that will be made available on 
+the website of the track.
+
+If you have a domain in mind but have doubts whether it would be
+appropriate for the IPC, don't hesitate to contact us!
+
+
+Organizers
+----------
+Ron Alford, MITRE, USA
+Dominik Schreiber, KIT, Germany
+Gregor Behnke, UvA, The Netherlands
