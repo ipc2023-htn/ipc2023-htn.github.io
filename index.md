@@ -67,7 +67,7 @@ We will use the same input language as the previous [HTN IPC 2020](https://ipc.h
 Comming soon
 
 ## Organizers
- - [Ron Alford](https://volus.net) (MITRE)
+ - [Ron Alford](https://www.volus.net) (MITRE)
  - [Dominik Schreiber](https://www.dominikschreiber.de/) (Karlsruhe Institute of Technology)
  - [Gregor Behnke](https://staff.fnwi.uva.nl/g.behnke/) (University of Amsterdam)
 
