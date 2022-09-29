@@ -87,4 +87,4 @@ Comming soon
  - [Dominik Schreiber](https://www.dominikschreiber.de/) (Karlsruhe Institute of Technology)
  - [Gregor Behnke](https://staff.fnwi.uva.nl/g.behnke/) (University of Amsterdam)
 
-Contact us: [ipc2023-htn@googlegroups.com](ipc2023-htn@googlegroups.com)
+Contact us: [ipc2023-htn@googlegroups.com](mailto:ipc2023-htn@googlegroups.com)
