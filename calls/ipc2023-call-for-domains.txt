@@ -53,9 +53,8 @@ that others can use and build on your domain.
 If you have a domain in mind but have doubts whether it would be appropriate
 for the IPC, don't hesitate to contact us!
 
-For each submission domain that is selected, there will be the option 
-to submit a paper describing the domain that will be made available on 
-the website of the track.
+For each submission domain that is selected, we highly encourage the authors to
+submit a paper describing the domain. These paper will be made publicly available. 
 
 If you have a domain in mind but have doubts whether it would be
 appropriate for the IPC, don't hesitate to contact us!
