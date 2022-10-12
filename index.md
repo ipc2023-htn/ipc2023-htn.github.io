@@ -15,7 +15,7 @@ Please forward the following calls to all interested parties.
 
 | Event  | Date  |
 |---|---|
-|Call for domains  |   October 1, 2022|
+|Call for domains  |   October 12, 2022|
 |Call for participation| October, 2022|
 |Domain expression of interest deadline|     December 31, 2022|
 |Domain submission deadline |    February 28, 2023|
