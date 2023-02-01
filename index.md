@@ -19,8 +19,8 @@ Please forward the following calls to all interested parties.
 |Call for participation| October, 2022|
 |Domain expression of interest deadline|     December 31, 2022|
 |Domain submission deadline |    February 28, 2023|
-|Demo problems provided    |  December, 2022|
-|Initial planner submission |    January, 2023|
+|Demo problems provided    |  February 10, 2023|
+|Initial planner submission |    February 28, 2023|
 |Feature stop (final planner submission) |    May, 2023|
 |Planner Abstract submission deadline  |   May, 2023|
 |Contest run           |June, 2023|
