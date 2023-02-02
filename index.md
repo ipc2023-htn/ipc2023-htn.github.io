@@ -90,7 +90,7 @@ As in the HTN IPC of 2020, we will use the container software Apptainer (formerl
 
 
 ## Registration
-In order to participate in the HTN IPC, you need to register until February 28, 2023. To do so, please send an email to (Gregor Behnke)[mailto:g.behnke@uva.nl] containing the following information
+In order to participate in the HTN IPC, you need to register until February 28, 2023. To do so, please send an email to [Gregor Behnke](mailto:g.behnke@uva.nl) containing the following information
  - names of participants
  - email contacts of participants
  - GitHub usernames (only these will be able to modify the submitted planner)
