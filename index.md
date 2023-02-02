@@ -24,7 +24,7 @@ Please forward the following calls to all interested parties.
 |Feature stop (final planner submission) |    May, 2023|
 |Planner Abstract submission deadline  |   May, 2023|
 |Contest run           |June, 2023|
-|Results announced     |July, 2023|
+|Results announced     |July 12, 2023|
 |Result analysis deadline  |   August, 2023|
 
 
