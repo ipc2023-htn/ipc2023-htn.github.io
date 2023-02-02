@@ -84,13 +84,13 @@ Competitors are required to submit their code via a github repository that was s
 
 Until the feature stop (see Schedule) competitors can make any change to their planners. After the feature stop, competitors are only allowed to send pull requests with bug fixes. We will review every pull request with its accompanying description of the bug fix to make sure that no significant changes or parameter tuning are possible.
 
-As in 2020, we will provide a continous integration system. We will run planners on sample problems and publish the resulting outputs. To fasciliate the detection of anomalies, each competitor is required to also submit a script that validates the planners output and that is responsible to highlight (potential) errors that need to be investigated.
+As in 2020, we will provide a continous integration system. We will run planners on sample problems and publish the resulting outputs. To faciliate the detection of anomalies, each competitor is required to also submit a script that validates the planners output and that is responsible to highlight (potential) errors that need to be investigated.
 
 As in the HTN IPC of 2020, we will use the container software Apptainer (formerly known as Singularity) to promote reproducibility and simplify program compilation.
 
 
 ## Registration
-In order to participate in the HTN IPC, you need to register before February 28, 2023. To do so, please send an email to (Gregor Behnke)[mailto:g.behnke@uva.nl] containing the following information
+In order to participate in the HTN IPC, you need to register until February 28, 2023. To do so, please send an email to (Gregor Behnke)[mailto:g.behnke@uva.nl] containing the following information
  - names of participants
  - email contacts of participants
  - GitHub usernames (only these will be able to modify the submitted planner)
@@ -101,8 +101,8 @@ In order to participate in the HTN IPC, you need to register before February 28,
 As the other IPC tracks, the HTN track allows for multiple submissions to use the same planner codebase. These submissions can, e.g., differ in the configuration of the planner such as the used heuristic(s) or search techniques. Each of these configurations will (most likely) be a separate apptainer definition file (formerly Singularity file).
 
 ## Organizers
- - [Ron Alford](https://www.volus.net) (MITRE)
- - [Dominik Schreiber](https://www.dominikschreiber.de/) (Karlsruhe Institute of Technology)
- - [Gregor Behnke](https://staff.fnwi.uva.nl/g.behnke/) (University of Amsterdam)
+ - [Ron Alford](ronwalf@volus.net) (MITRE)
+ - [Dominik Schreiber](dominik.schreiber@kit.edu) (Karlsruhe Institute of Technology)
+ - [Gregor Behnke](g.behnke@uva.nl) (University of Amsterdam)
 
 Contact us: [ipc2023-htn@googlegroups.com](mailto:ipc2023-htn@googlegroups.com)
