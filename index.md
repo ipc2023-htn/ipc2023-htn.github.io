@@ -100,7 +100,7 @@ In order to participate in the HTN IPC, you need to register until February 28, 
 
 As the other IPC tracks, the HTN track allows for multiple submissions to use the same planner codebase. These submissions can, e.g., differ in the configuration of the planner such as the used heuristic(s) or search techniques. Each of these configurations will (most likely) be a separate apptainer definition file (formerly Singularity file).
 
-The number of submissions per participant (natural person who participates) is limited to **three**. That means that any person may only be named as a "participant" for at most three submission. This limit applies to the number of configurations and not codebases. I.e. the limit is already reached if a participant submits one codebase that is used for three configurations.
+The number of submissions per participant (natural person who participates) is limited to **three** per track. That means that any person may only be named as a "participant" for at most three submission per track. This limit applies to the number of configurations and not codebases. I.e. the limit is already reached if a participant submits one codebase that is used for three configurations in one track.
 
 ## Organizers
  - [Ron Alford](ronwalf@volus.net) (MITRE)
