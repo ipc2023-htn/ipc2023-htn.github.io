@@ -11,7 +11,7 @@ Please forward the following calls to all interested parties.
  - [Call for Domains](calls/ipc2023-call-for-domains.txt)
 
 
-## Preliminary Schedule
+## Schedule
 
 | Event  | Date  |
 |---|---|
@@ -79,12 +79,32 @@ The semantics of these tracks is explained in the following.
 ## HDDL Fragment
 We will use the same input language as the previous [HTN IPC 2020](https://ipc.hierarchical-task.net/benchmarks/input-language)
 
+## Technical Issues.
+Competitors are required to submit their code via a github repository that was set up by the track's organisers. At the time of submission, these repositories will be private and will be made public after the competition results have been announced.
+
+Until the feature stop (see Schedule) competitors can make any change to their planners. After the feature stop, competitors are only allowed to send pull requests with bug fixes. We will review every pull request with its accompanying description of the bug fix to make sure that no significant changes or parameter tuning are possible.
+
+As in 2020, we will provide a continous integration system. We will run planners on sample problems and publish the resulting outputs. To faciliate the detection of anomalies, each competitor is required to also submit a script that validates the planners output and that is responsible to highlight (potential) errors that need to be investigated.
+
+As in the HTN IPC of 2020, we will use the container software Apptainer (formerly known as Singularity) to promote reproducibility and simplify program compilation.
+
+
 ## Registration
-Comming soon
+In order to participate in the HTN IPC, you need to register until February 28, 2023. To do so, please send an email to [Gregor Behnke](mailto:g.behnke@uva.nl) containing the following information
+ - names of participants
+ - email contacts of participants
+ - GitHub usernames (only these will be able to modify the submitted planner)
+ - the number of repositories needed (see below for details)
+ - which tracks you want to participate
+ - whether you require any special software that cannot be made part of the public repository (e.g. CPLEX).
+
+As the other IPC tracks, the HTN track allows for multiple submissions to use the same planner codebase. These submissions can, e.g., differ in the configuration of the planner such as the used heuristic(s) or search techniques. Each of these configurations will (most likely) be a separate apptainer definition file (formerly Singularity file).
+
+The number of submissions per participant (natural person who participates) is limited to **three** per track. That means that any person may only be named as a "participant" for at most three submission per track. This limit applies to the number of configurations and not codebases. I.e. the limit is already reached if a participant submits one codebase that is used for three configurations in one track.
 
 ## Organizers
- - [Ron Alford](https://www.volus.net) (MITRE)
- - [Dominik Schreiber](https://www.dominikschreiber.de/) (Karlsruhe Institute of Technology)
- - [Gregor Behnke](https://staff.fnwi.uva.nl/g.behnke/) (University of Amsterdam)
+ - [Ron Alford](ronwalf@volus.net) (MITRE)
+ - [Dominik Schreiber](dominik.schreiber@kit.edu) (Karlsruhe Institute of Technology)
+ - [Gregor Behnke](g.behnke@uva.nl) (University of Amsterdam)
 
 Contact us: [ipc2023-htn@googlegroups.com](mailto:ipc2023-htn@googlegroups.com)
