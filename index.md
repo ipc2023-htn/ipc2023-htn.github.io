@@ -102,6 +102,16 @@ As the other IPC tracks, the HTN track allows for multiple submissions to use th
 
 The number of submissions per participant (natural person who participates) is limited to **three** per track. That means that any person may only be named as a "participant" for at most three submission per track. This limit applies to the number of configurations and not codebases. I.e. the limit is already reached if a participant submits one codebase that is used for three configurations in one track.
 
+After some discussion we have decided to update and clarify the submission rules as follows (on 24-02-2023):
+
+Authors are allowed to submit an arbitrary number – within reason – of different planning systems per track.
+Two planning systems are considered different if the relevant codebase, i.e., the parts of the code that are actually being executed, differs substantially, as judged by the organizers.
+(This allows, e.g., for submitting different planning approaches as separate planning systems even if they are part of a common software.)
+
+For each planning system submitted, a maximum of **three** different configurations may be submitted.
+
+A modification of somebody else's HTN planning system is a valid submission if and only if the original author(s) have been made aware of the submission and are consenting.
+
 ## Organizers
  - [Ron Alford](ronwalf@volus.net) (MITRE)
  - [Dominik Schreiber](dominik.schreiber@kit.edu) (Karlsruhe Institute of Technology)
