@@ -86,7 +86,9 @@ Until the feature stop (see Schedule) competitors can make any change to their p
 
 As in 2020, we will provide a continous integration system. We will run planners on sample problems and publish the resulting outputs. To faciliate the detection of anomalies, each competitor is required to also submit a script that validates the planners output and that is responsible to highlight (potential) errors that need to be investigated.
 
-As in the HTN IPC of 2020, we will use the container software Apptainer (formerly known as Singularity) to promote reproducibility and simplify program compilation.
+As in the HTN IPC of 2020, we will use the container software Apptainer (formerly known as Singularity) to promote reproducibility and simplify program compilation. You can find the documentation on how the Apptainer files are written [here](https://apptainer.org/docs/user/1.0/definition_files.html).
+
+We will automatically extract the configurations you want to submit from your repository. We create one configuration per Apptainer file in the *root* directory of your repository. Apptainer files are files whose file ending is **.def**.
 
 
 ## Registration
