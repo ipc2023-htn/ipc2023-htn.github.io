@@ -21,8 +21,8 @@ Please forward the following calls to all interested parties.
 |Domain submission deadline |    February 28, 2023|
 |Demo problems provided    |  February 10, 2023|
 |Initial planner submission |    February 28, 2023|
-|Feature stop (final planner submission) |    May, 2023|
-|Planner Abstract submission deadline  |   May, 2023|
+|Feature stop (final planner submission) |  May 31, 2023, AoE|
+|Planner Abstract submission deadline  |   May 31, 2023, AoE|
 |Contest run           |June, 2023|
 |Results announced     |July 12, 2023|
 |Result analysis deadline  |   August, 2023|
