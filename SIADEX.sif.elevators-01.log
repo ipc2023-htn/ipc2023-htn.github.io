@@ -1,5 +1,1123 @@
-FATAL:   could not open image /home/gregor/Workspace/IPC2023/SIADEX.sif: failed to retrieve path for /home/gregor/Workspace/IPC2023/SIADEX.sif: lstat /home/gregor/Workspace/IPC2023/SIADEX.sif: no such file or directory
-Command exited with non-zero status 255
-%TIME 0:00.01 36228
-%EXIT 255
-NO OUTPUT
+
+Root:0-1-
+===
+Tarea:0
+
+(:method M22-ACHIEVE-SERVED
+:precondition
+      (and
+         (type_member_passenger P1)
+         (not (LOCKED-SERVED P1))
+         (not (SERVED P1))
+      )
+
+:tasks (
+   (ACHIEVE-SERVED2 P1)
+   (i-LOCK-SERVED P1)
+)
+)
+===
+Tarea:2
+
+(:method M24-ACHIEVE-SERVED2
+:precondition
+      (and
+         (type_member_floor F2)
+         (type_member_passenger P1)
+         (not (SERVED P1))
+         (not (SERVED P1))
+         (DESTIN P1 F2)
+      )
+
+:tasks (
+   (DO-SERVED-DEPART2 F2 P1)
+   (ACHIEVE-SERVED2 P1)
+)
+)
+===
+Tarea:4
+
+(:method M8-DO-SERVED-DEPART2
+:precondition
+      (and
+         (type_member_floor F2)
+         (type_member_passenger P1)
+         (not (SERVED P1))
+      )
+
+:tasks (
+   (ACHIEVE-BOARDED P1)
+   (ACHIEVE-LIFT-AT F2)
+   (IFUNLOCK-LIFT-AT F2)
+   (IFUNLOCK-BOARDED P1)
+   (DEPART F2 P1)
+)
+)
+===
+Tarea:6
+
+(:method M17-ACHIEVE-BOARDED
+:precondition
+      (and
+         (type_member_passenger P1)
+         (not (LOCKED-BOARDED P1))
+         (not (BOARDED P1))
+      )
+
+:tasks (
+   (ACHIEVE-BOARDED1 P1)
+   (i-LOCK-BOARDED P1)
+)
+)
+===
+Tarea:11
+
+(:method M19-ACHIEVE-BOARDED1
+:precondition
+      (and
+         (type_member_floor F0)
+         (type_member_passenger P1)
+         (not (BOARDED P1))
+         (not (BOARDED P1))
+         (ORIGIN P1 F0)
+      )
+
+:tasks (
+   (DO-BOARDED-BOARD1 F0 P1)
+   (ACHIEVE-BOARDED1 P1)
+)
+)
+===
+Tarea:13
+
+(:method M7-DO-BOARDED-BOARD1
+:precondition
+      (and
+         (type_member_floor F0)
+         (type_member_passenger P1)
+         (not (BOARDED P1))
+      )
+
+:tasks (
+   (ACHIEVE-LIFT-AT F0)
+   (IFUNLOCK-LIFT-AT F0)
+   (BOARD F0 P1)
+)
+)
+===
+Tarea:15
+
+(:method M10-ACHIEVE-LIFT-AT
+:precondition
+      (and
+         (type_member_floor F0)
+         (LIFT-AT F0)
+         (not (LOCKED-LIFT-AT F0))
+      )
+
+:tasks (
+   (i-LOCK-LIFT-AT F0)
+)
+)
+===
+Tarea:18
+
+(:method method1
+:precondition
+      (and
+         (type_member_floor F0)
+      )
+
+:tasks (
+   (i-LOCK-LIFT-AT_primitive F0)
+)
+)
+===
+Tarea:19
+
+===
+Tarea:16
+
+(:method IFUNLOCK5-LIFT-AT
+:precondition
+      (and
+         (type_member_floor F0)
+         (not (FLAGGED-LIFT-AT F0))
+      )
+
+:tasks (
+   (i-UNLOCK-LIFT-AT F0)
+)
+)
+===
+Tarea:21
+
+(:method method1
+:precondition
+      (and
+         (type_member_floor F0)
+      )
+
+:tasks (
+   (i-UNLOCK-LIFT-AT_primitive F0)
+)
+)
+===
+Tarea:22
+
+===
+Tarea:17
+
+(:method method1
+:precondition
+      (and
+         (type_member_floor F0)
+         (type_member_passenger P1)
+      )
+
+:tasks (
+   (BOARD_primitive F0 P1)
+)
+)
+===
+Tarea:24
+
+===
+Tarea:14
+
+(:method M18-ACHIEVE-BOARDED1
+:precondition
+      (and
+         (type_member_passenger P1)
+         (BOARDED P1)
+      )
+
+:tasks (
+   (:inline () ())
+)
+)
+===
+Tarea:26
+
+===
+Tarea:12
+
+(:method method1
+:precondition
+      (and
+         (type_member_passenger P1)
+      )
+
+:tasks (
+   (i-LOCK-BOARDED_primitive P1)
+)
+)
+===
+Tarea:28
+
+===
+Tarea:7
+
+(:method M11-ACHIEVE-LIFT-AT
+:precondition
+      (and
+         (type_member_floor F2)
+         (not (LOCKED-LIFT-AT F2))
+         (not (LIFT-AT F2))
+      )
+
+:tasks (
+   (ACHIEVE-LIFT-AT0 F2)
+   (i-LOCK-LIFT-AT F2)
+)
+)
+===
+Tarea:30
+
+(:method M13-ACHIEVE-LIFT-AT0
+:precondition
+      (and
+         (type_member_floor F2)
+         (type_member_floor F0)
+         (type_member_floor F1)
+         (not (LIFT-AT F2))
+         (LIFT-AT F0)
+         (ABOVE F0 F1)
+      )
+
+:tasks (
+   (UP F0 F1)
+   (ACHIEVE-LIFT-AT0 F2)
+)
+)
+===
+Tarea:32
+
+(:method method1
+:precondition
+      (and
+         (type_member_floor F0)
+         (type_member_floor F1)
+      )
+
+:tasks (
+   (UP_primitive F0 F1)
+)
+)
+===
+Tarea:34
+
+===
+Tarea:33
+
+(:method M13-ACHIEVE-LIFT-AT0
+:precondition
+      (and
+         (type_member_floor F2)
+         (type_member_floor F1)
+         (type_member_floor F2)
+         (not (LIFT-AT F2))
+         (LIFT-AT F1)
+         (ABOVE F1 F2)
+      )
+
+:tasks (
+   (UP F1 F2)
+   (ACHIEVE-LIFT-AT0 F2)
+)
+)
+===
+Tarea:36
+
+(:method method1
+:precondition
+      (and
+         (type_member_floor F1)
+         (type_member_floor F2)
+      )
+
+:tasks (
+   (UP_primitive F1 F2)
+)
+)
+===
+Tarea:38
+
+===
+Tarea:37
+
+(:method M12-ACHIEVE-LIFT-AT0
+:precondition
+      (and
+         (type_member_floor F2)
+         (LIFT-AT F2)
+      )
+
+:tasks (
+   (:inline () ())
+)
+)
+===
+Tarea:40
+
+===
+Tarea:31
+
+(:method method1
+:precondition
+      (and
+         (type_member_floor F2)
+      )
+
+:tasks (
+   (i-LOCK-LIFT-AT_primitive F2)
+)
+)
+===
+Tarea:42
+
+===
+Tarea:8
+
+(:method IFUNLOCK5-LIFT-AT
+:precondition
+      (and
+         (type_member_floor F2)
+         (not (FLAGGED-LIFT-AT F2))
+      )
+
+:tasks (
+   (i-UNLOCK-LIFT-AT F2)
+)
+)
+===
+Tarea:44
+
+(:method method1
+:precondition
+      (and
+         (type_member_floor F2)
+      )
+
+:tasks (
+   (i-UNLOCK-LIFT-AT_primitive F2)
+)
+)
+===
+Tarea:45
+
+===
+Tarea:9
+
+(:method IFUNLOCK1-BOARDED
+:precondition
+      (and
+         (type_member_passenger P1)
+         (not (FLAGGED-BOARDED P1))
+      )
+
+:tasks (
+   (i-UNLOCK-BOARDED P1)
+)
+)
+===
+Tarea:47
+
+(:method method1
+:precondition
+      (and
+         (type_member_passenger P1)
+      )
+
+:tasks (
+   (i-UNLOCK-BOARDED_primitive P1)
+)
+)
+===
+Tarea:48
+
+===
+Tarea:10
+
+(:method method1
+:precondition
+      (and
+         (type_member_floor F2)
+         (type_member_passenger P1)
+      )
+
+:tasks (
+   (DEPART_primitive F2 P1)
+)
+)
+===
+Tarea:50
+
+===
+Tarea:5
+
+(:method M23-ACHIEVE-SERVED2
+:precondition
+      (and
+         (type_member_passenger P1)
+         (SERVED P1)
+      )
+
+:tasks (
+   (:inline () ())
+)
+)
+===
+Tarea:52
+
+===
+Tarea:3
+
+(:method method1
+:precondition
+      (and
+         (type_member_passenger P1)
+      )
+
+:tasks (
+   (i-LOCK-SERVED_primitive P1)
+)
+)
+===
+Tarea:54
+
+===
+Tarea:1
+
+(:method M22-ACHIEVE-SERVED
+:precondition
+      (and
+         (type_member_passenger P0)
+         (not (LOCKED-SERVED P0))
+         (not (SERVED P0))
+      )
+
+:tasks (
+   (ACHIEVE-SERVED2 P0)
+   (i-LOCK-SERVED P0)
+)
+)
+===
+Tarea:56
+
+(:method M24-ACHIEVE-SERVED2
+:precondition
+      (and
+         (type_member_floor F0)
+         (type_member_passenger P0)
+         (not (SERVED P0))
+         (not (SERVED P0))
+         (DESTIN P0 F0)
+      )
+
+:tasks (
+   (DO-SERVED-DEPART2 F0 P0)
+   (ACHIEVE-SERVED2 P0)
+)
+)
+===
+Tarea:58
+
+(:method M8-DO-SERVED-DEPART2
+:precondition
+      (and
+         (type_member_floor F0)
+         (type_member_passenger P0)
+         (not (SERVED P0))
+      )
+
+:tasks (
+   (ACHIEVE-BOARDED P0)
+   (ACHIEVE-LIFT-AT F0)
+   (IFUNLOCK-LIFT-AT F0)
+   (IFUNLOCK-BOARDED P0)
+   (DEPART F0 P0)
+)
+)
+===
+Tarea:60
+
+(:method M17-ACHIEVE-BOARDED
+:precondition
+      (and
+         (type_member_passenger P0)
+         (not (LOCKED-BOARDED P0))
+         (not (BOARDED P0))
+      )
+
+:tasks (
+   (ACHIEVE-BOARDED1 P0)
+   (i-LOCK-BOARDED P0)
+)
+)
+===
+Tarea:65
+
+(:method M19-ACHIEVE-BOARDED1
+:precondition
+      (and
+         (type_member_floor F3)
+         (type_member_passenger P0)
+         (not (BOARDED P0))
+         (not (BOARDED P0))
+         (ORIGIN P0 F3)
+      )
+
+:tasks (
+   (DO-BOARDED-BOARD1 F3 P0)
+   (ACHIEVE-BOARDED1 P0)
+)
+)
+===
+Tarea:67
+
+(:method M7-DO-BOARDED-BOARD1
+:precondition
+      (and
+         (type_member_floor F3)
+         (type_member_passenger P0)
+         (not (BOARDED P0))
+      )
+
+:tasks (
+   (ACHIEVE-LIFT-AT F3)
+   (IFUNLOCK-LIFT-AT F3)
+   (BOARD F3 P0)
+)
+)
+===
+Tarea:69
+
+(:method M11-ACHIEVE-LIFT-AT
+:precondition
+      (and
+         (type_member_floor F3)
+         (not (LOCKED-LIFT-AT F3))
+         (not (LIFT-AT F3))
+      )
+
+:tasks (
+   (ACHIEVE-LIFT-AT0 F3)
+   (i-LOCK-LIFT-AT F3)
+)
+)
+===
+Tarea:72
+
+(:method M13-ACHIEVE-LIFT-AT0
+:precondition
+      (and
+         (type_member_floor F3)
+         (type_member_floor F2)
+         (type_member_floor F3)
+         (not (LIFT-AT F3))
+         (LIFT-AT F2)
+         (ABOVE F2 F3)
+      )
+
+:tasks (
+   (UP F2 F3)
+   (ACHIEVE-LIFT-AT0 F3)
+)
+)
+===
+Tarea:74
+
+(:method method1
+:precondition
+      (and
+         (type_member_floor F2)
+         (type_member_floor F3)
+      )
+
+:tasks (
+   (UP_primitive F2 F3)
+)
+)
+===
+Tarea:76
+
+===
+Tarea:75
+
+(:method M12-ACHIEVE-LIFT-AT0
+:precondition
+      (and
+         (type_member_floor F3)
+         (LIFT-AT F3)
+      )
+
+:tasks (
+   (:inline () ())
+)
+)
+===
+Tarea:78
+
+===
+Tarea:73
+
+(:method method1
+:precondition
+      (and
+         (type_member_floor F3)
+      )
+
+:tasks (
+   (i-LOCK-LIFT-AT_primitive F3)
+)
+)
+===
+Tarea:80
+
+===
+Tarea:70
+
+(:method IFUNLOCK5-LIFT-AT
+:precondition
+      (and
+         (type_member_floor F3)
+         (not (FLAGGED-LIFT-AT F3))
+      )
+
+:tasks (
+   (i-UNLOCK-LIFT-AT F3)
+)
+)
+===
+Tarea:82
+
+(:method method1
+:precondition
+      (and
+         (type_member_floor F3)
+      )
+
+:tasks (
+   (i-UNLOCK-LIFT-AT_primitive F3)
+)
+)
+===
+Tarea:83
+
+===
+Tarea:71
+
+(:method method1
+:precondition
+      (and
+         (type_member_floor F3)
+         (type_member_passenger P0)
+      )
+
+:tasks (
+   (BOARD_primitive F3 P0)
+)
+)
+===
+Tarea:85
+
+===
+Tarea:68
+
+(:method M18-ACHIEVE-BOARDED1
+:precondition
+      (and
+         (type_member_passenger P0)
+         (BOARDED P0)
+      )
+
+:tasks (
+   (:inline () ())
+)
+)
+===
+Tarea:87
+
+===
+Tarea:66
+
+(:method method1
+:precondition
+      (and
+         (type_member_passenger P0)
+      )
+
+:tasks (
+   (i-LOCK-BOARDED_primitive P0)
+)
+)
+===
+Tarea:89
+
+===
+Tarea:61
+
+(:method M11-ACHIEVE-LIFT-AT
+:precondition
+      (and
+         (type_member_floor F0)
+         (not (LOCKED-LIFT-AT F0))
+         (not (LIFT-AT F0))
+      )
+
+:tasks (
+   (ACHIEVE-LIFT-AT0 F0)
+   (i-LOCK-LIFT-AT F0)
+)
+)
+===
+Tarea:91
+
+(:method M14-ACHIEVE-LIFT-AT0
+:precondition
+      (and
+         (type_member_floor F0)
+         (type_member_floor F3)
+         (type_member_floor F0)
+         (not (LIFT-AT F0))
+         (LIFT-AT F3)
+         (ABOVE F0 F3)
+      )
+
+:tasks (
+   (DOWN F3 F0)
+   (ACHIEVE-LIFT-AT0 F0)
+)
+)
+===
+Tarea:93
+
+(:method method1
+:precondition
+      (and
+         (type_member_floor F3)
+         (type_member_floor F0)
+      )
+
+:tasks (
+   (DOWN_primitive F3 F0)
+)
+)
+===
+Tarea:95
+
+===
+Tarea:94
+
+(:method M12-ACHIEVE-LIFT-AT0
+:precondition
+      (and
+         (type_member_floor F0)
+         (LIFT-AT F0)
+      )
+
+:tasks (
+   (:inline () ())
+)
+)
+===
+Tarea:97
+
+===
+Tarea:92
+
+(:method method1
+:precondition
+      (and
+         (type_member_floor F0)
+      )
+
+:tasks (
+   (i-LOCK-LIFT-AT_primitive F0)
+)
+)
+===
+Tarea:99
+
+===
+Tarea:62
+
+(:method IFUNLOCK5-LIFT-AT
+:precondition
+      (and
+         (type_member_floor F0)
+         (not (FLAGGED-LIFT-AT F0))
+      )
+
+:tasks (
+   (i-UNLOCK-LIFT-AT F0)
+)
+)
+===
+Tarea:101
+
+(:method method1
+:precondition
+      (and
+         (type_member_floor F0)
+      )
+
+:tasks (
+   (i-UNLOCK-LIFT-AT_primitive F0)
+)
+)
+===
+Tarea:102
+
+===
+Tarea:63
+
+(:method IFUNLOCK1-BOARDED
+:precondition
+      (and
+         (type_member_passenger P0)
+         (not (FLAGGED-BOARDED P0))
+      )
+
+:tasks (
+   (i-UNLOCK-BOARDED P0)
+)
+)
+===
+Tarea:104
+
+(:method method1
+:precondition
+      (and
+         (type_member_passenger P0)
+      )
+
+:tasks (
+   (i-UNLOCK-BOARDED_primitive P0)
+)
+)
+===
+Tarea:105
+
+===
+Tarea:64
+
+(:method method1
+:precondition
+      (and
+         (type_member_floor F0)
+         (type_member_passenger P0)
+      )
+
+:tasks (
+   (DEPART_primitive F0 P0)
+)
+)
+===
+Tarea:107
+
+===
+Tarea:59
+
+(:method M23-ACHIEVE-SERVED2
+:precondition
+      (and
+         (type_member_passenger P0)
+         (SERVED P0)
+      )
+
+:tasks (
+   (:inline () ())
+)
+)
+===
+Tarea:109
+
+===
+Tarea:57
+
+(:method method1
+:precondition
+      (and
+         (type_member_passenger P0)
+      )
+
+:tasks (
+   (i-LOCK-SERVED_primitive P0)
+)
+)
+===
+Tarea:111
+
+===
+?FLOOR2 <- F2
+?FLOOR2 <- F0
+?FLOOR3 <- F1
+?FLOOR1 <- F0
+?FLOOR3 <- F2
+?FLOOR1 <- F1
+?FLOOR2 <- F0
+?FLOOR2 <- F3
+?FLOOR3 <- F3
+?FLOOR1 <- F2
+?FLOOR3 <- F0
+?FLOOR1 <- F3
+===
+Lista de tareas: 
+[0] <i> :unexpanded (ACHIEVE-SERVED P1)
+[1] <i> :unexpanded (ACHIEVE-SERVED P0)
+[2] <i> :unexpanded (ACHIEVE-SERVED2 P1)
+[3] <i> :unexpanded (i-LOCK-SERVED P1)
+[4] <i> :unexpanded (DO-SERVED-DEPART2 F2 P1)
+[5] <i> :unexpanded (ACHIEVE-SERVED2 P1)
+[6] <i> :unexpanded (ACHIEVE-BOARDED P1)
+[7] <i> :unexpanded (ACHIEVE-LIFT-AT F2)
+[8] <i> :unexpanded (IFUNLOCK-LIFT-AT F2)
+[9] <i> :unexpanded (IFUNLOCK-BOARDED P1)
+[10] <i> :unexpanded (DEPART F2 P1)
+[11] <i> :unexpanded (ACHIEVE-BOARDED1 P1)
+[12] <i> :unexpanded (i-LOCK-BOARDED P1)
+[13] <i> :unexpanded (DO-BOARDED-BOARD1 F0 P1)
+[14] <i> :unexpanded (ACHIEVE-BOARDED1 P1)
+[15] <i> :unexpanded (ACHIEVE-LIFT-AT F0)
+[16] <i> :unexpanded (IFUNLOCK-LIFT-AT F0)
+[17] <i> :unexpanded (BOARD F0 P1)
+[18] <i> :unexpanded (i-LOCK-LIFT-AT F0)
+[19] <i> :unexpanded (i-LOCK-LIFT-AT_primitive F0)
+[20] :action (i-LOCK-LIFT-AT_primitive F0)
+[21] <i> :unexpanded (i-UNLOCK-LIFT-AT F0)
+[22] <i> :unexpanded (i-UNLOCK-LIFT-AT_primitive F0)
+[23] :action (i-UNLOCK-LIFT-AT_primitive F0)
+[24] <i> :unexpanded (BOARD_primitive F0 P1)
+[25] :action (BOARD_primitive F0 P1)
+[26] <i> :action (:inline)
+[27] :action (:inline)
+[28] <i> :unexpanded (i-LOCK-BOARDED_primitive P1)
+[29] :action (i-LOCK-BOARDED_primitive P1)
+[30] <i> :unexpanded (ACHIEVE-LIFT-AT0 F2)
+[31] <i> :unexpanded (i-LOCK-LIFT-AT F2)
+[32] <i> :unexpanded (UP F0 F1)
+[33] <i> :unexpanded (ACHIEVE-LIFT-AT0 F2)
+[34] <i> :unexpanded (UP_primitive F0 F1)
+[35] :action (UP_primitive F0 F1)
+[36] <i> :unexpanded (UP F1 F2)
+[37] <i> :unexpanded (ACHIEVE-LIFT-AT0 F2)
+[38] <i> :unexpanded (UP_primitive F1 F2)
+[39] :action (UP_primitive F1 F2)
+[40] <i> :action (:inline)
+[41] :action (:inline)
+[42] <i> :unexpanded (i-LOCK-LIFT-AT_primitive F2)
+[43] :action (i-LOCK-LIFT-AT_primitive F2)
+[44] <i> :unexpanded (i-UNLOCK-LIFT-AT F2)
+[45] <i> :unexpanded (i-UNLOCK-LIFT-AT_primitive F2)
+[46] :action (i-UNLOCK-LIFT-AT_primitive F2)
+[47] <i> :unexpanded (i-UNLOCK-BOARDED P1)
+[48] <i> :unexpanded (i-UNLOCK-BOARDED_primitive P1)
+[49] :action (i-UNLOCK-BOARDED_primitive P1)
+[50] <i> :unexpanded (DEPART_primitive F2 P1)
+[51] :action (DEPART_primitive F2 P1)
+[52] <i> :action (:inline)
+[53] :action (:inline)
+[54] <i> :unexpanded (i-LOCK-SERVED_primitive P1)
+[55] :action (i-LOCK-SERVED_primitive P1)
+[56] <i> :unexpanded (ACHIEVE-SERVED2 P0)
+[57] <i> :unexpanded (i-LOCK-SERVED P0)
+[58] <i> :unexpanded (DO-SERVED-DEPART2 F0 P0)
+[59] <i> :unexpanded (ACHIEVE-SERVED2 P0)
+[60] <i> :unexpanded (ACHIEVE-BOARDED P0)
+[61] <i> :unexpanded (ACHIEVE-LIFT-AT F0)
+[62] <i> :unexpanded (IFUNLOCK-LIFT-AT F0)
+[63] <i> :unexpanded (IFUNLOCK-BOARDED P0)
+[64] <i> :unexpanded (DEPART F0 P0)
+[65] <i> :unexpanded (ACHIEVE-BOARDED1 P0)
+[66] <i> :unexpanded (i-LOCK-BOARDED P0)
+[67] <i> :unexpanded (DO-BOARDED-BOARD1 F3 P0)
+[68] <i> :unexpanded (ACHIEVE-BOARDED1 P0)
+[69] <i> :unexpanded (ACHIEVE-LIFT-AT F3)
+[70] <i> :unexpanded (IFUNLOCK-LIFT-AT F3)
+[71] <i> :unexpanded (BOARD F3 P0)
+[72] <i> :unexpanded (ACHIEVE-LIFT-AT0 F3)
+[73] <i> :unexpanded (i-LOCK-LIFT-AT F3)
+[74] <i> :unexpanded (UP F2 F3)
+[75] <i> :unexpanded (ACHIEVE-LIFT-AT0 F3)
+[76] <i> :unexpanded (UP_primitive F2 F3)
+[77] :action (UP_primitive F2 F3)
+[78] <i> :action (:inline)
+[79] :action (:inline)
+[80] <i> :unexpanded (i-LOCK-LIFT-AT_primitive F3)
+[81] :action (i-LOCK-LIFT-AT_primitive F3)
+[82] <i> :unexpanded (i-UNLOCK-LIFT-AT F3)
+[83] <i> :unexpanded (i-UNLOCK-LIFT-AT_primitive F3)
+[84] :action (i-UNLOCK-LIFT-AT_primitive F3)
+[85] <i> :unexpanded (BOARD_primitive F3 P0)
+[86] :action (BOARD_primitive F3 P0)
+[87] <i> :action (:inline)
+[88] :action (:inline)
+[89] <i> :unexpanded (i-LOCK-BOARDED_primitive P0)
+[90] :action (i-LOCK-BOARDED_primitive P0)
+[91] <i> :unexpanded (ACHIEVE-LIFT-AT0 F0)
+[92] <i> :unexpanded (i-LOCK-LIFT-AT F0)
+[93] <i> :unexpanded (DOWN F3 F0)
+[94] <i> :unexpanded (ACHIEVE-LIFT-AT0 F0)
+[95] <i> :unexpanded (DOWN_primitive F3 F0)
+[96] :action (DOWN_primitive F3 F0)
+[97] <i> :action (:inline)
+[98] :action (:inline)
+[99] <i> :unexpanded (i-LOCK-LIFT-AT_primitive F0)
+[100] :action (i-LOCK-LIFT-AT_primitive F0)
+[101] <i> :unexpanded (i-UNLOCK-LIFT-AT F0)
+[102] <i> :unexpanded (i-UNLOCK-LIFT-AT_primitive F0)
+[103] :action (i-UNLOCK-LIFT-AT_primitive F0)
+[104] <i> :unexpanded (i-UNLOCK-BOARDED P0)
+[105] <i> :unexpanded (i-UNLOCK-BOARDED_primitive P0)
+[106] :action (i-UNLOCK-BOARDED_primitive P0)
+[107] <i> :unexpanded (DEPART_primitive F0 P0)
+[108] :action (DEPART_primitive F0 P0)
+[109] <i> :action (:inline)
+[110] :action (:inline)
+[111] <i> :unexpanded (i-LOCK-SERVED_primitive P0)
+[112] :action (i-LOCK-SERVED_primitive P0)
+###
+:action (i-LOCK-LIFT-AT_primitive F0)
+:action (i-UNLOCK-LIFT-AT_primitive F0)
+:action (BOARD_primitive F0 P1)
+:action (i-LOCK-BOARDED_primitive P1)
+:action (UP_primitive F0 F1)
+:action (UP_primitive F1 F2)
+:action (i-LOCK-LIFT-AT_primitive F2)
+:action (i-UNLOCK-LIFT-AT_primitive F2)
+:action (i-UNLOCK-BOARDED_primitive P1)
+:action (DEPART_primitive F2 P1)
+:action (i-LOCK-SERVED_primitive P1)
+:action (UP_primitive F2 F3)
+:action (i-LOCK-LIFT-AT_primitive F3)
+:action (i-UNLOCK-LIFT-AT_primitive F3)
+:action (BOARD_primitive F3 P0)
+:action (i-LOCK-BOARDED_primitive P0)
+:action (DOWN_primitive F3 F0)
+:action (i-LOCK-LIFT-AT_primitive F0)
+:action (i-UNLOCK-LIFT-AT_primitive F0)
+:action (i-UNLOCK-BOARDED_primitive P0)
+:action (DEPART_primitive F0 P0)
+:action (i-LOCK-SERVED_primitive P0)
+==>
+18 i-LOCK-LIFT-AT F0
+21 i-UNLOCK-LIFT-AT F0
+17 BOARD F0 P1
+12 i-LOCK-BOARDED P1
+32 UP F0 F1
+36 UP F1 F2
+31 i-LOCK-LIFT-AT F2
+44 i-UNLOCK-LIFT-AT F2
+47 i-UNLOCK-BOARDED P1
+10 DEPART F2 P1
+3 i-LOCK-SERVED P1
+74 UP F2 F3
+73 i-LOCK-LIFT-AT F3
+82 i-UNLOCK-LIFT-AT F3
+71 BOARD F3 P0
+66 i-LOCK-BOARDED P0
+93 DOWN F3 F0
+92 i-LOCK-LIFT-AT F0
+101 i-UNLOCK-LIFT-AT F0
+104 i-UNLOCK-BOARDED P0
+64 DEPART F0 P0
+57 i-LOCK-SERVED P0
+root 0 1
+0 ACHIEVE-SERVED P1 -> M22-ACHIEVE-SERVED 2 3
+2 ACHIEVE-SERVED2 P1 -> M24-ACHIEVE-SERVED2 4 5
+4 DO-SERVED-DEPART2 F2 P1 -> M8-DO-SERVED-DEPART2 6 7 8 9 10
+6 ACHIEVE-BOARDED P1 -> M17-ACHIEVE-BOARDED 11 12
+11 ACHIEVE-BOARDED1 P1 -> M19-ACHIEVE-BOARDED1 13 14
+13 DO-BOARDED-BOARD1 F0 P1 -> M7-DO-BOARDED-BOARD1 15 16 17
+15 ACHIEVE-LIFT-AT F0 -> M10-ACHIEVE-LIFT-AT 18
+16 IFUNLOCK-LIFT-AT F0 -> IFUNLOCK5-LIFT-AT 21
+14 ACHIEVE-BOARDED1 P1 -> M18-ACHIEVE-BOARDED1 
+7 ACHIEVE-LIFT-AT F2 -> M11-ACHIEVE-LIFT-AT 30 31
+30 ACHIEVE-LIFT-AT0 F2 -> M13-ACHIEVE-LIFT-AT0 32 33
+33 ACHIEVE-LIFT-AT0 F2 -> M13-ACHIEVE-LIFT-AT0 36 37
+37 ACHIEVE-LIFT-AT0 F2 -> M12-ACHIEVE-LIFT-AT0 
+8 IFUNLOCK-LIFT-AT F2 -> IFUNLOCK5-LIFT-AT 44
+9 IFUNLOCK-BOARDED P1 -> IFUNLOCK1-BOARDED 47
+5 ACHIEVE-SERVED2 P1 -> M23-ACHIEVE-SERVED2 
+1 ACHIEVE-SERVED P0 -> M22-ACHIEVE-SERVED 56 57
+56 ACHIEVE-SERVED2 P0 -> M24-ACHIEVE-SERVED2 58 59
+58 DO-SERVED-DEPART2 F0 P0 -> M8-DO-SERVED-DEPART2 60 61 62 63 64
+60 ACHIEVE-BOARDED P0 -> M17-ACHIEVE-BOARDED 65 66
+65 ACHIEVE-BOARDED1 P0 -> M19-ACHIEVE-BOARDED1 67 68
+67 DO-BOARDED-BOARD1 F3 P0 -> M7-DO-BOARDED-BOARD1 69 70 71
+69 ACHIEVE-LIFT-AT F3 -> M11-ACHIEVE-LIFT-AT 72 73
+72 ACHIEVE-LIFT-AT0 F3 -> M13-ACHIEVE-LIFT-AT0 74 75
+75 ACHIEVE-LIFT-AT0 F3 -> M12-ACHIEVE-LIFT-AT0 
+70 IFUNLOCK-LIFT-AT F3 -> IFUNLOCK5-LIFT-AT 82
+68 ACHIEVE-BOARDED1 P0 -> M18-ACHIEVE-BOARDED1 
+61 ACHIEVE-LIFT-AT F0 -> M11-ACHIEVE-LIFT-AT 91 92
+91 ACHIEVE-LIFT-AT0 F0 -> M14-ACHIEVE-LIFT-AT0 93 94
+94 ACHIEVE-LIFT-AT0 F0 -> M12-ACHIEVE-LIFT-AT0 
+62 IFUNLOCK-LIFT-AT F0 -> IFUNLOCK5-LIFT-AT 101
+63 IFUNLOCK-BOARDED P0 -> IFUNLOCK1-BOARDED 104
+59 ACHIEVE-SERVED2 P0 -> M23-ACHIEVE-SERVED2 
+<==
+%TIME 0:00.29 35372
+%EXIT 0

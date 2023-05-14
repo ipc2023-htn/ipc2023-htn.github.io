@@ -1,5 +1,1036 @@
-FATAL:   could not open image /home/gregor/Workspace/IPC2023/SIADEX.sif: failed to retrieve path for /home/gregor/Workspace/IPC2023/SIADEX.sif: lstat /home/gregor/Workspace/IPC2023/SIADEX.sif: no such file or directory
-Command exited with non-zero status 255
-%TIME 0:00.01 38312
-%EXIT 255
-NO OUTPUT
+
+Root:0-
+===
+Tarea:0
+
+(:method m_tlt_set_up_shelter
+:precondition
+      (and
+         (type_member_point airport)
+      )
+
+:tasks (
+   (set_up_shelter airport)
+)
+)
+===
+Tarea:1
+
+(:method m_set_up_shelter
+:precondition
+      (and
+         (type_member_food food1)
+         (type_member_shelter_leader sleader1)
+         (type_member_point airport)
+      )
+
+:tasks (
+   (get_electricity airport)
+   (get_to sleader1 airport)
+   (get_to food1 airport)
+)
+)
+===
+Tarea:2
+
+(:method m_get_electricity_noop
+:precondition
+      (and
+         (type_member_point airport)
+      )
+
+:tasks (
+   (SHOP_methodm_get_electricity_noop_precondition airport)
+)
+)
+===
+Tarea:5
+
+(:method method1
+:precondition
+      (and
+         (type_member_point airport)
+      )
+
+:tasks (
+   (SHOP_methodm_get_electricity_noop_precondition_primitive airport)
+)
+)
+===
+Tarea:6
+
+===
+Tarea:3
+
+(:method m_get_to_as_cargo
+:precondition
+      (and
+         (type_member_object__compiled sleader1)
+         (type_member_point mendon_pond)
+         (type_member_point airport)
+         (type_member_vehicle wtruck1)
+      )
+
+:tasks (
+   (SHOP_methodm_get_to_as_cargo_precondition sleader1 airport mendon_pond wtruck1)
+   (get_to wtruck1 mendon_pond)
+   (get_in sleader1 wtruck1)
+   (get_to wtruck1 airport)
+   (get_out sleader1 wtruck1)
+)
+)
+===
+Tarea:8
+
+(:method method1
+:precondition
+      (and
+         (type_member_object__compiled sleader1)
+         (type_member_point airport)
+         (type_member_point mendon_pond)
+         (type_member_vehicle wtruck1)
+      )
+
+:tasks (
+   (SHOP_methodm_get_to_as_cargo_precondition_primitive sleader1 airport mendon_pond wtruck1)
+)
+)
+===
+Tarea:13
+
+===
+Tarea:9
+
+(:method m_get_to_already_there
+:precondition
+      (and
+         (type_member_object__compiled wtruck1)
+         (type_member_point mendon_pond)
+      )
+
+:tasks (
+   (SHOP_methodm_get_to_already_there_precondition wtruck1 mendon_pond)
+)
+)
+===
+Tarea:15
+
+(:method method1
+:precondition
+      (and
+         (type_member_object__compiled wtruck1)
+         (type_member_point mendon_pond)
+      )
+
+:tasks (
+   (SHOP_methodm_get_to_already_there_precondition_primitive wtruck1 mendon_pond)
+)
+)
+===
+Tarea:16
+
+===
+Tarea:10
+
+(:method m_get_in_ambulatory_person
+:precondition
+      (and
+         (type_member_person sleader1)
+         (type_member_point mendon_pond)
+         (type_member_vehicle wtruck1)
+         (type_member_person sleader1)
+      )
+
+:tasks (
+   (SHOP_methodm_get_in_ambulatory_person_precondition sleader1 mendon_pond wtruck1)
+   (climb_in sleader1 wtruck1 mendon_pond)
+)
+)
+===
+Tarea:18
+
+(:method method1
+:precondition
+      (and
+         (type_member_person sleader1)
+         (type_member_point mendon_pond)
+         (type_member_vehicle wtruck1)
+      )
+
+:tasks (
+   (SHOP_methodm_get_in_ambulatory_person_precondition_primitive sleader1 mendon_pond wtruck1)
+)
+)
+===
+Tarea:20
+
+===
+Tarea:19
+
+(:method method1
+:precondition
+      (and
+         (type_member_person sleader1)
+         (type_member_vehicle wtruck1)
+         (type_member_point mendon_pond)
+      )
+
+:tasks (
+   (climb_in_primitive sleader1 wtruck1 mendon_pond)
+)
+)
+===
+Tarea:22
+
+===
+Tarea:11
+
+(:method m_get_to_vehicle_gets_driven
+:precondition
+      (and
+         (type_member_person wcrew1)
+         (type_member_point airport)
+         (type_member_vehicle wtruck1)
+         (type_member_point mendon_pond)
+         (type_member_vehicle wtruck1)
+      )
+
+:tasks (
+   (SHOP_methodm_get_to_vehicle_gets_driven_precondition wtruck1 airport mendon_pond wcrew1)
+   (drive_to wcrew1 wtruck1 airport)
+)
+)
+===
+Tarea:24
+
+(:method method1
+:precondition
+      (and
+         (type_member_vehicle wtruck1)
+         (type_member_point airport)
+         (type_member_point mendon_pond)
+         (type_member_person wcrew1)
+      )
+
+:tasks (
+   (SHOP_methodm_get_to_vehicle_gets_driven_precondition_primitive wtruck1 airport mendon_pond wcrew1)
+)
+)
+===
+Tarea:26
+
+===
+Tarea:25
+
+(:method m_drive_to
+:precondition
+      (and
+         (type_member_point airport)
+         (type_member_adult wcrew1)
+         (type_member_vehicle wtruck1)
+         (type_member_point mendon_pond)
+         (type_member_adult wcrew1)
+      )
+
+:tasks (
+   (SHOP_methodm_drive_to_precondition wtruck1 mendon_pond wcrew1)
+   (navegate_vehicle wcrew1 wtruck1 airport mendon_pond)
+)
+)
+===
+Tarea:28
+
+(:method method1
+:precondition
+      (and
+         (type_member_vehicle wtruck1)
+         (type_member_point mendon_pond)
+         (type_member_adult wcrew1)
+      )
+
+:tasks (
+   (SHOP_methodm_drive_to_precondition_primitive wtruck1 mendon_pond wcrew1)
+)
+)
+===
+Tarea:30
+
+===
+Tarea:29
+
+(:method method1
+:precondition
+      (and
+         (type_member_adult wcrew1)
+         (type_member_vehicle wtruck1)
+         (type_member_point airport)
+         (type_member_point mendon_pond)
+      )
+
+:tasks (
+   (navegate_vehicle_primitive wcrew1 wtruck1 airport mendon_pond)
+)
+)
+===
+Tarea:32
+
+===
+Tarea:12
+
+(:method m_get_out_ambulatory_person
+:precondition
+      (and
+         (type_member_person sleader1)
+         (type_member_point airport)
+         (type_member_vehicle wtruck1)
+         (type_member_person sleader1)
+      )
+
+:tasks (
+   (climb_out sleader1 wtruck1 airport)
+)
+)
+===
+Tarea:34
+
+(:method method1
+:precondition
+      (and
+         (type_member_person sleader1)
+         (type_member_vehicle wtruck1)
+         (type_member_point airport)
+      )
+
+:tasks (
+   (climb_out_primitive sleader1 wtruck1 airport)
+)
+)
+===
+Tarea:35
+
+===
+Tarea:4
+
+(:method m_get_to_as_cargo
+:precondition
+      (and
+         (type_member_object__compiled food1)
+         (type_member_point brighton_dump)
+         (type_member_point airport)
+         (type_member_vehicle wtruck1)
+      )
+
+:tasks (
+   (SHOP_methodm_get_to_as_cargo_precondition food1 airport brighton_dump wtruck1)
+   (get_to wtruck1 brighton_dump)
+   (get_in food1 wtruck1)
+   (get_to wtruck1 airport)
+   (get_out food1 wtruck1)
+)
+)
+===
+Tarea:37
+
+(:method method1
+:precondition
+      (and
+         (type_member_object__compiled food1)
+         (type_member_point airport)
+         (type_member_point brighton_dump)
+         (type_member_vehicle wtruck1)
+      )
+
+:tasks (
+   (SHOP_methodm_get_to_as_cargo_precondition_primitive food1 airport brighton_dump wtruck1)
+)
+)
+===
+Tarea:42
+
+===
+Tarea:38
+
+(:method m_get_to_vehicle_gets_driven
+:precondition
+      (and
+         (type_member_person wcrew1)
+         (type_member_point brighton_dump)
+         (type_member_vehicle wtruck1)
+         (type_member_point airport)
+         (type_member_vehicle wtruck1)
+      )
+
+:tasks (
+   (SHOP_methodm_get_to_vehicle_gets_driven_precondition wtruck1 brighton_dump airport wcrew1)
+   (drive_to wcrew1 wtruck1 brighton_dump)
+)
+)
+===
+Tarea:44
+
+(:method method1
+:precondition
+      (and
+         (type_member_vehicle wtruck1)
+         (type_member_point brighton_dump)
+         (type_member_point airport)
+         (type_member_person wcrew1)
+      )
+
+:tasks (
+   (SHOP_methodm_get_to_vehicle_gets_driven_precondition_primitive wtruck1 brighton_dump airport wcrew1)
+)
+)
+===
+Tarea:46
+
+===
+Tarea:45
+
+(:method m_drive_to
+:precondition
+      (and
+         (type_member_point brighton_dump)
+         (type_member_adult wcrew1)
+         (type_member_vehicle wtruck1)
+         (type_member_point airport)
+         (type_member_adult wcrew1)
+      )
+
+:tasks (
+   (SHOP_methodm_drive_to_precondition wtruck1 airport wcrew1)
+   (navegate_vehicle wcrew1 wtruck1 brighton_dump airport)
+)
+)
+===
+Tarea:48
+
+(:method method1
+:precondition
+      (and
+         (type_member_vehicle wtruck1)
+         (type_member_point airport)
+         (type_member_adult wcrew1)
+      )
+
+:tasks (
+   (SHOP_methodm_drive_to_precondition_primitive wtruck1 airport wcrew1)
+)
+)
+===
+Tarea:50
+
+===
+Tarea:49
+
+(:method method1
+:precondition
+      (and
+         (type_member_adult wcrew1)
+         (type_member_vehicle wtruck1)
+         (type_member_point brighton_dump)
+         (type_member_point airport)
+      )
+
+:tasks (
+   (navegate_vehicle_primitive wcrew1 wtruck1 brighton_dump airport)
+)
+)
+===
+Tarea:52
+
+===
+Tarea:39
+
+(:method m_get_in_load_in
+:precondition
+      (and
+         (type_member_object__compiled food1)
+         (type_member_point brighton_dump)
+         (type_member_person ccrew1)
+         (type_member_vehicle wtruck1)
+      )
+
+:tasks (
+   (SHOP_methodm_get_in_load_in_precondition food1 brighton_dump wtruck1 ccrew1)
+   (get_to ccrew1 brighton_dump)
+   (load ccrew1 food1 wtruck1 brighton_dump)
+)
+)
+===
+Tarea:54
+
+(:method method1
+:precondition
+      (and
+         (type_member_object__compiled food1)
+         (type_member_point brighton_dump)
+         (type_member_vehicle wtruck1)
+         (type_member_person ccrew1)
+      )
+
+:tasks (
+   (SHOP_methodm_get_in_load_in_precondition_primitive food1 brighton_dump wtruck1 ccrew1)
+)
+)
+===
+Tarea:57
+
+===
+Tarea:55
+
+(:method m_get_to_person_drives_themself
+:precondition
+      (and
+         (type_member_person ccrew1)
+         (type_member_point brighton_dump)
+         (type_member_vehicle backhoe1)
+         (type_member_point pittsford_plaza)
+         (type_member_person ccrew1)
+      )
+
+:tasks (
+   (SHOP_methodm_get_to_person_drives_themself_precondition ccrew1 brighton_dump backhoe1 pittsford_plaza)
+   (drive_to ccrew1 backhoe1 brighton_dump)
+)
+)
+===
+Tarea:59
+
+(:method method1
+:precondition
+      (and
+         (type_member_person ccrew1)
+         (type_member_point brighton_dump)
+         (type_member_vehicle backhoe1)
+         (type_member_point pittsford_plaza)
+      )
+
+:tasks (
+   (SHOP_methodm_get_to_person_drives_themself_precondition_primitive ccrew1 brighton_dump backhoe1 pittsford_plaza)
+)
+)
+===
+Tarea:61
+
+===
+Tarea:60
+
+(:method m_drive_to
+:precondition
+      (and
+         (type_member_point brighton_dump)
+         (type_member_adult ccrew1)
+         (type_member_vehicle backhoe1)
+         (type_member_point pittsford_plaza)
+         (type_member_adult ccrew1)
+      )
+
+:tasks (
+   (SHOP_methodm_drive_to_precondition backhoe1 pittsford_plaza ccrew1)
+   (navegate_vehicle ccrew1 backhoe1 brighton_dump pittsford_plaza)
+)
+)
+===
+Tarea:63
+
+(:method method1
+:precondition
+      (and
+         (type_member_vehicle backhoe1)
+         (type_member_point pittsford_plaza)
+         (type_member_adult ccrew1)
+      )
+
+:tasks (
+   (SHOP_methodm_drive_to_precondition_primitive backhoe1 pittsford_plaza ccrew1)
+)
+)
+===
+Tarea:65
+
+===
+Tarea:64
+
+(:method method1
+:precondition
+      (and
+         (type_member_adult ccrew1)
+         (type_member_vehicle backhoe1)
+         (type_member_point brighton_dump)
+         (type_member_point pittsford_plaza)
+      )
+
+:tasks (
+   (navegate_vehicle_primitive ccrew1 backhoe1 brighton_dump pittsford_plaza)
+)
+)
+===
+Tarea:67
+
+===
+Tarea:56
+
+(:method method1
+:precondition
+      (and
+         (type_member_person ccrew1)
+         (type_member_object__compiled food1)
+         (type_member_vehicle wtruck1)
+         (type_member_point brighton_dump)
+      )
+
+:tasks (
+   (load_primitive ccrew1 food1 wtruck1 brighton_dump)
+)
+)
+===
+Tarea:69
+
+===
+Tarea:40
+
+(:method m_get_to_vehicle_gets_driven
+:precondition
+      (and
+         (type_member_person tdriver1)
+         (type_member_point airport)
+         (type_member_vehicle wtruck1)
+         (type_member_point brighton_dump)
+         (type_member_vehicle wtruck1)
+      )
+
+:tasks (
+   (SHOP_methodm_get_to_vehicle_gets_driven_precondition wtruck1 airport brighton_dump tdriver1)
+   (drive_to tdriver1 wtruck1 airport)
+)
+)
+===
+Tarea:71
+
+(:method method1
+:precondition
+      (and
+         (type_member_vehicle wtruck1)
+         (type_member_point airport)
+         (type_member_point brighton_dump)
+         (type_member_person tdriver1)
+      )
+
+:tasks (
+   (SHOP_methodm_get_to_vehicle_gets_driven_precondition_primitive wtruck1 airport brighton_dump tdriver1)
+)
+)
+===
+Tarea:73
+
+===
+Tarea:72
+
+(:method m_drive_to
+:precondition
+      (and
+         (type_member_point airport)
+         (type_member_adult tdriver1)
+         (type_member_vehicle wtruck1)
+         (type_member_point brighton_dump)
+         (type_member_adult tdriver1)
+      )
+
+:tasks (
+   (SHOP_methodm_drive_to_precondition wtruck1 brighton_dump tdriver1)
+   (navegate_vehicle tdriver1 wtruck1 airport brighton_dump)
+)
+)
+===
+Tarea:75
+
+(:method method1
+:precondition
+      (and
+         (type_member_vehicle wtruck1)
+         (type_member_point brighton_dump)
+         (type_member_adult tdriver1)
+      )
+
+:tasks (
+   (SHOP_methodm_drive_to_precondition_primitive wtruck1 brighton_dump tdriver1)
+)
+)
+===
+Tarea:77
+
+===
+Tarea:76
+
+(:method method1
+:precondition
+      (and
+         (type_member_adult tdriver1)
+         (type_member_vehicle wtruck1)
+         (type_member_point airport)
+         (type_member_point brighton_dump)
+      )
+
+:tasks (
+   (navegate_vehicle_primitive tdriver1 wtruck1 airport brighton_dump)
+)
+)
+===
+Tarea:79
+
+===
+Tarea:41
+
+(:method m_get_out_unload
+:precondition
+      (and
+         (type_member_object__compiled food1)
+         (type_member_person ccrew1)
+         (type_member_vehicle wtruck1)
+         (type_member_point airport)
+      )
+
+:tasks (
+   (SHOP_methodm_get_out_unload_precondition wtruck1 airport ccrew1 food1)
+   (get_to ccrew1 airport)
+   (unload ccrew1 food1 wtruck1 airport)
+)
+)
+===
+Tarea:81
+
+(:method method1
+:precondition
+      (and
+         (type_member_vehicle wtruck1)
+         (type_member_point airport)
+         (type_member_person ccrew1)
+         (type_member_object__compiled food1)
+      )
+
+:tasks (
+   (SHOP_methodm_get_out_unload_precondition_primitive wtruck1 airport ccrew1 food1)
+)
+)
+===
+Tarea:84
+
+===
+Tarea:82
+
+(:method m_get_to_person_drives_themself
+:precondition
+      (and
+         (type_member_person ccrew1)
+         (type_member_point airport)
+         (type_member_vehicle backhoe1)
+         (type_member_point brighton_dump)
+         (type_member_person ccrew1)
+      )
+
+:tasks (
+   (SHOP_methodm_get_to_person_drives_themself_precondition ccrew1 airport backhoe1 brighton_dump)
+   (drive_to ccrew1 backhoe1 airport)
+)
+)
+===
+Tarea:86
+
+(:method method1
+:precondition
+      (and
+         (type_member_person ccrew1)
+         (type_member_point airport)
+         (type_member_vehicle backhoe1)
+         (type_member_point brighton_dump)
+      )
+
+:tasks (
+   (SHOP_methodm_get_to_person_drives_themself_precondition_primitive ccrew1 airport backhoe1 brighton_dump)
+)
+)
+===
+Tarea:88
+
+===
+Tarea:87
+
+(:method m_drive_to
+:precondition
+      (and
+         (type_member_point airport)
+         (type_member_adult ccrew1)
+         (type_member_vehicle backhoe1)
+         (type_member_point brighton_dump)
+         (type_member_adult ccrew1)
+      )
+
+:tasks (
+   (SHOP_methodm_drive_to_precondition backhoe1 brighton_dump ccrew1)
+   (navegate_vehicle ccrew1 backhoe1 airport brighton_dump)
+)
+)
+===
+Tarea:90
+
+(:method method1
+:precondition
+      (and
+         (type_member_vehicle backhoe1)
+         (type_member_point brighton_dump)
+         (type_member_adult ccrew1)
+      )
+
+:tasks (
+   (SHOP_methodm_drive_to_precondition_primitive backhoe1 brighton_dump ccrew1)
+)
+)
+===
+Tarea:92
+
+===
+Tarea:91
+
+(:method method1
+:precondition
+      (and
+         (type_member_adult ccrew1)
+         (type_member_vehicle backhoe1)
+         (type_member_point airport)
+         (type_member_point brighton_dump)
+      )
+
+:tasks (
+   (navegate_vehicle_primitive ccrew1 backhoe1 airport brighton_dump)
+)
+)
+===
+Tarea:94
+
+===
+Tarea:83
+
+(:method method1
+:precondition
+      (and
+         (type_member_person ccrew1)
+         (type_member_object__compiled food1)
+         (type_member_vehicle wtruck1)
+         (type_member_point airport)
+      )
+
+:tasks (
+   (unload_primitive ccrew1 food1 wtruck1 airport)
+)
+)
+===
+Tarea:96
+
+===
+?p0 <- airport
+?leader <- sleader1
+?food <- food1
+?veh <- wtruck1
+?objloc <- mendon_pond
+?objloc <- mendon_pond
+?vehloc <- mendon_pond
+?person <- wcrew1
+?vehloc <- mendon_pond
+?p <- airport
+?veh <- wtruck1
+?objloc <- brighton_dump
+?vehloc <- airport
+?person <- wcrew1
+?vehloc <- airport
+?person <- ccrew1
+?objloc <- brighton_dump
+?vehloc <- pittsford_plaza
+?veh <- backhoe1
+?vehloc <- pittsford_plaza
+?vehloc <- brighton_dump
+?person <- tdriver1
+?vehloc <- brighton_dump
+?vehloc <- airport
+?person <- ccrew1
+?vehloc <- brighton_dump
+?veh <- backhoe1
+?vehloc <- brighton_dump
+===
+Lista de tareas: 
+[0] <i> :unexpanded (tlt)
+[1] <i> :unexpanded (set_up_shelter airport)
+[2] <i> :unexpanded (get_electricity airport)
+[3] <i> :unexpanded (get_to sleader1 airport)
+[4] <i> :unexpanded (get_to food1 airport)
+[5] <i> :unexpanded (SHOP_methodm_get_electricity_noop_precondition airport)
+[6] <i> :unexpanded (SHOP_methodm_get_electricity_noop_precondition_primitive airport)
+[7] :action (SHOP_methodm_get_electricity_noop_precondition_primitive airport)
+[8] <i> :unexpanded (SHOP_methodm_get_to_as_cargo_precondition sleader1 airport mendon_pond wtruck1)
+[9] <i> :unexpanded (get_to wtruck1 mendon_pond)
+[10] <i> :unexpanded (get_in sleader1 wtruck1)
+[11] <i> :unexpanded (get_to wtruck1 airport)
+[12] <i> :unexpanded (get_out sleader1 wtruck1)
+[13] <i> :unexpanded (SHOP_methodm_get_to_as_cargo_precondition_primitive sleader1 airport mendon_pond wtruck1)
+[14] :action (SHOP_methodm_get_to_as_cargo_precondition_primitive sleader1 airport mendon_pond wtruck1)
+[15] <i> :unexpanded (SHOP_methodm_get_to_already_there_precondition wtruck1 mendon_pond)
+[16] <i> :unexpanded (SHOP_methodm_get_to_already_there_precondition_primitive wtruck1 mendon_pond)
+[17] :action (SHOP_methodm_get_to_already_there_precondition_primitive wtruck1 mendon_pond)
+[18] <i> :unexpanded (SHOP_methodm_get_in_ambulatory_person_precondition sleader1 mendon_pond wtruck1)
+[19] <i> :unexpanded (climb_in sleader1 wtruck1 mendon_pond)
+[20] <i> :unexpanded (SHOP_methodm_get_in_ambulatory_person_precondition_primitive sleader1 mendon_pond wtruck1)
+[21] :action (SHOP_methodm_get_in_ambulatory_person_precondition_primitive sleader1 mendon_pond wtruck1)
+[22] <i> :unexpanded (climb_in_primitive sleader1 wtruck1 mendon_pond)
+[23] :action (climb_in_primitive sleader1 wtruck1 mendon_pond)
+[24] <i> :unexpanded (SHOP_methodm_get_to_vehicle_gets_driven_precondition wtruck1 airport mendon_pond wcrew1)
+[25] <i> :unexpanded (drive_to wcrew1 wtruck1 airport)
+[26] <i> :unexpanded (SHOP_methodm_get_to_vehicle_gets_driven_precondition_primitive wtruck1 airport mendon_pond wcrew1)
+[27] :action (SHOP_methodm_get_to_vehicle_gets_driven_precondition_primitive wtruck1 airport mendon_pond wcrew1)
+[28] <i> :unexpanded (SHOP_methodm_drive_to_precondition wtruck1 mendon_pond wcrew1)
+[29] <i> :unexpanded (navegate_vehicle wcrew1 wtruck1 airport mendon_pond)
+[30] <i> :unexpanded (SHOP_methodm_drive_to_precondition_primitive wtruck1 mendon_pond wcrew1)
+[31] :action (SHOP_methodm_drive_to_precondition_primitive wtruck1 mendon_pond wcrew1)
+[32] <i> :unexpanded (navegate_vehicle_primitive wcrew1 wtruck1 airport mendon_pond)
+[33] :action (navegate_vehicle_primitive wcrew1 wtruck1 airport mendon_pond)
+[34] <i> :unexpanded (climb_out sleader1 wtruck1 airport)
+[35] <i> :unexpanded (climb_out_primitive sleader1 wtruck1 airport)
+[36] :action (climb_out_primitive sleader1 wtruck1 airport)
+[37] <i> :unexpanded (SHOP_methodm_get_to_as_cargo_precondition food1 airport brighton_dump wtruck1)
+[38] <i> :unexpanded (get_to wtruck1 brighton_dump)
+[39] <i> :unexpanded (get_in food1 wtruck1)
+[40] <i> :unexpanded (get_to wtruck1 airport)
+[41] <i> :unexpanded (get_out food1 wtruck1)
+[42] <i> :unexpanded (SHOP_methodm_get_to_as_cargo_precondition_primitive food1 airport brighton_dump wtruck1)
+[43] :action (SHOP_methodm_get_to_as_cargo_precondition_primitive food1 airport brighton_dump wtruck1)
+[44] <i> :unexpanded (SHOP_methodm_get_to_vehicle_gets_driven_precondition wtruck1 brighton_dump airport wcrew1)
+[45] <i> :unexpanded (drive_to wcrew1 wtruck1 brighton_dump)
+[46] <i> :unexpanded (SHOP_methodm_get_to_vehicle_gets_driven_precondition_primitive wtruck1 brighton_dump airport wcrew1)
+[47] :action (SHOP_methodm_get_to_vehicle_gets_driven_precondition_primitive wtruck1 brighton_dump airport wcrew1)
+[48] <i> :unexpanded (SHOP_methodm_drive_to_precondition wtruck1 airport wcrew1)
+[49] <i> :unexpanded (navegate_vehicle wcrew1 wtruck1 brighton_dump airport)
+[50] <i> :unexpanded (SHOP_methodm_drive_to_precondition_primitive wtruck1 airport wcrew1)
+[51] :action (SHOP_methodm_drive_to_precondition_primitive wtruck1 airport wcrew1)
+[52] <i> :unexpanded (navegate_vehicle_primitive wcrew1 wtruck1 brighton_dump airport)
+[53] :action (navegate_vehicle_primitive wcrew1 wtruck1 brighton_dump airport)
+[54] <i> :unexpanded (SHOP_methodm_get_in_load_in_precondition food1 brighton_dump wtruck1 ccrew1)
+[55] <i> :unexpanded (get_to ccrew1 brighton_dump)
+[56] <i> :unexpanded (load ccrew1 food1 wtruck1 brighton_dump)
+[57] <i> :unexpanded (SHOP_methodm_get_in_load_in_precondition_primitive food1 brighton_dump wtruck1 ccrew1)
+[58] :action (SHOP_methodm_get_in_load_in_precondition_primitive food1 brighton_dump wtruck1 ccrew1)
+[59] <i> :unexpanded (SHOP_methodm_get_to_person_drives_themself_precondition ccrew1 brighton_dump backhoe1 pittsford_plaza)
+[60] <i> :unexpanded (drive_to ccrew1 backhoe1 brighton_dump)
+[61] <i> :unexpanded (SHOP_methodm_get_to_person_drives_themself_precondition_primitive ccrew1 brighton_dump backhoe1 pittsford_plaza)
+[62] :action (SHOP_methodm_get_to_person_drives_themself_precondition_primitive ccrew1 brighton_dump backhoe1 pittsford_plaza)
+[63] <i> :unexpanded (SHOP_methodm_drive_to_precondition backhoe1 pittsford_plaza ccrew1)
+[64] <i> :unexpanded (navegate_vehicle ccrew1 backhoe1 brighton_dump pittsford_plaza)
+[65] <i> :unexpanded (SHOP_methodm_drive_to_precondition_primitive backhoe1 pittsford_plaza ccrew1)
+[66] :action (SHOP_methodm_drive_to_precondition_primitive backhoe1 pittsford_plaza ccrew1)
+[67] <i> :unexpanded (navegate_vehicle_primitive ccrew1 backhoe1 brighton_dump pittsford_plaza)
+[68] :action (navegate_vehicle_primitive ccrew1 backhoe1 brighton_dump pittsford_plaza)
+[69] <i> :unexpanded (load_primitive ccrew1 food1 wtruck1 brighton_dump)
+[70] :action (load_primitive ccrew1 food1 wtruck1 brighton_dump)
+[71] <i> :unexpanded (SHOP_methodm_get_to_vehicle_gets_driven_precondition wtruck1 airport brighton_dump tdriver1)
+[72] <i> :unexpanded (drive_to tdriver1 wtruck1 airport)
+[73] <i> :unexpanded (SHOP_methodm_get_to_vehicle_gets_driven_precondition_primitive wtruck1 airport brighton_dump tdriver1)
+[74] :action (SHOP_methodm_get_to_vehicle_gets_driven_precondition_primitive wtruck1 airport brighton_dump tdriver1)
+[75] <i> :unexpanded (SHOP_methodm_drive_to_precondition wtruck1 brighton_dump tdriver1)
+[76] <i> :unexpanded (navegate_vehicle tdriver1 wtruck1 airport brighton_dump)
+[77] <i> :unexpanded (SHOP_methodm_drive_to_precondition_primitive wtruck1 brighton_dump tdriver1)
+[78] :action (SHOP_methodm_drive_to_precondition_primitive wtruck1 brighton_dump tdriver1)
+[79] <i> :unexpanded (navegate_vehicle_primitive tdriver1 wtruck1 airport brighton_dump)
+[80] :action (navegate_vehicle_primitive tdriver1 wtruck1 airport brighton_dump)
+[81] <i> :unexpanded (SHOP_methodm_get_out_unload_precondition wtruck1 airport ccrew1 food1)
+[82] <i> :unexpanded (get_to ccrew1 airport)
+[83] <i> :unexpanded (unload ccrew1 food1 wtruck1 airport)
+[84] <i> :unexpanded (SHOP_methodm_get_out_unload_precondition_primitive wtruck1 airport ccrew1 food1)
+[85] :action (SHOP_methodm_get_out_unload_precondition_primitive wtruck1 airport ccrew1 food1)
+[86] <i> :unexpanded (SHOP_methodm_get_to_person_drives_themself_precondition ccrew1 airport backhoe1 brighton_dump)
+[87] <i> :unexpanded (drive_to ccrew1 backhoe1 airport)
+[88] <i> :unexpanded (SHOP_methodm_get_to_person_drives_themself_precondition_primitive ccrew1 airport backhoe1 brighton_dump)
+[89] :action (SHOP_methodm_get_to_person_drives_themself_precondition_primitive ccrew1 airport backhoe1 brighton_dump)
+[90] <i> :unexpanded (SHOP_methodm_drive_to_precondition backhoe1 brighton_dump ccrew1)
+[91] <i> :unexpanded (navegate_vehicle ccrew1 backhoe1 airport brighton_dump)
+[92] <i> :unexpanded (SHOP_methodm_drive_to_precondition_primitive backhoe1 brighton_dump ccrew1)
+[93] :action (SHOP_methodm_drive_to_precondition_primitive backhoe1 brighton_dump ccrew1)
+[94] <i> :unexpanded (navegate_vehicle_primitive ccrew1 backhoe1 airport brighton_dump)
+[95] :action (navegate_vehicle_primitive ccrew1 backhoe1 airport brighton_dump)
+[96] <i> :unexpanded (unload_primitive ccrew1 food1 wtruck1 airport)
+[97] :action (unload_primitive ccrew1 food1 wtruck1 airport)
+###
+:action (SHOP_methodm_get_electricity_noop_precondition_primitive airport)
+:action (SHOP_methodm_get_to_as_cargo_precondition_primitive sleader1 airport mendon_pond wtruck1)
+:action (SHOP_methodm_get_to_already_there_precondition_primitive wtruck1 mendon_pond)
+:action (SHOP_methodm_get_in_ambulatory_person_precondition_primitive sleader1 mendon_pond wtruck1)
+:action (climb_in_primitive sleader1 wtruck1 mendon_pond)
+:action (SHOP_methodm_get_to_vehicle_gets_driven_precondition_primitive wtruck1 airport mendon_pond wcrew1)
+:action (SHOP_methodm_drive_to_precondition_primitive wtruck1 mendon_pond wcrew1)
+:action (navegate_vehicle_primitive wcrew1 wtruck1 airport mendon_pond)
+:action (climb_out_primitive sleader1 wtruck1 airport)
+:action (SHOP_methodm_get_to_as_cargo_precondition_primitive food1 airport brighton_dump wtruck1)
+:action (SHOP_methodm_get_to_vehicle_gets_driven_precondition_primitive wtruck1 brighton_dump airport wcrew1)
+:action (SHOP_methodm_drive_to_precondition_primitive wtruck1 airport wcrew1)
+:action (navegate_vehicle_primitive wcrew1 wtruck1 brighton_dump airport)
+:action (SHOP_methodm_get_in_load_in_precondition_primitive food1 brighton_dump wtruck1 ccrew1)
+:action (SHOP_methodm_get_to_person_drives_themself_precondition_primitive ccrew1 brighton_dump backhoe1 pittsford_plaza)
+:action (SHOP_methodm_drive_to_precondition_primitive backhoe1 pittsford_plaza ccrew1)
+:action (navegate_vehicle_primitive ccrew1 backhoe1 brighton_dump pittsford_plaza)
+:action (load_primitive ccrew1 food1 wtruck1 brighton_dump)
+:action (SHOP_methodm_get_to_vehicle_gets_driven_precondition_primitive wtruck1 airport brighton_dump tdriver1)
+:action (SHOP_methodm_drive_to_precondition_primitive wtruck1 brighton_dump tdriver1)
+:action (navegate_vehicle_primitive tdriver1 wtruck1 airport brighton_dump)
+:action (SHOP_methodm_get_out_unload_precondition_primitive wtruck1 airport ccrew1 food1)
+:action (SHOP_methodm_get_to_person_drives_themself_precondition_primitive ccrew1 airport backhoe1 brighton_dump)
+:action (SHOP_methodm_drive_to_precondition_primitive backhoe1 brighton_dump ccrew1)
+:action (navegate_vehicle_primitive ccrew1 backhoe1 airport brighton_dump)
+:action (unload_primitive ccrew1 food1 wtruck1 airport)
+==>
+5 SHOP_methodm_get_electricity_noop_precondition airport
+8 SHOP_methodm_get_to_as_cargo_precondition sleader1 airport mendon_pond wtruck1
+15 SHOP_methodm_get_to_already_there_precondition wtruck1 mendon_pond
+18 SHOP_methodm_get_in_ambulatory_person_precondition sleader1 mendon_pond wtruck1
+19 climb_in sleader1 wtruck1 mendon_pond
+24 SHOP_methodm_get_to_vehicle_gets_driven_precondition wtruck1 airport mendon_pond wcrew1
+28 SHOP_methodm_drive_to_precondition wtruck1 mendon_pond wcrew1
+29 navegate_vehicle wcrew1 wtruck1 airport mendon_pond
+34 climb_out sleader1 wtruck1 airport
+37 SHOP_methodm_get_to_as_cargo_precondition food1 airport brighton_dump wtruck1
+44 SHOP_methodm_get_to_vehicle_gets_driven_precondition wtruck1 brighton_dump airport wcrew1
+48 SHOP_methodm_drive_to_precondition wtruck1 airport wcrew1
+49 navegate_vehicle wcrew1 wtruck1 brighton_dump airport
+54 SHOP_methodm_get_in_load_in_precondition food1 brighton_dump wtruck1 ccrew1
+59 SHOP_methodm_get_to_person_drives_themself_precondition ccrew1 brighton_dump backhoe1 pittsford_plaza
+63 SHOP_methodm_drive_to_precondition backhoe1 pittsford_plaza ccrew1
+64 navegate_vehicle ccrew1 backhoe1 brighton_dump pittsford_plaza
+56 load ccrew1 food1 wtruck1 brighton_dump
+71 SHOP_methodm_get_to_vehicle_gets_driven_precondition wtruck1 airport brighton_dump tdriver1
+75 SHOP_methodm_drive_to_precondition wtruck1 brighton_dump tdriver1
+76 navegate_vehicle tdriver1 wtruck1 airport brighton_dump
+81 SHOP_methodm_get_out_unload_precondition wtruck1 airport ccrew1 food1
+86 SHOP_methodm_get_to_person_drives_themself_precondition ccrew1 airport backhoe1 brighton_dump
+90 SHOP_methodm_drive_to_precondition backhoe1 brighton_dump ccrew1
+91 navegate_vehicle ccrew1 backhoe1 airport brighton_dump
+83 unload ccrew1 food1 wtruck1 airport
+root 0
+0 tlt -> m_tlt_set_up_shelter 1
+1 set_up_shelter airport -> m_set_up_shelter 2 3 4
+2 get_electricity airport -> m_get_electricity_noop 5
+3 get_to sleader1 airport -> m_get_to_as_cargo 8 9 10 11 12
+9 get_to wtruck1 mendon_pond -> m_get_to_already_there 15
+10 get_in sleader1 wtruck1 -> m_get_in_ambulatory_person 18 19
+11 get_to wtruck1 airport -> m_get_to_vehicle_gets_driven 24 25
+25 drive_to wcrew1 wtruck1 airport -> m_drive_to 28 29
+12 get_out sleader1 wtruck1 -> m_get_out_ambulatory_person 34
+4 get_to food1 airport -> m_get_to_as_cargo 37 38 39 40 41
+38 get_to wtruck1 brighton_dump -> m_get_to_vehicle_gets_driven 44 45
+45 drive_to wcrew1 wtruck1 brighton_dump -> m_drive_to 48 49
+39 get_in food1 wtruck1 -> m_get_in_load_in 54 55 56
+55 get_to ccrew1 brighton_dump -> m_get_to_person_drives_themself 59 60
+60 drive_to ccrew1 backhoe1 brighton_dump -> m_drive_to 63 64
+40 get_to wtruck1 airport -> m_get_to_vehicle_gets_driven 71 72
+72 drive_to tdriver1 wtruck1 airport -> m_drive_to 75 76
+41 get_out food1 wtruck1 -> m_get_out_unload 81 82 83
+82 get_to ccrew1 airport -> m_get_to_person_drives_themself 86 87
+87 drive_to ccrew1 backhoe1 airport -> m_drive_to 90 91
+<==
+%TIME 0:00.32 37728
+%EXIT 0

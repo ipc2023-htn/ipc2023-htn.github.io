@@ -1,4 +1,4 @@
 INFO:    underlay of /etc/localtime required more than 50 (71) bind mounts
-%TIME 0:00.10 36328
+%TIME 0:00.08 35364
 %EXIT 0
 NO OUTPUT

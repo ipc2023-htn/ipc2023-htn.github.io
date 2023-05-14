@@ -1,5 +1,405 @@
-FATAL:   could not open image /home/gregor/Workspace/IPC2023/SIADEX.sif: failed to retrieve path for /home/gregor/Workspace/IPC2023/SIADEX.sif: lstat /home/gregor/Workspace/IPC2023/SIADEX.sif: no such file or directory
-Command exited with non-zero status 255
-%TIME 0:00.01 36124
-%EXIT 255
-NO OUTPUT
+
+Root:0-1-
+===
+Tarea:0
+
+(:method m_deliver_ordering_0
+:precondition
+      (and
+         (type_member_location city_loc_1)
+         (type_member_location city_loc_0)
+         (type_member_package package_0)
+         (type_member_vehicle truck_0)
+      )
+
+:tasks (
+   (get_to truck_0 city_loc_1)
+   (load truck_0 city_loc_1 package_0)
+   (get_to truck_0 city_loc_0)
+   (unload truck_0 city_loc_0 package_0)
+)
+)
+===
+Tarea:2
+
+(:method m_drive_to_ordering_0
+:precondition
+      (and
+         (type_member_location city_loc_2)
+         (type_member_location city_loc_1)
+         (type_member_vehicle truck_0)
+      )
+
+:tasks (
+   (drive truck_0 city_loc_2 city_loc_1)
+)
+)
+===
+Tarea:6
+
+(:method method1
+:precondition
+      (and
+         (type_member_vehicle truck_0)
+         (type_member_location city_loc_2)
+         (type_member_location city_loc_1)
+      )
+
+:tasks (
+   (drive_primitive truck_0 city_loc_2 city_loc_1)
+)
+)
+===
+Tarea:7
+
+===
+Tarea:3
+
+(:method m_load_ordering_0
+:precondition
+      (and
+         (type_member_location city_loc_1)
+         (type_member_package package_0)
+         (type_member_capacity_number capacity_0)
+         (type_member_capacity_number capacity_1)
+         (type_member_vehicle truck_0)
+      )
+
+:tasks (
+   (pick_up truck_0 city_loc_1 package_0 capacity_0 capacity_1)
+)
+)
+===
+Tarea:9
+
+(:method method1
+:precondition
+      (and
+         (type_member_vehicle truck_0)
+         (type_member_location city_loc_1)
+         (type_member_package package_0)
+         (type_member_capacity_number capacity_0)
+         (type_member_capacity_number capacity_1)
+      )
+
+:tasks (
+   (pick_up_primitive truck_0 city_loc_1 package_0 capacity_0 capacity_1)
+)
+)
+===
+Tarea:10
+
+===
+Tarea:4
+
+(:method m_drive_to_ordering_0
+:precondition
+      (and
+         (type_member_location city_loc_1)
+         (type_member_location city_loc_0)
+         (type_member_vehicle truck_0)
+      )
+
+:tasks (
+   (drive truck_0 city_loc_1 city_loc_0)
+)
+)
+===
+Tarea:12
+
+(:method method1
+:precondition
+      (and
+         (type_member_vehicle truck_0)
+         (type_member_location city_loc_1)
+         (type_member_location city_loc_0)
+      )
+
+:tasks (
+   (drive_primitive truck_0 city_loc_1 city_loc_0)
+)
+)
+===
+Tarea:13
+
+===
+Tarea:5
+
+(:method m_unload_ordering_0
+:precondition
+      (and
+         (type_member_location city_loc_0)
+         (type_member_package package_0)
+         (type_member_capacity_number capacity_0)
+         (type_member_capacity_number capacity_1)
+         (type_member_vehicle truck_0)
+      )
+
+:tasks (
+   (drop truck_0 city_loc_0 package_0 capacity_0 capacity_1)
+)
+)
+===
+Tarea:15
+
+(:method method1
+:precondition
+      (and
+         (type_member_vehicle truck_0)
+         (type_member_location city_loc_0)
+         (type_member_package package_0)
+         (type_member_capacity_number capacity_0)
+         (type_member_capacity_number capacity_1)
+      )
+
+:tasks (
+   (drop_primitive truck_0 city_loc_0 package_0 capacity_0 capacity_1)
+)
+)
+===
+Tarea:16
+
+===
+Tarea:1
+
+(:method m_deliver_ordering_0
+:precondition
+      (and
+         (type_member_location city_loc_1)
+         (type_member_location city_loc_2)
+         (type_member_package package_1)
+         (type_member_vehicle truck_0)
+      )
+
+:tasks (
+   (get_to truck_0 city_loc_1)
+   (load truck_0 city_loc_1 package_1)
+   (get_to truck_0 city_loc_2)
+   (unload truck_0 city_loc_2 package_1)
+)
+)
+===
+Tarea:18
+
+(:method m_drive_to_ordering_0
+:precondition
+      (and
+         (type_member_location city_loc_0)
+         (type_member_location city_loc_1)
+         (type_member_vehicle truck_0)
+      )
+
+:tasks (
+   (drive truck_0 city_loc_0 city_loc_1)
+)
+)
+===
+Tarea:22
+
+(:method method1
+:precondition
+      (and
+         (type_member_vehicle truck_0)
+         (type_member_location city_loc_0)
+         (type_member_location city_loc_1)
+      )
+
+:tasks (
+   (drive_primitive truck_0 city_loc_0 city_loc_1)
+)
+)
+===
+Tarea:23
+
+===
+Tarea:19
+
+(:method m_load_ordering_0
+:precondition
+      (and
+         (type_member_location city_loc_1)
+         (type_member_package package_1)
+         (type_member_capacity_number capacity_0)
+         (type_member_capacity_number capacity_1)
+         (type_member_vehicle truck_0)
+      )
+
+:tasks (
+   (pick_up truck_0 city_loc_1 package_1 capacity_0 capacity_1)
+)
+)
+===
+Tarea:25
+
+(:method method1
+:precondition
+      (and
+         (type_member_vehicle truck_0)
+         (type_member_location city_loc_1)
+         (type_member_package package_1)
+         (type_member_capacity_number capacity_0)
+         (type_member_capacity_number capacity_1)
+      )
+
+:tasks (
+   (pick_up_primitive truck_0 city_loc_1 package_1 capacity_0 capacity_1)
+)
+)
+===
+Tarea:26
+
+===
+Tarea:20
+
+(:method m_drive_to_ordering_0
+:precondition
+      (and
+         (type_member_location city_loc_1)
+         (type_member_location city_loc_2)
+         (type_member_vehicle truck_0)
+      )
+
+:tasks (
+   (drive truck_0 city_loc_1 city_loc_2)
+)
+)
+===
+Tarea:28
+
+(:method method1
+:precondition
+      (and
+         (type_member_vehicle truck_0)
+         (type_member_location city_loc_1)
+         (type_member_location city_loc_2)
+      )
+
+:tasks (
+   (drive_primitive truck_0 city_loc_1 city_loc_2)
+)
+)
+===
+Tarea:29
+
+===
+Tarea:21
+
+(:method m_unload_ordering_0
+:precondition
+      (and
+         (type_member_location city_loc_2)
+         (type_member_package package_1)
+         (type_member_capacity_number capacity_0)
+         (type_member_capacity_number capacity_1)
+         (type_member_vehicle truck_0)
+      )
+
+:tasks (
+   (drop truck_0 city_loc_2 package_1 capacity_0 capacity_1)
+)
+)
+===
+Tarea:31
+
+(:method method1
+:precondition
+      (and
+         (type_member_vehicle truck_0)
+         (type_member_location city_loc_2)
+         (type_member_package package_1)
+         (type_member_capacity_number capacity_0)
+         (type_member_capacity_number capacity_1)
+      )
+
+:tasks (
+   (drop_primitive truck_0 city_loc_2 package_1 capacity_0 capacity_1)
+)
+)
+===
+Tarea:32
+
+===
+?v <- truck_0
+?l1 <- city_loc_1
+?l1 <- city_loc_2
+?s2 <- capacity_1
+?s1 <- capacity_0
+?l1 <- city_loc_1
+?s2 <- capacity_1
+?s1 <- capacity_0
+?v <- truck_0
+?l1 <- city_loc_1
+?l1 <- city_loc_0
+?s2 <- capacity_1
+?s1 <- capacity_0
+?l1 <- city_loc_1
+?s2 <- capacity_1
+?s1 <- capacity_0
+===
+Lista de tareas: 
+[0] <i> :unexpanded (deliver package_0 city_loc_0)
+[1] <i> :unexpanded (deliver package_1 city_loc_2)
+[2] <i> :unexpanded (get_to truck_0 city_loc_1)
+[3] <i> :unexpanded (load truck_0 city_loc_1 package_0)
+[4] <i> :unexpanded (get_to truck_0 city_loc_0)
+[5] <i> :unexpanded (unload truck_0 city_loc_0 package_0)
+[6] <i> :unexpanded (drive truck_0 city_loc_2 city_loc_1)
+[7] <i> :unexpanded (drive_primitive truck_0 city_loc_2 city_loc_1)
+[8] :action (drive_primitive truck_0 city_loc_2 city_loc_1)
+[9] <i> :unexpanded (pick_up truck_0 city_loc_1 package_0 capacity_0 capacity_1)
+[10] <i> :unexpanded (pick_up_primitive truck_0 city_loc_1 package_0 capacity_0 capacity_1)
+[11] :action (pick_up_primitive truck_0 city_loc_1 package_0 capacity_0 capacity_1)
+[12] <i> :unexpanded (drive truck_0 city_loc_1 city_loc_0)
+[13] <i> :unexpanded (drive_primitive truck_0 city_loc_1 city_loc_0)
+[14] :action (drive_primitive truck_0 city_loc_1 city_loc_0)
+[15] <i> :unexpanded (drop truck_0 city_loc_0 package_0 capacity_0 capacity_1)
+[16] <i> :unexpanded (drop_primitive truck_0 city_loc_0 package_0 capacity_0 capacity_1)
+[17] :action (drop_primitive truck_0 city_loc_0 package_0 capacity_0 capacity_1)
+[18] <i> :unexpanded (get_to truck_0 city_loc_1)
+[19] <i> :unexpanded (load truck_0 city_loc_1 package_1)
+[20] <i> :unexpanded (get_to truck_0 city_loc_2)
+[21] <i> :unexpanded (unload truck_0 city_loc_2 package_1)
+[22] <i> :unexpanded (drive truck_0 city_loc_0 city_loc_1)
+[23] <i> :unexpanded (drive_primitive truck_0 city_loc_0 city_loc_1)
+[24] :action (drive_primitive truck_0 city_loc_0 city_loc_1)
+[25] <i> :unexpanded (pick_up truck_0 city_loc_1 package_1 capacity_0 capacity_1)
+[26] <i> :unexpanded (pick_up_primitive truck_0 city_loc_1 package_1 capacity_0 capacity_1)
+[27] :action (pick_up_primitive truck_0 city_loc_1 package_1 capacity_0 capacity_1)
+[28] <i> :unexpanded (drive truck_0 city_loc_1 city_loc_2)
+[29] <i> :unexpanded (drive_primitive truck_0 city_loc_1 city_loc_2)
+[30] :action (drive_primitive truck_0 city_loc_1 city_loc_2)
+[31] <i> :unexpanded (drop truck_0 city_loc_2 package_1 capacity_0 capacity_1)
+[32] <i> :unexpanded (drop_primitive truck_0 city_loc_2 package_1 capacity_0 capacity_1)
+[33] :action (drop_primitive truck_0 city_loc_2 package_1 capacity_0 capacity_1)
+###
+:action (drive_primitive truck_0 city_loc_2 city_loc_1)
+:action (pick_up_primitive truck_0 city_loc_1 package_0 capacity_0 capacity_1)
+:action (drive_primitive truck_0 city_loc_1 city_loc_0)
+:action (drop_primitive truck_0 city_loc_0 package_0 capacity_0 capacity_1)
+:action (drive_primitive truck_0 city_loc_0 city_loc_1)
+:action (pick_up_primitive truck_0 city_loc_1 package_1 capacity_0 capacity_1)
+:action (drive_primitive truck_0 city_loc_1 city_loc_2)
+:action (drop_primitive truck_0 city_loc_2 package_1 capacity_0 capacity_1)
+==>
+6 drive truck_0 city_loc_2 city_loc_1
+9 pick_up truck_0 city_loc_1 package_0 capacity_0 capacity_1
+12 drive truck_0 city_loc_1 city_loc_0
+15 drop truck_0 city_loc_0 package_0 capacity_0 capacity_1
+22 drive truck_0 city_loc_0 city_loc_1
+25 pick_up truck_0 city_loc_1 package_1 capacity_0 capacity_1
+28 drive truck_0 city_loc_1 city_loc_2
+31 drop truck_0 city_loc_2 package_1 capacity_0 capacity_1
+root 0 1
+0 deliver package_0 city_loc_0 -> m_deliver_ordering_0 2 3 4 5
+2 get_to truck_0 city_loc_1 -> m_drive_to_ordering_0 6
+3 load truck_0 city_loc_1 package_0 -> m_load_ordering_0 9
+4 get_to truck_0 city_loc_0 -> m_drive_to_ordering_0 12
+5 unload truck_0 city_loc_0 package_0 -> m_unload_ordering_0 15
+1 deliver package_1 city_loc_2 -> m_deliver_ordering_0 18 19 20 21
+18 get_to truck_0 city_loc_1 -> m_drive_to_ordering_0 22
+19 load truck_0 city_loc_1 package_1 -> m_load_ordering_0 25
+20 get_to truck_0 city_loc_2 -> m_drive_to_ordering_0 28
+21 unload truck_0 city_loc_2 package_1 -> m_unload_ordering_0 31
+<==
+%TIME 0:00.25 37960
+%EXIT 0

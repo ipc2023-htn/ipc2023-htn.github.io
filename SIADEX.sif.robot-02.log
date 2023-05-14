@@ -1,5 +1,5 @@
-FATAL:   could not open image /home/gregor/Workspace/IPC2023/SIADEX.sif: failed to retrieve path for /home/gregor/Workspace/IPC2023/SIADEX.sif: lstat /home/gregor/Workspace/IPC2023/SIADEX.sif: no such file or directory
-Command exited with non-zero status 255
-%TIME 0:00.01 39664
-%EXIT 255
+
+Root:0-1-Command exited with non-zero status 124
+%TIME 0:02.03 35864
+%EXIT 124
 NO OUTPUT

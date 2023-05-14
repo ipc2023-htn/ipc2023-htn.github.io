@@ -1,5 +1,264 @@
-FATAL:   could not open image /home/gregor/Workspace/IPC2023/SIADEX.sif: failed to retrieve path for /home/gregor/Workspace/IPC2023/SIADEX.sif: lstat /home/gregor/Workspace/IPC2023/SIADEX.sif: no such file or directory
-Command exited with non-zero status 255
-%TIME 0:00.01 36908
-%EXIT 255
-NO OUTPUT
+
+Root:0-
+===
+Tarea:0
+
+(:method hunt_all
+:precondition
+      (and
+         (type_member_snake viper)
+         (type_member_location px0y0)
+         (type_member_location px2y2)
+         (type_member_location px0y1)
+         (mouse-at px0y0)
+         (head viper px2y2)
+         (adjacent px0y0 px0y1)
+      )
+
+:tasks (
+   (move viper px2y2 px0y1)
+   (strike viper px0y1 px0y0)
+   (hunt)
+)
+)
+===
+Tarea:1
+
+(:method move-long-snake
+:precondition
+      (and
+         (type_member_snake viper)
+         (type_member_location px2y2)
+         (type_member_location px0y1)
+         (type_member_location px1y2)
+         (type_member_location px2y2)
+         (type_member_location px2y1)
+         (adjacent px1y2 px2y2)
+         (not (occupied px1y2))
+         (connected viper px2y2 px2y1)
+         (tail viper px2y1)
+      )
+
+:tasks (
+   (move-long viper px1y2 px2y2 px2y2 px2y1)
+   (move viper px1y2 px0y1)
+)
+)
+===
+Tarea:4
+
+(:method method1
+:precondition
+      (and
+         (type_member_snake viper)
+         (type_member_location px1y2)
+         (type_member_location px2y2)
+         (type_member_location px2y2)
+         (type_member_location px2y1)
+      )
+
+:tasks (
+   (move-long_primitive viper px1y2 px2y2 px2y2 px2y1)
+)
+)
+===
+Tarea:6
+
+===
+Tarea:5
+
+(:method move-long-snake
+:precondition
+      (and
+         (type_member_snake viper)
+         (type_member_location px1y2)
+         (type_member_location px0y1)
+         (type_member_location px0y2)
+         (type_member_location px1y2)
+         (type_member_location px2y2)
+         (adjacent px0y2 px1y2)
+         (not (occupied px0y2))
+         (connected viper px1y2 px2y2)
+         (tail viper px2y2)
+      )
+
+:tasks (
+   (move-long viper px0y2 px1y2 px1y2 px2y2)
+   (move viper px0y2 px0y1)
+)
+)
+===
+Tarea:8
+
+(:method method1
+:precondition
+      (and
+         (type_member_snake viper)
+         (type_member_location px0y2)
+         (type_member_location px1y2)
+         (type_member_location px1y2)
+         (type_member_location px2y2)
+      )
+
+:tasks (
+   (move-long_primitive viper px0y2 px1y2 px1y2 px2y2)
+)
+)
+===
+Tarea:10
+
+===
+Tarea:9
+
+(:method move-long-snake
+:precondition
+      (and
+         (type_member_snake viper)
+         (type_member_location px0y2)
+         (type_member_location px0y1)
+         (type_member_location px0y1)
+         (type_member_location px0y2)
+         (type_member_location px1y2)
+         (adjacent px0y1 px0y2)
+         (not (occupied px0y1))
+         (connected viper px0y2 px1y2)
+         (tail viper px1y2)
+      )
+
+:tasks (
+   (move-long viper px0y1 px0y2 px0y2 px1y2)
+   (move viper px0y1 px0y1)
+)
+)
+===
+Tarea:12
+
+(:method method1
+:precondition
+      (and
+         (type_member_snake viper)
+         (type_member_location px0y1)
+         (type_member_location px0y2)
+         (type_member_location px0y2)
+         (type_member_location px1y2)
+      )
+
+:tasks (
+   (move-long_primitive viper px0y1 px0y2 px0y2 px1y2)
+)
+)
+===
+Tarea:14
+
+===
+Tarea:13
+
+(:method move-base
+:precondition
+      (and
+         (type_member_snake viper)
+         (type_member_location px0y1)
+         (type_member_location px0y1)
+         (= px0y1 px0y1)
+      )
+
+:tasks (
+   (:inline () ())
+)
+)
+===
+Tarea:16
+
+===
+Tarea:2
+
+(:method method1
+:precondition
+      (and
+         (type_member_snake viper)
+         (type_member_location px0y1)
+         (type_member_location px0y0)
+      )
+
+:tasks (
+   (strike_primitive viper px0y1 px0y0)
+)
+)
+===
+Tarea:18
+
+===
+Tarea:3
+
+(:method hunt_done
+:precondition
+      (and
+         (forall ( ?pos - location) 
+            (not (mouse-at ?pos - location))         )
+      )
+
+:tasks (
+   (:inline () ())
+)
+)
+===
+Tarea:20
+
+===
+?pos1 <- px0y1
+?snakepos <- px2y2
+?foodpos <- px0y0
+?snake <- viper
+?tailpos <- px2y1
+?bodypos <- px2y2
+?pos2 <- px1y2
+?tailpos <- px2y2
+?bodypos <- px1y2
+?pos2 <- px0y2
+?tailpos <- px1y2
+?bodypos <- px0y2
+?pos2 <- px0y1
+===
+Lista de tareas: 
+[0] <i> :unexpanded (hunt)
+[1] <i> :unexpanded (move viper px2y2 px0y1)
+[2] <i> :unexpanded (strike viper px0y1 px0y0)
+[3] <i> :unexpanded (hunt)
+[4] <i> :unexpanded (move-long viper px1y2 px2y2 px2y2 px2y1)
+[5] <i> :unexpanded (move viper px1y2 px0y1)
+[6] <i> :unexpanded (move-long_primitive viper px1y2 px2y2 px2y2 px2y1)
+[7] :action (move-long_primitive viper px1y2 px2y2 px2y2 px2y1)
+[8] <i> :unexpanded (move-long viper px0y2 px1y2 px1y2 px2y2)
+[9] <i> :unexpanded (move viper px0y2 px0y1)
+[10] <i> :unexpanded (move-long_primitive viper px0y2 px1y2 px1y2 px2y2)
+[11] :action (move-long_primitive viper px0y2 px1y2 px1y2 px2y2)
+[12] <i> :unexpanded (move-long viper px0y1 px0y2 px0y2 px1y2)
+[13] <i> :unexpanded (move viper px0y1 px0y1)
+[14] <i> :unexpanded (move-long_primitive viper px0y1 px0y2 px0y2 px1y2)
+[15] :action (move-long_primitive viper px0y1 px0y2 px0y2 px1y2)
+[16] <i> :action (:inline)
+[17] :action (:inline)
+[18] <i> :unexpanded (strike_primitive viper px0y1 px0y0)
+[19] :action (strike_primitive viper px0y1 px0y0)
+[20] <i> :action (:inline)
+[21] :action (:inline)
+###
+:action (move-long_primitive viper px1y2 px2y2 px2y2 px2y1)
+:action (move-long_primitive viper px0y2 px1y2 px1y2 px2y2)
+:action (move-long_primitive viper px0y1 px0y2 px0y2 px1y2)
+:action (strike_primitive viper px0y1 px0y0)
+==>
+4 move-long viper px1y2 px2y2 px2y2 px2y1
+8 move-long viper px0y2 px1y2 px1y2 px2y2
+12 move-long viper px0y1 px0y2 px0y2 px1y2
+2 strike viper px0y1 px0y0
+root 0
+0 hunt -> hunt_all 1 2 3
+1 move viper px2y2 px0y1 -> move-long-snake 4 5
+5 move viper px1y2 px0y1 -> move-long-snake 8 9
+9 move viper px0y2 px0y1 -> move-long-snake 12 13
+13 move viper px0y1 px0y1 -> move-base 
+3 hunt -> hunt_done 
+<==
+%TIME 0:00.24 36168
+%EXIT 0
