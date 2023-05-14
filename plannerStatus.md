@@ -1,20 +1,4 @@
-## Aries
-| Aries| ? |
-## grounded-linear
-| grounded-linear-agile| ? |
-| grounded-linear-sat| ? |
-| lifted-linear| ? |
-## Hyper-Lin
-| Hyper-Lin| ? |
-## LiftedRC
-| LiftedRC| ? |
-## PandaCOlz
-| PandaCOlz| ? |
 ## PandaPi
-| PandaPi| ? |
-## PDDL4J
-| PDDL4J| ? |
-## SIADEX
-| SIADEX| ? |
-## TOAD
-| TOAD| ? |
+| Planner | Compile Status | elevators-01 (D)[https://ipc2023-htn.github.io/sampleProblems/elevators-01-d.hddl] (P)[https://ipc2023-htn.github.io/sampleProblems/elevators-01-p.hddl] | monroe-fo-01 (D)[https://ipc2023-htn.github.io/sampleProblems/monroe-fo-01-d.hddl] (P)[https://ipc2023-htn.github.io/sampleProblems/monroe-fo-01-p.hddl] | robot-01 (D)[https://ipc2023-htn.github.io/sampleProblems/robot-01-d.hddl] (P)[https://ipc2023-htn.github.io/sampleProblems/robot-01-p.hddl] | robot-02 (D)[https://ipc2023-htn.github.io/sampleProblems/robot-02-d.hddl] (P)[https://ipc2023-htn.github.io/sampleProblems/robot-02-p.hddl] | snake-01 (D)[https://ipc2023-htn.github.io/sampleProblems/snake-01-d.hddl] (P)[https://ipc2023-htn.github.io/sampleProblems/snake-01-p.hddl] | snake-02 (D)[https://ipc2023-htn.github.io/sampleProblems/snake-02-d.hddl] (P)[https://ipc2023-htn.github.io/sampleProblems/snake-02-p.hddl] | transport-01 (D)[https://ipc2023-htn.github.io/sampleProblems/transport-01-d.hddl] (P)[https://ipc2023-htn.github.io/sampleProblems/transport-01-p.hddl] | transport-04 (D)[https://ipc2023-htn.github.io/sampleProblems/transport-04-d.hddl] (P)[https://ipc2023-htn.github.io/sampleProblems/transport-04-p.hddl] |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| PandaPi| fail (kB) (log)[https://ipc2023-htn.github.io/PandaPi.sif.build.log] |invalid plan (0:00.22 36360kB) (log)[https://ipc2023-htn.github.io/PandaPi.sif.elevators-01.log] |no plan (0:02.00 36008kB) (log)[https://ipc2023-htn.github.io/PandaPi.sif.monroe-fo-01.log] |invalid plan (0:00.24 36968kB) (log)[https://ipc2023-htn.github.io/PandaPi.sif.robot-01.log] |invalid plan (0:00.23 38636kB) (log)[https://ipc2023-htn.github.io/PandaPi.sif.robot-02.log] |invalid plan (0:00.28 39144kB) (log)[https://ipc2023-htn.github.io/PandaPi.sif.snake-01.log] |invalid plan (0:00.28 38240kB) (log)[https://ipc2023-htn.github.io/PandaPi.sif.snake-02.log] |invalid plan (0:00.24 39364kB) (log)[https://ipc2023-htn.github.io/PandaPi.sif.transport-01.log] |invalid plan (0:00.23 38412kB) (log)[https://ipc2023-htn.github.io/PandaPi.sif.transport-04.log] |
