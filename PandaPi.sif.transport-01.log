@@ -1,0 +1,84 @@
+INFO:    underlay of /etc/localtime required more than 50 (76) bind mounts
+pandaPIparser is configured as follows
+  Colors in output: true
+  Mode: parsing mode
+  Parameter splitting: true
+  Conditional effects: exponential encoding
+  Disjunctive preconditions as HTN: false
+  Replace goal with action: false
+  Output: pandaPI format
+%TIME 0:00.23 37552
+%EXIT 0
+pandaPIparser is configured as follows
+  Colors in output: false
+  Mode: plan verification
+  Verbosity: 1
+  Lenient mode: false
+  Ignore given order: false
+Reading plan given as input
+Parse instantiated task from " drive[truck_0,city_loc_2,city_loc_1]" ... done
+Parsed action id=4 drive truck_0 city_loc_2 city_loc_1
+Parse instantiated task from " pick_up[truck_0,city_loc_1,package_0,capacity_0,capacity_1]" ... done
+Parsed action id=5 pick_up truck_0 city_loc_1 package_0 capacity_0 capacity_1
+Parse instantiated task from " drive[truck_0,city_loc_1,city_loc_0]" ... done
+Parsed action id=11 drive truck_0 city_loc_1 city_loc_0
+Parse instantiated task from " drop[truck_0,city_loc_0,package_0,capacity_0,capacity_1]" ... done
+Parsed action id=12 drop truck_0 city_loc_0 package_0 capacity_0 capacity_1
+Parse instantiated task from " drive[truck_0,city_loc_0,city_loc_1]" ... done
+Parsed action id=19 drive truck_0 city_loc_0 city_loc_1
+Parse instantiated task from " pick_up[truck_0,city_loc_1,package_1,capacity_0,capacity_1]" ... done
+Parsed action id=20 pick_up truck_0 city_loc_1 package_1 capacity_0 capacity_1
+Parse instantiated task from " drive[truck_0,city_loc_1,city_loc_2]" ... done
+Parsed action id=25 drive truck_0 city_loc_1 city_loc_2
+Parse instantiated task from " drop[truck_0,city_loc_2,package_1,capacity_0,capacity_1]" ... done
+Parsed action id=26 drop truck_0 city_loc_2 package_1 capacity_0 capacity_1
+Size of primitive plan: 8
+Reading list of integers from " 0"
+Root tasks (1): 0
+Reading plan given as input
+Parse instantiated task from "  get_to[truck_0,city_loc_2]" ... done
+Parsed abstract task id=24 get_to truck_0 city_loc_2
+Parsed method name: m_drive_to_ordering_0
+Subtasks: 25
+
+Parse instantiated task from "  get_to[truck_0,city_loc_1]" ... done
+Parsed abstract task id=18 get_to truck_0 city_loc_1
+Parsed method name: m_drive_to_ordering_0
+Subtasks: 19
+
+Parse instantiated task from "  m_deliver_ordering_0_splitted_1[truck_0,package_1]" ... done
+Parsed abstract task id=15 m_deliver_ordering_0_splitted_1 truck_0 package_1
+Parsed method name: <_splitting_method_m_deliver_ordering_0_splitted_1;load[truck_0,city_loc_1,package_1];m_load_ordering_0;1;0,-1>
+Subtasks: 18 20
+
+Parse instantiated task from "  get_to[truck_0,city_loc_0]" ... done
+Parsed abstract task id=10 get_to truck_0 city_loc_0
+Parsed method name: m_drive_to_ordering_0
+Subtasks: 11
+
+Parse instantiated task from "  get_to[truck_0,city_loc_1]" ... done
+Parsed abstract task id=3 get_to truck_0 city_loc_1
+Parsed method name: m_drive_to_ordering_0
+Subtasks: 4
+
+Parse instantiated task from "  m_deliver_ordering_0_splitted_1[truck_0,package_0]" ... done
+Parsed abstract task id=1 m_deliver_ordering_0_splitted_1 truck_0 package_0
+Parsed method name: <_splitting_method_m_deliver_ordering_0_splitted_1;load[truck_0,city_loc_1,package_0];m_load_ordering_0;1;0,-1>
+Subtasks: 3 5
+
+Parse instantiated task from "  __top[]" ... done
+Parsed abstract task id=0 __top 
+Parsed method name: <<<<__top_method;deliver[package_1,city_loc_2];m_deliver_ordering_0;1;0,-1,-2,-3>;unload[truck_0,city_loc_2,package_1];m_unload_ordering_0;3;0,1,2,-1>;deliver[package_0,city_loc_0];m_deliver_ordering_0;0;-1,-2,-3,1,2,3>;unload[truck_0,city_loc_0,package_0];m_unload_ordering_0;2;0,1,-1,3,4,5>
+Subtasks: 1 10 12 15 24 26
+
+Reached end of plan (marked).
+
+Checking the given plan ...
+IDs of subtasks used in the plan exist: true
+Task with id=0 has wrong number of arguments. 1 are given in the plan, but the domain required 0 parameters.
+Task with id=1 and task name "m_deliver_ordering_0_splitted_1" is not declared in the domain.
+Task with id=15 and task name "m_deliver_ordering_0_splitted_1" is not declared in the domain.
+Tasks declared in plan actually exist and can be instantiated as given: false
+Methods don't contain duplicate subtasks: true
+Methods don't contain orphaned tasks: true
+Plan verification result: false
