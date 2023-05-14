@@ -114,6 +114,10 @@ For each planning system submitted, a maximum of **three** different configurati
 
 A modification of somebody else's HTN planning system is a valid submission if and only if the original author(s) have been made aware of the submission and are consenting.
 
+## Current Status of Planner Submissions
+
+See (status page)[https://ipc2023-htn.github.io/plannerStatus.html].
+
 ## Organizers
  - [Ron Alford](ronwalf@volus.net) (MITRE)
  - [Dominik Schreiber](dominik.schreiber@kit.edu) (Karlsruhe Institute of Technology)
