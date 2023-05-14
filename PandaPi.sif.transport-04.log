@@ -7,5 +7,208 @@ pandaPIparser is configured as follows
   Disjunctive preconditions as HTN: false
   Replace goal with action: false
   Output: pandaPI format
-%TIME 0:00.17 41080
+%TIME 0:00.15 36824
 %EXIT 0
+pandaPIparser is configured as follows
+  Colors in output: false
+  Mode: plan verification
+  Verbosity: 1
+  Lenient mode: false
+  Ignore given order: false
+Reading plan given as input
+Parse instantiated task from " drive[truck_0,city_loc_0,city_loc_3]" ... done
+Parsed action id=12 drive truck_0 city_loc_0 city_loc_3
+Parse instantiated task from " drive[truck_0,city_loc_3,city_loc_2]" ... done
+Parsed action id=13 drive truck_0 city_loc_3 city_loc_2
+Parse instantiated task from " drive[truck_0,city_loc_2,city_loc_1]" ... done
+Parsed action id=14 drive truck_0 city_loc_2 city_loc_1
+Parse instantiated task from " pick_up[truck_0,city_loc_1,package_1,capacity_2,capacity_3]" ... done
+Parsed action id=24 pick_up truck_0 city_loc_1 package_1 capacity_2 capacity_3
+Parse instantiated task from " drive[truck_0,city_loc_1,city_loc_2]" ... done
+Parsed action id=37 drive truck_0 city_loc_1 city_loc_2
+Parse instantiated task from " drive[truck_0,city_loc_2,city_loc_3]" ... done
+Parsed action id=38 drive truck_0 city_loc_2 city_loc_3
+Parse instantiated task from " drive[truck_0,city_loc_3,city_loc_0]" ... done
+Parsed action id=39 drive truck_0 city_loc_3 city_loc_0
+Parse instantiated task from " drop[truck_0,city_loc_0,package_1,capacity_2,capacity_3]" ... done
+Parsed action id=46 drop truck_0 city_loc_0 package_1 capacity_2 capacity_3
+Parse instantiated task from " noop[truck_0,city_loc_0]" ... done
+Parsed action id=51 noop truck_0 city_loc_0
+Parse instantiated task from " pick_up[truck_0,city_loc_0,package_0,capacity_2,capacity_3]" ... done
+Parsed action id=54 pick_up truck_0 city_loc_0 package_0 capacity_2 capacity_3
+Parse instantiated task from " drive[truck_0,city_loc_0,city_loc_3]" ... done
+Parsed action id=58 drive truck_0 city_loc_0 city_loc_3
+Parse instantiated task from " drop[truck_0,city_loc_3,package_0,capacity_2,capacity_3]" ... done
+Parsed action id=66 drop truck_0 city_loc_3 package_0 capacity_2 capacity_3
+Parse instantiated task from " drive[truck_0,city_loc_3,city_loc_2]" ... done
+Parsed action id=72 drive truck_0 city_loc_3 city_loc_2
+Parse instantiated task from " pick_up[truck_0,city_loc_2,package_3,capacity_2,capacity_3]" ... done
+Parsed action id=78 pick_up truck_0 city_loc_2 package_3 capacity_2 capacity_3
+Parse instantiated task from " drive[truck_0,city_loc_2,city_loc_3]" ... done
+Parsed action id=87 drive truck_0 city_loc_2 city_loc_3
+Parse instantiated task from " drive[truck_0,city_loc_3,city_loc_0]" ... done
+Parsed action id=88 drive truck_0 city_loc_3 city_loc_0
+Parse instantiated task from " drop[truck_0,city_loc_0,package_3,capacity_2,capacity_3]" ... done
+Parsed action id=96 drop truck_0 city_loc_0 package_3 capacity_2 capacity_3
+Parse instantiated task from " drive[truck_0,city_loc_0,city_loc_3]" ... done
+Parsed action id=100 drive truck_0 city_loc_0 city_loc_3
+Parse instantiated task from " pick_up[truck_0,city_loc_3,package_2,capacity_2,capacity_3]" ... done
+Parsed action id=109 pick_up truck_0 city_loc_3 package_2 capacity_2 capacity_3
+Parse instantiated task from " drive[truck_0,city_loc_3,city_loc_2]" ... done
+Parsed action id=115 drive truck_0 city_loc_3 city_loc_2
+Parse instantiated task from " drive[truck_0,city_loc_2,city_loc_1]" ... done
+Parsed action id=116 drive truck_0 city_loc_2 city_loc_1
+Parse instantiated task from " drop[truck_0,city_loc_1,package_2,capacity_2,capacity_3]" ... done
+Parsed action id=124 drop truck_0 city_loc_1 package_2 capacity_2 capacity_3
+Size of primitive plan: 22
+Reading list of integers from " 0"
+Root tasks (1): 0
+Reading plan given as input
+Parse instantiated task from "  unload[truck_0,city_loc_1,package_2]" ... done
+Parsed abstract task id=123 unload truck_0 city_loc_1 package_2
+Parsed method name: m_unload_ordering_0
+Subtasks: 124
+
+Parse instantiated task from "  get_to[truck_0,city_loc_2]" ... done
+Parsed abstract task id=114 get_to truck_0 city_loc_2
+Parsed method name: m_drive_to_ordering_0
+Subtasks: 115
+
+Parse instantiated task from "  get_to[truck_0,city_loc_1]" ... done
+Parsed abstract task id=113 get_to truck_0 city_loc_1
+Parsed method name: m_drive_to_via_ordering_0
+Subtasks: 114 116
+
+Parse instantiated task from "  load[truck_0,city_loc_3,package_2]" ... done
+Parsed abstract task id=108 load truck_0 city_loc_3 package_2
+Parsed method name: m_load_ordering_0
+Subtasks: 109
+
+Parse instantiated task from "  get_to[truck_0,city_loc_3]" ... done
+Parsed abstract task id=99 get_to truck_0 city_loc_3
+Parsed method name: m_drive_to_ordering_0
+Subtasks: 100
+
+Parse instantiated task from "  m_deliver_ordering_0_splitted_1[truck_0,package_2]" ... done
+Parsed abstract task id=97 m_deliver_ordering_0_splitted_1 truck_0 package_2
+Parsed method name: _splitting_method_m_deliver_ordering_0_splitted_1
+Subtasks: 99 108
+
+Parse instantiated task from "  unload[truck_0,city_loc_0,package_3]" ... done
+Parsed abstract task id=95 unload truck_0 city_loc_0 package_3
+Parsed method name: m_unload_ordering_0
+Subtasks: 96
+
+Parse instantiated task from "  get_to[truck_0,city_loc_3]" ... done
+Parsed abstract task id=86 get_to truck_0 city_loc_3
+Parsed method name: m_drive_to_ordering_0
+Subtasks: 87
+
+Parse instantiated task from "  get_to[truck_0,city_loc_0]" ... done
+Parsed abstract task id=83 get_to truck_0 city_loc_0
+Parsed method name: m_drive_to_via_ordering_0
+Subtasks: 86 88
+
+Parse instantiated task from "  load[truck_0,city_loc_2,package_3]" ... done
+Parsed abstract task id=77 load truck_0 city_loc_2 package_3
+Parsed method name: m_load_ordering_0
+Subtasks: 78
+
+Parse instantiated task from "  get_to[truck_0,city_loc_2]" ... done
+Parsed abstract task id=71 get_to truck_0 city_loc_2
+Parsed method name: m_drive_to_ordering_0
+Subtasks: 72
+
+Parse instantiated task from "  m_deliver_ordering_0_splitted_1[truck_0,package_3]" ... done
+Parsed abstract task id=70 m_deliver_ordering_0_splitted_1 truck_0 package_3
+Parsed method name: _splitting_method_m_deliver_ordering_0_splitted_1
+Subtasks: 71 77
+
+Parse instantiated task from "  unload[truck_0,city_loc_3,package_0]" ... done
+Parsed abstract task id=65 unload truck_0 city_loc_3 package_0
+Parsed method name: m_unload_ordering_0
+Subtasks: 66
+
+Parse instantiated task from "  get_to[truck_0,city_loc_3]" ... done
+Parsed abstract task id=57 get_to truck_0 city_loc_3
+Parsed method name: m_drive_to_ordering_0
+Subtasks: 58
+
+Parse instantiated task from "  load[truck_0,city_loc_0,package_0]" ... done
+Parsed abstract task id=53 load truck_0 city_loc_0 package_0
+Parsed method name: m_load_ordering_0
+Subtasks: 54
+
+Parse instantiated task from "  get_to[truck_0,city_loc_0]" ... done
+Parsed abstract task id=50 get_to truck_0 city_loc_0
+Parsed method name: m_i_am_there_ordering_0
+Subtasks: 51
+
+Parse instantiated task from "  m_deliver_ordering_0_splitted_1[truck_0,package_0]" ... done
+Parsed abstract task id=48 m_deliver_ordering_0_splitted_1 truck_0 package_0
+Parsed method name: _splitting_method_m_deliver_ordering_0_splitted_1
+Subtasks: 50 53
+
+Parse instantiated task from "  unload[truck_0,city_loc_0,package_1]" ... done
+Parsed abstract task id=45 unload truck_0 city_loc_0 package_1
+Parsed method name: m_unload_ordering_0
+Subtasks: 46
+
+Parse instantiated task from "  get_to[truck_0,city_loc_2]" ... done
+Parsed abstract task id=36 get_to truck_0 city_loc_2
+Parsed method name: m_drive_to_ordering_0
+Subtasks: 37
+
+Parse instantiated task from "  get_to[truck_0,city_loc_3]" ... done
+Parsed abstract task id=34 get_to truck_0 city_loc_3
+Parsed method name: m_drive_to_via_ordering_0
+Subtasks: 36 38
+
+Parse instantiated task from "  get_to[truck_0,city_loc_0]" ... done
+Parsed abstract task id=27 get_to truck_0 city_loc_0
+Parsed method name: m_drive_to_via_ordering_0
+Subtasks: 34 39
+
+Parse instantiated task from "  load[truck_0,city_loc_1,package_1]" ... done
+Parsed abstract task id=23 load truck_0 city_loc_1 package_1
+Parsed method name: m_load_ordering_0
+Subtasks: 24
+
+Parse instantiated task from "  get_to[truck_0,city_loc_3]" ... done
+Parsed abstract task id=11 get_to truck_0 city_loc_3
+Parsed method name: m_drive_to_ordering_0
+Subtasks: 12
+
+Parse instantiated task from "  get_to[truck_0,city_loc_2]" ... done
+Parsed abstract task id=9 get_to truck_0 city_loc_2
+Parsed method name: m_drive_to_via_ordering_0
+Subtasks: 11 13
+
+Parse instantiated task from "  get_to[truck_0,city_loc_1]" ... done
+Parsed abstract task id=5 get_to truck_0 city_loc_1
+Parsed method name: m_drive_to_via_ordering_0
+Subtasks: 9 14
+
+Parse instantiated task from "  m_deliver_ordering_0_splitted_1[truck_0,package_1]" ... done
+Parsed abstract task id=2 m_deliver_ordering_0_splitted_1 truck_0 package_1
+Parsed method name: _splitting_method_m_deliver_ordering_0_splitted_1
+Subtasks: 5 23
+
+Parse instantiated task from "  __top[]" ... done
+Parsed abstract task id=0 __top 
+Parsed method name: <<<<__top_method;deliver[package_3,city_loc_0];m_deliver_ordering_0;2;0,1,-1,-2,-3,3>;deliver[package_2,city_loc_1];m_deliver_ordering_0;5;0,1,2,3,4,-1,-2,-3>;deliver[package_1,city_loc_0];m_deliver_ordering_0;0;-1,-2,-3,1,2,3,4,5,6,7>;deliver[package_0,city_loc_3];m_deliver_ordering_0;3;0,1,2,-1,-2,-3,4,5,6,7,8,9>
+Subtasks: 2 27 45 48 57 65 70 83 95 97 113 123
+
+Reached end of plan (marked).
+
+Checking the given plan ...
+IDs of subtasks used in the plan exist: true
+Task with id=0 has wrong number of arguments. 1 are given in the plan, but the domain required 0 parameters.
+Task with id=2 and task name "m_deliver_ordering_0_splitted_1" is not declared in the domain.
+Task with id=48 and task name "m_deliver_ordering_0_splitted_1" is not declared in the domain.
+Task with id=70 and task name "m_deliver_ordering_0_splitted_1" is not declared in the domain.
+Task with id=97 and task name "m_deliver_ordering_0_splitted_1" is not declared in the domain.
+Tasks declared in plan actually exist and can be instantiated as given: false
+Methods don't contain duplicate subtasks: true
+Methods don't contain orphaned tasks: true
+Plan verification result: false

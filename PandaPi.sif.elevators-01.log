@@ -7,5 +7,335 @@ pandaPIparser is configured as follows
   Disjunctive preconditions as HTN: false
   Replace goal with action: false
   Output: pandaPI format
-%TIME 0:00.19 37612
+%TIME 0:00.17 37164
 %EXIT 0
+pandaPIparser is configured as follows
+  Colors in output: false
+  Mode: plan verification
+  Verbosity: 1
+  Lenient mode: false
+  Ignore given order: false
+Reading plan given as input
+Parse instantiated task from " __method_precondition_M22-ACHIEVE-SERVED[P1]" ... done
+Parsed action id=4 __method_precondition_M22-ACHIEVE-SERVED P1
+Parse instantiated task from " __method_precondition_M24-ACHIEVE-SERVED2_base[P1]" ... done
+Parsed action id=7 __method_precondition_M24-ACHIEVE-SERVED2_base P1
+Parse instantiated task from " __method_precondition_M8-DO-SERVED-DEPART2[P1]" ... done
+Parsed action id=8 __method_precondition_M8-DO-SERVED-DEPART2 P1
+Parse instantiated task from " __method_precondition_M17-ACHIEVE-BOARDED[P1]" ... done
+Parsed action id=12 __method_precondition_M17-ACHIEVE-BOARDED P1
+Parse instantiated task from " __method_precondition_M19-ACHIEVE-BOARDED1_base[P1]" ... done
+Parsed action id=15 __method_precondition_M19-ACHIEVE-BOARDED1_base P1
+Parse instantiated task from " __method_precondition_M7-DO-BOARDED-BOARD1[P1]" ... done
+Parsed action id=16 __method_precondition_M7-DO-BOARDED-BOARD1 P1
+Parse instantiated task from " __method_precondition_M10-ACHIEVE-LIFT-AT[F0]" ... done
+Parsed action id=19 __method_precondition_M10-ACHIEVE-LIFT-AT F0
+Parse instantiated task from " i-LOCK-LIFT-AT[F0]" ... done
+Parsed action id=20 i-LOCK-LIFT-AT F0
+Parse instantiated task from " __method_precondition_IFUNLOCK5-LIFT-AT[F0]" ... done
+Parsed action id=24 __method_precondition_IFUNLOCK5-LIFT-AT F0
+Parse instantiated task from " i-UNLOCK-LIFT-AT[F0]" ... done
+Parsed action id=25 i-UNLOCK-LIFT-AT F0
+Parse instantiated task from " BOARD[F0,P1]" ... done
+Parsed action id=26 BOARD F0 P1
+Parse instantiated task from " __method_precondition_M18-ACHIEVE-BOARDED1[P1]" ... done
+Parsed action id=28 __method_precondition_M18-ACHIEVE-BOARDED1 P1
+Parse instantiated task from " i-LOCK-BOARDED[P1]" ... done
+Parsed action id=29 i-LOCK-BOARDED P1
+Parse instantiated task from " __method_precondition_M11-ACHIEVE-LIFT-AT[F2]" ... done
+Parsed action id=34 __method_precondition_M11-ACHIEVE-LIFT-AT F2
+Parse instantiated task from " __method_precondition_M13-ACHIEVE-LIFT-AT0_base[F2]" ... done
+Parsed action id=37 __method_precondition_M13-ACHIEVE-LIFT-AT0_base F2
+Parse instantiated task from " __method_precondition_M13-ACHIEVE-LIFT-AT0_split[F0,F3]" ... done
+Parsed action id=47 __method_precondition_M13-ACHIEVE-LIFT-AT0_split F0 F3
+Parse instantiated task from " UP[F0,F2]" ... done
+Parsed action id=48 UP F0 F2
+Parse instantiated task from " __method_precondition_M12-ACHIEVE-LIFT-AT0[F2]" ... done
+Parsed action id=59 __method_precondition_M12-ACHIEVE-LIFT-AT0 F2
+Parse instantiated task from " i-LOCK-LIFT-AT[F2]" ... done
+Parsed action id=60 i-LOCK-LIFT-AT F2
+Parse instantiated task from " __method_precondition_IFUNLOCK5-LIFT-AT[F2]" ... done
+Parsed action id=70 __method_precondition_IFUNLOCK5-LIFT-AT F2
+Parse instantiated task from " i-UNLOCK-LIFT-AT[F2]" ... done
+Parsed action id=71 i-UNLOCK-LIFT-AT F2
+Parse instantiated task from " __method_precondition_IFUNLOCK1-BOARDED[P1]" ... done
+Parsed action id=79 __method_precondition_IFUNLOCK1-BOARDED P1
+Parse instantiated task from " i-UNLOCK-BOARDED[P1]" ... done
+Parsed action id=80 i-UNLOCK-BOARDED P1
+Parse instantiated task from " DEPART[F2,P1]" ... done
+Parsed action id=81 DEPART F2 P1
+Parse instantiated task from " __method_precondition_M23-ACHIEVE-SERVED2[P1]" ... done
+Parsed action id=83 __method_precondition_M23-ACHIEVE-SERVED2 P1
+Parse instantiated task from " i-LOCK-SERVED[P1]" ... done
+Parsed action id=84 i-LOCK-SERVED P1
+Parse instantiated task from " __method_precondition_M22-ACHIEVE-SERVED[P0]" ... done
+Parsed action id=89 __method_precondition_M22-ACHIEVE-SERVED P0
+Parse instantiated task from " __method_precondition_M24-ACHIEVE-SERVED2_base[P0]" ... done
+Parsed action id=92 __method_precondition_M24-ACHIEVE-SERVED2_base P0
+Parse instantiated task from " __method_precondition_M8-DO-SERVED-DEPART2[P0]" ... done
+Parsed action id=93 __method_precondition_M8-DO-SERVED-DEPART2 P0
+Parse instantiated task from " __method_precondition_M17-ACHIEVE-BOARDED[P0]" ... done
+Parsed action id=109 __method_precondition_M17-ACHIEVE-BOARDED P0
+Parse instantiated task from " __method_precondition_M19-ACHIEVE-BOARDED1_base[P0]" ... done
+Parsed action id=112 __method_precondition_M19-ACHIEVE-BOARDED1_base P0
+Parse instantiated task from " __method_precondition_M7-DO-BOARDED-BOARD1[P0]" ... done
+Parsed action id=113 __method_precondition_M7-DO-BOARDED-BOARD1 P0
+Parse instantiated task from " __method_precondition_M11-ACHIEVE-LIFT-AT[F3]" ... done
+Parsed action id=117 __method_precondition_M11-ACHIEVE-LIFT-AT F3
+Parse instantiated task from " __method_precondition_M13-ACHIEVE-LIFT-AT0_base[F3]" ... done
+Parsed action id=120 __method_precondition_M13-ACHIEVE-LIFT-AT0_base F3
+Parse instantiated task from " __method_precondition_M12-ACHIEVE-LIFT-AT0[F2]" ... done
+Parsed action id=135 __method_precondition_M12-ACHIEVE-LIFT-AT0 F2
+Parse instantiated task from " UP[F2,F3]" ... done
+Parsed action id=136 UP F2 F3
+Parse instantiated task from " __method_precondition_M14-ACHIEVE-LIFT-AT0_split[F3,F0]" ... done
+Parsed action id=152 __method_precondition_M14-ACHIEVE-LIFT-AT0_split F3 F0
+Parse instantiated task from " i-LOCK-LIFT-AT[F3]" ... done
+Parsed action id=153 i-LOCK-LIFT-AT F3
+Parse instantiated task from " __method_precondition_IFUNLOCK5-LIFT-AT[F3]" ... done
+Parsed action id=182 __method_precondition_IFUNLOCK5-LIFT-AT F3
+Parse instantiated task from " i-UNLOCK-LIFT-AT[F3]" ... done
+Parsed action id=183 i-UNLOCK-LIFT-AT F3
+Parse instantiated task from " BOARD[F3,P0]" ... done
+Parsed action id=184 BOARD F3 P0
+Parse instantiated task from " __method_precondition_M18-ACHIEVE-BOARDED1[P0]" ... done
+Parsed action id=186 __method_precondition_M18-ACHIEVE-BOARDED1 P0
+Parse instantiated task from " i-LOCK-BOARDED[P0]" ... done
+Parsed action id=187 i-LOCK-BOARDED P0
+Parse instantiated task from " __method_precondition_M11-ACHIEVE-LIFT-AT[F0]" ... done
+Parsed action id=192 __method_precondition_M11-ACHIEVE-LIFT-AT F0
+Parse instantiated task from " __method_precondition_M13-ACHIEVE-LIFT-AT0_base[F0]" ... done
+Parsed action id=197 __method_precondition_M13-ACHIEVE-LIFT-AT0_base F0
+Parse instantiated task from " __method_precondition_M14-ACHIEVE-LIFT-AT0_split[F3,F0]" ... done
+Parsed action id=205 __method_precondition_M14-ACHIEVE-LIFT-AT0_split F3 F0
+Parse instantiated task from " DOWN[F3,F0]" ... done
+Parsed action id=206 DOWN F3 F0
+Parse instantiated task from " __method_precondition_M13-ACHIEVE-LIFT-AT0_split[F0,F3]" ... done
+Parsed action id=217 __method_precondition_M13-ACHIEVE-LIFT-AT0_split F0 F3
+Parse instantiated task from " i-LOCK-LIFT-AT[F0]" ... done
+Parsed action id=218 i-LOCK-LIFT-AT F0
+Parse instantiated task from " __method_precondition_IFUNLOCK5-LIFT-AT[F0]" ... done
+Parsed action id=223 __method_precondition_IFUNLOCK5-LIFT-AT F0
+Parse instantiated task from " i-UNLOCK-LIFT-AT[F0]" ... done
+Parsed action id=224 i-UNLOCK-LIFT-AT F0
+Parse instantiated task from " __method_precondition_IFUNLOCK1-BOARDED[P0]" ... done
+Parsed action id=232 __method_precondition_IFUNLOCK1-BOARDED P0
+Parse instantiated task from " i-UNLOCK-BOARDED[P0]" ... done
+Parsed action id=233 i-UNLOCK-BOARDED P0
+Parse instantiated task from " DEPART[F0,P0]" ... done
+Parsed action id=234 DEPART F0 P0
+Parse instantiated task from " __method_precondition_M23-ACHIEVE-SERVED2[P0]" ... done
+Parsed action id=236 __method_precondition_M23-ACHIEVE-SERVED2 P0
+Parse instantiated task from " i-LOCK-SERVED[P0]" ... done
+Parsed action id=237 i-LOCK-SERVED P0
+Size of primitive plan: 56
+Reading list of integers from " 0"
+Root tasks (1): 0
+Reading plan given as input
+Parse instantiated task from "  ACHIEVE-SERVED2[P0]" ... done
+Parsed abstract task id=235 ACHIEVE-SERVED2 P0
+Parsed method name: M23-ACHIEVE-SERVED2
+Subtasks: 236
+
+Parse instantiated task from "  IFUNLOCK-BOARDED[P0]" ... done
+Parsed abstract task id=231 IFUNLOCK-BOARDED P0
+Parsed method name: IFUNLOCK1-BOARDED
+Subtasks: 232 233
+
+Parse instantiated task from "  IFUNLOCK-LIFT-AT[F0]" ... done
+Parsed abstract task id=222 IFUNLOCK-LIFT-AT F0
+Parsed method name: IFUNLOCK5-LIFT-AT
+Subtasks: 223 224
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT0[F0]" ... done
+Parsed abstract task id=216 ACHIEVE-LIFT-AT0 F0
+Parsed method name: M12-ACHIEVE-LIFT-AT0
+Subtasks: 217
+
+Parse instantiated task from "  M14-ACHIEVE-LIFT-AT0_splitted_3[]" ... done
+Parsed abstract task id=204 M14-ACHIEVE-LIFT-AT0_splitted_3 
+Parsed method name: _splitting_method_M14-ACHIEVE-LIFT-AT0_splitted_3
+Subtasks: 205 206
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT0[F0]" ... done
+Parsed abstract task id=196 ACHIEVE-LIFT-AT0 F0
+Parsed method name: M14-ACHIEVE-LIFT-AT0
+Subtasks: 197 204 216
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT[F0]" ... done
+Parsed abstract task id=191 ACHIEVE-LIFT-AT F0
+Parsed method name: M11-ACHIEVE-LIFT-AT
+Subtasks: 192 196 218
+
+Parse instantiated task from "  ACHIEVE-BOARDED1[P0]" ... done
+Parsed abstract task id=185 ACHIEVE-BOARDED1 P0
+Parsed method name: M18-ACHIEVE-BOARDED1
+Subtasks: 186
+
+Parse instantiated task from "  IFUNLOCK-LIFT-AT[F3]" ... done
+Parsed abstract task id=181 IFUNLOCK-LIFT-AT F3
+Parsed method name: IFUNLOCK5-LIFT-AT
+Subtasks: 182 183
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT0[F3]" ... done
+Parsed abstract task id=151 ACHIEVE-LIFT-AT0 F3
+Parsed method name: M12-ACHIEVE-LIFT-AT0
+Subtasks: 152
+
+Parse instantiated task from "  M13-ACHIEVE-LIFT-AT0_splitted_2[]" ... done
+Parsed abstract task id=134 M13-ACHIEVE-LIFT-AT0_splitted_2 
+Parsed method name: _splitting_method_M13-ACHIEVE-LIFT-AT0_splitted_2
+Subtasks: 135 136
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT0[F3]" ... done
+Parsed abstract task id=119 ACHIEVE-LIFT-AT0 F3
+Parsed method name: M13-ACHIEVE-LIFT-AT0
+Subtasks: 120 134 151
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT[F3]" ... done
+Parsed abstract task id=116 ACHIEVE-LIFT-AT F3
+Parsed method name: M11-ACHIEVE-LIFT-AT
+Subtasks: 117 119 153
+
+Parse instantiated task from "  ACHIEVE-BOARDED1[P0]" ... done
+Parsed abstract task id=111 ACHIEVE-BOARDED1 P0
+Parsed method name: <<M19-ACHIEVE-BOARDED1;M19-ACHIEVE-BOARDED1_splitted_1[P0];_splitting_method_M19-ACHIEVE-BOARDED1_splitted_1;1;0,-1,2>;DO-BOARDED-BOARD1[F3,P0];M7-DO-BOARDED-BOARD1;1;0,-1,-2,-3,-4,2>
+Subtasks: 112 113 116 181 184 185
+
+Parse instantiated task from "  ACHIEVE-BOARDED[P0]" ... done
+Parsed abstract task id=108 ACHIEVE-BOARDED P0
+Parsed method name: M17-ACHIEVE-BOARDED
+Subtasks: 109 111 187
+
+Parse instantiated task from "  ACHIEVE-SERVED2[P0]" ... done
+Parsed abstract task id=91 ACHIEVE-SERVED2 P0
+Parsed method name: <<M24-ACHIEVE-SERVED2;M24-ACHIEVE-SERVED2_splitted_4[P0];_splitting_method_M24-ACHIEVE-SERVED2_splitted_4;1;0,-1,2>;DO-SERVED-DEPART2[F0,P0];M8-DO-SERVED-DEPART2;1;0,-1,-2,-3,-4,-5,-6,2>
+Subtasks: 92 93 108 191 222 231 234 235
+
+Parse instantiated task from "  ACHIEVE-SERVED[P0]" ... done
+Parsed abstract task id=88 ACHIEVE-SERVED P0
+Parsed method name: M22-ACHIEVE-SERVED
+Subtasks: 89 91 237
+
+Parse instantiated task from "  ACHIEVE-SERVED2[P1]" ... done
+Parsed abstract task id=82 ACHIEVE-SERVED2 P1
+Parsed method name: M23-ACHIEVE-SERVED2
+Subtasks: 83
+
+Parse instantiated task from "  IFUNLOCK-BOARDED[P1]" ... done
+Parsed abstract task id=78 IFUNLOCK-BOARDED P1
+Parsed method name: IFUNLOCK1-BOARDED
+Subtasks: 79 80
+
+Parse instantiated task from "  IFUNLOCK-LIFT-AT[F2]" ... done
+Parsed abstract task id=69 IFUNLOCK-LIFT-AT F2
+Parsed method name: IFUNLOCK5-LIFT-AT
+Subtasks: 70 71
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT0[F2]" ... done
+Parsed abstract task id=58 ACHIEVE-LIFT-AT0 F2
+Parsed method name: M12-ACHIEVE-LIFT-AT0
+Subtasks: 59
+
+Parse instantiated task from "  M13-ACHIEVE-LIFT-AT0_splitted_2[]" ... done
+Parsed abstract task id=46 M13-ACHIEVE-LIFT-AT0_splitted_2 
+Parsed method name: _splitting_method_M13-ACHIEVE-LIFT-AT0_splitted_2
+Subtasks: 47 48
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT0[F2]" ... done
+Parsed abstract task id=36 ACHIEVE-LIFT-AT0 F2
+Parsed method name: M13-ACHIEVE-LIFT-AT0
+Subtasks: 37 46 58
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT[F2]" ... done
+Parsed abstract task id=33 ACHIEVE-LIFT-AT F2
+Parsed method name: M11-ACHIEVE-LIFT-AT
+Subtasks: 34 36 60
+
+Parse instantiated task from "  ACHIEVE-BOARDED1[P1]" ... done
+Parsed abstract task id=27 ACHIEVE-BOARDED1 P1
+Parsed method name: M18-ACHIEVE-BOARDED1
+Subtasks: 28
+
+Parse instantiated task from "  IFUNLOCK-LIFT-AT[F0]" ... done
+Parsed abstract task id=23 IFUNLOCK-LIFT-AT F0
+Parsed method name: IFUNLOCK5-LIFT-AT
+Subtasks: 24 25
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT[F0]" ... done
+Parsed abstract task id=18 ACHIEVE-LIFT-AT F0
+Parsed method name: M10-ACHIEVE-LIFT-AT
+Subtasks: 19 20
+
+Parse instantiated task from "  ACHIEVE-BOARDED1[P1]" ... done
+Parsed abstract task id=14 ACHIEVE-BOARDED1 P1
+Parsed method name: <<M19-ACHIEVE-BOARDED1;M19-ACHIEVE-BOARDED1_splitted_1[P1];_splitting_method_M19-ACHIEVE-BOARDED1_splitted_1;1;0,-1,2>;DO-BOARDED-BOARD1[F0,P1];M7-DO-BOARDED-BOARD1;1;0,-1,-2,-3,-4,2>
+Subtasks: 15 16 18 23 26 27
+
+Parse instantiated task from "  ACHIEVE-BOARDED[P1]" ... done
+Parsed abstract task id=11 ACHIEVE-BOARDED P1
+Parsed method name: M17-ACHIEVE-BOARDED
+Subtasks: 12 14 29
+
+Parse instantiated task from "  ACHIEVE-SERVED2[P1]" ... done
+Parsed abstract task id=6 ACHIEVE-SERVED2 P1
+Parsed method name: <<M24-ACHIEVE-SERVED2;M24-ACHIEVE-SERVED2_splitted_4[P1];_splitting_method_M24-ACHIEVE-SERVED2_splitted_4;1;0,-1,2>;DO-SERVED-DEPART2[F2,P1];M8-DO-SERVED-DEPART2;1;0,-1,-2,-3,-4,-5,-6,2>
+Subtasks: 7 8 11 33 69 78 81 82
+
+Parse instantiated task from "  ACHIEVE-SERVED[P1]" ... done
+Parsed abstract task id=3 ACHIEVE-SERVED P1
+Parsed method name: M22-ACHIEVE-SERVED
+Subtasks: 4 6 84
+
+Parse instantiated task from "  __top[]" ... done
+Parsed abstract task id=0 __top 
+Parsed method name: __top_method
+Subtasks: 3 88
+
+Reached end of plan (marked).
+
+Checking the given plan ...
+IDs of subtasks used in the plan exist: true
+Task with id=0 has wrong number of arguments. 1 are given in the plan, but the domain required 0 parameters.
+Task with id=4 and task name "__method_precondition_M22-ACHIEVE-SERVED" is not declared in the domain.
+Task with id=7 and task name "__method_precondition_M24-ACHIEVE-SERVED2_base" is not declared in the domain.
+Task with id=8 and task name "__method_precondition_M8-DO-SERVED-DEPART2" is not declared in the domain.
+Task with id=12 and task name "__method_precondition_M17-ACHIEVE-BOARDED" is not declared in the domain.
+Task with id=15 and task name "__method_precondition_M19-ACHIEVE-BOARDED1_base" is not declared in the domain.
+Task with id=16 and task name "__method_precondition_M7-DO-BOARDED-BOARD1" is not declared in the domain.
+Task with id=19 and task name "__method_precondition_M10-ACHIEVE-LIFT-AT" is not declared in the domain.
+Task with id=24 and task name "__method_precondition_IFUNLOCK5-LIFT-AT" is not declared in the domain.
+Task with id=28 and task name "__method_precondition_M18-ACHIEVE-BOARDED1" is not declared in the domain.
+Task with id=34 and task name "__method_precondition_M11-ACHIEVE-LIFT-AT" is not declared in the domain.
+Task with id=37 and task name "__method_precondition_M13-ACHIEVE-LIFT-AT0_base" is not declared in the domain.
+Task with id=46 and task name "M13-ACHIEVE-LIFT-AT0_splitted_2" is not declared in the domain.
+Task with id=47 and task name "__method_precondition_M13-ACHIEVE-LIFT-AT0_split" is not declared in the domain.
+Task with id=59 and task name "__method_precondition_M12-ACHIEVE-LIFT-AT0" is not declared in the domain.
+Task with id=70 and task name "__method_precondition_IFUNLOCK5-LIFT-AT" is not declared in the domain.
+Task with id=79 and task name "__method_precondition_IFUNLOCK1-BOARDED" is not declared in the domain.
+Task with id=83 and task name "__method_precondition_M23-ACHIEVE-SERVED2" is not declared in the domain.
+Task with id=89 and task name "__method_precondition_M22-ACHIEVE-SERVED" is not declared in the domain.
+Task with id=92 and task name "__method_precondition_M24-ACHIEVE-SERVED2_base" is not declared in the domain.
+Task with id=93 and task name "__method_precondition_M8-DO-SERVED-DEPART2" is not declared in the domain.
+Task with id=109 and task name "__method_precondition_M17-ACHIEVE-BOARDED" is not declared in the domain.
+Task with id=112 and task name "__method_precondition_M19-ACHIEVE-BOARDED1_base" is not declared in the domain.
+Task with id=113 and task name "__method_precondition_M7-DO-BOARDED-BOARD1" is not declared in the domain.
+Task with id=117 and task name "__method_precondition_M11-ACHIEVE-LIFT-AT" is not declared in the domain.
+Task with id=120 and task name "__method_precondition_M13-ACHIEVE-LIFT-AT0_base" is not declared in the domain.
+Task with id=134 and task name "M13-ACHIEVE-LIFT-AT0_splitted_2" is not declared in the domain.
+Task with id=135 and task name "__method_precondition_M12-ACHIEVE-LIFT-AT0" is not declared in the domain.
+Task with id=152 and task name "__method_precondition_M14-ACHIEVE-LIFT-AT0_split" is not declared in the domain.
+Task with id=182 and task name "__method_precondition_IFUNLOCK5-LIFT-AT" is not declared in the domain.
+Task with id=186 and task name "__method_precondition_M18-ACHIEVE-BOARDED1" is not declared in the domain.
+Task with id=192 and task name "__method_precondition_M11-ACHIEVE-LIFT-AT" is not declared in the domain.
+Task with id=197 and task name "__method_precondition_M13-ACHIEVE-LIFT-AT0_base" is not declared in the domain.
+Task with id=204 and task name "M14-ACHIEVE-LIFT-AT0_splitted_3" is not declared in the domain.
+Task with id=205 and task name "__method_precondition_M14-ACHIEVE-LIFT-AT0_split" is not declared in the domain.
+Task with id=217 and task name "__method_precondition_M13-ACHIEVE-LIFT-AT0_split" is not declared in the domain.
+Task with id=223 and task name "__method_precondition_IFUNLOCK5-LIFT-AT" is not declared in the domain.
+Task with id=232 and task name "__method_precondition_IFUNLOCK1-BOARDED" is not declared in the domain.
+Task with id=236 and task name "__method_precondition_M23-ACHIEVE-SERVED2" is not declared in the domain.
+Tasks declared in plan actually exist and can be instantiated as given: false
+Methods don't contain duplicate subtasks: true
+Methods don't contain orphaned tasks: true
+Plan verification result: false
