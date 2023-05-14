@@ -7,7 +7,7 @@ pandaPIparser is configured as follows
   Disjunctive preconditions as HTN: false
   Replace goal with action: false
   Output: pandaPI format
-%TIME 0:00.19 35748
+%TIME 0:00.17 37036
 %EXIT 0
 pandaPIparser is configured as follows
   Colors in output: false
