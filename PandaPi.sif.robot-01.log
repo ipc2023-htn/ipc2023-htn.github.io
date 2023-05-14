@@ -7,39 +7,5 @@ pandaPIparser is configured as follows
   Disjunctive preconditions as HTN: false
   Replace goal with action: false
   Output: pandaPI format
-%TIME 0:00.19 36412
+%TIME 0:00.21 38116
 %EXIT 0
-pandaPIparser is configured as follows
-  Colors in output: false
-  Mode: plan verification
-  Verbosity: 1
-  Lenient mode: false
-  Ignore given order: false
-Reading plan given as input
-Parse instantiated task from " __noop" ... done
-Parsed action id=2 __noop
-Size of primitive plan: 1
-Reading list of integers from " 0"
-Root tasks (1): 0
-Reading plan given as input
-Parse instantiated task from "  achieve-goals[]" ... done
-Parsed abstract task id=1 achieve-goals 
-Parsed method name: finished
-Subtasks: 2
-
-Parse instantiated task from "  __top[]" ... done
-Parsed abstract task id=0 __top 
-Parsed method name: __top_method
-Subtasks: 1
-
-Reached end of plan (marked).
-
-Checking the given plan ...
-IDs of subtasks used in the plan exist: true
-Task with id=0 has wrong number of arguments. 1 are given in the plan, but the domain required 0 parameters.
-Task with id=1 has wrong number of arguments. 1 are given in the plan, but the domain required 0 parameters.
-Task with id=2 and task name "__noop" is not declared in the domain.
-Tasks declared in plan actually exist and can be instantiated as given: false
-Methods don't contain duplicate subtasks: true
-Methods don't contain orphaned tasks: true
-Plan verification result: false

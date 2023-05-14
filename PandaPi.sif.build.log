@@ -1,23 +1,36 @@
-Get:1 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
-Get:2 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
-Get:3 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [108 kB]
-Get:4 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
-Get:5 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [266 kB]
-Get:6 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [17.5 MB]
-Get:7 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [36.3 kB]
-Get:8 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [291 kB]
-Get:9 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [459 kB]
-Get:10 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [901 kB]
+WARNING: 'nodev' mount option set on /tmp, it could be a source of failure during build process
+INFO:    Starting build...
+Getting image source signatures
+Copying blob sha256:dbf6a9befcdeecbb8813406afbd62ce81394e3869d84599f19f941aa5c74f3d1
+Copying config sha256:3b418d7b466ac6275a6bfcb0c86fbe4422ff6ea0af444a294f82d3bf5173ce74
+Writing manifest to image destination
+Storing signatures
+2023/05/14 13:48:04  info unpack layer: sha256:dbf6a9befcdeecbb8813406afbd62ce81394e3869d84599f19f941aa5c74f3d1
+INFO:    Running setup scriptlet
+INFO:    Copying . to /planner
+INFO:    Running post scriptlet
++ apt-get update
+Get:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
+Get:3 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [459 kB]
+Get:4 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [36.3 kB]
+Get:5 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [291 kB]
+Get:6 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [901 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:8 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [108 kB]
+Get:9 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [17.5 MB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [266 kB]
 Get:11 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1792 kB]
 Get:12 http://archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages [164 kB]
-Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [42.2 kB]
+Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [738 kB]
 Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [292 kB]
-Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1136 kB]
-Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [738 kB]
-Get:17 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [49.4 kB]
-Get:18 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [25.6 kB]
-Fetched 24.3 MB in 4s (5768 kB/s)
+Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [42.2 kB]
+Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1135 kB]
+Get:17 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [25.6 kB]
+Get:18 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [49.4 kB]
+Fetched 24.3 MB in 6s (4221 kB/s)
 Reading package lists...
++ apt-get -y install make g++ bison cmake gengetopt flex unzip patch
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -155,7 +168,8 @@ Get:90 http://archive.ubuntu.com/ubuntu jammy/main amd64 make amd64 4.3-4.1build
 Get:91 http://archive.ubuntu.com/ubuntu jammy/main amd64 manpages-dev all 5.10-1ubuntu1 [2309 kB]
 Get:92 http://archive.ubuntu.com/ubuntu jammy/main amd64 patch amd64 2.7.6-7build2 [109 kB]
 Get:93 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 unzip amd64 6.0-26ubuntu3.1 [174 kB]
-Fetched 93.6 MB in 17s (5406 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 93.6 MB in 23s (4060 kB/s)
 Selecting previously unselected package libsigsegv2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4395 files and directories currently installed.)
 Preparing to unpack .../00-libsigsegv2_2.13-1ubuntu3_amd64.deb ...
@@ -554,9 +568,15 @@ Updating certificates in /etc/ssl/certs...
 0 added, 0 removed; done.
 Running hooks in /etc/ca-certificates/update.d...
 done.
++ cd /planner
++ cd 00-parser/
++ make
 bison -v -d -o src/hddl.cpp src/hddl.y
 flex --yylineno -o src/hddl-token.cpp src/hddl-token.l
 g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/hddl-token.o -c src/hddl-token.cpp
+src/hddl-token.cpp:1559:17: warning: 'void yyunput(int, char*)' defined but not used [-Wunused-function]
+ 1559 |     static void yyunput (int c, char * yy_bp )
+      |                 ^~~~~~~
 g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/hddl.o -c src/hddl.cpp
 gengetopt --include-getopt --default-optional --unamed-opts --output-dir=src -i src/options.ggo
 g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/main.o -c src/main.cpp
@@ -570,17 +590,36 @@ g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter 
 g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/typeof.o -c src/typeof.cpp
 g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/shopWriter.o -c src/shopWriter.cpp
 g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/hpdlWriter.o -c src/hpdlWriter.cpp
+src/hpdlWriter.cpp: In function 'void write_instance_as_HPDL(std::ostream&, std::ostream&)':
+src/hpdlWriter.cpp:254:14: warning: variable 'lastSorts' set but not used [-Wunused-but-set-variable]
+  254 |         bool lastSorts = false;
+      |              ^~~~~~~~~
 g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/hddlWriter.o -c src/hddlWriter.cpp
 g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/htn2stripsWriter.o -c src/htn2stripsWriter.cpp
 g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/orderingDecomposition.o -c src/orderingDecomposition.cpp
 g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/plan.o -c src/plan.cpp
 g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/verify.o -c src/verify.cpp
+src/verify.cpp: In function 'bool verify_plan(std::istream&, bool, bool, int)':
+src/verify.cpp:1464:67: warning: loop variable 'c' creates a copy from type 'const string' {aka 'const std::__cxx11::basic_string<char>'} [-Wrange-loop-construct]
+ 1464 |                                                 for (const string c : s.second){
+      |                                                                   ^
+src/verify.cpp:1464:67: note: use reference type to prevent copying
+ 1464 |                                                 for (const string c : s.second){
+      |                                                                   ^
+      |                                                                   &
 g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/properties.o -c src/properties.cpp
 g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/verification_encoding.o -c src/verification_encoding.cpp
 cc    -c -o src/cmdline.o src/cmdline.c
 g++ -O3 -lm -flto -static -static-libgcc -DNDEBUG src/hddl-token.o src/hddl.o src/main.o src/sortexpansion.o src/parsetree.o src/util.o src/domain.o src/output.o src/parametersplitting.o src/cwa.o src/typeof.o src/shopWriter.o src/hpdlWriter.o src/hddlWriter.o src/htn2stripsWriter.o src/orderingDecomposition.o src/plan.o src/verify.o src/properties.o src/verification_encoding.o src/cmdline.o -o pandaPIparser 
++ mv pandaPIparser ..
++ cd ..
++ cd 01-grounder
++ cd cpddl
++ make boruvka opts bliss lpsolve
 make CC="cc" DEBUG=no -C third-party/boruvka all
 make[1]: Entering directory '/planner/01-grounder/cpddl/third-party/boruvka'
+/bin/sh: 1: pkg-config: not found
+/bin/sh: 1: pkg-config: not found
 echo 'int main(int argc, char *arvg[]) { int x = 1; return *(char *)&x; }' >__end.c
 cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -o __end __end.c
 echo "#ifndef __BOR_CONFIG_ENDIAN_H__" >boruvka/config_endian.h
@@ -592,6 +631,7 @@ if ./__end; then \
 fi
 echo "#endif /* __BOR_CONFIG_ENDIAN_H__ */" >>boruvka/config_endian.h
 rm -f __end.c __end
+/bin/sh: 1: pkg-config: not found
 echo "#ifndef __BOR_CONFIG_H__" >boruvka/config.h
 echo "#define __BOR_CONFIG_H__" >>boruvka/config.h
 echo "" >>boruvka/config.h
@@ -633,6 +673,66 @@ cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/mat3.o src/mat3.c
 cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/poly2.o src/poly2.c
 cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/predicates.o src/predicates.c
 cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/sort.o src/sort.c
+In function 'radixSortZeroizeCounter',
+    inlined from 'radixSortCount' at src/sort.c:50:5,
+    inlined from 'borRadixSort' at src/sort.c:143:9:
+src/sort.c:40:20: warning: '__builtin_memset' forming offset [1020, 1023] is out of the bounds [0, 1020] of object 'counter' with type 'uint32_t[255]' {aka 'unsigned int[255]'} [-Warray-bounds]
+   40 |         counter[i] = 0;
+      |         ~~~~~~~~~~~^~~
+src/sort.c: In function 'borRadixSort':
+src/sort.c:135:14: note: 'counter' declared here
+  135 |     uint32_t counter[RADIX_SORT_MASK], negative;
+      |              ^~~~~~~
+In function 'radixSortZeroizeCounter',
+    inlined from 'radixSortCountFinal' at src/sort.c:66:5,
+    inlined from 'borRadixSort' at src/sort.c:151:5:
+src/sort.c:40:20: warning: '__builtin_memset' forming offset [1020, 1023] is out of the bounds [0, 1020] of object 'counter' with type 'uint32_t[255]' {aka 'unsigned int[255]'} [-Warray-bounds]
+   40 |         counter[i] = 0;
+      |         ~~~~~~~~~~~^~~
+src/sort.c: In function 'borRadixSort':
+src/sort.c:135:14: note: 'counter' declared here
+  135 |     uint32_t counter[RADIX_SORT_MASK], negative;
+      |              ^~~~~~~
+In function 'radixSortPtrZeroizeCounter',
+    inlined from 'radixSortPtrCount' at src/sort.c:190:5,
+    inlined from 'borRadixSortPtr' at src/sort.c:289:9:
+src/sort.c:180:20: warning: '__builtin_memset' forming offset [1020, 1023] is out of the bounds [0, 1020] of object 'counter' with type 'uint32_t[255]' {aka 'unsigned int[255]'} [-Warray-bounds]
+  180 |         counter[i] = 0;
+      |         ~~~~~~~~~~~^~~
+src/sort.c: In function 'borRadixSortPtr':
+src/sort.c:281:14: note: 'counter' declared here
+  281 |     uint32_t counter[RADIX_SORT_MASK], negative;
+      |              ^~~~~~~
+In function 'radixSortPtrZeroizeCounter',
+    inlined from 'radixSortPtrCountFinal' at src/sort.c:207:5,
+    inlined from 'borRadixSortPtr' at src/sort.c:298:5:
+src/sort.c:180:20: warning: '__builtin_memset' forming offset [1020, 1023] is out of the bounds [0, 1020] of object 'counter' with type 'uint32_t[255]' {aka 'unsigned int[255]'} [-Warray-bounds]
+  180 |         counter[i] = 0;
+      |         ~~~~~~~~~~~^~~
+src/sort.c: In function 'borRadixSortPtr':
+src/sort.c:281:14: note: 'counter' declared here
+  281 |     uint32_t counter[RADIX_SORT_MASK], negative;
+      |              ^~~~~~~
+In function 'radixSortPtrZeroizeCounter',
+    inlined from 'radixSortPtrCount' at src/sort.c:190:5,
+    inlined from 'borRadixSortPtr' at src/sort.c:290:9:
+src/sort.c:180:20: warning: '__builtin_memset' forming offset [1020, 1023] is out of the bounds [0, 1020] of object 'counter' with type 'uint32_t[255]' {aka 'unsigned int[255]'} [-Warray-bounds]
+  180 |         counter[i] = 0;
+      |         ~~~~~~~~~~~^~~
+src/sort.c: In function 'borRadixSortPtr':
+src/sort.c:281:14: note: 'counter' declared here
+  281 |     uint32_t counter[RADIX_SORT_MASK], negative;
+      |              ^~~~~~~
+In function 'radixSortPtrZeroizeCounter',
+    inlined from 'radixSortPtrCount' at src/sort.c:190:5,
+    inlined from 'borRadixSortPtr' at src/sort.c:290:9:
+src/sort.c:180:20: warning: '__builtin_memset' forming offset [1020, 1023] is out of the bounds [0, 1020] of object 'counter' with type 'uint32_t[255]' {aka 'unsigned int[255]'} [-Warray-bounds]
+  180 |         counter[i] = 0;
+      |         ~~~~~~~~~~~^~~
+src/sort.c: In function 'borRadixSortPtr':
+src/sort.c:281:14: note: 'counter' declared here
+  281 |     uint32_t counter[RADIX_SORT_MASK], negative;
+      |              ^~~~~~~
 cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/heapsort.o src/heapsort.c
 cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/mergesort.o src/mergesort.c
 cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/qsort.o src/qsort.c
@@ -776,6 +876,9 @@ patching file graph.cc
 make CC=g++ -C third-party/bliss
 make[1]: Entering directory '/planner/01-grounder/cpddl/third-party/bliss'
 g++ -I. -g -Wall --pedantic -O9 -fPIC -c -o bliss.o bliss.cc
+bliss.cc:62:15: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+   62 |   fprintf(fp, "bliss version %s (compiled "__DATE__")\n", bliss::version);
+      |               ^
 g++ -I. -g -Wall --pedantic -O9 -fPIC -c -o defs.o defs.cc
 g++ -I. -g -Wall --pedantic -O9 -fPIC -c -o graph.o graph.cc
 g++ -I. -g -Wall --pedantic -O9 -fPIC -c -o partition.o partition.cc
@@ -794,6 +897,14 @@ make -C third-party/lpsolve
 make[1]: Entering directory '/planner/01-grounder/cpddl/third-party/lpsolve'
 cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_MDO.o lp_MDO.c
 cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o shared/commonlib.o shared/commonlib.c
+shared/commonlib.c: In function 'timeNow':
+shared/commonlib.c:849:3: warning: 'ftime' is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  849 |   ftime(&buf);
+      |   ^~~~~
+In file included from shared/commonlib.c:9:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
 cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o shared/mmio.o shared/mmio.c
 cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o shared/myblas.o shared/myblas.c
 cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o ini.o ini.c
@@ -822,6 +933,7 @@ cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LU
 ar cr liblpsolve.a lp_MDO.o shared/commonlib.o shared/mmio.o shared/myblas.o ini.o fortify.o colamd/colamd.o lp_rlp.o lp_crash.o bfp/bfp_LUSOL/lp_LUSOL.o bfp/bfp_LUSOL/LUSOL/lusol.o lp_Hash.o lp_lib.o lp_wlp.o lp_matrix.o lp_mipbb.o lp_MPS.o lp_params.o lp_presolve.o lp_price.o lp_pricePSE.o lp_report.o lp_scale.o lp_simplex.o lp_SOS.o lp_utils.o yacc_read.o
 ranlib liblpsolve.a
 make[1]: Leaving directory '/planner/01-grounder/cpddl/third-party/lpsolve'
++ make
 echo "#ifndef __PDDL_CONFIG_H__" >pddl/config.h
 echo "#define __PDDL_CONFIG_H__" >>pddl/config.h
 echo "" >>pddl/config.h
@@ -844,6 +956,19 @@ cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounde
 cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/prep_action.o src/prep_action.c
 cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/pddl.o src/pddl.c
 cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/cond.o src/cond.c
+src/cond.c: In function 'instantiateQuant':
+src/cond.c:2011:35: warning: array subscript 'pddl_params_t {aka const struct pddl_params}[0]' is partly outside array bounds of 'instantiate_cond_t[1]' {aka 'struct instantiate_cond[1]'} [-Warray-bounds]
+ 2011 |         for (int i = 0; i < params->param_size; ++i){
+      |                             ~~~~~~^~~~~~~~~~~~
+src/cond.c:2064:24: note: while referencing 'set'
+ 2064 |     instantiate_cond_t set;
+      |                        ^~~
+src/cond.c:2012:23: warning: array subscript 'pddl_params_t {aka const struct pddl_params}[0]' is partly outside array bounds of 'instantiate_cond_t[1]' {aka 'struct instantiate_cond[1]'} [-Warray-bounds]
+ 2012 |             if (params->param[i].inherit < 0)
+      |                 ~~~~~~^~~~~~~
+src/cond.c:2064:24: note: while referencing 'set'
+ 2064 |     instantiate_cond_t set;
+      |                        ^~~
 cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/cond_arr.o src/cond_arr.c
 cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/strips.o src/strips.c
 cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/strips_op.o src/strips_op.c
@@ -870,6 +995,8 @@ cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounde
 cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/famgroup.o src/famgroup.c
 ar cr libpddl.a .objs/lisp.o .objs/require.o .objs/type.o .objs/param.o .objs/obj.o .objs/pred.o .objs/fact.o .objs/action.o .objs/prep_action.o .objs/pddl.o .objs/cond.o .objs/cond_arr.o .objs/strips.o .objs/strips_op.o .objs/strips_fact_cross_ref.o .objs/strips_ground_tree.o .objs/strips_ground.o .objs/action_args.o .objs/ground_atom.o .objs/profile.o .objs/helper.o .objs/lifted_mgroup.o .objs/lifted_mgroup_infer.o .objs/lifted_mgroup_htable.o .objs/mgroup.o .objs/mutex_pair.o .objs/pddl_file.o .objs/irrelevance.o .objs/h2.o .objs/disambiguation.o .objs/bitset.o .objs/fdr_var.o .objs/fdr.o .objs/sym.o .objs/famgroup.o
 ranlib libpddl.a
++ cd ../src
++ make
 g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o FAMmutexes.o FAMmutexes.cpp
 g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o conditional_effects.o conditional_effects.cpp
 g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o debug.o debug.cpp
@@ -886,6 +1013,10 @@ g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-si
 g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o model.o model.cpp
 g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o naiveGrounding.o naiveGrounding.cpp
 g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o output.o output.cpp
+output.cpp: In function 'void write_grounded_HTN(std::ostream&, const Domain&, const Problem&, std::vector<Fact>&, std::vector<GroundedTask>&, std::vector<GroundedMethod>&, std::vector<bool>&, std::vector<bool>&, std::vector<bool>&, std::unordered_set<int>, std::unordered_set<int>, std::unordered_set<Fact>, std::vector<std::unordered_set<int> >, std::vector<std::unordered_set<int> >, std::vector<std::unordered_set<int> >, std::vector<std::unordered_set<int> >, std::vector<bool>&, grounding_configuration&)':
+output.cpp:860:47: warning: unused variable '_cover_assignment' [-Wunused-variable]
+  860 |                 for (const std::vector<int> & _cover_assignment : instances){
+      |                                               ^~~~~~~~~~~~~~~~~
 g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o parser.o parser.cpp
 g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o postprocessing.o postprocessing.cpp
 g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o sasinvariants.o sasinvariants.cpp
@@ -906,6 +1037,13 @@ g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-si
 g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o ../h2-fd-preprocessor/src/successor_generator.cc.o ../h2-fd-preprocessor/src/successor_generator.cc
 g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o ../h2-fd-preprocessor/src/variable.cc.o ../h2-fd-preprocessor/src/variable.cc
 g++  -O3 -flto -static -static-libgcc -o ../pandaPIgrounder FAMmutexes.o conditional_effects.o debug.o duplicate.o givenPlan.o gpg.o groundedGPG.o grounding.o h2mutexes.o hierarchy-typing.o liftedGPG.o main.o model.o naiveGrounding.o output.o parser.o postprocessing.o sasinvariants.o sasplus.o util.o rss.o cmdline.o ../h2-fd-preprocessor/src/axiom.cc.o ../h2-fd-preprocessor/src/causal_graph.cc.o ../h2-fd-preprocessor/src/domain_transition_graph.cc.o ../h2-fd-preprocessor/src/h2_mutexes.cc.o ../h2-fd-preprocessor/src/helper_functions.cc.o ../h2-fd-preprocessor/src/max_dag.cc.o ../h2-fd-preprocessor/src/mutex_group.cc.o ../h2-fd-preprocessor/src/operator.cc.o ../h2-fd-preprocessor/src/scc.cc.o ../h2-fd-preprocessor/src/state.cc.o ../h2-fd-preprocessor/src/successor_generator.cc.o ../h2-fd-preprocessor/src/variable.cc.o ../cpddl/libpddl.a ../cpddl/third-party/boruvka/libboruvka.a 
++ cd ..
++ mv pandaPIgrounder ..
++ cd ..
++ cd 02-planner/src
++ mkdir bin
++ cd bin
++ cmake ..
 -- The C compiler identification is GNU 11.3.0
 -- The CXX compiler identification is GNU 11.3.0
 -- Detecting C compiler ABI info
@@ -921,6 +1059,7 @@ g++  -O3 -flto -static -static-libgcc -o ../pandaPIgrounder FAMmutexes.o conditi
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /planner/02-planner/src/bin
++ make
 [  1%] Building CXX object intDataStructures/CMakeFiles/intDataStructures.dir/bIntSet.cpp.o
 [  3%] Building CXX object intDataStructures/CMakeFiles/intDataStructures.dir/bucketSet.cpp.o
 [  4%] Building CXX object intDataStructures/CMakeFiles/intDataStructures.dir/delIterIntSet.cpp.o
@@ -944,6 +1083,10 @@ g++  -O3 -flto -static -static-libgcc -o ../pandaPIgrounder FAMmutexes.o conditi
 [ 32%] Linking CXX static library libsearch.a
 [ 32%] Built target search
 [ 34%] Building CXX object symbolic_search/CMakeFiles/symbolic_search.dir/automaton.cpp.o
+/planner/02-planner/src/symbolic_search/automaton.cpp: In function 'reconstructed_plan extract2From(int, int, int, int, BDD, std::deque<int>, std::deque<int>, std::deque<BDD>, progression::Model*, symbolic::SymVariables&)':
+/planner/02-planner/src/symbolic_search/automaton.cpp:582:37: warning: unused variable 'costCarriedByTheEdge' [-Wunused-variable]
+  582 |                                 int costCarriedByTheEdge = cost;
+      |                                     ^~~~~~~~~~~~~~~~~~~~
 [ 36%] Building CXX object symbolic_search/CMakeFiles/symbolic_search.dir/sym_variables.cpp.o
 [ 37%] Building CXX object symbolic_search/CMakeFiles/symbolic_search.dir/transition_relation.cpp.o
 [ 39%] Linking CXX static library libsymbolic_search.a
@@ -970,8 +1113,26 @@ g++  -O3 -flto -static -static-libgcc -o ../pandaPIgrounder FAMmutexes.o conditi
 [ 68%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/lmExtraction/LmAoNode.cpp.o
 [ 70%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/lmExtraction/LmCausal.cpp.o
 [ 72%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/lmExtraction/LmFdConnector.cpp.o
+/planner/02-planner/src/heuristics/landmarks/lmExtraction/LmFdConnector.cpp: In member function 'lmGraph* progression::LmFdConnector::createLMs(progression::Model*, progression::lmFactoryType, bool)':
+/planner/02-planner/src/heuristics/landmarks/lmExtraction/LmFdConnector.cpp:39:15: warning: ignoring return value of 'int system(const char*)' declared with attribute 'warn_unused_result' [-Wunused-result]
+   39 |         system("\"callFDfromPANDA.sh\" \"rhw\"");
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/planner/02-planner/src/heuristics/landmarks/lmExtraction/LmFdConnector.cpp:41:15: warning: ignoring return value of 'int system(const char*)' declared with attribute 'warn_unused_result' [-Wunused-result]
+   41 |         system("\"callFDfromPANDA.sh\" \"ao1\"");
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/planner/02-planner/src/heuristics/landmarks/lmExtraction/LmFdConnector.cpp:43:15: warning: ignoring return value of 'int system(const char*)' declared with attribute 'warn_unused_result' [-Wunused-result]
+   43 |         system("\"callFDfromPANDA.sh\" \"ao2\"");
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/planner/02-planner/src/heuristics/landmarks/lmExtraction/LmFdConnector.cpp: In member function 'void progression::LmFdConnector::printDOT(progression::Model*, lmGraph*)':
+/planner/02-planner/src/heuristics/landmarks/lmExtraction/LmFdConnector.cpp:376:11: warning: ignoring return value of 'int system(const char*)' declared with attribute 'warn_unused_result' [-Wunused-result]
+  376 |     system("xdot graph.dot");
+      |     ~~~~~~^~~~~~~~~~~~~~~~~~
 [ 73%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/lmExtraction/LmLocalLMs.cpp.o
 [ 75%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/lmExtraction/lmGraph.cpp.o
+/planner/02-planner/src/heuristics/landmarks/lmExtraction/lmGraph.cpp: In member function 'void lmGraph::showDot(hhLMPayload*)':
+/planner/02-planner/src/heuristics/landmarks/lmExtraction/lmGraph.cpp:147:11: warning: ignoring return value of 'int system(const char*)' declared with attribute 'warn_unused_result' [-Wunused-result]
+  147 |     system("xdot graph.dot");
+      |     ~~~~~~^~~~~~~~~~~~~~~~~~
 [ 77%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/lmExtraction/lmNode.cpp.o
 [ 78%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/hhLMCount.cpp.o
 [ 80%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/hhLMPayload.cpp.o
@@ -983,9 +1144,28 @@ g++  -O3 -flto -static -static-libgcc -o ../pandaPIgrounder FAMmutexes.o conditi
 [ 88%] Building CXX object CMakeFiles/pandaPIengine.dir/Model.cpp.o
 [ 90%] Building CXX object CMakeFiles/pandaPIengine.dir/ProgressionNetwork.cpp.o
 [ 91%] Building CXX object CMakeFiles/pandaPIengine.dir/SearchEngine.cpp.o
+/planner/02-planner/src/SearchEngine.cpp: In function 'int main(int, char**)':
+/planner/02-planner/src/SearchEngine.cpp:567:30: warning: unused variable 'hlm' [-Wunused-variable]
+  567 |                 hhLmOrdered *hlm = (hhLmOrdered*)heuristics[ihLM];
+      |                              ^~~
+/planner/02-planner/src/SearchEngine.cpp:498:100: warning: 'lmType' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  498 |                         heuristics[ihLM] = new hhLmOrdered(htn, ihLM, lmType, useLMOrderings, false);
+      |                                                                                                    ^
 [ 93%] Building CXX object CMakeFiles/pandaPIengine.dir/Util.cpp.o
 [ 95%] Building CXX object CMakeFiles/pandaPIengine.dir/VisitedList.cpp.o
+/planner/02-planner/src/VisitedList.cpp: In member function 'bool VisitedList::insertVisi(progression::searchNode*)':
+/planner/02-planner/src/VisitedList.cpp:549:36: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  549 |                         *payload = (void*) costOfInsertedNode; // now the hash is known at the given cost
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
 [ 96%] Building C object CMakeFiles/pandaPIengine.dir/cmdline.c.o
 [ 98%] Building CXX object CMakeFiles/pandaPIengine.dir/interactivePlanner.cpp.o
 [100%] Linking CXX executable pandaPIengine
 [100%] Built target pandaPIengine
++ mv pandaPIengine ../../..
++ cd ..
+INFO:    Adding labels
+INFO:    Adding runscript
+INFO:    Creating SIF file...
+INFO:    Build complete: ../PandaPi.sif
+%TIME 4:24.10 747340
+%EXIT 0
