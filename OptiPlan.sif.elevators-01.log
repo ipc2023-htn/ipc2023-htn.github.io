@@ -1,5 +1,5 @@
 FATAL:   could not open image /home/gregor/Workspace/IPC2023/OptiPlan.sif: failed to retrieve path for /home/gregor/Workspace/IPC2023/OptiPlan.sif: lstat /home/gregor/Workspace/IPC2023/OptiPlan.sif: no such file or directory
 Command exited with non-zero status 255
-%TIME 0:00.01 38548
+%TIME 0:00.01 37396
 %EXIT 255
 NO OUTPUT

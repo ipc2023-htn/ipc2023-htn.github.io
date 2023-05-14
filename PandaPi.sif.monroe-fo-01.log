@@ -8,6 +8,6 @@ pandaPIparser is configured as follows
   Replace goal with action: false
   Output: pandaPI format
 Command exited with non-zero status 124
-%TIME 0:02.00 37180
+%TIME 0:02.00 36312
 %EXIT 124
 NO OUTPUT
