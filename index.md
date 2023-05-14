@@ -116,7 +116,7 @@ A modification of somebody else's HTN planning system is a valid submission if a
 
 ## Current Status of Planner Submissions
 
-See (status page)[https://ipc2023-htn.github.io/plannerStatus.html].
+See [status page](https://ipc2023-htn.github.io/plannerStatus.html).
 
 ## Organizers
  - [Ron Alford](ronwalf@volus.net) (MITRE)
