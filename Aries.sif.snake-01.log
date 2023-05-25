@@ -7,67 +7,36 @@ Substitution from predicate to state variable:
 Transforming static state functions as table constraints:
  - adjacent
 ==========================
-0 Solving with 0 actions
-  [0.001s] Populated
+0 Solving with depth 0
+  [0.000s] Populated
+  [0.000s] Solved
+1 Solving with depth 1
+  [0.000s] Populated
+  [0.000s] Solved
+2 Solving with depth 2
+  [0.000s] Populated
   [0.001s] Solved
-1 Solving with 1 actions
+3 Solving with depth 3
   [0.001s] Populated
-  [0.002s] Solved
-2 Solving with 2 actions
-  [0.002s] Populated
-  [0.002s] Solved
-3 Solving with 3 actions
-  [0.002s] Populated
   [0.007s] Solved
-4 Solving with 4 actions
+4 Solving with depth 4
   [0.007s] Populated
-  [0.021s] Solved
-5 Solving with 5 actions
-  [0.021s] Populated
-
-==== Worker 1
-solutions           : 0           
-restarts            : 0           
-decisions           : 92           (16381 /sec)
-conflicts           : 8            (1424 /sec)
-================= 
-Solvers             :             SAT        DiffLog             CP
-% propagation cycles:         15.64 %        84.16 %         0.06 %
-# propagation loops :             150            144            142
-# conflicts         :               6              2              0
-================= 
-Init time           : 0.002157 s
-Solve time          : 0.005616 s
-
-====== SAT =====
-DB size              : 6516
-Num unit propagations: 879
-====== DiffLog =====
-# nodes: 405
-# propagators: 4608
-# propagations: 165
-# domain updates: 546
-====== CP =====
-
-==== Worker 2
-Solver is running
-
-==== Worker 3
-Solver is running
-  [0.060s] Solved
+  [0.025s] Solved
+5 Solving with depth 5
+  [0.025s] Populated
 
 **** Decomposition ****
 
 ==>
 13 (move-short viper px2y1 px2y2)
-20 (move-short viper px2y0 px2y1)
+24 (move-short viper px2y0 px2y1)
 38 (move-short viper px1y0 px2y0)
 6 (strike viper px1y0 px0y0)
-root 2
-2 (hunt) -> hunt_all 5 6 8
-5 (move viper px2y2 px1y0) -> move-short-snake 13 10
-10 (move viper px2y1 px1y0) -> move-short-snake 20 22
-22 (move viper px2y0 px1y0) -> move-short-snake 38 37
+root 1
+1 (hunt) -> hunt_all 5 6 8
+5 (move viper px2y2 px1y0) -> move-short-snake 13 12
+12 (move viper px2y1 px1y0) -> move-short-snake 24 23
+23 (move viper px2y0 px1y0) -> move-short-snake 38 37
 37 (move viper px1y0 px1y0) -> move-base
 8 (hunt) -> hunt_done
 <==
@@ -80,8 +49,54 @@ root 2
 0.5: (move-short viper px1y0 px2y0) [0.000]
 0.7: (strike viper px1y0 px0y0) [0.000]
 
-%TIME 0:00.17 38792
-%EXIT 0
+
+==== Worker 1
+Solver is running
+
+==== Worker 2
+solutions           : 1           
+restarts            : 0           
+decisions           : 74           (5175 /sec)
+conflicts           : 16           (1119 /sec)
+================= 
+Solvers             :             SAT        DiffLog             CP
+% propagation cycles:         14.75 %        83.80 %         1.39 %
+# propagation loops :             141            128            125
+# conflicts         :              13              3              0
+================= 
+Init time           : 0.004445 s
+Solve time          : 0.014300 s
+
+====== SAT =====
+DB size              : 6517
+Num unit propagations: 1449
+====== DiffLog =====
+# nodes: 405
+# propagators: 4608
+# propagations: 272
+# domain updates: 792
+====== CP =====
+
+==== Worker 3
+Solver is running
+  [0.082s] Solved
+6 Solving with depth 6
+  [0.083s] Populated
+  [0.211s] Solved
+7 Solving with depth 7
+  [0.212s] Populated
+  [0.464s] Solved
+8 Solving with depth 8
+  [0.465s] Populated
+  [0.927s] Solved
+9 Solving with depth 9
+  [0.928s] Populated
+  [1.726s] Solved
+10 Solving with depth 10
+  [1.727s] Populated
+Command exited with non-zero status 124
+%TIME 0:02.01 347696
+%EXIT 124
 pandaPIparser is configured as follows
   Colors in output: false
   Mode: plan verification
@@ -92,32 +107,32 @@ Reading plan given as input
 Parse instantiated task from " (move-short viper px2y1 px2y2)" ... done
 Parsed action id=13 move-short viper px2y1 px2y2
 Parse instantiated task from " (move-short viper px2y0 px2y1)" ... done
-Parsed action id=20 move-short viper px2y0 px2y1
+Parsed action id=24 move-short viper px2y0 px2y1
 Parse instantiated task from " (move-short viper px1y0 px2y0)" ... done
 Parsed action id=38 move-short viper px1y0 px2y0
 Parse instantiated task from " (strike viper px1y0 px0y0)" ... done
 Parsed action id=6 strike viper px1y0 px0y0
 Size of primitive plan: 4
-Reading list of integers from " 2"
-Root tasks (1): 2
+Reading list of integers from " 1"
+Root tasks (1): 1
 Reading plan given as input
 Parse instantiated task from "  (hunt)" ... done
-Parsed abstract task id=2 hunt
+Parsed abstract task id=1 hunt
 Parsed method name: hunt_all
 Subtasks: 5 6 8
 
 Parse instantiated task from "  (move viper px2y2 px1y0)" ... done
 Parsed abstract task id=5 move viper px2y2 px1y0
 Parsed method name: move-short-snake
-Subtasks: 13 10
+Subtasks: 13 12
 
 Parse instantiated task from "  (move viper px2y1 px1y0)" ... done
-Parsed abstract task id=10 move viper px2y1 px1y0
+Parsed abstract task id=12 move viper px2y1 px1y0
 Parsed method name: move-short-snake
-Subtasks: 20 22
+Subtasks: 24 23
 
 Parse instantiated task from "  (move viper px2y0 px1y0)" ... done
-Parsed abstract task id=22 move viper px2y0 px1y0
+Parsed abstract task id=23 move viper px2y0 px1y0
 Parsed method name: move-short-snake
 Subtasks: 38 37
 
@@ -139,7 +154,7 @@ Tasks declared in plan actually exist and can be instantiated as given: true
 Methods don't contain duplicate subtasks: true
 Methods don't contain orphaned tasks: true
 Generating Matchings for task with id=0
- Matching Task 2 Curpos=0 #sources=1
+ Matching Task 1 Curpos=0 #sources=1
  Task is: hunt
  Attempting matching with source __t_id_7
    Found compatible linearisation.
@@ -148,7 +163,7 @@ Generating Matchings for task with id=0
     Checking variable constraints in method's precondition ... 
     Matching is ok.
 Found 1 matchings for task with id=0
-Generating Matchings for task with id=2
+Generating Matchings for task with id=1
  Matching Task 5 Curpos=0 #sources=1
  Task is: move viper px2y2 px1y0
  Attempting matching with source __t_id_0
@@ -169,7 +184,7 @@ Generating Matchings for task with id=2
         Checking method's constraint formula ... 
         Checking variable constraints in method's precondition ... 
         Matching is ok.
-Found 1 matchings for task with id=2
+Found 1 matchings for task with id=1
 Generating Matchings for task with id=5
  Matching Task 13 Curpos=0 #sources=1
  Task is: move-short viper px2y1 px2y2
@@ -177,7 +192,7 @@ Generating Matchings for task with id=5
   Setting ?snake = viper
   Setting ?pos2 = px2y1
   Setting ?snakepos = px2y2
-   Matching Task 10 Curpos=1 #sources=1
+   Matching Task 12 Curpos=1 #sources=1
    Task is: move viper px2y1 px1y0
    Attempting matching with source __t_id_6
     Setting ?snake = viper
@@ -196,14 +211,14 @@ Generating Matchings for task with id=8
   Checking variable constraints in method's precondition ... 
   Matching is ok.
 Found 1 matchings for task with id=8
-Generating Matchings for task with id=10
- Matching Task 20 Curpos=0 #sources=1
+Generating Matchings for task with id=12
+ Matching Task 24 Curpos=0 #sources=1
  Task is: move-short viper px2y0 px2y1
  Attempting matching with source __t_id_5
   Setting ?snake = viper
   Setting ?pos2 = px2y0
   Setting ?snakepos = px2y1
-   Matching Task 22 Curpos=1 #sources=1
+   Matching Task 23 Curpos=1 #sources=1
    Task is: move viper px2y0 px1y0
    Attempting matching with source __t_id_6
     Setting ?snake = viper
@@ -214,8 +229,8 @@ Generating Matchings for task with id=10
       Checking method's constraint formula ... 
       Checking variable constraints in method's precondition ... 
       Matching is ok.
-Found 1 matchings for task with id=10
-Generating Matchings for task with id=22
+Found 1 matchings for task with id=12
+Generating Matchings for task with id=23
  Matching Task 38 Curpos=0 #sources=1
  Task is: move-short viper px1y0 px2y0
  Attempting matching with source __t_id_5
@@ -233,7 +248,7 @@ Generating Matchings for task with id=22
       Checking method's constraint formula ... 
       Checking variable constraints in method's precondition ... 
       Matching is ok.
-Found 1 matchings for task with id=22
+Found 1 matchings for task with id=23
 Generating Matchings for task with id=37
  Found compatible linearisation.
   Checking constants are in variable type ... 
@@ -245,15 +260,15 @@ Methods can be instantiated: true
 Check whether primitive plan is a linearisation of the orderings resulting from applied decomposition methods.
  Abstract Task id=0 matching still unique: true (1)
   Attempting matching
- Abstract Task id=2 matching still unique: true (1)
+ Abstract Task id=1 matching still unique: true (1)
   Attempting matching
  Abstract Task id=5 matching still unique: true (1)
   Attempting matching
  Primitive Task id=13
- Abstract Task id=10 matching still unique: true (1)
+ Abstract Task id=12 matching still unique: true (1)
   Attempting matching
- Primitive Task id=20
- Abstract Task id=22 matching still unique: true (1)
+ Primitive Task id=24
+ Abstract Task id=23 matching still unique: true (1)
   Attempting matching
  Primitive Task id=38
  Abstract Task id=37 matching still unique: true (1)
@@ -305,7 +320,7 @@ Check whether primitive plan is a linearisation of the orderings resulting from 
     Method has no effect.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source 2 is the begin of an abstract task.
+    Source 1 is the begin of an abstract task.
     Evaluating the method precondition
     Method has no effect.
     I can greedily take this source without making any mistake.
@@ -361,15 +376,15 @@ Check whether primitive plan is a linearisation of the orderings resulting from 
     Source -14 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source 10 is the begin of an abstract task.
+    Source 12 is the begin of an abstract task.
     Evaluating the method precondition
     Method has no effect.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source 20 is a primitive action.
+    Source 24 is a primitive action.
     Action has an effect.
     Performed all sources that can be taken greedily. 1 sources remain. unique=true
-    Attempting to progress through source 20
+    Attempting to progress through source 24
     Task is: move-short viper px2y0 px2y1
     Applying effects of the action.
      Removing fact from state: head viper px2y1
@@ -409,10 +424,10 @@ Check whether primitive plan is a linearisation of the orderings resulting from 
       occupied px2y0
       tail viper px2y0
    Executing plan time=1 #sources=1
-    Source -21 is a dummy for the end of a task.
+    Source -25 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source 22 is the begin of an abstract task.
+    Source 23 is the begin of an abstract task.
     Evaluating the method precondition
     Method has no effect.
     I can greedily take this source without making any mistake.
@@ -471,10 +486,10 @@ Check whether primitive plan is a linearisation of the orderings resulting from 
     Source -38 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source -23 is a dummy for the end of a task.
+    Source -24 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source -11 is a dummy for the end of a task.
+    Source -13 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
     Source -6 is a dummy for the end of a task.
@@ -532,7 +547,7 @@ Check whether primitive plan is a linearisation of the orderings resulting from 
     Source -9 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source -3 is a dummy for the end of a task.
+    Source -2 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
     Source -1 is a dummy for the end of a task.

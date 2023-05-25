@@ -33,36 +33,36 @@ Transforming static state functions as table constraints:
  - LOCKED-NOT-SERVED
  - FLAGGED-NOT-SERVED
 ==========================
-0 Solving with 0 actions
-  [0.001s] Populated
-  [0.001s] Solved
-1 Solving with 1 actions
-  [0.001s] Populated
-  [0.001s] Solved
-2 Solving with 2 actions
-  [0.002s] Populated
+0 Solving with depth 0
+  [0.000s] Populated
+  [0.000s] Solved
+1 Solving with depth 1
+  [0.000s] Populated
+  [0.000s] Solved
+2 Solving with depth 2
+  [0.000s] Populated
   [0.002s] Solved
-3 Solving with 3 actions
+3 Solving with depth 3
   [0.002s] Populated
-  [0.004s] Solved
-4 Solving with 4 actions
-  [0.004s] Populated
+  [0.003s] Solved
+4 Solving with depth 4
+  [0.003s] Populated
   [0.005s] Solved
-5 Solving with 5 actions
-  [0.006s] Populated
-  [0.010s] Solved
-6 Solving with 6 actions
-  [0.010s] Populated
-  [0.024s] Solved
-7 Solving with 7 actions
-  [0.025s] Populated
-  [0.063s] Solved
-8 Solving with 8 actions
-  [0.064s] Populated
-  [1.040s] Solved
-9 Solving with 9 actions
-  [1.042s] Populated
+5 Solving with depth 5
+  [0.005s] Populated
+  [0.013s] Solved
+6 Solving with depth 6
+  [0.014s] Populated
+  [0.037s] Solved
+7 Solving with depth 7
+  [0.038s] Populated
+  [0.100s] Solved
+8 Solving with depth 8
+  [0.101s] Populated
+  [1.349s] Solved
+9 Solving with depth 9
+  [1.352s] Populated
 Command exited with non-zero status 124
-%TIME 0:02.01 560416
+%TIME 0:02.01 205096
 %EXIT 124
 NO OUTPUT

@@ -7,7 +7,10 @@ pandaPIparser is configured as follows
   Disjunctive preconditions as HTN: false
   Replace goal with action: false
   Output: pandaPI format
-%TIME 0:00.21 39336
+pandaPIparser is configured as follows
+  Colors in output: true
+  Mode: convert pandaPI plan
+%TIME 0:00.18 37936
 %EXIT 0
 pandaPIparser is configured as follows
   Colors in output: false
@@ -16,199 +19,1658 @@ pandaPIparser is configured as follows
   Lenient mode: false
   Ignore given order: false
 Reading plan given as input
-Parse instantiated task from " drive[truck_0,city_loc_0,city_loc_3]" ... done
+Parse instantiated task from " drive truck_0 city_loc_0 city_loc_3" ... done
 Parsed action id=12 drive truck_0 city_loc_0 city_loc_3
-Parse instantiated task from " drive[truck_0,city_loc_3,city_loc_2]" ... done
+Parse instantiated task from " drive truck_0 city_loc_3 city_loc_2" ... done
 Parsed action id=13 drive truck_0 city_loc_3 city_loc_2
-Parse instantiated task from " drive[truck_0,city_loc_2,city_loc_1]" ... done
+Parse instantiated task from " drive truck_0 city_loc_2 city_loc_1" ... done
 Parsed action id=14 drive truck_0 city_loc_2 city_loc_1
-Parse instantiated task from " pick_up[truck_0,city_loc_1,package_1,capacity_2,capacity_3]" ... done
+Parse instantiated task from " pick_up truck_0 city_loc_1 package_1 capacity_2 capacity_3" ... done
 Parsed action id=24 pick_up truck_0 city_loc_1 package_1 capacity_2 capacity_3
-Parse instantiated task from " drive[truck_0,city_loc_1,city_loc_2]" ... done
+Parse instantiated task from " drive truck_0 city_loc_1 city_loc_2" ... done
 Parsed action id=37 drive truck_0 city_loc_1 city_loc_2
-Parse instantiated task from " drive[truck_0,city_loc_2,city_loc_3]" ... done
+Parse instantiated task from " drive truck_0 city_loc_2 city_loc_3" ... done
 Parsed action id=38 drive truck_0 city_loc_2 city_loc_3
-Parse instantiated task from " drive[truck_0,city_loc_3,city_loc_0]" ... done
+Parse instantiated task from " drive truck_0 city_loc_3 city_loc_0" ... done
 Parsed action id=39 drive truck_0 city_loc_3 city_loc_0
-Parse instantiated task from " drop[truck_0,city_loc_0,package_1,capacity_2,capacity_3]" ... done
+Parse instantiated task from " drop truck_0 city_loc_0 package_1 capacity_2 capacity_3" ... done
 Parsed action id=46 drop truck_0 city_loc_0 package_1 capacity_2 capacity_3
-Parse instantiated task from " noop[truck_0,city_loc_0]" ... done
+Parse instantiated task from " noop truck_0 city_loc_0" ... done
 Parsed action id=51 noop truck_0 city_loc_0
-Parse instantiated task from " pick_up[truck_0,city_loc_0,package_0,capacity_2,capacity_3]" ... done
+Parse instantiated task from " pick_up truck_0 city_loc_0 package_0 capacity_2 capacity_3" ... done
 Parsed action id=54 pick_up truck_0 city_loc_0 package_0 capacity_2 capacity_3
-Parse instantiated task from " drive[truck_0,city_loc_0,city_loc_3]" ... done
+Parse instantiated task from " drive truck_0 city_loc_0 city_loc_3" ... done
 Parsed action id=58 drive truck_0 city_loc_0 city_loc_3
-Parse instantiated task from " drop[truck_0,city_loc_3,package_0,capacity_2,capacity_3]" ... done
+Parse instantiated task from " drop truck_0 city_loc_3 package_0 capacity_2 capacity_3" ... done
 Parsed action id=66 drop truck_0 city_loc_3 package_0 capacity_2 capacity_3
-Parse instantiated task from " drive[truck_0,city_loc_3,city_loc_2]" ... done
+Parse instantiated task from " drive truck_0 city_loc_3 city_loc_2" ... done
 Parsed action id=72 drive truck_0 city_loc_3 city_loc_2
-Parse instantiated task from " pick_up[truck_0,city_loc_2,package_3,capacity_2,capacity_3]" ... done
+Parse instantiated task from " pick_up truck_0 city_loc_2 package_3 capacity_2 capacity_3" ... done
 Parsed action id=78 pick_up truck_0 city_loc_2 package_3 capacity_2 capacity_3
-Parse instantiated task from " drive[truck_0,city_loc_2,city_loc_3]" ... done
+Parse instantiated task from " drive truck_0 city_loc_2 city_loc_3" ... done
 Parsed action id=87 drive truck_0 city_loc_2 city_loc_3
-Parse instantiated task from " drive[truck_0,city_loc_3,city_loc_0]" ... done
+Parse instantiated task from " drive truck_0 city_loc_3 city_loc_0" ... done
 Parsed action id=88 drive truck_0 city_loc_3 city_loc_0
-Parse instantiated task from " drop[truck_0,city_loc_0,package_3,capacity_2,capacity_3]" ... done
+Parse instantiated task from " drop truck_0 city_loc_0 package_3 capacity_2 capacity_3" ... done
 Parsed action id=96 drop truck_0 city_loc_0 package_3 capacity_2 capacity_3
-Parse instantiated task from " drive[truck_0,city_loc_0,city_loc_3]" ... done
+Parse instantiated task from " drive truck_0 city_loc_0 city_loc_3" ... done
 Parsed action id=100 drive truck_0 city_loc_0 city_loc_3
-Parse instantiated task from " pick_up[truck_0,city_loc_3,package_2,capacity_2,capacity_3]" ... done
+Parse instantiated task from " pick_up truck_0 city_loc_3 package_2 capacity_2 capacity_3" ... done
 Parsed action id=109 pick_up truck_0 city_loc_3 package_2 capacity_2 capacity_3
-Parse instantiated task from " drive[truck_0,city_loc_3,city_loc_2]" ... done
+Parse instantiated task from " drive truck_0 city_loc_3 city_loc_2" ... done
 Parsed action id=115 drive truck_0 city_loc_3 city_loc_2
-Parse instantiated task from " drive[truck_0,city_loc_2,city_loc_1]" ... done
+Parse instantiated task from " drive truck_0 city_loc_2 city_loc_1" ... done
 Parsed action id=116 drive truck_0 city_loc_2 city_loc_1
-Parse instantiated task from " drop[truck_0,city_loc_1,package_2,capacity_2,capacity_3]" ... done
+Parse instantiated task from " drop truck_0 city_loc_1 package_2 capacity_2 capacity_3" ... done
 Parsed action id=124 drop truck_0 city_loc_1 package_2 capacity_2 capacity_3
 Size of primitive plan: 22
-Reading list of integers from " 0"
-Root tasks (1): 0
+Reading list of integers from " 126 125 128 127"
+Root tasks (4): 126 125 128 127
 Reading plan given as input
-Parse instantiated task from "  unload[truck_0,city_loc_1,package_2]" ... done
-Parsed abstract task id=123 unload truck_0 city_loc_1 package_2
-Parsed method name: m_unload_ordering_0
-Subtasks: 124
-
-Parse instantiated task from "  get_to[truck_0,city_loc_2]" ... done
-Parsed abstract task id=114 get_to truck_0 city_loc_2
-Parsed method name: m_drive_to_ordering_0
-Subtasks: 115
-
-Parse instantiated task from "  get_to[truck_0,city_loc_1]" ... done
-Parsed abstract task id=113 get_to truck_0 city_loc_1
-Parsed method name: m_drive_to_via_ordering_0
-Subtasks: 114 116
-
-Parse instantiated task from "  load[truck_0,city_loc_3,package_2]" ... done
-Parsed abstract task id=108 load truck_0 city_loc_3 package_2
-Parsed method name: m_load_ordering_0
-Subtasks: 109
-
-Parse instantiated task from "  get_to[truck_0,city_loc_3]" ... done
-Parsed abstract task id=99 get_to truck_0 city_loc_3
-Parsed method name: m_drive_to_ordering_0
-Subtasks: 100
-
-Parse instantiated task from "  m_deliver_ordering_0_splitted_1[truck_0,package_2]" ... done
-Parsed abstract task id=97 m_deliver_ordering_0_splitted_1 truck_0 package_2
-Parsed method name: _splitting_method_m_deliver_ordering_0_splitted_1
-Subtasks: 99 108
-
-Parse instantiated task from "  unload[truck_0,city_loc_0,package_3]" ... done
-Parsed abstract task id=95 unload truck_0 city_loc_0 package_3
-Parsed method name: m_unload_ordering_0
-Subtasks: 96
-
-Parse instantiated task from "  get_to[truck_0,city_loc_3]" ... done
-Parsed abstract task id=86 get_to truck_0 city_loc_3
-Parsed method name: m_drive_to_ordering_0
-Subtasks: 87
-
-Parse instantiated task from "  get_to[truck_0,city_loc_0]" ... done
-Parsed abstract task id=83 get_to truck_0 city_loc_0
-Parsed method name: m_drive_to_via_ordering_0
-Subtasks: 86 88
-
-Parse instantiated task from "  load[truck_0,city_loc_2,package_3]" ... done
-Parsed abstract task id=77 load truck_0 city_loc_2 package_3
-Parsed method name: m_load_ordering_0
-Subtasks: 78
-
-Parse instantiated task from "  get_to[truck_0,city_loc_2]" ... done
-Parsed abstract task id=71 get_to truck_0 city_loc_2
-Parsed method name: m_drive_to_ordering_0
-Subtasks: 72
-
-Parse instantiated task from "  m_deliver_ordering_0_splitted_1[truck_0,package_3]" ... done
-Parsed abstract task id=70 m_deliver_ordering_0_splitted_1 truck_0 package_3
-Parsed method name: _splitting_method_m_deliver_ordering_0_splitted_1
-Subtasks: 71 77
-
-Parse instantiated task from "  unload[truck_0,city_loc_3,package_0]" ... done
-Parsed abstract task id=65 unload truck_0 city_loc_3 package_0
-Parsed method name: m_unload_ordering_0
-Subtasks: 66
-
-Parse instantiated task from "  get_to[truck_0,city_loc_3]" ... done
-Parsed abstract task id=57 get_to truck_0 city_loc_3
-Parsed method name: m_drive_to_ordering_0
-Subtasks: 58
-
-Parse instantiated task from "  load[truck_0,city_loc_0,package_0]" ... done
-Parsed abstract task id=53 load truck_0 city_loc_0 package_0
-Parsed method name: m_load_ordering_0
-Subtasks: 54
-
-Parse instantiated task from "  get_to[truck_0,city_loc_0]" ... done
-Parsed abstract task id=50 get_to truck_0 city_loc_0
-Parsed method name: m_i_am_there_ordering_0
-Subtasks: 51
-
-Parse instantiated task from "  m_deliver_ordering_0_splitted_1[truck_0,package_0]" ... done
-Parsed abstract task id=48 m_deliver_ordering_0_splitted_1 truck_0 package_0
-Parsed method name: _splitting_method_m_deliver_ordering_0_splitted_1
-Subtasks: 50 53
-
-Parse instantiated task from "  unload[truck_0,city_loc_0,package_1]" ... done
-Parsed abstract task id=45 unload truck_0 city_loc_0 package_1
-Parsed method name: m_unload_ordering_0
-Subtasks: 46
-
-Parse instantiated task from "  get_to[truck_0,city_loc_2]" ... done
-Parsed abstract task id=36 get_to truck_0 city_loc_2
-Parsed method name: m_drive_to_ordering_0
-Subtasks: 37
-
-Parse instantiated task from "  get_to[truck_0,city_loc_3]" ... done
-Parsed abstract task id=34 get_to truck_0 city_loc_3
-Parsed method name: m_drive_to_via_ordering_0
-Subtasks: 36 38
-
-Parse instantiated task from "  get_to[truck_0,city_loc_0]" ... done
-Parsed abstract task id=27 get_to truck_0 city_loc_0
-Parsed method name: m_drive_to_via_ordering_0
-Subtasks: 34 39
-
-Parse instantiated task from "  load[truck_0,city_loc_1,package_1]" ... done
-Parsed abstract task id=23 load truck_0 city_loc_1 package_1
-Parsed method name: m_load_ordering_0
-Subtasks: 24
-
-Parse instantiated task from "  get_to[truck_0,city_loc_3]" ... done
-Parsed abstract task id=11 get_to truck_0 city_loc_3
-Parsed method name: m_drive_to_ordering_0
-Subtasks: 12
-
-Parse instantiated task from "  get_to[truck_0,city_loc_2]" ... done
-Parsed abstract task id=9 get_to truck_0 city_loc_2
-Parsed method name: m_drive_to_via_ordering_0
-Subtasks: 11 13
-
-Parse instantiated task from "  get_to[truck_0,city_loc_1]" ... done
+Parse instantiated task from "  get_to truck_0 city_loc_1" ... done
 Parsed abstract task id=5 get_to truck_0 city_loc_1
 Parsed method name: m_drive_to_via_ordering_0
 Subtasks: 9 14
 
-Parse instantiated task from "  m_deliver_ordering_0_splitted_1[truck_0,package_1]" ... done
-Parsed abstract task id=2 m_deliver_ordering_0_splitted_1 truck_0 package_1
-Parsed method name: _splitting_method_m_deliver_ordering_0_splitted_1
-Subtasks: 5 23
+Parse instantiated task from "  get_to truck_0 city_loc_2" ... done
+Parsed abstract task id=9 get_to truck_0 city_loc_2
+Parsed method name: m_drive_to_via_ordering_0
+Subtasks: 11 13
 
-Parse instantiated task from "  __top[]" ... done
-Parsed abstract task id=0 __top 
-Parsed method name: <<<<__top_method;deliver[package_3,city_loc_0];m_deliver_ordering_0;2;0,1,-1,-2,-3,3>;deliver[package_2,city_loc_1];m_deliver_ordering_0;5;0,1,2,3,4,-1,-2,-3>;deliver[package_1,city_loc_0];m_deliver_ordering_0;0;-1,-2,-3,1,2,3,4,5,6,7>;deliver[package_0,city_loc_3];m_deliver_ordering_0;3;0,1,2,-1,-2,-3,4,5,6,7,8,9>
-Subtasks: 2 27 45 48 57 65 70 83 95 97 113 123
+Parse instantiated task from "  get_to truck_0 city_loc_3" ... done
+Parsed abstract task id=11 get_to truck_0 city_loc_3
+Parsed method name: m_drive_to_ordering_0
+Subtasks: 12
 
-Reached end of plan (marked).
+Parse instantiated task from "  load truck_0 city_loc_1 package_1" ... done
+Parsed abstract task id=23 load truck_0 city_loc_1 package_1
+Parsed method name: m_load_ordering_0
+Subtasks: 24
+
+Parse instantiated task from "  get_to truck_0 city_loc_0" ... done
+Parsed abstract task id=27 get_to truck_0 city_loc_0
+Parsed method name: m_drive_to_via_ordering_0
+Subtasks: 34 39
+
+Parse instantiated task from "  get_to truck_0 city_loc_3" ... done
+Parsed abstract task id=34 get_to truck_0 city_loc_3
+Parsed method name: m_drive_to_via_ordering_0
+Subtasks: 36 38
+
+Parse instantiated task from "  get_to truck_0 city_loc_2" ... done
+Parsed abstract task id=36 get_to truck_0 city_loc_2
+Parsed method name: m_drive_to_ordering_0
+Subtasks: 37
+
+Parse instantiated task from "  unload truck_0 city_loc_0 package_1" ... done
+Parsed abstract task id=45 unload truck_0 city_loc_0 package_1
+Parsed method name: m_unload_ordering_0
+Subtasks: 46
+
+Parse instantiated task from "  get_to truck_0 city_loc_0" ... done
+Parsed abstract task id=50 get_to truck_0 city_loc_0
+Parsed method name: m_i_am_there_ordering_0
+Subtasks: 51
+
+Parse instantiated task from "  load truck_0 city_loc_0 package_0" ... done
+Parsed abstract task id=53 load truck_0 city_loc_0 package_0
+Parsed method name: m_load_ordering_0
+Subtasks: 54
+
+Parse instantiated task from "  get_to truck_0 city_loc_3" ... done
+Parsed abstract task id=57 get_to truck_0 city_loc_3
+Parsed method name: m_drive_to_ordering_0
+Subtasks: 58
+
+Parse instantiated task from "  unload truck_0 city_loc_3 package_0" ... done
+Parsed abstract task id=65 unload truck_0 city_loc_3 package_0
+Parsed method name: m_unload_ordering_0
+Subtasks: 66
+
+Parse instantiated task from "  get_to truck_0 city_loc_2" ... done
+Parsed abstract task id=71 get_to truck_0 city_loc_2
+Parsed method name: m_drive_to_ordering_0
+Subtasks: 72
+
+Parse instantiated task from "  load truck_0 city_loc_2 package_3" ... done
+Parsed abstract task id=77 load truck_0 city_loc_2 package_3
+Parsed method name: m_load_ordering_0
+Subtasks: 78
+
+Parse instantiated task from "  get_to truck_0 city_loc_0" ... done
+Parsed abstract task id=83 get_to truck_0 city_loc_0
+Parsed method name: m_drive_to_via_ordering_0
+Subtasks: 86 88
+
+Parse instantiated task from "  get_to truck_0 city_loc_3" ... done
+Parsed abstract task id=86 get_to truck_0 city_loc_3
+Parsed method name: m_drive_to_ordering_0
+Subtasks: 87
+
+Parse instantiated task from "  unload truck_0 city_loc_0 package_3" ... done
+Parsed abstract task id=95 unload truck_0 city_loc_0 package_3
+Parsed method name: m_unload_ordering_0
+Subtasks: 96
+
+Parse instantiated task from "  get_to truck_0 city_loc_3" ... done
+Parsed abstract task id=99 get_to truck_0 city_loc_3
+Parsed method name: m_drive_to_ordering_0
+Subtasks: 100
+
+Parse instantiated task from "  load truck_0 city_loc_3 package_2" ... done
+Parsed abstract task id=108 load truck_0 city_loc_3 package_2
+Parsed method name: m_load_ordering_0
+Subtasks: 109
+
+Parse instantiated task from "  get_to truck_0 city_loc_1" ... done
+Parsed abstract task id=113 get_to truck_0 city_loc_1
+Parsed method name: m_drive_to_via_ordering_0
+Subtasks: 114 116
+
+Parse instantiated task from "  get_to truck_0 city_loc_2" ... done
+Parsed abstract task id=114 get_to truck_0 city_loc_2
+Parsed method name: m_drive_to_ordering_0
+Subtasks: 115
+
+Parse instantiated task from "  unload truck_0 city_loc_1 package_2" ... done
+Parsed abstract task id=123 unload truck_0 city_loc_1 package_2
+Parsed method name: m_unload_ordering_0
+Subtasks: 124
+
+Parse instantiated task from "  deliver package_0 city_loc_3" ... done
+Parsed abstract task id=125 deliver package_0 city_loc_3
+Parsed method name: m_deliver_ordering_0
+Subtasks: 50 53 57 65
+
+Parse instantiated task from "  deliver package_1 city_loc_0" ... done
+Parsed abstract task id=126 deliver package_1 city_loc_0
+Parsed method name: m_deliver_ordering_0
+Subtasks: 5 23 27 45
+
+Parse instantiated task from "  deliver package_2 city_loc_1" ... done
+Parsed abstract task id=127 deliver package_2 city_loc_1
+Parsed method name: m_deliver_ordering_0
+Subtasks: 99 108 113 123
+
+Parse instantiated task from "  deliver package_3 city_loc_0" ... done
+Parsed abstract task id=128 deliver package_3 city_loc_0
+Parsed method name: m_deliver_ordering_0
+Subtasks: 71 77 83 95
+
+Reached end of input.
 
 Checking the given plan ...
 IDs of subtasks used in the plan exist: true
-Task with id=0 has wrong number of arguments. 1 are given in the plan, but the domain required 0 parameters.
-Task with id=2 and task name "m_deliver_ordering_0_splitted_1" is not declared in the domain.
-Task with id=48 and task name "m_deliver_ordering_0_splitted_1" is not declared in the domain.
-Task with id=70 and task name "m_deliver_ordering_0_splitted_1" is not declared in the domain.
-Task with id=97 and task name "m_deliver_ordering_0_splitted_1" is not declared in the domain.
-Tasks declared in plan actually exist and can be instantiated as given: false
+Tasks declared in plan actually exist and can be instantiated as given: true
 Methods don't contain duplicate subtasks: true
 Methods don't contain orphaned tasks: true
-Plan verification result: false
+Generating Matchings for task with id=0
+ Matching Task 126 Curpos=0 #sources=1
+ Task is: deliver package_1 city_loc_0
+ Attempting matching with source task1
+  Setting ?var_for_package_1 = package_1
+  Setting ?var_for_city_loc_0 = city_loc_0
+   Matching Task 125 Curpos=1 #sources=1
+   Task is: deliver package_0 city_loc_3
+   Attempting matching with source task0
+    Setting ?var_for_package_0 = package_0
+    Setting ?var_for_city_loc_3 = city_loc_3
+     Matching Task 128 Curpos=2 #sources=1
+     Task is: deliver package_3 city_loc_0
+     Attempting matching with source task3
+      Setting ?var_for_package_3 = package_3
+      Setting ?var_for_city_loc_0 = city_loc_0
+       Matching Task 127 Curpos=3 #sources=1
+       Task is: deliver package_2 city_loc_1
+       Attempting matching with source task2
+        Setting ?var_for_package_2 = package_2
+        Setting ?var_for_city_loc_1 = city_loc_1
+         Found compatible linearisation.
+          Checking constants are in variable type ... 
+          Checking method's constraint formula ... 
+          Checking variable constraints in method's precondition ... 
+          Matching is ok.
+Found 1 matchings for task with id=0
+Generating Matchings for task with id=5
+ Matching Task 9 Curpos=0 #sources=1
+ Task is: get_to truck_0 city_loc_2
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l2 = city_loc_2
+   Matching Task 14 Curpos=1 #sources=1
+   Task is: drive truck_0 city_loc_2 city_loc_1
+   Attempting matching with source task1
+    Setting ?v = truck_0
+    Setting ?l2 = city_loc_2
+    Setting ?l3 = city_loc_1
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=5
+Generating Matchings for task with id=9
+ Matching Task 11 Curpos=0 #sources=1
+ Task is: get_to truck_0 city_loc_3
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l2 = city_loc_3
+   Matching Task 13 Curpos=1 #sources=1
+   Task is: drive truck_0 city_loc_3 city_loc_2
+   Attempting matching with source task1
+    Setting ?v = truck_0
+    Setting ?l2 = city_loc_3
+    Setting ?l3 = city_loc_2
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=9
+Generating Matchings for task with id=11
+ Matching Task 12 Curpos=0 #sources=1
+ Task is: drive truck_0 city_loc_0 city_loc_3
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l1 = city_loc_0
+  Setting ?l2 = city_loc_3
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=11
+Generating Matchings for task with id=23
+ Matching Task 24 Curpos=0 #sources=1
+ Task is: pick_up truck_0 city_loc_1 package_1 capacity_2 capacity_3
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l = city_loc_1
+  Setting ?p = package_1
+  Setting ?s1 = capacity_2
+  Setting ?s2 = capacity_3
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=23
+Generating Matchings for task with id=27
+ Matching Task 34 Curpos=0 #sources=1
+ Task is: get_to truck_0 city_loc_3
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l2 = city_loc_3
+   Matching Task 39 Curpos=1 #sources=1
+   Task is: drive truck_0 city_loc_3 city_loc_0
+   Attempting matching with source task1
+    Setting ?v = truck_0
+    Setting ?l2 = city_loc_3
+    Setting ?l3 = city_loc_0
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=27
+Generating Matchings for task with id=34
+ Matching Task 36 Curpos=0 #sources=1
+ Task is: get_to truck_0 city_loc_2
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l2 = city_loc_2
+   Matching Task 38 Curpos=1 #sources=1
+   Task is: drive truck_0 city_loc_2 city_loc_3
+   Attempting matching with source task1
+    Setting ?v = truck_0
+    Setting ?l2 = city_loc_2
+    Setting ?l3 = city_loc_3
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=34
+Generating Matchings for task with id=36
+ Matching Task 37 Curpos=0 #sources=1
+ Task is: drive truck_0 city_loc_1 city_loc_2
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l1 = city_loc_1
+  Setting ?l2 = city_loc_2
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=36
+Generating Matchings for task with id=45
+ Matching Task 46 Curpos=0 #sources=1
+ Task is: drop truck_0 city_loc_0 package_1 capacity_2 capacity_3
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l = city_loc_0
+  Setting ?p = package_1
+  Setting ?s1 = capacity_2
+  Setting ?s2 = capacity_3
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=45
+Generating Matchings for task with id=50
+ Matching Task 51 Curpos=0 #sources=1
+ Task is: noop truck_0 city_loc_0
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l = city_loc_0
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=50
+Generating Matchings for task with id=53
+ Matching Task 54 Curpos=0 #sources=1
+ Task is: pick_up truck_0 city_loc_0 package_0 capacity_2 capacity_3
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l = city_loc_0
+  Setting ?p = package_0
+  Setting ?s1 = capacity_2
+  Setting ?s2 = capacity_3
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=53
+Generating Matchings for task with id=57
+ Matching Task 58 Curpos=0 #sources=1
+ Task is: drive truck_0 city_loc_0 city_loc_3
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l1 = city_loc_0
+  Setting ?l2 = city_loc_3
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=57
+Generating Matchings for task with id=65
+ Matching Task 66 Curpos=0 #sources=1
+ Task is: drop truck_0 city_loc_3 package_0 capacity_2 capacity_3
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l = city_loc_3
+  Setting ?p = package_0
+  Setting ?s1 = capacity_2
+  Setting ?s2 = capacity_3
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=65
+Generating Matchings for task with id=71
+ Matching Task 72 Curpos=0 #sources=1
+ Task is: drive truck_0 city_loc_3 city_loc_2
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l1 = city_loc_3
+  Setting ?l2 = city_loc_2
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=71
+Generating Matchings for task with id=77
+ Matching Task 78 Curpos=0 #sources=1
+ Task is: pick_up truck_0 city_loc_2 package_3 capacity_2 capacity_3
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l = city_loc_2
+  Setting ?p = package_3
+  Setting ?s1 = capacity_2
+  Setting ?s2 = capacity_3
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=77
+Generating Matchings for task with id=83
+ Matching Task 86 Curpos=0 #sources=1
+ Task is: get_to truck_0 city_loc_3
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l2 = city_loc_3
+   Matching Task 88 Curpos=1 #sources=1
+   Task is: drive truck_0 city_loc_3 city_loc_0
+   Attempting matching with source task1
+    Setting ?v = truck_0
+    Setting ?l2 = city_loc_3
+    Setting ?l3 = city_loc_0
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=83
+Generating Matchings for task with id=86
+ Matching Task 87 Curpos=0 #sources=1
+ Task is: drive truck_0 city_loc_2 city_loc_3
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l1 = city_loc_2
+  Setting ?l2 = city_loc_3
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=86
+Generating Matchings for task with id=95
+ Matching Task 96 Curpos=0 #sources=1
+ Task is: drop truck_0 city_loc_0 package_3 capacity_2 capacity_3
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l = city_loc_0
+  Setting ?p = package_3
+  Setting ?s1 = capacity_2
+  Setting ?s2 = capacity_3
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=95
+Generating Matchings for task with id=99
+ Matching Task 100 Curpos=0 #sources=1
+ Task is: drive truck_0 city_loc_0 city_loc_3
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l1 = city_loc_0
+  Setting ?l2 = city_loc_3
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=99
+Generating Matchings for task with id=108
+ Matching Task 109 Curpos=0 #sources=1
+ Task is: pick_up truck_0 city_loc_3 package_2 capacity_2 capacity_3
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l = city_loc_3
+  Setting ?p = package_2
+  Setting ?s1 = capacity_2
+  Setting ?s2 = capacity_3
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=108
+Generating Matchings for task with id=113
+ Matching Task 114 Curpos=0 #sources=1
+ Task is: get_to truck_0 city_loc_2
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l2 = city_loc_2
+   Matching Task 116 Curpos=1 #sources=1
+   Task is: drive truck_0 city_loc_2 city_loc_1
+   Attempting matching with source task1
+    Setting ?v = truck_0
+    Setting ?l2 = city_loc_2
+    Setting ?l3 = city_loc_1
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=113
+Generating Matchings for task with id=114
+ Matching Task 115 Curpos=0 #sources=1
+ Task is: drive truck_0 city_loc_3 city_loc_2
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l1 = city_loc_3
+  Setting ?l2 = city_loc_2
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=114
+Generating Matchings for task with id=123
+ Matching Task 124 Curpos=0 #sources=1
+ Task is: drop truck_0 city_loc_1 package_2 capacity_2 capacity_3
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l = city_loc_1
+  Setting ?p = package_2
+  Setting ?s1 = capacity_2
+  Setting ?s2 = capacity_3
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=123
+Generating Matchings for task with id=125
+ Matching Task 50 Curpos=0 #sources=1
+ Task is: get_to truck_0 city_loc_0
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l1 = city_loc_0
+   Matching Task 53 Curpos=1 #sources=1
+   Task is: load truck_0 city_loc_0 package_0
+   Attempting matching with source task1
+    Setting ?v = truck_0
+    Setting ?l1 = city_loc_0
+    Setting ?p = package_0
+     Matching Task 57 Curpos=2 #sources=1
+     Task is: get_to truck_0 city_loc_3
+     Attempting matching with source task2
+      Setting ?v = truck_0
+      Setting ?l2 = city_loc_3
+       Matching Task 65 Curpos=3 #sources=1
+       Task is: unload truck_0 city_loc_3 package_0
+       Attempting matching with source task3
+        Setting ?v = truck_0
+        Setting ?l2 = city_loc_3
+        Setting ?p = package_0
+         Found compatible linearisation.
+          Checking constants are in variable type ... 
+          Checking method's constraint formula ... 
+          Checking variable constraints in method's precondition ... 
+          Matching is ok.
+Found 1 matchings for task with id=125
+Generating Matchings for task with id=126
+ Matching Task 5 Curpos=0 #sources=1
+ Task is: get_to truck_0 city_loc_1
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l1 = city_loc_1
+   Matching Task 23 Curpos=1 #sources=1
+   Task is: load truck_0 city_loc_1 package_1
+   Attempting matching with source task1
+    Setting ?v = truck_0
+    Setting ?l1 = city_loc_1
+    Setting ?p = package_1
+     Matching Task 27 Curpos=2 #sources=1
+     Task is: get_to truck_0 city_loc_0
+     Attempting matching with source task2
+      Setting ?v = truck_0
+      Setting ?l2 = city_loc_0
+       Matching Task 45 Curpos=3 #sources=1
+       Task is: unload truck_0 city_loc_0 package_1
+       Attempting matching with source task3
+        Setting ?v = truck_0
+        Setting ?l2 = city_loc_0
+        Setting ?p = package_1
+         Found compatible linearisation.
+          Checking constants are in variable type ... 
+          Checking method's constraint formula ... 
+          Checking variable constraints in method's precondition ... 
+          Matching is ok.
+Found 1 matchings for task with id=126
+Generating Matchings for task with id=127
+ Matching Task 99 Curpos=0 #sources=1
+ Task is: get_to truck_0 city_loc_3
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l1 = city_loc_3
+   Matching Task 108 Curpos=1 #sources=1
+   Task is: load truck_0 city_loc_3 package_2
+   Attempting matching with source task1
+    Setting ?v = truck_0
+    Setting ?l1 = city_loc_3
+    Setting ?p = package_2
+     Matching Task 113 Curpos=2 #sources=1
+     Task is: get_to truck_0 city_loc_1
+     Attempting matching with source task2
+      Setting ?v = truck_0
+      Setting ?l2 = city_loc_1
+       Matching Task 123 Curpos=3 #sources=1
+       Task is: unload truck_0 city_loc_1 package_2
+       Attempting matching with source task3
+        Setting ?v = truck_0
+        Setting ?l2 = city_loc_1
+        Setting ?p = package_2
+         Found compatible linearisation.
+          Checking constants are in variable type ... 
+          Checking method's constraint formula ... 
+          Checking variable constraints in method's precondition ... 
+          Matching is ok.
+Found 1 matchings for task with id=127
+Generating Matchings for task with id=128
+ Matching Task 71 Curpos=0 #sources=1
+ Task is: get_to truck_0 city_loc_2
+ Attempting matching with source task0
+  Setting ?v = truck_0
+  Setting ?l1 = city_loc_2
+   Matching Task 77 Curpos=1 #sources=1
+   Task is: load truck_0 city_loc_2 package_3
+   Attempting matching with source task1
+    Setting ?v = truck_0
+    Setting ?l1 = city_loc_2
+    Setting ?p = package_3
+     Matching Task 83 Curpos=2 #sources=1
+     Task is: get_to truck_0 city_loc_0
+     Attempting matching with source task2
+      Setting ?v = truck_0
+      Setting ?l2 = city_loc_0
+       Matching Task 95 Curpos=3 #sources=1
+       Task is: unload truck_0 city_loc_0 package_3
+       Attempting matching with source task3
+        Setting ?v = truck_0
+        Setting ?l2 = city_loc_0
+        Setting ?p = package_3
+         Found compatible linearisation.
+          Checking constants are in variable type ... 
+          Checking method's constraint formula ... 
+          Checking variable constraints in method's precondition ... 
+          Matching is ok.
+Found 1 matchings for task with id=128
+Methods can be instantiated: true
+Check whether primitive plan is a linearisation of the orderings resulting from applied decomposition methods.
+ Abstract Task id=0 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=126 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=5 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=9 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=11 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=12
+  Ordering OK.
+ Primitive Task id=13
+  Ordering OK.
+ Primitive Task id=14
+  Ordering OK.
+ Abstract Task id=23 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=24
+  Ordering OK.
+ Abstract Task id=27 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=34 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=36 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=37
+  Ordering OK.
+ Primitive Task id=38
+  Ordering OK.
+ Primitive Task id=39
+  Ordering OK.
+ Abstract Task id=45 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=46
+  Ordering OK.
+  Ordering OK.
+ Abstract Task id=125 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=50 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=51
+  Ordering OK.
+ Abstract Task id=53 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=54
+  Ordering OK.
+ Abstract Task id=57 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=58
+  Ordering OK.
+ Abstract Task id=65 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=66
+  Ordering OK.
+  Ordering OK.
+ Abstract Task id=128 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=71 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=72
+  Ordering OK.
+ Abstract Task id=77 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=78
+  Ordering OK.
+ Abstract Task id=83 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=86 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=87
+  Ordering OK.
+ Primitive Task id=88
+  Ordering OK.
+ Abstract Task id=95 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=96
+  Ordering OK.
+  Ordering OK.
+ Abstract Task id=127 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=99 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=100
+  Ordering OK.
+ Abstract Task id=108 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=109
+  Ordering OK.
+ Abstract Task id=113 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=114 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=115
+  Ordering OK.
+ Primitive Task id=116
+  Ordering OK.
+ Abstract Task id=123 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=124
+  Ordering OK.
+  Ordering OK.
+  Root Task, checking primitive executability ...
+  Running exponential top-sort.
+  The current state is:
+     at package_0 city_loc_0
+     at package_1 city_loc_1
+     at package_2 city_loc_3
+     at package_3 city_loc_2
+     at truck_0 city_loc_0
+     capacity truck_0 capacity_3
+     capacity_predecessor capacity_0 capacity_1
+     capacity_predecessor capacity_1 capacity_2
+     capacity_predecessor capacity_2 capacity_3
+     road city_loc_0 city_loc_3
+     road city_loc_1 city_loc_2
+     road city_loc_2 city_loc_1
+     road city_loc_2 city_loc_3
+     road city_loc_3 city_loc_0
+     road city_loc_3 city_loc_2
+     road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source 0 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 126 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 5 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 9 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 11 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 12 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 12
+    Task is: drive truck_0 city_loc_0 city_loc_3
+    Applying effects of the action.
+     Removing fact from state: at truck_0 city_loc_0
+     Adding fact to state: at truck_0 city_loc_3
+    The new state is:
+      at package_0 city_loc_0
+      at package_1 city_loc_1
+      at package_2 city_loc_3
+      at package_3 city_loc_2
+      at truck_0 city_loc_3
+      capacity truck_0 capacity_3
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -13 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -12 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 13 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 13
+    Task is: drive truck_0 city_loc_3 city_loc_2
+    Applying effects of the action.
+     Removing fact from state: at truck_0 city_loc_3
+     Adding fact to state: at truck_0 city_loc_2
+    The new state is:
+      at package_0 city_loc_0
+      at package_1 city_loc_1
+      at package_2 city_loc_3
+      at package_3 city_loc_2
+      at truck_0 city_loc_2
+      capacity truck_0 capacity_3
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -14 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -10 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 14 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 14
+    Task is: drive truck_0 city_loc_2 city_loc_1
+    Applying effects of the action.
+     Removing fact from state: at truck_0 city_loc_2
+     Adding fact to state: at truck_0 city_loc_1
+    The new state is:
+      at package_0 city_loc_0
+      at package_1 city_loc_1
+      at package_2 city_loc_3
+      at package_3 city_loc_2
+      at truck_0 city_loc_1
+      capacity truck_0 capacity_3
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -15 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -6 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 23 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 24 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 24
+    Task is: pick_up truck_0 city_loc_1 package_1 capacity_2 capacity_3
+    Applying effects of the action.
+     Removing fact from state: at package_1 city_loc_1
+     Removing fact from state: capacity truck_0 capacity_3
+     Adding fact to state: capacity truck_0 capacity_2
+     Adding fact to state: in package_1 truck_0
+    The new state is:
+      at package_0 city_loc_0
+      at package_2 city_loc_3
+      at package_3 city_loc_2
+      at truck_0 city_loc_1
+      capacity truck_0 capacity_2
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      in package_1 truck_0
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -25 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -24 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 27 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 34 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 36 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 37 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 37
+    Task is: drive truck_0 city_loc_1 city_loc_2
+    Applying effects of the action.
+     Removing fact from state: at truck_0 city_loc_1
+     Adding fact to state: at truck_0 city_loc_2
+    The new state is:
+      at package_0 city_loc_0
+      at package_2 city_loc_3
+      at package_3 city_loc_2
+      at truck_0 city_loc_2
+      capacity truck_0 capacity_2
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      in package_1 truck_0
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -38 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -37 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 38 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 38
+    Task is: drive truck_0 city_loc_2 city_loc_3
+    Applying effects of the action.
+     Removing fact from state: at truck_0 city_loc_2
+     Adding fact to state: at truck_0 city_loc_3
+    The new state is:
+      at package_0 city_loc_0
+      at package_2 city_loc_3
+      at package_3 city_loc_2
+      at truck_0 city_loc_3
+      capacity truck_0 capacity_2
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      in package_1 truck_0
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -39 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -35 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 39 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 39
+    Task is: drive truck_0 city_loc_3 city_loc_0
+    Applying effects of the action.
+     Removing fact from state: at truck_0 city_loc_3
+     Adding fact to state: at truck_0 city_loc_0
+    The new state is:
+      at package_0 city_loc_0
+      at package_2 city_loc_3
+      at package_3 city_loc_2
+      at truck_0 city_loc_0
+      capacity truck_0 capacity_2
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      in package_1 truck_0
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -40 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -28 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 45 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 46 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 46
+    Task is: drop truck_0 city_loc_0 package_1 capacity_2 capacity_3
+    Applying effects of the action.
+     Removing fact from state: capacity truck_0 capacity_2
+     Removing fact from state: in package_1 truck_0
+     Adding fact to state: at package_1 city_loc_0
+     Adding fact to state: capacity truck_0 capacity_3
+    The new state is:
+      at package_0 city_loc_0
+      at package_1 city_loc_0
+      at package_2 city_loc_3
+      at package_3 city_loc_2
+      at truck_0 city_loc_0
+      capacity truck_0 capacity_3
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -47 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -46 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -127 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 125 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 50 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 51 is a primitive action.
+    Action has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -52 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -51 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 53 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 54 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 54
+    Task is: pick_up truck_0 city_loc_0 package_0 capacity_2 capacity_3
+    Applying effects of the action.
+     Removing fact from state: at package_0 city_loc_0
+     Removing fact from state: capacity truck_0 capacity_3
+     Adding fact to state: capacity truck_0 capacity_2
+     Adding fact to state: in package_0 truck_0
+    The new state is:
+      at package_1 city_loc_0
+      at package_2 city_loc_3
+      at package_3 city_loc_2
+      at truck_0 city_loc_0
+      capacity truck_0 capacity_2
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      in package_0 truck_0
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -55 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -54 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 57 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 58 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 58
+    Task is: drive truck_0 city_loc_0 city_loc_3
+    Applying effects of the action.
+     Removing fact from state: at truck_0 city_loc_0
+     Adding fact to state: at truck_0 city_loc_3
+    The new state is:
+      at package_1 city_loc_0
+      at package_2 city_loc_3
+      at package_3 city_loc_2
+      at truck_0 city_loc_3
+      capacity truck_0 capacity_2
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      in package_0 truck_0
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -59 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -58 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 65 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 66 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 66
+    Task is: drop truck_0 city_loc_3 package_0 capacity_2 capacity_3
+    Applying effects of the action.
+     Removing fact from state: capacity truck_0 capacity_2
+     Removing fact from state: in package_0 truck_0
+     Adding fact to state: at package_0 city_loc_3
+     Adding fact to state: capacity truck_0 capacity_3
+    The new state is:
+      at package_0 city_loc_3
+      at package_1 city_loc_0
+      at package_2 city_loc_3
+      at package_3 city_loc_2
+      at truck_0 city_loc_3
+      capacity truck_0 capacity_3
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -67 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -66 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -126 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 128 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 71 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 72 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 72
+    Task is: drive truck_0 city_loc_3 city_loc_2
+    Applying effects of the action.
+     Removing fact from state: at truck_0 city_loc_3
+     Adding fact to state: at truck_0 city_loc_2
+    The new state is:
+      at package_0 city_loc_3
+      at package_1 city_loc_0
+      at package_2 city_loc_3
+      at package_3 city_loc_2
+      at truck_0 city_loc_2
+      capacity truck_0 capacity_3
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -73 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -72 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 77 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 78 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 78
+    Task is: pick_up truck_0 city_loc_2 package_3 capacity_2 capacity_3
+    Applying effects of the action.
+     Removing fact from state: at package_3 city_loc_2
+     Removing fact from state: capacity truck_0 capacity_3
+     Adding fact to state: capacity truck_0 capacity_2
+     Adding fact to state: in package_3 truck_0
+    The new state is:
+      at package_0 city_loc_3
+      at package_1 city_loc_0
+      at package_2 city_loc_3
+      at truck_0 city_loc_2
+      capacity truck_0 capacity_2
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      in package_3 truck_0
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -79 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -78 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 83 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 86 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 87 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 87
+    Task is: drive truck_0 city_loc_2 city_loc_3
+    Applying effects of the action.
+     Removing fact from state: at truck_0 city_loc_2
+     Adding fact to state: at truck_0 city_loc_3
+    The new state is:
+      at package_0 city_loc_3
+      at package_1 city_loc_0
+      at package_2 city_loc_3
+      at truck_0 city_loc_3
+      capacity truck_0 capacity_2
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      in package_3 truck_0
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -88 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -87 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 88 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 88
+    Task is: drive truck_0 city_loc_3 city_loc_0
+    Applying effects of the action.
+     Removing fact from state: at truck_0 city_loc_3
+     Adding fact to state: at truck_0 city_loc_0
+    The new state is:
+      at package_0 city_loc_3
+      at package_1 city_loc_0
+      at package_2 city_loc_3
+      at truck_0 city_loc_0
+      capacity truck_0 capacity_2
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      in package_3 truck_0
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -89 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -84 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 95 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 96 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 96
+    Task is: drop truck_0 city_loc_0 package_3 capacity_2 capacity_3
+    Applying effects of the action.
+     Removing fact from state: capacity truck_0 capacity_2
+     Removing fact from state: in package_3 truck_0
+     Adding fact to state: at package_3 city_loc_0
+     Adding fact to state: capacity truck_0 capacity_3
+    The new state is:
+      at package_0 city_loc_3
+      at package_1 city_loc_0
+      at package_2 city_loc_3
+      at package_3 city_loc_0
+      at truck_0 city_loc_0
+      capacity truck_0 capacity_3
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -97 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -96 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -129 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 127 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 99 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 100 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 100
+    Task is: drive truck_0 city_loc_0 city_loc_3
+    Applying effects of the action.
+     Removing fact from state: at truck_0 city_loc_0
+     Adding fact to state: at truck_0 city_loc_3
+    The new state is:
+      at package_0 city_loc_3
+      at package_1 city_loc_0
+      at package_2 city_loc_3
+      at package_3 city_loc_0
+      at truck_0 city_loc_3
+      capacity truck_0 capacity_3
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -101 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -100 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 108 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 109 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 109
+    Task is: pick_up truck_0 city_loc_3 package_2 capacity_2 capacity_3
+    Applying effects of the action.
+     Removing fact from state: at package_2 city_loc_3
+     Removing fact from state: capacity truck_0 capacity_3
+     Adding fact to state: capacity truck_0 capacity_2
+     Adding fact to state: in package_2 truck_0
+    The new state is:
+      at package_0 city_loc_3
+      at package_1 city_loc_0
+      at package_3 city_loc_0
+      at truck_0 city_loc_3
+      capacity truck_0 capacity_2
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      in package_2 truck_0
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -110 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -109 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 113 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 114 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 115 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 115
+    Task is: drive truck_0 city_loc_3 city_loc_2
+    Applying effects of the action.
+     Removing fact from state: at truck_0 city_loc_3
+     Adding fact to state: at truck_0 city_loc_2
+    The new state is:
+      at package_0 city_loc_3
+      at package_1 city_loc_0
+      at package_3 city_loc_0
+      at truck_0 city_loc_2
+      capacity truck_0 capacity_2
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      in package_2 truck_0
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -116 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -115 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 116 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 116
+    Task is: drive truck_0 city_loc_2 city_loc_1
+    Applying effects of the action.
+     Removing fact from state: at truck_0 city_loc_2
+     Adding fact to state: at truck_0 city_loc_1
+    The new state is:
+      at package_0 city_loc_3
+      at package_1 city_loc_0
+      at package_3 city_loc_0
+      at truck_0 city_loc_1
+      capacity truck_0 capacity_2
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      in package_2 truck_0
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -117 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -114 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 123 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 124 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 124
+    Task is: drop truck_0 city_loc_1 package_2 capacity_2 capacity_3
+    Applying effects of the action.
+     Removing fact from state: capacity truck_0 capacity_2
+     Removing fact from state: in package_2 truck_0
+     Adding fact to state: at package_2 city_loc_1
+     Adding fact to state: capacity truck_0 capacity_3
+    The new state is:
+      at package_0 city_loc_3
+      at package_1 city_loc_0
+      at package_2 city_loc_1
+      at package_3 city_loc_0
+      at truck_0 city_loc_1
+      capacity truck_0 capacity_3
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+   Executing plan time=1 #sources=1
+    Source -125 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -124 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -128 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -1 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=0
+   Executed the whole plan ... checking whether we reached the goal state.
+   The current state is:
+      at package_0 city_loc_3
+      at package_1 city_loc_0
+      at package_2 city_loc_1
+      at package_3 city_loc_0
+      at truck_0 city_loc_1
+      capacity truck_0 capacity_3
+      capacity_predecessor capacity_0 capacity_1
+      capacity_predecessor capacity_1 capacity_2
+      capacity_predecessor capacity_2 capacity_3
+      road city_loc_0 city_loc_3
+      road city_loc_1 city_loc_2
+      road city_loc_2 city_loc_1
+      road city_loc_2 city_loc_3
+      road city_loc_3 city_loc_0
+      road city_loc_3 city_loc_2
+      road city_loc_3 city_loc_3
+  Executable linearisation found.
+  Ordering OK.
+Result true true
+Order induced by methods is present in plan: true
+Plan is executable: true
+Plan verification result: true

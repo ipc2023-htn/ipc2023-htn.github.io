@@ -8,33 +8,33 @@ Transforming static state functions as table constraints:
  - door
  - goal_in
 ==========================
-0 Solving with 0 actions
-  [0.001s] Populated
+0 Solving with depth 0
+  [0.000s] Populated
+  [0.000s] Solved
+1 Solving with depth 1
+  [0.000s] Populated
+  [0.000s] Solved
+2 Solving with depth 2
+  [0.000s] Populated
   [0.001s] Solved
-1 Solving with 1 actions
-  [0.001s] Populated
-  [0.001s] Solved
-2 Solving with 2 actions
+3 Solving with depth 3
   [0.001s] Populated
   [0.002s] Solved
-3 Solving with 3 actions
+4 Solving with depth 4
   [0.002s] Populated
-  [0.003s] Solved
-4 Solving with 4 actions
-  [0.003s] Populated
   [0.005s] Solved
-5 Solving with 5 actions
-  [0.005s] Populated
-  [0.019s] Solved
-6 Solving with 6 actions
-  [0.020s] Populated
-  [0.078s] Solved
-7 Solving with 7 actions
-  [0.080s] Populated
-  [0.353s] Solved
-8 Solving with 8 actions
-  [0.356s] Populated
+5 Solving with depth 5
+  [0.006s] Populated
+  [0.026s] Solved
+6 Solving with depth 6
+  [0.027s] Populated
+  [0.116s] Solved
+7 Solving with depth 7
+  [0.118s] Populated
+  [0.556s] Solved
+8 Solving with depth 8
+  [0.560s] Populated
 Command exited with non-zero status 124
-%TIME 0:02.01 660732
+%TIME 0:02.01 244656
 %EXIT 124
 NO OUTPUT

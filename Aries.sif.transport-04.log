@@ -8,24 +8,24 @@ Transforming static state functions as table constraints:
  - road
  - capacity_predecessor
 ==========================
-0 Solving with 0 actions
-  [0.001s] Populated
+0 Solving with depth 0
+  [0.000s] Populated
+  [0.000s] Solved
+1 Solving with depth 1
+  [0.000s] Populated
+  [0.000s] Solved
+2 Solving with depth 2
+  [0.000s] Populated
   [0.001s] Solved
-1 Solving with 1 actions
+3 Solving with depth 3
   [0.001s] Populated
-  [0.001s] Solved
-2 Solving with 2 actions
-  [0.002s] Populated
-  [0.002s] Solved
-3 Solving with 3 actions
-  [0.002s] Populated
-  [0.046s] Solved
-4 Solving with 4 actions
-  [0.046s] Populated
-  [0.405s] Solved
-5 Solving with 5 actions
-  [0.406s] Populated
+  [0.092s] Solved
+4 Solving with depth 4
+  [0.093s] Populated
+  [0.443s] Solved
+5 Solving with depth 5
+  [0.444s] Populated
 Command exited with non-zero status 124
-%TIME 0:02.00 113428
+%TIME 0:02.01 115636
 %EXIT 124
 NO OUTPUT

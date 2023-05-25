@@ -1,4 +1,1283 @@
-INFO:    underlay of /etc/localtime required more than 50 (71) bind mounts
-%TIME 0:00.12 36592
+INFO:    underlay of /etc/localtime required more than 50 (80) bind mounts
+pandaPIparser is configured as follows
+  Colors in output: true
+  Mode: parsing mode
+  Parameter splitting: true
+  Conditional effects: exponential encoding
+  Disjunctive preconditions as HTN: false
+  Replace goal with action: false
+  Output: pandaPI format
+TOAD - Total Order HTN Approximation with DFA.
+You have compiled TOAD without setting the NDEBUG flag. This will make it slow and should only be done for debug.
+Reading HTN model from file "domain-problem.psas" ... 
+- State has 15 bits divided into 6 mutex groups. [statebits=15] [statevars=6]
+- Domain contains 21 actions. [numActions=21]
+- Domain contains 31 tasks. [numTasks=31]
+- Domain contains 28 methods. [numMethods=28]
+- The initial state contains 6 set bits.
+- The initial task is "__top[]".
+- State-based goal contains 2 bits.
+- [timePrepareModel=1]
+Starting translation
+- adding methods as grammar rules
+Analysing rules
+- starting grammar simplification
+- 0 rules are not bottom-up reachable.
+- sorting rules...(done)
+- calculating SCCs...
+- number of SCCs: 30 [numSCCs=30]
+- number of cyclic SCCs: 1. [cyclicSCCs=1]
+- self-loops: 0. [sccSelfLoops=0]
+- collecting SCC data
+- analysing recursion...(done)
+- partitions of recursive tasks:
+- recursive structure: [rrec=yes] [lrec=no] [srec=no] [crec=no]
+- instance properties:
+  - the instance is recursive, but not self-embedding, i.e. it is regular. [rec=nonSelfEmbedding]
+  - using exact translation. [alg=exact]
+- [timeHtnToGrammar=0]
+Building DFA
+- Using bottom-up algorithm [algo=bu]
+- inplace threshold [ipt=15]
+- building sub-automata...
+  0%
+ 20% [0]
+ 30% [0]
+ 40% [0]
+ 50% [0]
+ 60% [0]
+ 70% [0]
+ 80% [0]
+ 90% [0]
+100% [timeBuildFA=2]
+final automaton has 6 states [faFinalStates=6].
+- [usePostOpt=true]
+- [roundsOfSuccOpt=0]
+- [postOptimization=0]
+- [numStatesFinal=6]
+- [buildingDFA=2]
+- counting actions...
+- [timeCountingActions=0]
+- [numActions=31]
+- writing FA distance for each state (used in special FD heuristic)
+Creating heuristic lookup table
+- [writingHfaLookUpTable=0]
+[t=5.3536e-05s, 10164 KB] reading input...
+[t=0.000321611s, 10164 KB] done reading input!
+[t=0.00132731s, 10420 KB] Simplifying 43 unary operators... done! [43 unary operators]
+[t=0.00139706s, 10420 KB] time to simplify: 8.8046e-05s
+[t=0.00142266s, 10420 KB] Initializing additive heuristic...
+[t=0.00143926s, 10420 KB] Initializing FF heuristic...
+[t=0.00148279s, 10420 KB] Initializing DFA distance heuristic...
+[t=0.00155234s, 10552 KB] Building successor generator...done!
+[t=0.00162684s, 10552 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00164146s, 10552 KB] time for successor generation creation: 2.1716e-05s
+[t=0.00165761s, 10552 KB] Variables: 7
+[t=0.0016743s, 10552 KB] FactPairs: 22
+[t=0.00169002s, 10552 KB] Bytes per state: 4
+[t=0.00178421s, 10552 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.00184003s, 10552 KB] New best heuristic value for ff: 13
+[t=0.00185452s, 10552 KB] New best heuristic value for dfad: 1
+[t=0.00186829s, 10552 KB] g=0, 1 evaluated, 0 expanded
+[t=0.00189154s, 10552 KB] Initial heuristic value for ff: 13
+[t=0.00190942s, 10552 KB] Initial heuristic value for dfad: 1
+[t=0.00193205s, 10552 KB] New best heuristic value for ff: 12
+[t=0.00194996s, 10552 KB] g=1, 2 evaluated, 1 expanded
+[t=0.00197635s, 10552 KB] New best heuristic value for ff: 11
+[t=0.00199074s, 10552 KB] g=2, 3 evaluated, 2 expanded
+[t=0.00202883s, 10552 KB] New best heuristic value for ff: 10
+[t=0.00204114s, 10552 KB] g=4, 8 evaluated, 4 expanded
+[t=0.00206558s, 10552 KB] New best heuristic value for ff: 9
+[t=0.00208391s, 10552 KB] g=5, 9 evaluated, 5 expanded
+[t=0.0021164s, 10552 KB] New best heuristic value for ff: 8
+[t=0.00213274s, 10552 KB] g=6, 11 evaluated, 7 expanded
+[t=0.00218109s, 10552 KB] New best heuristic value for ff: 7
+[t=0.00219637s, 10552 KB] g=8, 17 evaluated, 12 expanded
+[t=0.00223125s, 10552 KB] New best heuristic value for ff: 6
+[t=0.00224381s, 10552 KB] g=10, 21 evaluated, 16 expanded
+[t=0.00226288s, 10552 KB] New best heuristic value for ff: 5
+[t=0.00227297s, 10552 KB] g=11, 23 evaluated, 18 expanded
+[t=0.00228986s, 10552 KB] New best heuristic value for ff: 4
+[t=0.00229995s, 10552 KB] g=12, 25 evaluated, 20 expanded
+[t=0.00231896s, 10552 KB] New best heuristic value for ff: 3
+[t=0.00233047s, 10552 KB] g=13, 27 evaluated, 21 expanded
+[t=0.00234856s, 10552 KB] New best heuristic value for ff: 2
+[t=0.00236169s, 10552 KB] g=14, 28 evaluated, 22 expanded
+[t=0.00238515s, 10552 KB] New best heuristic value for ff: 1
+[t=0.00239944s, 10552 KB] g=15, 30 evaluated, 23 expanded
+[t=0.00241674s, 10552 KB] Solution found!
+move[c,r3,d03] (1)
+open[r3,r1,d13] (1)
+move[r3,r1,d13] (1)
+__method_precondition_achieve-goals-pickup_split[r1,o2] (1)
+pickup[o2,r1] (1)
+open[r1,r2,d12] (1)
+move[r1,r2,d12] (1)
+__method_precondition_release-putdown_abstract_split[r2,o2] (1)
+putdown[o2,r2] (1)
+move[r2,r1,d12] (1)
+__method_precondition_achieve-goals-pickup_split[r1,o1] (1)
+pickup[o1,r1] (1)
+move[r1,r3,d13] (1)
+__method_precondition_release-putdown_abstract_split[r3,o1] (1)
+putdown[o1,r3] (1)
+__noop (1)
+[t=0.00252476s, 10552 KB] Plan length: 16 step(s).
+[t=0.00254431s, 10552 KB] Plan cost: 16
+Reading HTN model from file "sas_plan.verify" ... 
+TOAD: verification successful.
+[t=0.00262888s, 10580 KB] verification successful
+Actual search time: 0.000862656s
+move[c,r3,d03] (1)
+open[r3,r1,d13] (1)
+move[r3,r1,d13] (1)
+__method_precondition_achieve-goals-pickup_split[r1,o2] (1)
+pickup[o2,r1] (1)
+open[r1,r2,d12] (1)
+move[r1,r2,d12] (1)
+__method_precondition_release-putdown_abstract_split[r2,o2] (1)
+putdown[o2,r2] (1)
+move[r2,r1,d12] (1)
+__method_precondition_achieve-goals-pickup_split[r1,o1] (1)
+pickup[o1,r1] (1)
+move[r1,r3,d13] (1)
+__method_precondition_release-putdown_abstract_split[r3,o1] (1)
+putdown[o1,r3] (1)
+__noop (1)
+[t=0.00269005s, 10580 KB] Plan length: 16 step(s).
+[t=0.00269005s, 10580 KB] Plan cost: 16
+[t=0.00269005s, 10580 KB] Expanded 24 state(s).
+[t=0.00269005s, 10580 KB] Reopened 0 state(s).
+[t=0.00269005s, 10580 KB] Evaluated 31 state(s).
+[t=0.00269005s, 10580 KB] Evaluations: 62
+[t=0.00269005s, 10580 KB] Generated 54 state(s).
+[t=0.00269005s, 10580 KB] Dead ends: 6 state(s).
+[t=0.00269005s, 10580 KB] Number of registered states: 31
+[t=0.00269005s, 10580 KB] Int hash set load factor: 31/32 = 0.96875
+[t=0.00269005s, 10580 KB] Int hash set resizes: 5
+[t=0.00269005s, 10580 KB] Search time: 0.000906444s
+[t=0.00269005s, 10580 KB] Total time: 0.00269005s
+Solution found.
+Peak memory: 10580 KB
+pandaPIparser is configured as follows
+  Colors in output: true
+  Mode: convert pandaPI plan
+%TIME 0:00.27 38116
 %EXIT 0
-NO OUTPUT
+pandaPIparser is configured as follows
+  Colors in output: false
+  Mode: plan verification
+  Verbosity: 1
+  Lenient mode: false
+  Ignore given order: false
+Reading plan given as input
+Parse instantiated task from " move c r3 d03" ... done
+Parsed action id=11 move c r3 d03
+Parse instantiated task from " open r3 r1 d13" ... done
+Parsed action id=21 open r3 r1 d13
+Parse instantiated task from " move r3 r1 d13" ... done
+Parsed action id=34 move r3 r1 d13
+Parse instantiated task from " pickup o2 r1" ... done
+Parsed action id=77 pickup o2 r1
+Parse instantiated task from " open r1 r2 d12" ... done
+Parsed action id=96 open r1 r2 d12
+Parse instantiated task from " move r1 r2 d12" ... done
+Parsed action id=112 move r1 r2 d12
+Parse instantiated task from " putdown o2 r2" ... done
+Parsed action id=123 putdown o2 r2
+Parse instantiated task from " move r2 r1 d12" ... done
+Parsed action id=135 move r2 r1 d12
+Parse instantiated task from " pickup o1 r1" ... done
+Parsed action id=154 pickup o1 r1
+Parse instantiated task from " move r1 r3 d13" ... done
+Parsed action id=167 move r1 r3 d13
+Parse instantiated task from " putdown o1 r3" ... done
+Parsed action id=178 putdown o1 r3
+Size of primitive plan: 11
+Reading list of integers from " 2"
+Root tasks (1): 2
+Reading plan given as input
+Parse instantiated task from "  achieve-goals" ... done
+Parsed abstract task id=2 achieve-goals
+Parsed method name: achieve-goals-move
+Subtasks: 9 14
+
+Parse instantiated task from "  move_abstract" ... done
+Parsed abstract task id=9 move_abstract
+Parsed method name: newMethod24
+Subtasks: 11
+
+Parse instantiated task from "  achieve-goals" ... done
+Parsed abstract task id=14 achieve-goals
+Parsed method name: achieve-goals-open
+Subtasks: 17 23
+
+Parse instantiated task from "  open_abstract" ... done
+Parsed abstract task id=17 open_abstract
+Parsed method name: newMethod25
+Subtasks: 21
+
+Parse instantiated task from "  achieve-goals" ... done
+Parsed abstract task id=23 achieve-goals
+Parsed method name: achieve-goals-move
+Subtasks: 26 38
+
+Parse instantiated task from "  move_abstract" ... done
+Parsed abstract task id=26 move_abstract
+Parsed method name: newMethod24
+Subtasks: 34
+
+Parse instantiated task from "  achieve-goals" ... done
+Parsed abstract task id=38 achieve-goals
+Parsed method name: achieve-goals-pickup
+Subtasks: 75 80
+
+Parse instantiated task from "  pickup_abstract o2" ... done
+Parsed abstract task id=75 pickup_abstract o2
+Parsed method name: newMethod22
+Subtasks: 77
+
+Parse instantiated task from "  release" ... done
+Parsed abstract task id=80 release
+Parsed method name: release-open
+Subtasks: 94 98
+
+Parse instantiated task from "  open_abstract" ... done
+Parsed abstract task id=94 open_abstract
+Parsed method name: newMethod25
+Subtasks: 96
+
+Parse instantiated task from "  release" ... done
+Parsed abstract task id=98 release
+Parsed method name: release-move
+Subtasks: 107 113
+
+Parse instantiated task from "  move_abstract" ... done
+Parsed abstract task id=107 move_abstract
+Parsed method name: newMethod24
+Subtasks: 112
+
+Parse instantiated task from "  release" ... done
+Parsed abstract task id=113 release
+Parsed method name: release-putdown_abstract
+Subtasks: 120 125
+
+Parse instantiated task from "  putdown_abstract" ... done
+Parsed abstract task id=120 putdown_abstract
+Parsed method name: newMethod23
+Subtasks: 123
+
+Parse instantiated task from "  achieve-goals" ... done
+Parsed abstract task id=125 achieve-goals
+Parsed method name: achieve-goals-move
+Subtasks: 130 139
+
+Parse instantiated task from "  move_abstract" ... done
+Parsed abstract task id=130 move_abstract
+Parsed method name: newMethod24
+Subtasks: 135
+
+Parse instantiated task from "  achieve-goals" ... done
+Parsed abstract task id=139 achieve-goals
+Parsed method name: achieve-goals-pickup
+Subtasks: 152 156
+
+Parse instantiated task from "  pickup_abstract o1" ... done
+Parsed abstract task id=152 pickup_abstract o1
+Parsed method name: newMethod22
+Subtasks: 154
+
+Parse instantiated task from "  release" ... done
+Parsed abstract task id=156 release
+Parsed method name: release-move
+Subtasks: 162 168
+
+Parse instantiated task from "  move_abstract" ... done
+Parsed abstract task id=162 move_abstract
+Parsed method name: newMethod24
+Subtasks: 167
+
+Parse instantiated task from "  release" ... done
+Parsed abstract task id=168 release
+Parsed method name: release-putdown_abstract
+Subtasks: 176 179
+
+Parse instantiated task from "  putdown_abstract" ... done
+Parsed abstract task id=176 putdown_abstract
+Parsed method name: newMethod23
+Subtasks: 178
+
+Parse instantiated task from "  achieve-goals" ... done
+Parsed abstract task id=179 achieve-goals
+Parsed method name: finished
+Subtasks:
+
+Reached end of input.
+
+Checking the given plan ...
+IDs of subtasks used in the plan exist: true
+Tasks declared in plan actually exist and can be instantiated as given: true
+Methods don't contain duplicate subtasks: true
+Methods don't contain orphaned tasks: true
+Generating Matchings for task with id=0
+ Matching Task 2 Curpos=0 #sources=1
+ Task is: achieve-goals
+ Attempting matching with source task0
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=0
+Generating Matchings for task with id=2
+ Matching Task 9 Curpos=0 #sources=1
+ Task is: move_abstract
+ Attempting matching with source __t_id_8
+   Matching Task 14 Curpos=1 #sources=1
+   Task is: achieve-goals
+   Attempting matching with source __t_id_9
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=2
+Generating Matchings for task with id=9
+ Matching Task 11 Curpos=0 #sources=1
+ Task is: move c r3 d03
+ Attempting matching with source __t_id_14
+  Setting ?loc1 = c
+  Setting ?loc2 = r3
+  Setting ?d = d03
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=9
+Generating Matchings for task with id=14
+ Matching Task 17 Curpos=0 #sources=1
+ Task is: open_abstract
+ Attempting matching with source __t_id_10
+   Matching Task 23 Curpos=1 #sources=1
+   Task is: achieve-goals
+   Attempting matching with source __t_id_11
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=14
+Generating Matchings for task with id=17
+ Matching Task 21 Curpos=0 #sources=1
+ Task is: open r3 r1 d13
+ Attempting matching with source __t_id_15
+  Setting ?loc1 = r3
+  Setting ?loc2 = r1
+  Setting ?d = d13
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=17
+Generating Matchings for task with id=23
+ Matching Task 26 Curpos=0 #sources=1
+ Task is: move_abstract
+ Attempting matching with source __t_id_8
+   Matching Task 38 Curpos=1 #sources=1
+   Task is: achieve-goals
+   Attempting matching with source __t_id_9
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=23
+Generating Matchings for task with id=26
+ Matching Task 34 Curpos=0 #sources=1
+ Task is: move r3 r1 d13
+ Attempting matching with source __t_id_14
+  Setting ?loc1 = r3
+  Setting ?loc2 = r1
+  Setting ?d = d13
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=26
+Generating Matchings for task with id=38
+ Matching Task 75 Curpos=0 #sources=1
+ Task is: pickup_abstract o2
+ Attempting matching with source __t_id_6
+  Setting ?obj = o2
+   Matching Task 80 Curpos=1 #sources=1
+   Task is: release
+   Attempting matching with source __t_id_7
+     Unassigned variable ?loc
+     Contained in method precondition: true
+     Contained in method effect: false
+     Contained in method constraints: false
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=38
+Generating Matchings for task with id=75
+ Matching Task 77 Curpos=0 #sources=1
+ Task is: pickup o2 r1
+ Attempting matching with source __t_id_12
+  Setting ?obj = o2
+  Setting ?loc = r1
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=75
+Generating Matchings for task with id=80
+ Matching Task 94 Curpos=0 #sources=1
+ Task is: open_abstract
+ Attempting matching with source __t_id_4
+   Matching Task 98 Curpos=1 #sources=1
+   Task is: release
+   Attempting matching with source __t_id_5
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=80
+Generating Matchings for task with id=94
+ Matching Task 96 Curpos=0 #sources=1
+ Task is: open r1 r2 d12
+ Attempting matching with source __t_id_15
+  Setting ?loc1 = r1
+  Setting ?loc2 = r2
+  Setting ?d = d12
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=94
+Generating Matchings for task with id=98
+ Matching Task 107 Curpos=0 #sources=1
+ Task is: move_abstract
+ Attempting matching with source __t_id_2
+   Matching Task 113 Curpos=1 #sources=1
+   Task is: release
+   Attempting matching with source __t_id_3
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=98
+Generating Matchings for task with id=107
+ Matching Task 112 Curpos=0 #sources=1
+ Task is: move r1 r2 d12
+ Attempting matching with source __t_id_14
+  Setting ?loc1 = r1
+  Setting ?loc2 = r2
+  Setting ?d = d12
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=107
+Generating Matchings for task with id=113
+ Matching Task 120 Curpos=0 #sources=1
+ Task is: putdown_abstract
+ Attempting matching with source __t_id_0
+   Matching Task 125 Curpos=1 #sources=1
+   Task is: achieve-goals
+   Attempting matching with source __t_id_1
+     Unassigned variable ?loc
+     Contained in method precondition: true
+     Contained in method effect: false
+     Contained in method constraints: false
+     Unassigned variable ?obj
+     Contained in method precondition: true
+     Contained in method effect: false
+     Contained in method constraints: false
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=113
+Generating Matchings for task with id=120
+ Matching Task 123 Curpos=0 #sources=1
+ Task is: putdown o2 r2
+ Attempting matching with source __t_id_13
+  Setting ?obj = o2
+  Setting ?loc = r2
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=120
+Generating Matchings for task with id=125
+ Matching Task 130 Curpos=0 #sources=1
+ Task is: move_abstract
+ Attempting matching with source __t_id_8
+   Matching Task 139 Curpos=1 #sources=1
+   Task is: achieve-goals
+   Attempting matching with source __t_id_9
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=125
+Generating Matchings for task with id=130
+ Matching Task 135 Curpos=0 #sources=1
+ Task is: move r2 r1 d12
+ Attempting matching with source __t_id_14
+  Setting ?loc1 = r2
+  Setting ?loc2 = r1
+  Setting ?d = d12
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=130
+Generating Matchings for task with id=139
+ Matching Task 152 Curpos=0 #sources=1
+ Task is: pickup_abstract o1
+ Attempting matching with source __t_id_6
+  Setting ?obj = o1
+   Matching Task 156 Curpos=1 #sources=1
+   Task is: release
+   Attempting matching with source __t_id_7
+     Unassigned variable ?loc
+     Contained in method precondition: true
+     Contained in method effect: false
+     Contained in method constraints: false
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=139
+Generating Matchings for task with id=152
+ Matching Task 154 Curpos=0 #sources=1
+ Task is: pickup o1 r1
+ Attempting matching with source __t_id_12
+  Setting ?obj = o1
+  Setting ?loc = r1
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=152
+Generating Matchings for task with id=156
+ Matching Task 162 Curpos=0 #sources=1
+ Task is: move_abstract
+ Attempting matching with source __t_id_2
+   Matching Task 168 Curpos=1 #sources=1
+   Task is: release
+   Attempting matching with source __t_id_3
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=156
+Generating Matchings for task with id=162
+ Matching Task 167 Curpos=0 #sources=1
+ Task is: move r1 r3 d13
+ Attempting matching with source __t_id_14
+  Setting ?loc1 = r1
+  Setting ?loc2 = r3
+  Setting ?d = d13
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=162
+Generating Matchings for task with id=168
+ Matching Task 176 Curpos=0 #sources=1
+ Task is: putdown_abstract
+ Attempting matching with source __t_id_0
+   Matching Task 179 Curpos=1 #sources=1
+   Task is: achieve-goals
+   Attempting matching with source __t_id_1
+     Unassigned variable ?loc
+     Contained in method precondition: true
+     Contained in method effect: false
+     Contained in method constraints: false
+     Unassigned variable ?obj
+     Contained in method precondition: true
+     Contained in method effect: false
+     Contained in method constraints: false
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=168
+Generating Matchings for task with id=176
+ Matching Task 178 Curpos=0 #sources=1
+ Task is: putdown o1 r3
+ Attempting matching with source __t_id_13
+  Setting ?obj = o1
+  Setting ?loc = r3
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=176
+Generating Matchings for task with id=179
+ Found compatible linearisation.
+  Checking constants are in variable type ... 
+  Checking method's constraint formula ... 
+  Checking variable constraints in method's precondition ... 
+  Matching is ok.
+Found 1 matchings for task with id=179
+Methods can be instantiated: true
+Check whether primitive plan is a linearisation of the orderings resulting from applied decomposition methods.
+ Abstract Task id=0 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=2 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=9 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=11
+  Ordering OK.
+ Abstract Task id=14 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=17 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=21
+  Ordering OK.
+ Abstract Task id=23 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=26 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=34
+  Ordering OK.
+ Abstract Task id=38 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=75 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=77
+  Ordering OK.
+ Abstract Task id=80 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=94 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=96
+  Ordering OK.
+ Abstract Task id=98 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=107 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=112
+  Ordering OK.
+ Abstract Task id=113 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=120 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=123
+  Ordering OK.
+ Abstract Task id=125 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=130 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=135
+  Ordering OK.
+ Abstract Task id=139 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=152 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=154
+  Ordering OK.
+ Abstract Task id=156 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=162 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=167
+  Ordering OK.
+ Abstract Task id=168 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=176 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=178
+  Ordering OK.
+ Abstract Task id=179 matching still unique: true (1)
+  Attempting matching
+  Ordering OK.
+  Ordering OK.
+  Ordering OK.
+  Ordering OK.
+  Ordering OK.
+  Ordering OK.
+  Ordering OK.
+  Ordering OK.
+  Ordering OK.
+  Ordering OK.
+  Ordering OK.
+  Ordering OK.
+  Root Task, checking primitive executability ...
+  Running exponential top-sort.
+  The current state is:
+     armempty
+     closed d12
+     closed d13
+     door c r3 d03
+     door r1 r2 d12
+     door r1 r3 d13
+     door r2 r1 d12
+     door r3 c d03
+     door r3 r1 d13
+     goal_in o1 r3
+     goal_in o2 r2
+     in o1 r1
+     in o2 r1
+     rloc c
+   Executing plan time=1 #sources=1
+    Source 0 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 2 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 9 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 11 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 11
+    Task is: move c r3 d03
+    Applying effects of the action.
+     Removing fact from state: rloc c
+     Adding fact to state: rloc r3
+    The new state is:
+      armempty
+      closed d12
+      closed d13
+      door c r3 d03
+      door r1 r2 d12
+      door r1 r3 d13
+      door r2 r1 d12
+      door r3 c d03
+      door r3 r1 d13
+      goal_in o1 r3
+      goal_in o2 r2
+      in o1 r1
+      in o2 r1
+      rloc r3
+   Executing plan time=1 #sources=1
+    Source -12 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -10 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 14 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 17 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 21 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 21
+    Task is: open r3 r1 d13
+    Applying effects of the action.
+     Removing fact from state: closed d13
+    The new state is:
+      armempty
+      closed d12
+      door c r3 d03
+      door r1 r2 d12
+      door r1 r3 d13
+      door r2 r1 d12
+      door r3 c d03
+      door r3 r1 d13
+      goal_in o1 r3
+      goal_in o2 r2
+      in o1 r1
+      in o2 r1
+      rloc r3
+   Executing plan time=1 #sources=1
+    Source -22 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -18 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 23 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 26 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 34 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 34
+    Task is: move r3 r1 d13
+    Applying effects of the action.
+     Removing fact from state: rloc r3
+     Adding fact to state: rloc r1
+    The new state is:
+      armempty
+      closed d12
+      door c r3 d03
+      door r1 r2 d12
+      door r1 r3 d13
+      door r2 r1 d12
+      door r3 c d03
+      door r3 r1 d13
+      goal_in o1 r3
+      goal_in o2 r2
+      in o1 r1
+      in o2 r1
+      rloc r1
+   Executing plan time=1 #sources=1
+    Source -35 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -27 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 38 is the begin of an abstract task.
+    Evaluating the method precondition
+     Unassigned variable ?loc
+     Contained in method precondition: true
+      Assigning variable ?loc to c
+      Assigning variable ?loc to r1
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 75 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 77 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 77
+    Task is: pickup o2 r1
+    Applying effects of the action.
+     Removing fact from state: armempty
+     Removing fact from state: in o2 r1
+     Adding fact to state: holding o2
+    The new state is:
+      closed d12
+      door c r3 d03
+      door r1 r2 d12
+      door r1 r3 d13
+      door r2 r1 d12
+      door r3 c d03
+      door r3 r1 d13
+      goal_in o1 r3
+      goal_in o2 r2
+      holding o2
+      in o1 r1
+      rloc r1
+   Executing plan time=1 #sources=1
+    Source -78 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -76 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 80 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 94 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 96 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 96
+    Task is: open r1 r2 d12
+    Applying effects of the action.
+     Removing fact from state: closed d12
+    The new state is:
+      door c r3 d03
+      door r1 r2 d12
+      door r1 r3 d13
+      door r2 r1 d12
+      door r3 c d03
+      door r3 r1 d13
+      goal_in o1 r3
+      goal_in o2 r2
+      holding o2
+      in o1 r1
+      rloc r1
+   Executing plan time=1 #sources=1
+    Source -97 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -95 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 98 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 107 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 112 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 112
+    Task is: move r1 r2 d12
+    Applying effects of the action.
+     Removing fact from state: rloc r1
+     Adding fact to state: rloc r2
+    The new state is:
+      door c r3 d03
+      door r1 r2 d12
+      door r1 r3 d13
+      door r2 r1 d12
+      door r3 c d03
+      door r3 r1 d13
+      goal_in o1 r3
+      goal_in o2 r2
+      holding o2
+      in o1 r1
+      rloc r2
+   Executing plan time=1 #sources=1
+    Source -113 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -108 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 113 is the begin of an abstract task.
+    Evaluating the method precondition
+     Unassigned variable ?loc
+     Contained in method precondition: true
+      Assigning variable ?loc to c
+       Unassigned variable ?obj
+       Contained in method precondition: true
+        Assigning variable ?obj to o1
+        Assigning variable ?obj to o2
+      Assigning variable ?loc to r1
+       Unassigned variable ?obj
+       Contained in method precondition: true
+        Assigning variable ?obj to o1
+        Assigning variable ?obj to o2
+      Assigning variable ?loc to r2
+       Unassigned variable ?obj
+       Contained in method precondition: true
+        Assigning variable ?obj to o1
+        Assigning variable ?obj to o2
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 120 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 123 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 123
+    Task is: putdown o2 r2
+    Applying effects of the action.
+     Removing fact from state: holding o2
+     Adding fact to state: armempty
+     Adding fact to state: in o2 r2
+    The new state is:
+      armempty
+      door c r3 d03
+      door r1 r2 d12
+      door r1 r3 d13
+      door r2 r1 d12
+      door r3 c d03
+      door r3 r1 d13
+      goal_in o1 r3
+      goal_in o2 r2
+      in o1 r1
+      in o2 r2
+      rloc r2
+   Executing plan time=1 #sources=1
+    Source -124 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -121 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 125 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 130 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 135 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 135
+    Task is: move r2 r1 d12
+    Applying effects of the action.
+     Removing fact from state: rloc r2
+     Adding fact to state: rloc r1
+    The new state is:
+      armempty
+      door c r3 d03
+      door r1 r2 d12
+      door r1 r3 d13
+      door r2 r1 d12
+      door r3 c d03
+      door r3 r1 d13
+      goal_in o1 r3
+      goal_in o2 r2
+      in o1 r1
+      in o2 r2
+      rloc r1
+   Executing plan time=1 #sources=1
+    Source -136 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -131 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 139 is the begin of an abstract task.
+    Evaluating the method precondition
+     Unassigned variable ?loc
+     Contained in method precondition: true
+      Assigning variable ?loc to c
+      Assigning variable ?loc to r1
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 152 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 154 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 154
+    Task is: pickup o1 r1
+    Applying effects of the action.
+     Removing fact from state: armempty
+     Removing fact from state: in o1 r1
+     Adding fact to state: holding o1
+    The new state is:
+      door c r3 d03
+      door r1 r2 d12
+      door r1 r3 d13
+      door r2 r1 d12
+      door r3 c d03
+      door r3 r1 d13
+      goal_in o1 r3
+      goal_in o2 r2
+      holding o1
+      in o2 r2
+      rloc r1
+   Executing plan time=1 #sources=1
+    Source -155 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -153 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 156 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 162 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 167 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 167
+    Task is: move r1 r3 d13
+    Applying effects of the action.
+     Removing fact from state: rloc r1
+     Adding fact to state: rloc r3
+    The new state is:
+      door c r3 d03
+      door r1 r2 d12
+      door r1 r3 d13
+      door r2 r1 d12
+      door r3 c d03
+      door r3 r1 d13
+      goal_in o1 r3
+      goal_in o2 r2
+      holding o1
+      in o2 r2
+      rloc r3
+   Executing plan time=1 #sources=1
+    Source -168 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -163 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 168 is the begin of an abstract task.
+    Evaluating the method precondition
+     Unassigned variable ?loc
+     Contained in method precondition: true
+      Assigning variable ?loc to c
+       Unassigned variable ?obj
+       Contained in method precondition: true
+        Assigning variable ?obj to o1
+        Assigning variable ?obj to o2
+      Assigning variable ?loc to r1
+       Unassigned variable ?obj
+       Contained in method precondition: true
+        Assigning variable ?obj to o1
+        Assigning variable ?obj to o2
+      Assigning variable ?loc to r2
+       Unassigned variable ?obj
+       Contained in method precondition: true
+        Assigning variable ?obj to o1
+        Assigning variable ?obj to o2
+      Assigning variable ?loc to r3
+       Unassigned variable ?obj
+       Contained in method precondition: true
+        Assigning variable ?obj to o1
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 176 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 178 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 178
+    Task is: putdown o1 r3
+    Applying effects of the action.
+     Removing fact from state: holding o1
+     Adding fact to state: armempty
+     Adding fact to state: in o1 r3
+    The new state is:
+      armempty
+      door c r3 d03
+      door r1 r2 d12
+      door r1 r3 d13
+      door r2 r1 d12
+      door r3 c d03
+      door r3 r1 d13
+      goal_in o1 r3
+      goal_in o2 r2
+      in o1 r3
+      in o2 r2
+      rloc r3
+   Executing plan time=1 #sources=1
+    Source -179 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -177 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 179 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -180 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -169 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -157 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -140 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -126 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -114 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -99 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -81 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -39 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -24 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -15 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -3 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -1 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=0
+   Executed the whole plan ... checking whether we reached the goal state.
+   The current state is:
+      armempty
+      door c r3 d03
+      door r1 r2 d12
+      door r1 r3 d13
+      door r2 r1 d12
+      door r3 c d03
+      door r3 r1 d13
+      goal_in o1 r3
+      goal_in o2 r2
+      in o1 r3
+      in o2 r2
+      rloc r3
+  Executable linearisation found.
+  Ordering OK.
+Result true true
+Order induced by methods is present in plan: true
+Plan is executable: true
+Plan verification result: true

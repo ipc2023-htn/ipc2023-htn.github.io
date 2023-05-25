@@ -7,7 +7,10 @@ pandaPIparser is configured as follows
   Disjunctive preconditions as HTN: false
   Replace goal with action: false
   Output: pandaPI format
-%TIME 0:00.22 35832
+pandaPIparser is configured as follows
+  Colors in output: true
+  Mode: convert pandaPI plan
+%TIME 0:00.19 39044
 %EXIT 0
 pandaPIparser is configured as follows
   Colors in output: false
@@ -16,30 +19,85 @@ pandaPIparser is configured as follows
   Lenient mode: false
   Ignore given order: false
 Reading plan given as input
-Parse instantiated task from " __noop" ... done
-Parsed action id=2 __noop
-Size of primitive plan: 1
-Reading list of integers from " 0"
-Root tasks (1): 0
+Size of primitive plan: 0
+Reading list of integers from " 1"
+Root tasks (1): 1
 Reading plan given as input
-Parse instantiated task from "  achieve-goals[]" ... done
-Parsed abstract task id=1 achieve-goals 
+Parse instantiated task from "  achieve-goals" ... done
+Parsed abstract task id=1 achieve-goals
 Parsed method name: finished
-Subtasks: 2
+Subtasks:
 
-Parse instantiated task from "  __top[]" ... done
-Parsed abstract task id=0 __top 
-Parsed method name: __top_method
-Subtasks: 1
-
-Reached end of plan (marked).
+Reached end of input.
 
 Checking the given plan ...
 IDs of subtasks used in the plan exist: true
-Task with id=0 has wrong number of arguments. 1 are given in the plan, but the domain required 0 parameters.
-Task with id=1 has wrong number of arguments. 1 are given in the plan, but the domain required 0 parameters.
-Task with id=2 and task name "__noop" is not declared in the domain.
-Tasks declared in plan actually exist and can be instantiated as given: false
+Tasks declared in plan actually exist and can be instantiated as given: true
 Methods don't contain duplicate subtasks: true
 Methods don't contain orphaned tasks: true
-Plan verification result: false
+Generating Matchings for task with id=0
+ Matching Task 1 Curpos=0 #sources=1
+ Task is: achieve-goals
+ Attempting matching with source task0
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=0
+Generating Matchings for task with id=1
+ Found compatible linearisation.
+  Checking constants are in variable type ... 
+  Checking method's constraint formula ... 
+  Checking variable constraints in method's precondition ... 
+  Matching is ok.
+Found 1 matchings for task with id=1
+Methods can be instantiated: true
+Check whether primitive plan is a linearisation of the orderings resulting from applied decomposition methods.
+ Abstract Task id=0 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=1 matching still unique: true (1)
+  Attempting matching
+  Ordering OK.
+  Root Task, checking primitive executability ...
+  Running exponential top-sort.
+  The current state is:
+     armempty
+     closed d01
+     door c r1 d01
+     door r1 c d01
+     goal_in o1 r1
+     in o1 r1
+     rloc c
+   Executing plan time=1 #sources=1
+    Source 0 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 1 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -2 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -1 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=0
+   Executed the whole plan ... checking whether we reached the goal state.
+   The current state is:
+      armempty
+      closed d01
+      door c r1 d01
+      door r1 c d01
+      goal_in o1 r1
+      in o1 r1
+      rloc c
+  Executable linearisation found.
+  Ordering OK.
+Result true true
+Order induced by methods is present in plan: true
+Plan is executable: true
+Plan verification result: true

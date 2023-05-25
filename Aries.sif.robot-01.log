@@ -8,42 +8,11 @@ Transforming static state functions as table constraints:
  - door
  - goal_in
 ==========================
-0 Solving with 0 actions
-  [0.001s] Populated
-  [0.001s] Solved
-1 Solving with 1 actions
-  [0.002s] Populated
-
-==== Worker 1
-Solver is running
-
-==== Worker 2
-solutions           : 0           
-restarts            : 0           
-decisions           : 22           (427517 /sec)
-conflicts           : 0            (0 /sec)
-================= 
-Solvers             :             SAT        DiffLog             CP
-% propagation cycles:         21.32 %        73.40 %         1.92 %
-# propagation loops :              25             25             25
-# conflicts         :               0              0              0
-================= 
-Init time           : 0.000017 s
-Solve time          : 0.000051 s
-
-====== SAT =====
-DB size              : 25
-Num unit propagations: 0
-====== DiffLog =====
-# nodes: 107
-# propagators: 32
-# propagations: 22
-# domain updates: 2
-====== CP =====
-
-==== Worker 3
-Solver is running
-  [0.005s] Solved
+0 Solving with depth 0
+  [0.000s] Populated
+  [0.000s] Solved
+1 Solving with depth 1
+  [0.000s] Populated
 
 **** Decomposition ****
 
@@ -56,8 +25,63 @@ root 1
 **** Plan ****
 
 
-%TIME 0:00.11 36028
-%EXIT 0
+
+==== Worker 1
+Solver is running
+
+==== Worker 2
+solutions           : 1           
+restarts            : 0           
+decisions           : 22           (230128 /sec)
+conflicts           : 1            (10460 /sec)
+================= 
+Solvers             :             SAT        DiffLog             CP
+% propagation cycles:         16.88 %        79.21 %         1.22 %
+# propagation loops :              27             26             26
+# conflicts         :               1              0              0
+================= 
+Init time           : 0.000023 s
+Solve time          : 0.000096 s
+
+====== SAT =====
+DB size              : 32
+Num unit propagations: 1
+====== DiffLog =====
+# nodes: 107
+# propagators: 32
+# propagations: 22
+# domain updates: 2
+====== CP =====
+
+==== Worker 3
+Solver is running
+  [0.001s] Solved
+2 Solving with depth 2
+  [0.001s] Populated
+  [0.002s] Solved
+3 Solving with depth 3
+  [0.002s] Populated
+  [0.004s] Solved
+4 Solving with depth 4
+  [0.004s] Populated
+  [0.009s] Solved
+5 Solving with depth 5
+  [0.009s] Populated
+  [0.024s] Solved
+6 Solving with depth 6
+  [0.025s] Populated
+  [0.078s] Solved
+7 Solving with depth 7
+  [0.080s] Populated
+  [0.328s] Solved
+8 Solving with depth 8
+  [0.333s] Populated
+  [1.749s] Solved
+9 Solving with depth 9
+  [1.756s] Populated
+Command exited with non-zero status 124
+%TIME 0:02.01 225704
+%EXIT 124
 pandaPIparser is configured as follows
   Colors in output: false
   Mode: plan verification

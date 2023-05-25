@@ -39,78 +39,47 @@ Transforming static state functions as table constraints:
  - waterco_of
  - wrecked_vehicle
 ==========================
-0 Solving with 0 actions
+0 Solving with depth 0
+  [0.000s] Populated
+  [0.000s] Solved
+1 Solving with depth 1
   [0.001s] Populated
   [0.001s] Solved
-1 Solving with 1 actions
-  [0.002s] Populated
+2 Solving with depth 2
+  [0.001s] Populated
   [0.002s] Solved
-2 Solving with 2 actions
-  [0.002s] Populated
-  [0.002s] Solved
-3 Solving with 3 actions
-[2m   0.038354897s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+3 Solving with depth 3
+[2m   0.053077040s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
 WARNING: workaround for empty domain of optional vars (Github Issue #28)
-[2m   0.039655765s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+[2m   0.053117768s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+  [0.002s] Populated
+  [0.004s] Solved
+4 Solving with depth 4
+[2m   0.054795409s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.054893852s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.055262237s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
 WARNING: workaround for empty domain of optional vars (Github Issue #28)
   [0.004s] Populated
-  [0.005s] Solved
-4 Solving with 4 actions
-[2m   0.040769894s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
-WARNING: workaround for empty domain of optional vars (Github Issue #28)
-[2m   0.040800810s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
-WARNING: workaround for empty domain of optional vars (Github Issue #28)
-[2m   0.041000182s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
-WARNING: workaround for empty domain of optional vars (Github Issue #28)
-  [0.005s] Populated
-
-==== Worker 1
-solutions           : 0           
-restarts            : 0           
-decisions           : 1199         (402289 /sec)
-conflicts           : 0            (0 /sec)
-================= 
-Solvers             :             SAT        DiffLog             CP
-% propagation cycles:         11.49 %        85.19 %         0.72 %
-# propagation loops :            1212           1212           1212
-# conflicts         :               0              0              0
-================= 
-Init time           : 0.000742 s
-Solve time          : 0.002980 s
-
-====== SAT =====
-DB size              : 2843
-Num unit propagations: 37
-====== DiffLog =====
-# nodes: 2670
-# propagators: 596
-# propagations: 1204
-# domain updates: 85
-====== CP =====
-
-==== Worker 2
-Solver is running
-
-==== Worker 3
-Solver is running
-  [0.046s] Solved
 
 **** Decomposition ****
 
 ==>
-51 (SHOP_methodm_quell_riot_precondition strong rochester)
-102 (call ebs)
-103 (call police_chief)
-106 (SHOP_methodm_get_to_already_there_precondition pu1 strong)
-110 (SHOP_methodm_get_to_already_there_precondition pu2 strong)
-49 (set_up_barricades pu1)
-50 (set_up_barricades pu2)
-root 5
-5 (tlt) -> m_tlt_quell_riot 17
-17 (quell_riot strong) -> m_quell_riot 51 40 43 47 49 50
-40 (declare_curfew rochester) -> m_declare_curfew 102 103
-43 (get_to pu1 strong) -> m_get_to_already_there 106
-47 (get_to pu2 strong) -> m_get_to_already_there 110
+73 (SHOP_methodm_quell_riot_precondition strong rochester)
+120 (call ebs)
+121 (call police_chief)
+125 (SHOP_methodm_get_to_already_there_precondition pu2 strong)
+126 (SHOP_methodm_get_to_already_there_precondition pu1 strong)
+71 (set_up_barricades pu2)
+72 (set_up_barricades pu1)
+root 8
+8 (tlt) -> m_tlt_quell_riot 19
+19 (quell_riot strong) -> m_quell_riot 73 62 66 67 71 72
+62 (declare_curfew rochester) -> m_declare_curfew 120 121
+66 (get_to pu2 strong) -> m_get_to_already_there 125
+67 (get_to pu1 strong) -> m_get_to_already_there 126
 <==
 
 
@@ -119,13 +88,80 @@ root 5
  0: (SHOP_methodm_quell_riot_precondition strong rochester) [0.000]
 0.1: (call ebs) [0.000]
 0.2: (call police_chief) [0.000]
-0.3: (SHOP_methodm_get_to_already_there_precondition pu1 strong) [0.000]
-0.4: (SHOP_methodm_get_to_already_there_precondition pu2 strong) [0.000]
-0.5: (set_up_barricades pu1) [0.000]
-0.6: (set_up_barricades pu2) [0.000]
+0.3: (SHOP_methodm_get_to_already_there_precondition pu2 strong) [0.000]
+0.4: (SHOP_methodm_get_to_already_there_precondition pu1 strong) [0.000]
+0.5: (set_up_barricades pu2) [0.000]
+0.6: (set_up_barricades pu1) [0.000]
 
-%TIME 0:00.18 37768
-%EXIT 0
+
+==== Worker 1
+Solver is running
+
+==== Worker 2
+Solver is running
+
+==== Worker 3
+solutions           : 1           
+restarts            : 0           
+decisions           : 387          (41434 /sec)
+conflicts           : 6            (642 /sec)
+================= 
+Solvers             :             SAT        DiffLog             CP
+% propagation cycles:          7.97 %        62.97 %        28.06 %
+# propagation loops :             426            420            420
+# conflicts         :               6              0              0
+================= 
+Init time           : 0.001371 s
+Solve time          : 0.009340 s
+
+====== SAT =====
+DB size              : 2851
+Num unit propagations: 142
+====== DiffLog =====
+# nodes: 2670
+# propagators: 596
+# propagations: 483
+# domain updates: 87
+====== CP =====
+  [0.072s] Solved
+5 Solving with depth 5
+[2m   0.123162075s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.123205590s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.123318708s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.124240470s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.124250741s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.124423814s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+  [0.074s] Populated
+  [0.438s] Solved
+6 Solving with depth 6
+[2m   0.490189002s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.490237723s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.490732579s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.490808064s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.491366868s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.491377043s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.492726089s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.496068535s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.496132121s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+  [0.447s] Populated
+Command exited with non-zero status 124
+%TIME 0:02.01 252504
+%EXIT 124
 pandaPIparser is configured as follows
   Colors in output: false
   Mode: plan verification
@@ -134,47 +170,47 @@ pandaPIparser is configured as follows
   Ignore given order: false
 Reading plan given as input
 Parse instantiated task from " (SHOP_methodm_quell_riot_precondition strong rochester)" ... done
-Parsed action id=51 SHOP_methodm_quell_riot_precondition strong rochester
+Parsed action id=73 SHOP_methodm_quell_riot_precondition strong rochester
 Parse instantiated task from " (call ebs)" ... done
-Parsed action id=102 call ebs
+Parsed action id=120 call ebs
 Parse instantiated task from " (call police_chief)" ... done
-Parsed action id=103 call police_chief
-Parse instantiated task from " (SHOP_methodm_get_to_already_there_precondition pu1 strong)" ... done
-Parsed action id=106 SHOP_methodm_get_to_already_there_precondition pu1 strong
+Parsed action id=121 call police_chief
 Parse instantiated task from " (SHOP_methodm_get_to_already_there_precondition pu2 strong)" ... done
-Parsed action id=110 SHOP_methodm_get_to_already_there_precondition pu2 strong
-Parse instantiated task from " (set_up_barricades pu1)" ... done
-Parsed action id=49 set_up_barricades pu1
+Parsed action id=125 SHOP_methodm_get_to_already_there_precondition pu2 strong
+Parse instantiated task from " (SHOP_methodm_get_to_already_there_precondition pu1 strong)" ... done
+Parsed action id=126 SHOP_methodm_get_to_already_there_precondition pu1 strong
 Parse instantiated task from " (set_up_barricades pu2)" ... done
-Parsed action id=50 set_up_barricades pu2
+Parsed action id=71 set_up_barricades pu2
+Parse instantiated task from " (set_up_barricades pu1)" ... done
+Parsed action id=72 set_up_barricades pu1
 Size of primitive plan: 7
-Reading list of integers from " 5"
-Root tasks (1): 5
+Reading list of integers from " 8"
+Root tasks (1): 8
 Reading plan given as input
 Parse instantiated task from "  (tlt)" ... done
-Parsed abstract task id=5 tlt
+Parsed abstract task id=8 tlt
 Parsed method name: m_tlt_quell_riot
-Subtasks: 17
+Subtasks: 19
 
 Parse instantiated task from "  (quell_riot strong)" ... done
-Parsed abstract task id=17 quell_riot strong
+Parsed abstract task id=19 quell_riot strong
 Parsed method name: m_quell_riot
-Subtasks: 51 40 43 47 49 50
+Subtasks: 73 62 66 67 71 72
 
 Parse instantiated task from "  (declare_curfew rochester)" ... done
-Parsed abstract task id=40 declare_curfew rochester
+Parsed abstract task id=62 declare_curfew rochester
 Parsed method name: m_declare_curfew
-Subtasks: 102 103
-
-Parse instantiated task from "  (get_to pu1 strong)" ... done
-Parsed abstract task id=43 get_to pu1 strong
-Parsed method name: m_get_to_already_there
-Subtasks: 106
+Subtasks: 120 121
 
 Parse instantiated task from "  (get_to pu2 strong)" ... done
-Parsed abstract task id=47 get_to pu2 strong
+Parsed abstract task id=66 get_to pu2 strong
 Parsed method name: m_get_to_already_there
-Subtasks: 110
+Subtasks: 125
+
+Parse instantiated task from "  (get_to pu1 strong)" ... done
+Parsed abstract task id=67 get_to pu1 strong
+Parsed method name: m_get_to_already_there
+Subtasks: 126
 
 Reached end of plan (marked).
 
@@ -184,7 +220,7 @@ Tasks declared in plan actually exist and can be instantiated as given: true
 Methods don't contain duplicate subtasks: true
 Methods don't contain orphaned tasks: true
 Generating Matchings for task with id=0
- Matching Task 5 Curpos=0 #sources=1
+ Matching Task 8 Curpos=0 #sources=1
  Task is: tlt
  Attempting matching with source __t_id_0
    Found compatible linearisation.
@@ -193,8 +229,8 @@ Generating Matchings for task with id=0
     Checking variable constraints in method's precondition ... 
     Matching is ok.
 Found 1 matchings for task with id=0
-Generating Matchings for task with id=5
- Matching Task 17 Curpos=0 #sources=1
+Generating Matchings for task with id=8
+ Matching Task 19 Curpos=0 #sources=1
  Task is: quell_riot strong
  Attempting matching with source task0
   Setting ?p0 = strong
@@ -203,47 +239,47 @@ Generating Matchings for task with id=5
     Checking method's constraint formula ... 
     Checking variable constraints in method's precondition ... 
     Matching is ok.
-Found 1 matchings for task with id=5
-Generating Matchings for task with id=17
- Matching Task 51 Curpos=0 #sources=1
+Found 1 matchings for task with id=8
+Generating Matchings for task with id=19
+ Matching Task 73 Curpos=0 #sources=1
  Task is: SHOP_methodm_quell_riot_precondition strong rochester
  Attempting matching with source task5
   Setting ?loc = strong
   Setting ?town = rochester
-   Matching Task 40 Curpos=1 #sources=1
+   Matching Task 62 Curpos=1 #sources=1
    Task is: declare_curfew rochester
    Attempting matching with source task0
     Setting ?town = rochester
-     Matching Task 43 Curpos=2 #sources=1
-     Task is: get_to pu1 strong
+     Matching Task 66 Curpos=2 #sources=1
+     Task is: get_to pu2 strong
      Attempting matching with source task1
-      Setting ?p1 = pu1
+      Setting ?p1 = pu2
       Setting ?loc = strong
-       Matching Task 47 Curpos=3 #sources=1
-       Task is: get_to pu2 strong
+       Matching Task 67 Curpos=3 #sources=1
+       Task is: get_to pu1 strong
        Attempting matching with source task2
-        Setting ?p2 = pu2
+        Setting ?p2 = pu1
         Setting ?loc = strong
-         Matching Task 49 Curpos=4 #sources=1
-         Task is: set_up_barricades pu1
+         Matching Task 71 Curpos=4 #sources=1
+         Task is: set_up_barricades pu2
          Attempting matching with source task3
-          Setting ?p1 = pu1
-           Matching Task 50 Curpos=5 #sources=1
-           Task is: set_up_barricades pu2
+          Setting ?p1 = pu2
+           Matching Task 72 Curpos=5 #sources=1
+           Task is: set_up_barricades pu1
            Attempting matching with source task4
-            Setting ?p2 = pu2
+            Setting ?p2 = pu1
              Found compatible linearisation.
               Checking constants are in variable type ... 
               Checking method's constraint formula ... 
               Checking variable constraints in method's precondition ... 
               Matching is ok.
-Found 1 matchings for task with id=17
-Generating Matchings for task with id=40
- Matching Task 102 Curpos=0 #sources=1
+Found 1 matchings for task with id=19
+Generating Matchings for task with id=62
+ Matching Task 120 Curpos=0 #sources=1
  Task is: call ebs
  Attempting matching with source task0
   Setting ?var_for_ebs = ebs
-   Matching Task 103 Curpos=1 #sources=1
+   Matching Task 121 Curpos=1 #sources=1
    Task is: call police_chief
    Attempting matching with source task1
     Setting ?var_for_police_chief = police_chief
@@ -252,21 +288,9 @@ Generating Matchings for task with id=40
       Checking method's constraint formula ... 
       Checking variable constraints in method's precondition ... 
       Matching is ok.
-Found 1 matchings for task with id=40
-Generating Matchings for task with id=43
- Matching Task 106 Curpos=0 #sources=1
- Task is: SHOP_methodm_get_to_already_there_precondition pu1 strong
- Attempting matching with source task0
-  Setting ?obj = pu1
-  Setting ?place = strong
-   Found compatible linearisation.
-    Checking constants are in variable type ... 
-    Checking method's constraint formula ... 
-    Checking variable constraints in method's precondition ... 
-    Matching is ok.
-Found 1 matchings for task with id=43
-Generating Matchings for task with id=47
- Matching Task 110 Curpos=0 #sources=1
+Found 1 matchings for task with id=62
+Generating Matchings for task with id=66
+ Matching Task 125 Curpos=0 #sources=1
  Task is: SHOP_methodm_get_to_already_there_precondition pu2 strong
  Attempting matching with source task0
   Setting ?obj = pu2
@@ -276,31 +300,43 @@ Generating Matchings for task with id=47
     Checking method's constraint formula ... 
     Checking variable constraints in method's precondition ... 
     Matching is ok.
-Found 1 matchings for task with id=47
+Found 1 matchings for task with id=66
+Generating Matchings for task with id=67
+ Matching Task 126 Curpos=0 #sources=1
+ Task is: SHOP_methodm_get_to_already_there_precondition pu1 strong
+ Attempting matching with source task0
+  Setting ?obj = pu1
+  Setting ?place = strong
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=67
 Methods can be instantiated: true
 Check whether primitive plan is a linearisation of the orderings resulting from applied decomposition methods.
  Abstract Task id=0 matching still unique: true (1)
   Attempting matching
- Abstract Task id=5 matching still unique: true (1)
+ Abstract Task id=8 matching still unique: true (1)
   Attempting matching
- Abstract Task id=17 matching still unique: true (1)
+ Abstract Task id=19 matching still unique: true (1)
   Attempting matching
- Primitive Task id=51
- Abstract Task id=40 matching still unique: true (1)
+ Primitive Task id=73
+ Abstract Task id=62 matching still unique: true (1)
   Attempting matching
- Primitive Task id=102
- Primitive Task id=103
+ Primitive Task id=120
+ Primitive Task id=121
   Ordering OK.
- Abstract Task id=43 matching still unique: true (1)
+ Abstract Task id=66 matching still unique: true (1)
   Attempting matching
- Primitive Task id=106
+ Primitive Task id=125
   Ordering OK.
- Abstract Task id=47 matching still unique: true (1)
+ Abstract Task id=67 matching still unique: true (1)
   Attempting matching
- Primitive Task id=110
+ Primitive Task id=126
   Ordering OK.
- Primitive Task id=49
- Primitive Task id=50
+ Primitive Task id=71
+ Primitive Task id=72
   Ordering OK.
   Ordering OK.
   Root Task, checking primitive executability ...
@@ -722,93 +758,93 @@ Check whether primitive plan is a linearisation of the orderings resulting from 
     Method has no effect.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source 5 is the begin of an abstract task.
+    Source 8 is the begin of an abstract task.
     Evaluating the method precondition
     Method has no effect.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source 17 is the begin of an abstract task.
+    Source 19 is the begin of an abstract task.
     Evaluating the method precondition
     Method has no effect.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source 51 is a primitive action.
+    Source 73 is a primitive action.
     Action has no effect.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source -52 is a dummy for the end of a task.
+    Source -74 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source 40 is the begin of an abstract task.
+    Source 62 is the begin of an abstract task.
     Evaluating the method precondition
     Method has no effect.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source 102 is a primitive action.
+    Source 120 is a primitive action.
     Action has no effect.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source -103 is a dummy for the end of a task.
+    Source -121 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source 103 is a primitive action.
+    Source 121 is a primitive action.
     Action has no effect.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source -104 is a dummy for the end of a task.
+    Source -122 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source -41 is a dummy for the end of a task.
+    Source -63 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source 43 is the begin of an abstract task.
+    Source 66 is the begin of an abstract task.
     Evaluating the method precondition
     Method has no effect.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source 106 is a primitive action.
+    Source 125 is a primitive action.
     Action has no effect.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source -107 is a dummy for the end of a task.
+    Source -126 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source -44 is a dummy for the end of a task.
+    Source -67 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source 47 is the begin of an abstract task.
+    Source 67 is the begin of an abstract task.
     Evaluating the method precondition
     Method has no effect.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source 110 is a primitive action.
+    Source 126 is a primitive action.
     Action has no effect.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source -111 is a dummy for the end of a task.
+    Source -127 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source -48 is a dummy for the end of a task.
+    Source -68 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source 49 is a primitive action.
+    Source 71 is a primitive action.
     Action has no effect.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source -50 is a dummy for the end of a task.
+    Source -72 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source 50 is a primitive action.
+    Source 72 is a primitive action.
     Action has no effect.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source -51 is a dummy for the end of a task.
+    Source -73 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source -18 is a dummy for the end of a task.
+    Source -20 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source -6 is a dummy for the end of a task.
+    Source -9 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
     Source -1 is a dummy for the end of a task.

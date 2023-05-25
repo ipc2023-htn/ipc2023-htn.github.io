@@ -1,4 +1,675 @@
-INFO:    underlay of /etc/localtime required more than 50 (71) bind mounts
-%TIME 0:00.12 38368
+INFO:    underlay of /etc/localtime required more than 50 (80) bind mounts
+pandaPIparser is configured as follows
+  Colors in output: true
+  Mode: parsing mode
+  Parameter splitting: true
+  Conditional effects: exponential encoding
+  Disjunctive preconditions as HTN: false
+  Replace goal with action: false
+  Output: pandaPI format
+TUUP sort_for_px0y0
+TUUP sort_for_px0y1
+TUUP sort_for_px0y2
+TUUP sort_for_px1y0
+TUUP sort_for_px1y1
+TUUP sort_for_px1y2
+TUUP sort_for_px2y0
+TUUP sort_for_px2y1
+TUUP sort_for_px2y2
+TOAD - Total Order HTN Approximation with DFA.
+You have compiled TOAD without setting the NDEBUG flag. This will make it slow and should only be done for debug.
+Reading HTN model from file "domain-problem.psas" ... 
+- State has 53 bits divided into 36 mutex groups. [statebits=53] [statevars=36]
+- Domain contains 624 actions. [numActions=624]
+- Domain contains 671 tasks. [numTasks=671]
+- Domain contains 515 methods. [numMethods=515]
+- The initial state contains 10 set bits.
+- The initial task is "__top[]".
+- State-based goal contains 0 bits.
+- [timePrepareModel=9]
+Starting translation
+- adding methods as grammar rules
+Analysing rules
+- starting grammar simplification
+- 0 rules are not bottom-up reachable.
+- sorting rules...(done)
+- calculating SCCs...
+- number of SCCs: 655 [numSCCs=655]
+- number of cyclic SCCs: 3. [cyclicSCCs=3]
+- self-loops: 1. [sccSelfLoops=1]
+- collecting SCC data
+- analysing recursion...(done)
+- partitions of recursive tasks:
+- recursive structure: [rrec=yes] [lrec=no] [srec=no] [crec=no]
+- instance properties:
+  - the instance is recursive, but not self-embedding, i.e. it is regular. [rec=nonSelfEmbedding]
+  - using exact translation. [alg=exact]
+- [timeHtnToGrammar=3]
+Building DFA
+- Using bottom-up algorithm [algo=bu]
+- inplace threshold [ipt=15]
+- building sub-automata...
+  0%
+ 11% [0]
+ 21% [0]
+ 32% [0]
+ 40% [0]
+ 51% [0]
+ 62% [0]
+ 70% [0]
+ 81% [0]
+ 91% [0]
+100% [timeBuildFA=106]
+final automaton has 433 states [faFinalStates=433].
+- [usePostOpt=true]
+- [roundsOfSuccOpt=0]
+- [postOptimization=10]
+- [numStatesFinal=433]
+- [buildingDFA=118]
+- counting actions...
+- [timeCountingActions=0]
+- [numActions=853]
+- writing FA distance for each state (used in special FD heuristic)
+Creating heuristic lookup table
+- [writingHfaLookUpTable=0]
+[t=5.9153e-05s, 10164 KB] reading input...
+[t=0.00536403s, 10556 KB] done reading input!
+[t=0.00681728s, 11212 KB] Simplifying 3331 unary operators... done! [3331 unary operators]
+[t=0.0122438s, 11344 KB] time to simplify: 0.00555154s
+[t=0.0125045s, 11344 KB] Initializing additive heuristic...
+[t=0.0125269s, 11344 KB] Initializing FF heuristic...
+[t=0.0125897s, 11344 KB] Initializing DFA distance heuristic...
+[t=0.0126807s, 11344 KB] Building successor generator...done!
+[t=0.0131386s, 11344 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.0131498s, 11344 KB] time for successor generation creation: 0.000395441s
+[t=0.0131728s, 11344 KB] Variables: 37
+[t=0.013184s, 11344 KB] FactPairs: 519
+[t=0.0131982s, 11344 KB] Bytes per state: 8
+[t=0.0133036s, 11344 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.013401s, 11344 KB] New best heuristic value for ff: 10
+[t=0.0134147s, 11344 KB] New best heuristic value for dfad: 1
+[t=0.0134296s, 11344 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0134512s, 11344 KB] Initial heuristic value for ff: 10
+[t=0.0134634s, 11344 KB] Initial heuristic value for dfad: 1
+[t=0.0135297s, 11344 KB] New best heuristic value for ff: 9
+[t=0.0135429s, 11344 KB] g=1, 2 evaluated, 1 expanded
+[t=0.013599s, 11344 KB] New best heuristic value for ff: 8
+[t=0.0136128s, 11344 KB] g=2, 3 evaluated, 2 expanded
+[t=0.0136669s, 11344 KB] New best heuristic value for ff: 7
+[t=0.0136812s, 11344 KB] g=3, 4 evaluated, 3 expanded
+[t=0.0137261s, 11344 KB] New best heuristic value for ff: 6
+[t=0.0137403s, 11344 KB] g=4, 5 evaluated, 4 expanded
+[t=0.01378s, 11344 KB] New best heuristic value for ff: 5
+[t=0.0137924s, 11344 KB] g=5, 6 evaluated, 5 expanded
+[t=0.0138298s, 11344 KB] New best heuristic value for ff: 4
+[t=0.013842s, 11344 KB] g=6, 7 evaluated, 6 expanded
+[t=0.0138798s, 11344 KB] New best heuristic value for ff: 3
+[t=0.0138932s, 11344 KB] g=7, 8 evaluated, 7 expanded
+[t=0.0139266s, 11344 KB] New best heuristic value for ff: 2
+[t=0.0139383s, 11344 KB] g=8, 9 evaluated, 8 expanded
+[t=0.0139703s, 11344 KB] New best heuristic value for ff: 1
+[t=0.0139822s, 11344 KB] g=9, 10 evaluated, 9 expanded
+[t=0.0140083s, 11344 KB] Solution found!
+__method_precondition_hunt_all_split[viper,px0y0,px2y2,px0y1] (1)
+__method_precondition_move-long-snake[viper,px2y2,px1y2,px2y2,px2y1] (1)
+move-long[viper,px1y2,px2y2,px2y2,px2y1] (1)
+__method_precondition_move-long-snake[viper,px1y2,px0y2,px1y2,px2y2] (1)
+move-long[viper,px0y2,px1y2,px1y2,px2y2] (1)
+__method_precondition_move-long-snake[viper,px1y1,px0y1,px0y2,px1y2] (1)
+move-long[viper,px0y1,px0y2,px0y2,px1y2] (1)
+__noop (1)
+strike[viper,px0y1,px0y0] (1)
+__method_precondition_hunt_done[] (1)
+[t=0.0141102s, 11344 KB] Plan length: 10 step(s).
+[t=0.0141236s, 11344 KB] Plan cost: 10
+Reading HTN model from file "sas_plan.verify" ... 
+TOAD: verification successful.
+[t=0.0142164s, 11380 KB] verification successful
+Actual search time: 0.000924774s
+__method_precondition_hunt_all_split[viper,px0y0,px2y2,px0y1] (1)
+__method_precondition_move-long-snake[viper,px2y2,px1y2,px2y2,px2y1] (1)
+move-long[viper,px1y2,px2y2,px2y2,px2y1] (1)
+__method_precondition_move-long-snake[viper,px1y2,px0y2,px1y2,px2y2] (1)
+move-long[viper,px0y2,px1y2,px1y2,px2y2] (1)
+__method_precondition_move-long-snake[viper,px1y1,px0y1,px0y2,px1y2] (1)
+move-long[viper,px0y1,px0y2,px0y2,px1y2] (1)
+__noop (1)
+strike[viper,px0y1,px0y0] (1)
+__method_precondition_hunt_done[] (1)
+[t=0.014275s, 11380 KB] Plan length: 10 step(s).
+[t=0.014275s, 11380 KB] Plan cost: 10
+[t=0.014275s, 11380 KB] Expanded 10 state(s).
+[t=0.014275s, 11380 KB] Reopened 0 state(s).
+[t=0.014275s, 11380 KB] Evaluated 11 state(s).
+[t=0.014275s, 11380 KB] Evaluations: 22
+[t=0.014275s, 11380 KB] Generated 12 state(s).
+[t=0.014275s, 11380 KB] Dead ends: 0 state(s).
+[t=0.014275s, 11380 KB] Number of registered states: 11
+[t=0.014275s, 11380 KB] Int hash set load factor: 11/16 = 0.6875
+[t=0.014275s, 11380 KB] Int hash set resizes: 4
+[t=0.014275s, 11380 KB] Search time: 0.000971769s
+[t=0.014275s, 11380 KB] Total time: 0.014275s
+Solution found.
+Peak memory: 11380 KB
+pandaPIparser is configured as follows
+  Colors in output: true
+  Mode: convert pandaPI plan
+%TIME 0:00.47 37708
 %EXIT 0
-NO OUTPUT
+pandaPIparser is configured as follows
+  Colors in output: false
+  Mode: plan verification
+  Verbosity: 1
+  Lenient mode: false
+  Ignore given order: false
+Reading plan given as input
+Parse instantiated task from " move-long viper px1y2 px2y2 px2y2 px2y1" ... done
+Parsed action id=12 move-long viper px1y2 px2y2 px2y2 px2y1
+Parse instantiated task from " move-long viper px0y2 px1y2 px1y2 px2y2" ... done
+Parsed action id=18 move-long viper px0y2 px1y2 px1y2 px2y2
+Parse instantiated task from " move-long viper px0y1 px0y2 px0y2 px1y2" ... done
+Parsed action id=24 move-long viper px0y1 px0y2 px0y2 px1y2
+Parse instantiated task from " strike viper px0y1 px0y0" ... done
+Parsed action id=29 strike viper px0y1 px0y0
+Size of primitive plan: 4
+Reading list of integers from " 2"
+Root tasks (1): 2
+Reading plan given as input
+Parse instantiated task from "  hunt" ... done
+Parsed abstract task id=2 hunt
+Parsed method name: hunt_all
+Subtasks: 7 29 30
+
+Parse instantiated task from "  move viper px2y2 px0y1" ... done
+Parsed abstract task id=7 move viper px2y2 px0y1
+Parsed method name: move-long-snake
+Subtasks: 12 13
+
+Parse instantiated task from "  move viper px1y2 px0y1" ... done
+Parsed abstract task id=13 move viper px1y2 px0y1
+Parsed method name: move-long-snake
+Subtasks: 18 19
+
+Parse instantiated task from "  move viper px0y2 px0y1" ... done
+Parsed abstract task id=19 move viper px0y2 px0y1
+Parsed method name: move-long-snake
+Subtasks: 24 25
+
+Parse instantiated task from "  move viper px0y1 px0y1" ... done
+Parsed abstract task id=25 move viper px0y1 px0y1
+Parsed method name: move-base
+Subtasks:
+
+Parse instantiated task from "  hunt" ... done
+Parsed abstract task id=30 hunt
+Parsed method name: hunt_done
+Subtasks:
+
+Reached end of input.
+
+Checking the given plan ...
+IDs of subtasks used in the plan exist: true
+Tasks declared in plan actually exist and can be instantiated as given: true
+Methods don't contain duplicate subtasks: true
+Methods don't contain orphaned tasks: true
+Generating Matchings for task with id=0
+ Matching Task 2 Curpos=0 #sources=1
+ Task is: hunt
+ Attempting matching with source __t_id_7
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=0
+Generating Matchings for task with id=2
+ Matching Task 7 Curpos=0 #sources=1
+ Task is: move viper px2y2 px0y1
+ Attempting matching with source __t_id_0
+  Setting ?snake = viper
+  Setting ?snakepos = px2y2
+  Setting ?pos1 = px0y1
+   Matching Task 29 Curpos=1 #sources=1
+   Task is: strike viper px0y1 px0y0
+   Attempting matching with source __t_id_1
+    Setting ?snake = viper
+    Setting ?pos1 = px0y1
+    Setting ?foodpos = px0y0
+     Matching Task 30 Curpos=2 #sources=1
+     Task is: hunt
+     Attempting matching with source __t_id_2
+       Found compatible linearisation.
+        Checking constants are in variable type ... 
+        Checking method's constraint formula ... 
+        Checking variable constraints in method's precondition ... 
+        Matching is ok.
+Found 1 matchings for task with id=2
+Generating Matchings for task with id=7
+ Matching Task 12 Curpos=0 #sources=1
+ Task is: move-long viper px1y2 px2y2 px2y2 px2y1
+ Attempting matching with source __t_id_3
+  Setting ?snake = viper
+  Setting ?pos2 = px1y2
+  Setting ?snakepos = px2y2
+  Setting ?bodypos = px2y2
+  Setting ?tailpos = px2y1
+   Matching Task 13 Curpos=1 #sources=1
+   Task is: move viper px1y2 px0y1
+   Attempting matching with source __t_id_4
+    Setting ?snake = viper
+    Setting ?pos2 = px1y2
+    Setting ?goalpos = px0y1
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=7
+Generating Matchings for task with id=13
+ Matching Task 18 Curpos=0 #sources=1
+ Task is: move-long viper px0y2 px1y2 px1y2 px2y2
+ Attempting matching with source __t_id_3
+  Setting ?snake = viper
+  Setting ?pos2 = px0y2
+  Setting ?snakepos = px1y2
+  Setting ?bodypos = px1y2
+  Setting ?tailpos = px2y2
+   Matching Task 19 Curpos=1 #sources=1
+   Task is: move viper px0y2 px0y1
+   Attempting matching with source __t_id_4
+    Setting ?snake = viper
+    Setting ?pos2 = px0y2
+    Setting ?goalpos = px0y1
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=13
+Generating Matchings for task with id=19
+ Matching Task 24 Curpos=0 #sources=1
+ Task is: move-long viper px0y1 px0y2 px0y2 px1y2
+ Attempting matching with source __t_id_3
+  Setting ?snake = viper
+  Setting ?pos2 = px0y1
+  Setting ?snakepos = px0y2
+  Setting ?bodypos = px0y2
+  Setting ?tailpos = px1y2
+   Matching Task 25 Curpos=1 #sources=1
+   Task is: move viper px0y1 px0y1
+   Attempting matching with source __t_id_4
+    Setting ?snake = viper
+    Setting ?pos2 = px0y1
+    Setting ?goalpos = px0y1
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=19
+Generating Matchings for task with id=25
+ Found compatible linearisation.
+  Checking constants are in variable type ... 
+  Checking method's constraint formula ... 
+  Checking variable constraints in method's precondition ... 
+  Matching is ok.
+Found 1 matchings for task with id=25
+Generating Matchings for task with id=30
+ Found compatible linearisation.
+  Checking constants are in variable type ... 
+  Checking method's constraint formula ... 
+  Checking variable constraints in method's precondition ... 
+  Matching is ok.
+Found 1 matchings for task with id=30
+Methods can be instantiated: true
+Check whether primitive plan is a linearisation of the orderings resulting from applied decomposition methods.
+ Abstract Task id=0 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=2 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=7 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=12
+ Abstract Task id=13 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=18
+ Abstract Task id=19 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=24
+ Abstract Task id=25 matching still unique: true (1)
+  Attempting matching
+  Ordering OK.
+  Ordering OK.
+  Ordering OK.
+  Ordering OK.
+ Primitive Task id=29
+ Abstract Task id=30 matching still unique: true (1)
+  Attempting matching
+  Ordering OK.
+  Ordering OK.
+  Root Task, checking primitive executability ...
+  Running exponential top-sort.
+  The current state is:
+     adjacent px0y0 px0y1
+     adjacent px0y0 px1y0
+     adjacent px0y1 px0y0
+     adjacent px0y1 px0y2
+     adjacent px0y1 px1y1
+     adjacent px0y2 px0y1
+     adjacent px0y2 px1y2
+     adjacent px1y0 px0y0
+     adjacent px1y0 px1y1
+     adjacent px1y0 px2y0
+     adjacent px1y1 px0y1
+     adjacent px1y1 px1y0
+     adjacent px1y1 px1y2
+     adjacent px1y1 px2y1
+     adjacent px1y2 px0y2
+     adjacent px1y2 px1y1
+     adjacent px1y2 px2y2
+     adjacent px2y0 px1y0
+     adjacent px2y0 px2y1
+     adjacent px2y1 px1y1
+     adjacent px2y1 px2y0
+     adjacent px2y1 px2y2
+     adjacent px2y2 px1y2
+     adjacent px2y2 px2y1
+     connected viper px2y2 px2y1
+     head viper px2y2
+     mouse-at px0y0
+     occupied px0y0
+     occupied px2y1
+     occupied px2y2
+     tail viper px2y1
+   Executing plan time=1 #sources=1
+    Source 0 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 2 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 7 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 12 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 12
+    Task is: move-long viper px1y2 px2y2 px2y2 px2y1
+    Applying effects of the action.
+     Removing fact from state: connected viper px2y2 px2y1
+     Removing fact from state: head viper px2y2
+     Removing fact from state: occupied px2y1
+     Removing fact from state: tail viper px2y1
+     Adding fact to state: connected viper px1y2 px2y2
+     Adding fact to state: head viper px1y2
+     Adding fact to state: occupied px1y2
+     Adding fact to state: tail viper px2y2
+    The new state is:
+      adjacent px0y0 px0y1
+      adjacent px0y0 px1y0
+      adjacent px0y1 px0y0
+      adjacent px0y1 px0y2
+      adjacent px0y1 px1y1
+      adjacent px0y2 px0y1
+      adjacent px0y2 px1y2
+      adjacent px1y0 px0y0
+      adjacent px1y0 px1y1
+      adjacent px1y0 px2y0
+      adjacent px1y1 px0y1
+      adjacent px1y1 px1y0
+      adjacent px1y1 px1y2
+      adjacent px1y1 px2y1
+      adjacent px1y2 px0y2
+      adjacent px1y2 px1y1
+      adjacent px1y2 px2y2
+      adjacent px2y0 px1y0
+      adjacent px2y0 px2y1
+      adjacent px2y1 px1y1
+      adjacent px2y1 px2y0
+      adjacent px2y1 px2y2
+      adjacent px2y2 px1y2
+      adjacent px2y2 px2y1
+      connected viper px1y2 px2y2
+      head viper px1y2
+      mouse-at px0y0
+      occupied px0y0
+      occupied px1y2
+      occupied px2y2
+      tail viper px2y2
+   Executing plan time=1 #sources=1
+    Source -13 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 13 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 18 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 18
+    Task is: move-long viper px0y2 px1y2 px1y2 px2y2
+    Applying effects of the action.
+     Removing fact from state: connected viper px1y2 px2y2
+     Removing fact from state: head viper px1y2
+     Removing fact from state: occupied px2y2
+     Removing fact from state: tail viper px2y2
+     Adding fact to state: connected viper px0y2 px1y2
+     Adding fact to state: head viper px0y2
+     Adding fact to state: occupied px0y2
+     Adding fact to state: tail viper px1y2
+    The new state is:
+      adjacent px0y0 px0y1
+      adjacent px0y0 px1y0
+      adjacent px0y1 px0y0
+      adjacent px0y1 px0y2
+      adjacent px0y1 px1y1
+      adjacent px0y2 px0y1
+      adjacent px0y2 px1y2
+      adjacent px1y0 px0y0
+      adjacent px1y0 px1y1
+      adjacent px1y0 px2y0
+      adjacent px1y1 px0y1
+      adjacent px1y1 px1y0
+      adjacent px1y1 px1y2
+      adjacent px1y1 px2y1
+      adjacent px1y2 px0y2
+      adjacent px1y2 px1y1
+      adjacent px1y2 px2y2
+      adjacent px2y0 px1y0
+      adjacent px2y0 px2y1
+      adjacent px2y1 px1y1
+      adjacent px2y1 px2y0
+      adjacent px2y1 px2y2
+      adjacent px2y2 px1y2
+      adjacent px2y2 px2y1
+      connected viper px0y2 px1y2
+      head viper px0y2
+      mouse-at px0y0
+      occupied px0y0
+      occupied px0y2
+      occupied px1y2
+      tail viper px1y2
+   Executing plan time=1 #sources=1
+    Source -19 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 19 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 24 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 24
+    Task is: move-long viper px0y1 px0y2 px0y2 px1y2
+    Applying effects of the action.
+     Removing fact from state: connected viper px0y2 px1y2
+     Removing fact from state: head viper px0y2
+     Removing fact from state: occupied px1y2
+     Removing fact from state: tail viper px1y2
+     Adding fact to state: connected viper px0y1 px0y2
+     Adding fact to state: head viper px0y1
+     Adding fact to state: occupied px0y1
+     Adding fact to state: tail viper px0y2
+    The new state is:
+      adjacent px0y0 px0y1
+      adjacent px0y0 px1y0
+      adjacent px0y1 px0y0
+      adjacent px0y1 px0y2
+      adjacent px0y1 px1y1
+      adjacent px0y2 px0y1
+      adjacent px0y2 px1y2
+      adjacent px1y0 px0y0
+      adjacent px1y0 px1y1
+      adjacent px1y0 px2y0
+      adjacent px1y1 px0y1
+      adjacent px1y1 px1y0
+      adjacent px1y1 px1y2
+      adjacent px1y1 px2y1
+      adjacent px1y2 px0y2
+      adjacent px1y2 px1y1
+      adjacent px1y2 px2y2
+      adjacent px2y0 px1y0
+      adjacent px2y0 px2y1
+      adjacent px2y1 px1y1
+      adjacent px2y1 px2y0
+      adjacent px2y1 px2y2
+      adjacent px2y2 px1y2
+      adjacent px2y2 px2y1
+      connected viper px0y1 px0y2
+      head viper px0y1
+      mouse-at px0y0
+      occupied px0y0
+      occupied px0y1
+      occupied px0y2
+      tail viper px0y2
+   Executing plan time=1 #sources=1
+    Source -25 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 25 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -26 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -20 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -14 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -8 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 29 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 29
+    Task is: strike viper px0y1 px0y0
+    Applying effects of the action.
+     Removing fact from state: head viper px0y1
+     Removing fact from state: mouse-at px0y0
+     Adding fact to state: connected viper px0y0 px0y1
+     Adding fact to state: head viper px0y0
+    The new state is:
+      adjacent px0y0 px0y1
+      adjacent px0y0 px1y0
+      adjacent px0y1 px0y0
+      adjacent px0y1 px0y2
+      adjacent px0y1 px1y1
+      adjacent px0y2 px0y1
+      adjacent px0y2 px1y2
+      adjacent px1y0 px0y0
+      adjacent px1y0 px1y1
+      adjacent px1y0 px2y0
+      adjacent px1y1 px0y1
+      adjacent px1y1 px1y0
+      adjacent px1y1 px1y2
+      adjacent px1y1 px2y1
+      adjacent px1y2 px0y2
+      adjacent px1y2 px1y1
+      adjacent px1y2 px2y2
+      adjacent px2y0 px1y0
+      adjacent px2y0 px2y1
+      adjacent px2y1 px1y1
+      adjacent px2y1 px2y0
+      adjacent px2y1 px2y2
+      adjacent px2y2 px1y2
+      adjacent px2y2 px2y1
+      connected viper px0y0 px0y1
+      connected viper px0y1 px0y2
+      head viper px0y0
+      occupied px0y0
+      occupied px0y1
+      occupied px0y2
+      tail viper px0y2
+   Executing plan time=1 #sources=1
+    Source -30 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 30 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -31 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -3 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -1 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=0
+   Executed the whole plan ... checking whether we reached the goal state.
+   The current state is:
+      adjacent px0y0 px0y1
+      adjacent px0y0 px1y0
+      adjacent px0y1 px0y0
+      adjacent px0y1 px0y2
+      adjacent px0y1 px1y1
+      adjacent px0y2 px0y1
+      adjacent px0y2 px1y2
+      adjacent px1y0 px0y0
+      adjacent px1y0 px1y1
+      adjacent px1y0 px2y0
+      adjacent px1y1 px0y1
+      adjacent px1y1 px1y0
+      adjacent px1y1 px1y2
+      adjacent px1y1 px2y1
+      adjacent px1y2 px0y2
+      adjacent px1y2 px1y1
+      adjacent px1y2 px2y2
+      adjacent px2y0 px1y0
+      adjacent px2y0 px2y1
+      adjacent px2y1 px1y1
+      adjacent px2y1 px2y0
+      adjacent px2y1 px2y2
+      adjacent px2y2 px1y2
+      adjacent px2y2 px2y1
+      connected viper px0y0 px0y1
+      connected viper px0y1 px0y2
+      head viper px0y0
+      occupied px0y0
+      occupied px0y1
+      occupied px0y2
+      tail viper px0y2
+  Executable linearisation found.
+  Ordering OK.
+Result true true
+Order induced by methods is present in plan: true
+Plan is executable: true
+Plan verification result: true

@@ -7,66 +7,35 @@ Substitution from predicate to state variable:
 Transforming static state functions as table constraints:
  - adjacent
 ==========================
-0 Solving with 0 actions
-  [0.001s] Populated
+0 Solving with depth 0
+  [0.000s] Populated
+  [0.000s] Solved
+1 Solving with depth 1
+  [0.000s] Populated
+  [0.000s] Solved
+2 Solving with depth 2
+  [0.000s] Populated
   [0.001s] Solved
-1 Solving with 1 actions
+3 Solving with depth 3
   [0.001s] Populated
-  [0.002s] Solved
-2 Solving with 2 actions
-  [0.002s] Populated
-  [0.002s] Solved
-3 Solving with 3 actions
-  [0.002s] Populated
   [0.007s] Solved
-4 Solving with 4 actions
-  [0.008s] Populated
-  [0.022s] Solved
-5 Solving with 5 actions
-  [0.023s] Populated
-
-==== Worker 1
-solutions           : 0           
-restarts            : 0           
-decisions           : 108          (7554 /sec)
-conflicts           : 20           (1399 /sec)
-================= 
-Solvers             :             SAT        DiffLog             CP
-% propagation cycles:          8.03 %        91.88 %         0.03 %
-# propagation loops :             219            205            199
-# conflicts         :              14              6              0
-================= 
-Init time           : 0.002759 s
-Solve time          : 0.014298 s
-
-====== SAT =====
-DB size              : 6516
-Num unit propagations: 3242
-====== DiffLog =====
-# nodes: 405
-# propagators: 4576
-# propagations: 532
-# domain updates: 1712
-====== CP =====
-
-==== Worker 2
-Solver is running
-
-==== Worker 3
-Solver is running
-  [0.070s] Solved
+4 Solving with depth 4
+  [0.007s] Populated
+  [0.028s] Solved
+5 Solving with depth 5
+  [0.029s] Populated
 
 **** Decomposition ****
 
 ==>
 13 (move-long viper px1y2 px2y2 px2y2 px2y1)
-24 (move-long viper px1y1 px1y2 px1y2 px2y2)
+20 (move-long viper px1y1 px1y2 px1y2 px2y2)
 36 (move-long viper px1y0 px1y1 px1y1 px1y2)
 6 (strike viper px1y0 px0y0)
 root 1
 1 (hunt) -> hunt_all 5 6 8
-5 (move viper px2y2 px1y0) -> move-long-snake 13 12
-12 (move viper px1y2 px1y0) -> move-long-snake 24 22
+5 (move viper px2y2 px1y0) -> move-long-snake 13 10
+10 (move viper px1y2 px1y0) -> move-long-snake 20 22
 22 (move viper px1y1 px1y0) -> move-long-snake 36 37
 37 (move viper px1y0 px1y0) -> move-base
 8 (hunt) -> hunt_done
@@ -80,8 +49,54 @@ root 1
 0.4: (move-long viper px1y0 px1y1 px1y1 px1y2) [0.000]
 0.6: (strike viper px1y0 px0y0) [0.000]
 
-%TIME 0:00.18 37308
-%EXIT 0
+
+==== Worker 1
+solutions           : 1           
+restarts            : 0           
+decisions           : 54           (3024 /sec)
+conflicts           : 22           (1232 /sec)
+================= 
+Solvers             :             SAT        DiffLog             CP
+% propagation cycles:         11.32 %        87.91 %         0.73 %
+# propagation loops :             141            122            119
+# conflicts         :              19              3              0
+================= 
+Init time           : 0.003084 s
+Solve time          : 0.017858 s
+
+====== SAT =====
+DB size              : 6517
+Num unit propagations: 2718
+====== DiffLog =====
+# nodes: 405
+# propagators: 4576
+# propagations: 377
+# domain updates: 961
+====== CP =====
+
+==== Worker 2
+Solver is running
+
+==== Worker 3
+Solver is running
+  [0.092s] Solved
+6 Solving with depth 6
+  [0.093s] Populated
+  [0.215s] Solved
+7 Solving with depth 7
+  [0.216s] Populated
+  [0.452s] Solved
+8 Solving with depth 8
+  [0.453s] Populated
+  [0.880s] Solved
+9 Solving with depth 9
+  [0.881s] Populated
+  [1.721s] Solved
+10 Solving with depth 10
+  [1.723s] Populated
+Command exited with non-zero status 124
+%TIME 0:02.01 348356
+%EXIT 124
 pandaPIparser is configured as follows
   Colors in output: false
   Mode: plan verification
@@ -92,7 +107,7 @@ Reading plan given as input
 Parse instantiated task from " (move-long viper px1y2 px2y2 px2y2 px2y1)" ... done
 Parsed action id=13 move-long viper px1y2 px2y2 px2y2 px2y1
 Parse instantiated task from " (move-long viper px1y1 px1y2 px1y2 px2y2)" ... done
-Parsed action id=24 move-long viper px1y1 px1y2 px1y2 px2y2
+Parsed action id=20 move-long viper px1y1 px1y2 px1y2 px2y2
 Parse instantiated task from " (move-long viper px1y0 px1y1 px1y1 px1y2)" ... done
 Parsed action id=36 move-long viper px1y0 px1y1 px1y1 px1y2
 Parse instantiated task from " (strike viper px1y0 px0y0)" ... done
@@ -109,12 +124,12 @@ Subtasks: 5 6 8
 Parse instantiated task from "  (move viper px2y2 px1y0)" ... done
 Parsed abstract task id=5 move viper px2y2 px1y0
 Parsed method name: move-long-snake
-Subtasks: 13 12
+Subtasks: 13 10
 
 Parse instantiated task from "  (move viper px1y2 px1y0)" ... done
-Parsed abstract task id=12 move viper px1y2 px1y0
+Parsed abstract task id=10 move viper px1y2 px1y0
 Parsed method name: move-long-snake
-Subtasks: 24 22
+Subtasks: 20 22
 
 Parse instantiated task from "  (move viper px1y1 px1y0)" ... done
 Parsed abstract task id=22 move viper px1y1 px1y0
@@ -179,7 +194,7 @@ Generating Matchings for task with id=5
   Setting ?snakepos = px2y2
   Setting ?bodypos = px2y2
   Setting ?tailpos = px2y1
-   Matching Task 12 Curpos=1 #sources=1
+   Matching Task 10 Curpos=1 #sources=1
    Task is: move viper px1y2 px1y0
    Attempting matching with source __t_id_4
     Setting ?snake = viper
@@ -198,8 +213,8 @@ Generating Matchings for task with id=8
   Checking variable constraints in method's precondition ... 
   Matching is ok.
 Found 1 matchings for task with id=8
-Generating Matchings for task with id=12
- Matching Task 24 Curpos=0 #sources=1
+Generating Matchings for task with id=10
+ Matching Task 20 Curpos=0 #sources=1
  Task is: move-long viper px1y1 px1y2 px1y2 px2y2
  Attempting matching with source __t_id_3
   Setting ?snake = viper
@@ -218,7 +233,7 @@ Generating Matchings for task with id=12
       Checking method's constraint formula ... 
       Checking variable constraints in method's precondition ... 
       Matching is ok.
-Found 1 matchings for task with id=12
+Found 1 matchings for task with id=10
 Generating Matchings for task with id=22
  Matching Task 36 Curpos=0 #sources=1
  Task is: move-long viper px1y0 px1y1 px1y1 px1y2
@@ -256,9 +271,9 @@ Check whether primitive plan is a linearisation of the orderings resulting from 
  Abstract Task id=5 matching still unique: true (1)
   Attempting matching
  Primitive Task id=13
- Abstract Task id=12 matching still unique: true (1)
+ Abstract Task id=10 matching still unique: true (1)
   Attempting matching
- Primitive Task id=24
+ Primitive Task id=20
  Abstract Task id=22 matching still unique: true (1)
   Attempting matching
  Primitive Task id=36
@@ -373,15 +388,15 @@ Check whether primitive plan is a linearisation of the orderings resulting from 
     Source -14 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source 12 is the begin of an abstract task.
+    Source 10 is the begin of an abstract task.
     Evaluating the method precondition
     Method has no effect.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source 24 is a primitive action.
+    Source 20 is a primitive action.
     Action has an effect.
     Performed all sources that can be taken greedily. 1 sources remain. unique=true
-    Attempting to progress through source 24
+    Attempting to progress through source 20
     Task is: move-long viper px1y1 px1y2 px1y2 px2y2
     Applying effects of the action.
      Removing fact from state: connected viper px1y2 px2y2
@@ -425,7 +440,7 @@ Check whether primitive plan is a linearisation of the orderings resulting from 
       occupied px1y2
       tail viper px1y2
    Executing plan time=1 #sources=1
-    Source -25 is a dummy for the end of a task.
+    Source -21 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
     Source 22 is the begin of an abstract task.
@@ -494,7 +509,7 @@ Check whether primitive plan is a linearisation of the orderings resulting from 
     Source -23 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
-    Source -13 is a dummy for the end of a task.
+    Source -11 is a dummy for the end of a task.
     I can greedily take this source without making any mistake.
    Executing plan time=1 #sources=1
     Source -6 is a dummy for the end of a task.
