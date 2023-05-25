@@ -401,7 +401,7 @@ root 0 1
 20 get_to truck_0 city_loc_2 -> m_drive_to_ordering_0 28
 21 unload truck_0 city_loc_2 package_1 -> m_unload_ordering_0 31
 <==
-%TIME 0:00.22 37592
+%TIME 0:00.27 36616
 %EXIT 0
 pandaPIparser is configured as follows
   Colors in output: false

@@ -5,30 +5,30 @@ Copying blob sha256:ca1778b6935686ad781c27472c4668fc61ec3aeb85494f72deb1921892b9
 Copying config sha256:88bd6891718934e63638d9ca0ecee018e69b638270fe04990a310e5c78ab4a92
 Writing manifest to image destination
 Storing signatures
-2023/05/14 16:46:42  info unpack layer: sha256:ca1778b6935686ad781c27472c4668fc61ec3aeb85494f72deb1921892b9d39e
+2023/05/25 15:27:34  info unpack layer: sha256:ca1778b6935686ad781c27472c4668fc61ec3aeb85494f72deb1921892b9d39e
 INFO:    Running setup scriptlet
 INFO:    Copying . to /planner
 INFO:    Running post scriptlet
 + apt-get update
-Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
-Get:2 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
-Get:3 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [2203 kB]
-Get:4 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [1046 kB]
-Get:5 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [28.5 kB]
-Get:6 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [2681 kB]
-Get:7 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
-Get:8 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
-Get:9 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [33.4 kB]
-Get:10 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [11.3 MB]
-Get:11 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [177 kB]
-Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [1275 kB]
-Get:13 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1343 kB]
-Get:14 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [2341 kB]
-Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3158 kB]
-Get:16 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [31.2 kB]
-Get:17 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [55.2 kB]
-Get:18 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [28.6 kB]
-Fetched 26.3 MB in 6s (4734 kB/s)
+Get:1 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [11.3 MB]
+Get:5 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [177 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [33.4 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [1275 kB]
+Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3202 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1345 kB]
+Get:11 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [31.2 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [2408 kB]
+Get:13 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [2726 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [55.2 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [28.6 kB]
+Get:16 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [28.5 kB]
+Get:17 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [2270 kB]
+Get:18 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [1051 kB]
+Fetched 26.6 MB in 2s (15.5 MB/s)
 Reading package lists...
 + apt-get -y install make cmake flex bison python-dev libreadline-dev g++
 Reading package lists...
@@ -44,15 +44,15 @@ The following additional packages will be installed:
   libheimntlm0-heimdal libhx509-5-heimdal libicu66 libisl22 libitm1
   libjsoncpp1 libk5crypto3 libkeyutils1 libkrb5-26-heimdal libkrb5-3
   libkrb5support0 libldap-2.4-2 libldap-common liblsan0 libmagic-mgc libmagic1
-  libmpc3 libmpfr6 libncurses-dev libnghttp2-14 libpsl5 libpython2-dev
-  libpython2-stdlib libpython2.7 libpython2.7-dev libpython2.7-minimal
-  libpython2.7-stdlib libquadmath0 libreadline8 librhash0 libroken18-heimdal
-  librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libsigsegv2
-  libsqlite3-0 libssh-4 libssl1.1 libstdc++-9-dev libtsan0 libubsan1 libuv1
-  libwind0-heimdal libxml2 linux-libc-dev m4 manpages manpages-dev
-  mime-support openssl publicsuffix python-is-python2 python2 python2-dev
-  python2-minimal python2.7 python2.7-dev python2.7-minimal readline-common
-  tzdata xz-utils
+  libmpc3 libmpfr6 libncurses-dev libncurses6 libncursesw6 libnghttp2-14
+  libpsl5 libpython2-dev libpython2-stdlib libpython2.7 libpython2.7-dev
+  libpython2.7-minimal libpython2.7-stdlib libquadmath0 libreadline8 librhash0
+  libroken18-heimdal librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db
+  libsigsegv2 libsqlite3-0 libssh-4 libssl1.1 libstdc++-9-dev libtinfo6
+  libtsan0 libubsan1 libuv1 libwind0-heimdal libxml2 linux-libc-dev m4
+  manpages manpages-dev mime-support openssl publicsuffix python-is-python2
+  python2 python2-dev python2-minimal python2.7 python2.7-dev
+  python2.7-minimal readline-common tzdata xz-utils
 Suggested packages:
   binutils-doc bison-doc cmake-doc ninja-build cpp-doc gcc-9-locales
   build-essential flex-doc g++-multilib g++-9-multilib gcc-9-doc gcc-multilib
@@ -61,6 +61,8 @@ Suggested packages:
   | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp
   libsasl2-modules-sql libstdc++-9-doc m4-doc make-doc man-browser python2-doc
   python-tk python2.7-doc binfmt-support
+Recommended packages:
+  libgpm2
 The following NEW packages will be installed:
   binutils binutils-common binutils-x86-64-linux-gnu bison ca-certificates
   cmake cmake-data cpp cpp-9 file flex g++ g++-9 gcc gcc-9 gcc-9-base
@@ -81,8 +83,10 @@ The following NEW packages will be installed:
   publicsuffix python-dev-is-python2 python-is-python2 python2 python2-dev
   python2-minimal python2.7 python2.7-dev python2.7-minimal readline-common
   tzdata xz-utils
-0 upgraded, 105 newly installed, 0 to remove and 0 not upgraded.
-Need to get 76.6 MB of archives.
+The following packages will be upgraded:
+  libncurses6 libncursesw6 libtinfo6
+3 upgraded, 105 newly installed, 0 to remove and 2 not upgraded.
+Need to get 76.9 MB of archives.
 After this operation, 335 MB of additional disk space will be used.
 Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libsigsegv2 amd64 2.12-2 [13.9 kB]
 Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 m4 amd64 1.4.18-4 [199 kB]
@@ -93,104 +97,107 @@ Get:6 http://archive.ubuntu.com/ubuntu focal/universe amd64 python2-minimal amd6
 Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libssl1.1 amd64 1.1.1f-1ubuntu2.18 [1322 kB]
 Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 mime-support all 3.64ubuntu1 [30.6 kB]
 Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libexpat1 amd64 2.2.9-1ubuntu0.6 [74.6 kB]
-Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 readline-common all 8.0-4 [53.5 kB]
-Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 libreadline8 amd64 8.0-4 [131 kB]
-Get:12 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsqlite3-0 amd64 3.31.1-4ubuntu0.5 [549 kB]
-Get:13 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libpython2.7-stdlib amd64 2.7.18-1~20.04.3 [1888 kB]
-Get:14 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python2.7 amd64 2.7.18-1~20.04.3 [248 kB]
-Get:15 http://archive.ubuntu.com/ubuntu focal/universe amd64 libpython2-stdlib amd64 2.7.17-2ubuntu4 [7072 B]
-Get:16 http://archive.ubuntu.com/ubuntu focal/universe amd64 python2 amd64 2.7.17-2ubuntu4 [26.5 kB]
-Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openssl amd64 1.1.1f-1ubuntu2.18 [621 kB]
-Get:18 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 ca-certificates all 20211016ubuntu0.20.04.1 [141 kB]
-Get:19 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
-Get:20 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
-Get:21 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
-Get:22 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 tzdata all 2023c-0ubuntu0.20.04.1 [306 kB]
-Get:23 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
-Get:24 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.6 [640 kB]
-Get:25 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 xz-utils amd64 5.2.4-1ubuntu1.1 [82.6 kB]
-Get:26 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 krb5-locales all 1.17-6ubuntu4.3 [11.6 kB]
-Get:27 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libkrb5support0 amd64 1.17-6ubuntu4.3 [31.1 kB]
-Get:28 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libk5crypto3 amd64 1.17-6ubuntu4.3 [80.2 kB]
-Get:29 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libkeyutils1 amd64 1.6-6ubuntu1.1 [10.3 kB]
-Get:30 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libkrb5-3 amd64 1.17-6ubuntu4.3 [330 kB]
-Get:31 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgssapi-krb5-2 amd64 1.17-6ubuntu4.3 [121 kB]
-Get:32 http://archive.ubuntu.com/ubuntu focal/main amd64 libpsl5 amd64 0.21.0-1ubuntu1 [51.5 kB]
-Get:33 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libuv1 amd64 1.34.2-1ubuntu1.3 [80.8 kB]
-Get:34 http://archive.ubuntu.com/ubuntu focal/main amd64 manpages all 5.05-1 [1314 kB]
-Get:35 http://archive.ubuntu.com/ubuntu focal/main amd64 publicsuffix all 20200303.0012-1 [111 kB]
-Get:36 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils-common amd64 2.34-6ubuntu1.4 [207 kB]
-Get:37 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libbinutils amd64 2.34-6ubuntu1.4 [474 kB]
-Get:38 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libctf-nobfd0 amd64 2.34-6ubuntu1.4 [47.2 kB]
-Get:39 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libctf0 amd64 2.34-6ubuntu1.4 [46.6 kB]
-Get:40 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.34-6ubuntu1.4 [1613 kB]
-Get:41 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils amd64 2.34-6ubuntu1.4 [3380 B]
-Get:42 http://archive.ubuntu.com/ubuntu focal/main amd64 bison amd64 2:3.5.1+dfsg-1 [657 kB]
-Get:43 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cmake-data all 3.16.3-1ubuntu1.20.04.1 [1613 kB]
-Get:44 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libarchive13 amd64 3.4.0-2ubuntu1.2 [327 kB]
-Get:45 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libbrotli1 amd64 1.0.7-6ubuntu0.1 [267 kB]
-Get:46 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libroken18-heimdal amd64 7.7.0+dfsg-1ubuntu1.4 [42.5 kB]
-Get:47 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libasn1-8-heimdal amd64 7.7.0+dfsg-1ubuntu1.4 [181 kB]
-Get:48 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libheimbase1-heimdal amd64 7.7.0+dfsg-1ubuntu1.4 [30.4 kB]
-Get:49 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libhcrypto4-heimdal amd64 7.7.0+dfsg-1ubuntu1.4 [88.1 kB]
-Get:50 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libwind0-heimdal amd64 7.7.0+dfsg-1ubuntu1.4 [47.7 kB]
-Get:51 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libhx509-5-heimdal amd64 7.7.0+dfsg-1ubuntu1.4 [107 kB]
-Get:52 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libkrb5-26-heimdal amd64 7.7.0+dfsg-1ubuntu1.4 [207 kB]
-Get:53 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libheimntlm0-heimdal amd64 7.7.0+dfsg-1ubuntu1.4 [15.1 kB]
-Get:54 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgssapi3-heimdal amd64 7.7.0+dfsg-1ubuntu1.4 [96.5 kB]
-Get:55 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsasl2-modules-db amd64 2.1.27+dfsg-2ubuntu0.1 [14.7 kB]
-Get:56 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsasl2-2 amd64 2.1.27+dfsg-2ubuntu0.1 [49.3 kB]
-Get:57 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libldap-common all 2.4.49+dfsg-2ubuntu1.9 [16.6 kB]
-Get:58 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libldap-2.4-2 amd64 2.4.49+dfsg-2ubuntu1.9 [155 kB]
-Get:59 http://archive.ubuntu.com/ubuntu focal/main amd64 libnghttp2-14 amd64 1.40.0-1build1 [78.7 kB]
-Get:60 http://archive.ubuntu.com/ubuntu focal/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2build1 [54.9 kB]
-Get:61 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libssh-4 amd64 0.9.3-2ubuntu2.2 [170 kB]
-Get:62 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcurl4 amd64 7.68.0-1ubuntu2.18 [236 kB]
-Get:63 http://archive.ubuntu.com/ubuntu focal/main amd64 libjsoncpp1 amd64 1.7.4-3.1ubuntu2 [75.6 kB]
-Get:64 http://archive.ubuntu.com/ubuntu focal/main amd64 librhash0 amd64 1.3.9-1 [113 kB]
-Get:65 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cmake amd64 3.16.3-1ubuntu1.20.04.1 [3668 kB]
-Get:66 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gcc-9-base amd64 9.4.0-1ubuntu1~20.04.1 [19.4 kB]
-Get:67 http://archive.ubuntu.com/ubuntu focal/main amd64 libisl22 amd64 0.22.1-1 [592 kB]
-Get:68 http://archive.ubuntu.com/ubuntu focal/main amd64 libmpfr6 amd64 4.0.2-1 [240 kB]
-Get:69 http://archive.ubuntu.com/ubuntu focal/main amd64 libmpc3 amd64 1.1.0-1 [40.8 kB]
-Get:70 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cpp-9 amd64 9.4.0-1ubuntu1~20.04.1 [7500 kB]
-Get:71 http://archive.ubuntu.com/ubuntu focal/main amd64 cpp amd64 4:9.3.0-1ubuntu2 [27.6 kB]
-Get:72 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcc1-0 amd64 10.3.0-1ubuntu1~20.04 [48.8 kB]
-Get:73 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgomp1 amd64 10.3.0-1ubuntu1~20.04 [102 kB]
-Get:74 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libitm1 amd64 10.3.0-1ubuntu1~20.04 [26.2 kB]
-Get:75 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libatomic1 amd64 10.3.0-1ubuntu1~20.04 [9284 B]
-Get:76 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libasan5 amd64 9.4.0-1ubuntu1~20.04.1 [2751 kB]
-Get:77 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 liblsan0 amd64 10.3.0-1ubuntu1~20.04 [835 kB]
-Get:78 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libtsan0 amd64 10.3.0-1ubuntu1~20.04 [2009 kB]
-Get:79 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libubsan1 amd64 10.3.0-1ubuntu1~20.04 [784 kB]
-Get:80 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libquadmath0 amd64 10.3.0-1ubuntu1~20.04 [146 kB]
-Get:81 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgcc-9-dev amd64 9.4.0-1ubuntu1~20.04.1 [2359 kB]
-Get:82 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gcc-9 amd64 9.4.0-1ubuntu1~20.04.1 [8274 kB]
-Get:83 http://archive.ubuntu.com/ubuntu focal/main amd64 gcc amd64 4:9.3.0-1ubuntu2 [5208 B]
-Get:84 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libc-dev-bin amd64 2.31-0ubuntu9.9 [71.8 kB]
-Get:85 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-libc-dev amd64 5.4.0-148.165 [1120 kB]
-Get:86 http://archive.ubuntu.com/ubuntu focal/main amd64 libcrypt-dev amd64 1:4.4.10-10ubuntu4 [104 kB]
-Get:87 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libc6-dev amd64 2.31-0ubuntu9.9 [2519 kB]
-Get:88 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libstdc++-9-dev amd64 9.4.0-1ubuntu1~20.04.1 [1722 kB]
-Get:89 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 g++-9 amd64 9.4.0-1ubuntu1~20.04.1 [8420 kB]
-Get:90 http://archive.ubuntu.com/ubuntu focal/main amd64 g++ amd64 4:9.3.0-1ubuntu2 [1604 B]
-Get:91 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libexpat1-dev amd64 2.2.9-1ubuntu0.6 [116 kB]
-Get:92 http://archive.ubuntu.com/ubuntu focal/main amd64 libfl2 amd64 2.6.4-6.2 [11.5 kB]
-Get:93 http://archive.ubuntu.com/ubuntu focal/main amd64 libfl-dev amd64 2.6.4-6.2 [6316 B]
-Get:94 http://archive.ubuntu.com/ubuntu focal/main amd64 libncurses-dev amd64 6.2-0ubuntu2 [339 kB]
-Get:95 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libpython2.7 amd64 2.7.18-1~20.04.3 [1037 kB]
-Get:96 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libpython2.7-dev amd64 2.7.18-1~20.04.3 [2466 kB]
-Get:97 http://archive.ubuntu.com/ubuntu focal/universe amd64 libpython2-dev amd64 2.7.17-2ubuntu4 [7140 B]
-Get:98 http://archive.ubuntu.com/ubuntu focal/main amd64 libreadline-dev amd64 8.0-4 [141 kB]
-Get:99 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsasl2-modules amd64 2.1.27+dfsg-2ubuntu0.1 [48.8 kB]
-Get:100 http://archive.ubuntu.com/ubuntu focal/main amd64 make amd64 4.2.1-1.2 [162 kB]
-Get:101 http://archive.ubuntu.com/ubuntu focal/main amd64 manpages-dev all 5.05-1 [2266 kB]
-Get:102 http://archive.ubuntu.com/ubuntu focal/universe amd64 python-is-python2 all 2.7.17-4 [2496 B]
-Get:103 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python2.7-dev amd64 2.7.18-1~20.04.3 [293 kB]
-Get:104 http://archive.ubuntu.com/ubuntu focal/universe amd64 python2-dev amd64 2.7.17-2ubuntu4 [1268 B]
-Get:105 http://archive.ubuntu.com/ubuntu focal/universe amd64 python-dev-is-python2 all 2.7.17-4 [1396 B]
+Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libncurses6 amd64 6.2-0ubuntu2.1 [101 kB]
+Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libncursesw6 amd64 6.2-0ubuntu2.1 [132 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libtinfo6 amd64 6.2-0ubuntu2.1 [87.4 kB]
+Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 readline-common all 8.0-4 [53.5 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 libreadline8 amd64 8.0-4 [131 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsqlite3-0 amd64 3.31.1-4ubuntu0.5 [549 kB]
+Get:16 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libpython2.7-stdlib amd64 2.7.18-1~20.04.3 [1888 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python2.7 amd64 2.7.18-1~20.04.3 [248 kB]
+Get:18 http://archive.ubuntu.com/ubuntu focal/universe amd64 libpython2-stdlib amd64 2.7.17-2ubuntu4 [7072 B]
+Get:19 http://archive.ubuntu.com/ubuntu focal/universe amd64 python2 amd64 2.7.17-2ubuntu4 [26.5 kB]
+Get:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openssl amd64 1.1.1f-1ubuntu2.18 [621 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 ca-certificates all 20230311ubuntu0.20.04.1 [152 kB]
+Get:22 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+Get:23 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Get:24 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 tzdata all 2023c-0ubuntu0.20.04.1 [306 kB]
+Get:26 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
+Get:27 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.6 [640 kB]
+Get:28 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 xz-utils amd64 5.2.4-1ubuntu1.1 [82.6 kB]
+Get:29 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 krb5-locales all 1.17-6ubuntu4.3 [11.6 kB]
+Get:30 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libkrb5support0 amd64 1.17-6ubuntu4.3 [31.1 kB]
+Get:31 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libk5crypto3 amd64 1.17-6ubuntu4.3 [80.2 kB]
+Get:32 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libkeyutils1 amd64 1.6-6ubuntu1.1 [10.3 kB]
+Get:33 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libkrb5-3 amd64 1.17-6ubuntu4.3 [330 kB]
+Get:34 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgssapi-krb5-2 amd64 1.17-6ubuntu4.3 [121 kB]
+Get:35 http://archive.ubuntu.com/ubuntu focal/main amd64 libpsl5 amd64 0.21.0-1ubuntu1 [51.5 kB]
+Get:36 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libuv1 amd64 1.34.2-1ubuntu1.3 [80.8 kB]
+Get:37 http://archive.ubuntu.com/ubuntu focal/main amd64 manpages all 5.05-1 [1314 kB]
+Get:38 http://archive.ubuntu.com/ubuntu focal/main amd64 publicsuffix all 20200303.0012-1 [111 kB]
+Get:39 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils-common amd64 2.34-6ubuntu1.5 [207 kB]
+Get:40 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libbinutils amd64 2.34-6ubuntu1.5 [475 kB]
+Get:41 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libctf-nobfd0 amd64 2.34-6ubuntu1.5 [47.4 kB]
+Get:42 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libctf0 amd64 2.34-6ubuntu1.5 [46.6 kB]
+Get:43 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.34-6ubuntu1.5 [1613 kB]
+Get:44 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils amd64 2.34-6ubuntu1.5 [3372 B]
+Get:45 http://archive.ubuntu.com/ubuntu focal/main amd64 bison amd64 2:3.5.1+dfsg-1 [657 kB]
+Get:46 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cmake-data all 3.16.3-1ubuntu1.20.04.1 [1613 kB]
+Get:47 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libarchive13 amd64 3.4.0-2ubuntu1.2 [327 kB]
+Get:48 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libbrotli1 amd64 1.0.7-6ubuntu0.1 [267 kB]
+Get:49 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libroken18-heimdal amd64 7.7.0+dfsg-1ubuntu1.4 [42.5 kB]
+Get:50 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libasn1-8-heimdal amd64 7.7.0+dfsg-1ubuntu1.4 [181 kB]
+Get:51 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libheimbase1-heimdal amd64 7.7.0+dfsg-1ubuntu1.4 [30.4 kB]
+Get:52 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libhcrypto4-heimdal amd64 7.7.0+dfsg-1ubuntu1.4 [88.1 kB]
+Get:53 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libwind0-heimdal amd64 7.7.0+dfsg-1ubuntu1.4 [47.7 kB]
+Get:54 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libhx509-5-heimdal amd64 7.7.0+dfsg-1ubuntu1.4 [107 kB]
+Get:55 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libkrb5-26-heimdal amd64 7.7.0+dfsg-1ubuntu1.4 [207 kB]
+Get:56 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libheimntlm0-heimdal amd64 7.7.0+dfsg-1ubuntu1.4 [15.1 kB]
+Get:57 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgssapi3-heimdal amd64 7.7.0+dfsg-1ubuntu1.4 [96.5 kB]
+Get:58 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsasl2-modules-db amd64 2.1.27+dfsg-2ubuntu0.1 [14.7 kB]
+Get:59 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsasl2-2 amd64 2.1.27+dfsg-2ubuntu0.1 [49.3 kB]
+Get:60 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libldap-common all 2.4.49+dfsg-2ubuntu1.9 [16.6 kB]
+Get:61 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libldap-2.4-2 amd64 2.4.49+dfsg-2ubuntu1.9 [155 kB]
+Get:62 http://archive.ubuntu.com/ubuntu focal/main amd64 libnghttp2-14 amd64 1.40.0-1build1 [78.7 kB]
+Get:63 http://archive.ubuntu.com/ubuntu focal/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2build1 [54.9 kB]
+Get:64 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libssh-4 amd64 0.9.3-2ubuntu2.2 [170 kB]
+Get:65 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcurl4 amd64 7.68.0-1ubuntu2.18 [236 kB]
+Get:66 http://archive.ubuntu.com/ubuntu focal/main amd64 libjsoncpp1 amd64 1.7.4-3.1ubuntu2 [75.6 kB]
+Get:67 http://archive.ubuntu.com/ubuntu focal/main amd64 librhash0 amd64 1.3.9-1 [113 kB]
+Get:68 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cmake amd64 3.16.3-1ubuntu1.20.04.1 [3668 kB]
+Get:69 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gcc-9-base amd64 9.4.0-1ubuntu1~20.04.1 [19.4 kB]
+Get:70 http://archive.ubuntu.com/ubuntu focal/main amd64 libisl22 amd64 0.22.1-1 [592 kB]
+Get:71 http://archive.ubuntu.com/ubuntu focal/main amd64 libmpfr6 amd64 4.0.2-1 [240 kB]
+Get:72 http://archive.ubuntu.com/ubuntu focal/main amd64 libmpc3 amd64 1.1.0-1 [40.8 kB]
+Get:73 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cpp-9 amd64 9.4.0-1ubuntu1~20.04.1 [7500 kB]
+Get:74 http://archive.ubuntu.com/ubuntu focal/main amd64 cpp amd64 4:9.3.0-1ubuntu2 [27.6 kB]
+Get:75 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcc1-0 amd64 10.3.0-1ubuntu1~20.04 [48.8 kB]
+Get:76 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgomp1 amd64 10.3.0-1ubuntu1~20.04 [102 kB]
+Get:77 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libitm1 amd64 10.3.0-1ubuntu1~20.04 [26.2 kB]
+Get:78 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libatomic1 amd64 10.3.0-1ubuntu1~20.04 [9284 B]
+Get:79 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libasan5 amd64 9.4.0-1ubuntu1~20.04.1 [2751 kB]
+Get:80 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 liblsan0 amd64 10.3.0-1ubuntu1~20.04 [835 kB]
+Get:81 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libtsan0 amd64 10.3.0-1ubuntu1~20.04 [2009 kB]
+Get:82 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libubsan1 amd64 10.3.0-1ubuntu1~20.04 [784 kB]
+Get:83 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libquadmath0 amd64 10.3.0-1ubuntu1~20.04 [146 kB]
+Get:84 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgcc-9-dev amd64 9.4.0-1ubuntu1~20.04.1 [2359 kB]
+Get:85 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gcc-9 amd64 9.4.0-1ubuntu1~20.04.1 [8274 kB]
+Get:86 http://archive.ubuntu.com/ubuntu focal/main amd64 gcc amd64 4:9.3.0-1ubuntu2 [5208 B]
+Get:87 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libc-dev-bin amd64 2.31-0ubuntu9.9 [71.8 kB]
+Get:88 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-libc-dev amd64 5.4.0-149.166 [1117 kB]
+Get:89 http://archive.ubuntu.com/ubuntu focal/main amd64 libcrypt-dev amd64 1:4.4.10-10ubuntu4 [104 kB]
+Get:90 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libc6-dev amd64 2.31-0ubuntu9.9 [2519 kB]
+Get:91 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libstdc++-9-dev amd64 9.4.0-1ubuntu1~20.04.1 [1722 kB]
+Get:92 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 g++-9 amd64 9.4.0-1ubuntu1~20.04.1 [8420 kB]
+Get:93 http://archive.ubuntu.com/ubuntu focal/main amd64 g++ amd64 4:9.3.0-1ubuntu2 [1604 B]
+Get:94 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libexpat1-dev amd64 2.2.9-1ubuntu0.6 [116 kB]
+Get:95 http://archive.ubuntu.com/ubuntu focal/main amd64 libfl2 amd64 2.6.4-6.2 [11.5 kB]
+Get:96 http://archive.ubuntu.com/ubuntu focal/main amd64 libfl-dev amd64 2.6.4-6.2 [6316 B]
+Get:97 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libncurses-dev amd64 6.2-0ubuntu2.1 [340 kB]
+Get:98 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libpython2.7 amd64 2.7.18-1~20.04.3 [1037 kB]
+Get:99 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libpython2.7-dev amd64 2.7.18-1~20.04.3 [2466 kB]
+Get:100 http://archive.ubuntu.com/ubuntu focal/universe amd64 libpython2-dev amd64 2.7.17-2ubuntu4 [7140 B]
+Get:101 http://archive.ubuntu.com/ubuntu focal/main amd64 libreadline-dev amd64 8.0-4 [141 kB]
+Get:102 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsasl2-modules amd64 2.1.27+dfsg-2ubuntu0.1 [48.8 kB]
+Get:103 http://archive.ubuntu.com/ubuntu focal/main amd64 make amd64 4.2.1-1.2 [162 kB]
+Get:104 http://archive.ubuntu.com/ubuntu focal/main amd64 manpages-dev all 5.05-1 [2266 kB]
+Get:105 http://archive.ubuntu.com/ubuntu focal/universe amd64 python-is-python2 all 2.7.17-4 [2496 B]
+Get:106 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python2.7-dev amd64 2.7.18-1~20.04.3 [293 kB]
+Get:107 http://archive.ubuntu.com/ubuntu focal/universe amd64 python2-dev amd64 2.7.17-2ubuntu4 [1268 B]
+Get:108 http://archive.ubuntu.com/ubuntu focal/universe amd64 python-dev-is-python2 all 2.7.17-4 [1396 B]
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 76.6 MB in 14s (5370 kB/s)
+Fetched 76.9 MB in 4s (19.9 MB/s)
 Selecting previously unselected package libsigsegv2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4126 files and directories currently installed.)
 Preparing to unpack .../00-libsigsegv2_2.12-2_amd64.deb ...
@@ -219,23 +226,31 @@ Unpacking mime-support (3.64ubuntu1) ...
 Selecting previously unselected package libexpat1:amd64.
 Preparing to unpack .../08-libexpat1_2.2.9-1ubuntu0.6_amd64.deb ...
 Unpacking libexpat1:amd64 (2.2.9-1ubuntu0.6) ...
+Preparing to unpack .../09-libncurses6_6.2-0ubuntu2.1_amd64.deb ...
+Unpacking libncurses6:amd64 (6.2-0ubuntu2.1) over (6.2-0ubuntu2) ...
+Preparing to unpack .../10-libncursesw6_6.2-0ubuntu2.1_amd64.deb ...
+Unpacking libncursesw6:amd64 (6.2-0ubuntu2.1) over (6.2-0ubuntu2) ...
+Preparing to unpack .../11-libtinfo6_6.2-0ubuntu2.1_amd64.deb ...
+Unpacking libtinfo6:amd64 (6.2-0ubuntu2.1) over (6.2-0ubuntu2) ...
+Setting up libtinfo6:amd64 (6.2-0ubuntu2.1) ...
 Selecting previously unselected package readline-common.
-Preparing to unpack .../09-readline-common_8.0-4_all.deb ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4549 files and directories currently installed.)
+Preparing to unpack .../0-readline-common_8.0-4_all.deb ...
 Unpacking readline-common (8.0-4) ...
 Selecting previously unselected package libreadline8:amd64.
-Preparing to unpack .../10-libreadline8_8.0-4_amd64.deb ...
+Preparing to unpack .../1-libreadline8_8.0-4_amd64.deb ...
 Unpacking libreadline8:amd64 (8.0-4) ...
 Selecting previously unselected package libsqlite3-0:amd64.
-Preparing to unpack .../11-libsqlite3-0_3.31.1-4ubuntu0.5_amd64.deb ...
+Preparing to unpack .../2-libsqlite3-0_3.31.1-4ubuntu0.5_amd64.deb ...
 Unpacking libsqlite3-0:amd64 (3.31.1-4ubuntu0.5) ...
 Selecting previously unselected package libpython2.7-stdlib:amd64.
-Preparing to unpack .../12-libpython2.7-stdlib_2.7.18-1~20.04.3_amd64.deb ...
+Preparing to unpack .../3-libpython2.7-stdlib_2.7.18-1~20.04.3_amd64.deb ...
 Unpacking libpython2.7-stdlib:amd64 (2.7.18-1~20.04.3) ...
 Selecting previously unselected package python2.7.
-Preparing to unpack .../13-python2.7_2.7.18-1~20.04.3_amd64.deb ...
+Preparing to unpack .../4-python2.7_2.7.18-1~20.04.3_amd64.deb ...
 Unpacking python2.7 (2.7.18-1~20.04.3) ...
 Selecting previously unselected package libpython2-stdlib:amd64.
-Preparing to unpack .../14-libpython2-stdlib_2.7.17-2ubuntu4_amd64.deb ...
+Preparing to unpack .../5-libpython2-stdlib_2.7.17-2ubuntu4_amd64.deb ...
 Unpacking libpython2-stdlib:amd64 (2.7.17-2ubuntu4) ...
 Setting up libpython2.7-minimal:amd64 (2.7.18-1~20.04.3) ...
 Setting up python2.7-minimal (2.7.18-1~20.04.3) ...
@@ -249,8 +264,8 @@ Selecting previously unselected package openssl.
 Preparing to unpack .../01-openssl_1.1.1f-1ubuntu2.18_amd64.deb ...
 Unpacking openssl (1.1.1f-1ubuntu2.18) ...
 Selecting previously unselected package ca-certificates.
-Preparing to unpack .../02-ca-certificates_20211016ubuntu0.20.04.1_all.deb ...
-Unpacking ca-certificates (20211016ubuntu0.20.04.1) ...
+Preparing to unpack .../02-ca-certificates_20230311ubuntu0.20.04.1_all.deb ...
+Unpacking ca-certificates (20230311ubuntu0.20.04.1) ...
 Selecting previously unselected package libmagic-mgc.
 Preparing to unpack .../03-libmagic-mgc_1%3a5.38-4_amd64.deb ...
 Unpacking libmagic-mgc (1:5.38-4) ...
@@ -303,23 +318,23 @@ Selecting previously unselected package publicsuffix.
 Preparing to unpack .../19-publicsuffix_20200303.0012-1_all.deb ...
 Unpacking publicsuffix (20200303.0012-1) ...
 Selecting previously unselected package binutils-common:amd64.
-Preparing to unpack .../20-binutils-common_2.34-6ubuntu1.4_amd64.deb ...
-Unpacking binutils-common:amd64 (2.34-6ubuntu1.4) ...
+Preparing to unpack .../20-binutils-common_2.34-6ubuntu1.5_amd64.deb ...
+Unpacking binutils-common:amd64 (2.34-6ubuntu1.5) ...
 Selecting previously unselected package libbinutils:amd64.
-Preparing to unpack .../21-libbinutils_2.34-6ubuntu1.4_amd64.deb ...
-Unpacking libbinutils:amd64 (2.34-6ubuntu1.4) ...
+Preparing to unpack .../21-libbinutils_2.34-6ubuntu1.5_amd64.deb ...
+Unpacking libbinutils:amd64 (2.34-6ubuntu1.5) ...
 Selecting previously unselected package libctf-nobfd0:amd64.
-Preparing to unpack .../22-libctf-nobfd0_2.34-6ubuntu1.4_amd64.deb ...
-Unpacking libctf-nobfd0:amd64 (2.34-6ubuntu1.4) ...
+Preparing to unpack .../22-libctf-nobfd0_2.34-6ubuntu1.5_amd64.deb ...
+Unpacking libctf-nobfd0:amd64 (2.34-6ubuntu1.5) ...
 Selecting previously unselected package libctf0:amd64.
-Preparing to unpack .../23-libctf0_2.34-6ubuntu1.4_amd64.deb ...
-Unpacking libctf0:amd64 (2.34-6ubuntu1.4) ...
+Preparing to unpack .../23-libctf0_2.34-6ubuntu1.5_amd64.deb ...
+Unpacking libctf0:amd64 (2.34-6ubuntu1.5) ...
 Selecting previously unselected package binutils-x86-64-linux-gnu.
-Preparing to unpack .../24-binutils-x86-64-linux-gnu_2.34-6ubuntu1.4_amd64.deb ...
-Unpacking binutils-x86-64-linux-gnu (2.34-6ubuntu1.4) ...
+Preparing to unpack .../24-binutils-x86-64-linux-gnu_2.34-6ubuntu1.5_amd64.deb ...
+Unpacking binutils-x86-64-linux-gnu (2.34-6ubuntu1.5) ...
 Selecting previously unselected package binutils.
-Preparing to unpack .../25-binutils_2.34-6ubuntu1.4_amd64.deb ...
-Unpacking binutils (2.34-6ubuntu1.4) ...
+Preparing to unpack .../25-binutils_2.34-6ubuntu1.5_amd64.deb ...
+Unpacking binutils (2.34-6ubuntu1.5) ...
 Selecting previously unselected package bison.
 Preparing to unpack .../26-bison_2%3a3.5.1+dfsg-1_amd64.deb ...
 Unpacking bison (2:3.5.1+dfsg-1) ...
@@ -450,8 +465,8 @@ Selecting previously unselected package libc-dev-bin.
 Preparing to unpack .../68-libc-dev-bin_2.31-0ubuntu9.9_amd64.deb ...
 Unpacking libc-dev-bin (2.31-0ubuntu9.9) ...
 Selecting previously unselected package linux-libc-dev:amd64.
-Preparing to unpack .../69-linux-libc-dev_5.4.0-148.165_amd64.deb ...
-Unpacking linux-libc-dev:amd64 (5.4.0-148.165) ...
+Preparing to unpack .../69-linux-libc-dev_5.4.0-149.166_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (5.4.0-149.166) ...
 Selecting previously unselected package libcrypt-dev:amd64.
 Preparing to unpack .../70-libcrypt-dev_1%3a4.4.10-10ubuntu4_amd64.deb ...
 Unpacking libcrypt-dev:amd64 (1:4.4.10-10ubuntu4) ...
@@ -477,8 +492,8 @@ Selecting previously unselected package libfl-dev:amd64.
 Preparing to unpack .../77-libfl-dev_2.6.4-6.2_amd64.deb ...
 Unpacking libfl-dev:amd64 (2.6.4-6.2) ...
 Selecting previously unselected package libncurses-dev:amd64.
-Preparing to unpack .../78-libncurses-dev_6.2-0ubuntu2_amd64.deb ...
-Unpacking libncurses-dev:amd64 (6.2-0ubuntu2) ...
+Preparing to unpack .../78-libncurses-dev_6.2-0ubuntu2.1_amd64.deb ...
+Unpacking libncurses-dev:amd64 (6.2-0ubuntu2.1) ...
 Selecting previously unselected package libpython2.7:amd64.
 Preparing to unpack .../79-libpython2.7_2.7.18-1~20.04.3_amd64.deb ...
 Unpacking libpython2.7:amd64 (2.7.18-1~20.04.3) ...
@@ -528,11 +543,11 @@ debconf: falling back to frontend: Teletype
 Setting up libbrotli1:amd64 (1.0.7-6ubuntu0.1) ...
 Setting up libsqlite3-0:amd64 (3.31.1-4ubuntu0.5) ...
 Setting up libsasl2-modules:amd64 (2.1.27+dfsg-2ubuntu0.1) ...
-Setting up binutils-common:amd64 (2.34-6ubuntu1.4) ...
+Setting up binutils-common:amd64 (2.34-6ubuntu1.5) ...
 Setting up libnghttp2-14:amd64 (1.40.0-1build1) ...
 Setting up libmagic1:amd64 (1:5.38-4) ...
-Setting up linux-libc-dev:amd64 (5.4.0-148.165) ...
-Setting up libctf-nobfd0:amd64 (2.34-6ubuntu1.4) ...
+Setting up linux-libc-dev:amd64 (5.4.0-149.166) ...
+Setting up libctf-nobfd0:amd64 (2.34-6ubuntu1.5) ...
 Setting up krb5-locales (1.17-6ubuntu4.3) ...
 Setting up file (1:5.38-4) ...
 Setting up libgomp1:amd64 (10.3.0-1ubuntu1~20.04) ...
@@ -560,8 +575,8 @@ Geographic area:
 Use of uninitialized value $_[1] in join or string at /usr/share/perl5/Debconf/DbDriver/Stack.pm line 111.
 
 Current default time zone: '/UTC'
-Local time is now:      Sun May 14 14:47:11 UTC 2023.
-Universal Time is now:  Sun May 14 14:47:11 UTC 2023.
+Local time is now:      Thu May 25 13:27:48 UTC 2023.
+Universal Time is now:  Thu May 25 13:27:48 UTC 2023.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Use of uninitialized value $val in substitution (s///) at /usr/share/perl5/Debconf/Format/822.pm line 83, <GEN6> line 4.
@@ -570,6 +585,7 @@ Setting up libuv1:amd64 (1.34.2-1ubuntu1.3) ...
 Setting up make (4.2.1-1.2) ...
 Setting up libmpfr6:amd64 (4.0.2-1) ...
 Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build1) ...
+Setting up libncurses6:amd64 (6.2-0ubuntu2.1) ...
 Setting up libsigsegv2:amd64 (2.12-2) ...
 Setting up xz-utils (5.2.4-1ubuntu1.1) ...
 update-alternatives: using /usr/bin/xz to provide /usr/bin/lzma (lzma) in auto mode
@@ -587,6 +603,7 @@ Setting up libquadmath0:amd64 (10.3.0-1ubuntu1~20.04) ...
 Setting up libmpc3:amd64 (1.1.0-1) ...
 Setting up libatomic1:amd64 (10.3.0-1ubuntu1~20.04) ...
 Setting up libfl2:amd64 (2.6.4-6.2) ...
+Setting up libncursesw6:amd64 (6.2-0ubuntu2.1) ...
 Setting up libk5crypto3:amd64 (1.17-6ubuntu4.3) ...
 Setting up libsasl2-2:amd64 (2.1.27+dfsg-2ubuntu0.1) ...
 Setting up libroken18-heimdal:amd64 (7.7.0+dfsg-1ubuntu1.4) ...
@@ -596,7 +613,7 @@ Setting up libcrypt-dev:amd64 (1:4.4.10-10ubuntu4) ...
 Setting up libisl22:amd64 (0.22.1-1) ...
 Setting up cmake-data (3.16.3-1ubuntu1.20.04.1) ...
 Setting up libkrb5-3:amd64 (1.17-6ubuntu4.3) ...
-Setting up libbinutils:amd64 (2.34-6ubuntu1.4) ...
+Setting up libbinutils:amd64 (2.34-6ubuntu1.5) ...
 Setting up libc-dev-bin (2.31-0ubuntu9.9) ...
 Setting up openssl (1.1.1f-1ubuntu2.18) ...
 Setting up readline-common (8.0-4) ...
@@ -608,7 +625,7 @@ Setting up libjsoncpp1:amd64 (1.7.4-3.1ubuntu2) ...
 Setting up libheimbase1-heimdal:amd64 (7.7.0+dfsg-1ubuntu1.4) ...
 Setting up gcc-9-base:amd64 (9.4.0-1ubuntu1~20.04.1) ...
 Setting up libtsan0:amd64 (10.3.0-1ubuntu1~20.04) ...
-Setting up libctf0:amd64 (2.34-6ubuntu1.4) ...
+Setting up libctf0:amd64 (2.34-6ubuntu1.5) ...
 Setting up manpages-dev (5.05-1) ...
 Setting up libicu66:amd64 (66.1-2ubuntu2.1) ...
 Setting up libasn1-8-heimdal:amd64 (7.7.0+dfsg-1ubuntu1.4) ...
@@ -616,7 +633,7 @@ Setting up libreadline8:amd64 (8.0-4) ...
 Setting up m4 (1.4.18-4) ...
 Setting up libhcrypto4-heimdal:amd64 (7.7.0+dfsg-1ubuntu1.4) ...
 Setting up libpython2.7-stdlib:amd64 (2.7.18-1~20.04.3) ...
-Setting up ca-certificates (20211016ubuntu0.20.04.1) ...
+Setting up ca-certificates (20230311ubuntu0.20.04.1) ...
 debconf: unable to initialize frontend: Dialog
 debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
 debconf: falling back to frontend: Readline
@@ -624,7 +641,7 @@ debconf: unable to initialize frontend: Readline
 debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.30.0 /usr/local/share/perl/5.30.0 /usr/lib/x86_64-linux-gnu/perl5/5.30 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.30 /usr/share/perl/5.30 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
 debconf: falling back to frontend: Teletype
 Updating certificates in /etc/ssl/certs...
-124 added, 0 removed; done.
+137 added, 0 removed; done.
 Setting up libasan5:amd64 (9.4.0-1ubuntu1~20.04.1) ...
 Setting up libwind0-heimdal:amd64 (7.7.0+dfsg-1ubuntu1.4) ...
 Setting up libgssapi-krb5-2:amd64 (1.17-6ubuntu4.3) ...
@@ -635,15 +652,15 @@ update-alternatives: warning: skip creation of /usr/share/man/man1/yacc.1.gz bec
 Setting up cpp-9 (9.4.0-1ubuntu1~20.04.1) ...
 Setting up libc6-dev:amd64 (2.31-0ubuntu9.9) ...
 Setting up libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.6) ...
-Setting up binutils-x86-64-linux-gnu (2.34-6ubuntu1.4) ...
+Setting up binutils-x86-64-linux-gnu (2.34-6ubuntu1.5) ...
 Setting up libpython2.7:amd64 (2.7.18-1~20.04.3) ...
 Setting up flex (2.6.4-6.2) ...
-Setting up libncurses-dev:amd64 (6.2-0ubuntu2) ...
+Setting up libncurses-dev:amd64 (6.2-0ubuntu2.1) ...
 Setting up python2.7 (2.7.18-1~20.04.3) ...
 Setting up libpython2-stdlib:amd64 (2.7.17-2ubuntu4) ...
 Setting up libarchive13:amd64 (3.4.0-2ubuntu1.2) ...
 Setting up libhx509-5-heimdal:amd64 (7.7.0+dfsg-1ubuntu1.4) ...
-Setting up binutils (2.34-6ubuntu1.4) ...
+Setting up binutils (2.34-6ubuntu1.5) ...
 Setting up libreadline-dev:amd64 (8.0-4) ...
 Setting up python2 (2.7.17-2ubuntu4) ...
 Setting up libfl-dev:amd64 (2.6.4-6.2) ...
@@ -670,7 +687,7 @@ Setting up python-dev-is-python2 (2.7.17-4) ...
 Setting up libcurl4:amd64 (7.68.0-1ubuntu2.18) ...
 Setting up cmake (3.16.3-1ubuntu1.20.04.1) ...
 Processing triggers for libc-bin (2.31-0ubuntu9.9) ...
-Processing triggers for ca-certificates (20211016ubuntu0.20.04.1) ...
+Processing triggers for ca-certificates (20230311ubuntu0.20.04.1) ...
 Updating certificates in /etc/ssl/certs...
 0 added, 0 removed; done.
 Running hooks in /etc/ca-certificates/update.d...
@@ -699,133 +716,136 @@ done.
 -- Build files have been written to: /planner/planner
 + make -j
 Scanning dependencies of target planner
-[  1%] Building CXX object CMakeFiles/planner.dir/src/MyLexer.cpp.o
-[  2%] Building CXX object CMakeFiles/planner.dir/src/lexer.cpp.o
-[  4%] Building CXX object CMakeFiles/planner.dir/src/andEffect.cpp.o
-[  5%] Building CXX object CMakeFiles/planner.dir/src/parser.cpp.o
-[  7%] Building CXX object CMakeFiles/planner.dir/src/andGoal.cpp.o
-[  8%] Building CXX object CMakeFiles/planner.dir/src/axiom.cpp.o
-[ 10%] Building CXX object CMakeFiles/planner.dir/nodes/iactive_planner.cpp.o
-[ 11%] Building CXX object CMakeFiles/planner.dir/src/causal.cpp.o
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[  2%] Building CXX object CMakeFiles/planner.dir/src/parser.cpp.o
+[  2%] Building CXX object CMakeFiles/planner.dir/nodes/iactive_planner.cpp.o
+[  4%] Building CXX object CMakeFiles/planner.dir/src/MyLexer.cpp.o
+[  5%] Building CXX object CMakeFiles/planner.dir/src/andEffect.cpp.o
+[  7%] Building CXX object CMakeFiles/planner.dir/src/lexer.cpp.o
+[  8%] Building CXX object CMakeFiles/planner.dir/src/clock.cpp.o
+[ 10%] Building CXX object CMakeFiles/planner.dir/src/axiom.cpp.o
+[ 11%] Building CXX object CMakeFiles/planner.dir/src/andGoal.cpp.o
 [ 12%] Building CXX object CMakeFiles/planner.dir/src/boundGoal.cpp.o
-[ 14%] Building CXX object CMakeFiles/planner.dir/src/clock.cpp.o
-[ 15%] Building CXX object CMakeFiles/planner.dir/src/causalTable.cpp.o
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 17%] Building CXX object CMakeFiles/planner.dir/src/check.cpp.o
+[ 14%] Building CXX object CMakeFiles/planner.dir/src/check.cpp.o
+[ 15%] Building CXX object CMakeFiles/planner.dir/src/causal.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 17%] Building CXX object CMakeFiles/planner.dir/src/comparationGoal.cpp.o
+[ 18%] Building CXX object CMakeFiles/planner.dir/src/causalTable.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 18%] Building CXX object CMakeFiles/planner.dir/src/comparationGoal.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 [ 20%] Building CXX object CMakeFiles/planner.dir/src/compoundtask.cpp.o
-[ 21%] Building CXX object CMakeFiles/planner.dir/src/controlrules.cpp.o
-[ 22%] Building CXX object CMakeFiles/planner.dir/src/debugger.cpp.o
-[ 24%] Building CXX object CMakeFiles/planner.dir/src/constantsymbol.cpp.o
+[ 21%] Building CXX object CMakeFiles/planner.dir/src/constantsymbol.cpp.o
+[ 22%] Building CXX object CMakeFiles/planner.dir/src/controlrules.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 24%] Building CXX object CMakeFiles/planner.dir/src/domain.cpp.o
+[ 25%] Building CXX object CMakeFiles/planner.dir/src/debugger.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 25%] Building CXX object CMakeFiles/planner.dir/src/domain.cpp.o
 [ 27%] Building CXX object CMakeFiles/planner.dir/src/existsgoal.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 [ 28%] Building CXX object CMakeFiles/planner.dir/src/expansiontree.cpp.o
 [ 30%] Building CXX object CMakeFiles/planner.dir/src/fluentEffect.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 31%] Building CXX object CMakeFiles/planner.dir/src/fluentOperator.cpp.o
-[ 32%] Building CXX object CMakeFiles/planner.dir/src/fluentLiteral.cpp.o
+[ 31%] Building CXX object CMakeFiles/planner.dir/src/fluentLiteral.cpp.o
+[ 32%] Building CXX object CMakeFiles/planner.dir/src/fluentOperator.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 [ 34%] Building CXX object CMakeFiles/planner.dir/src/foralleffect.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 35%] Building CXX object CMakeFiles/planner.dir/src/forallgoal.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 [ 37%] Building CXX object CMakeFiles/planner.dir/src/function.cpp.o
-[ 37%] Building CXX object CMakeFiles/planner.dir/src/forallgoal.cpp.o
 [ 38%] Building CXX object CMakeFiles/planner.dir/src/header.cpp.o
 [ 40%] Building CXX object CMakeFiles/planner.dir/src/implyGoal.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 [ 41%] Building CXX object CMakeFiles/planner.dir/src/literal.cpp.o
 [ 42%] Building CXX object CMakeFiles/planner.dir/src/interface.cpp.o
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 [ 44%] Building CXX object CMakeFiles/planner.dir/src/literaleffect.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 [ 45%] Building CXX object CMakeFiles/planner.dir/src/literalgoal.cpp.o
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 [ 47%] Building CXX object CMakeFiles/planner.dir/src/method.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 48%] Building CXX object CMakeFiles/planner.dir/src/oldDecision.cpp.o
-[ 50%] Building CXX object CMakeFiles/planner.dir/src/orGoal.cpp.o
-[ 51%] Building CXX object CMakeFiles/planner.dir/src/plan.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 52%] Building CXX object CMakeFiles/planner.dir/src/papi.cpp.o
+[ 48%] Building CXX object CMakeFiles/planner.dir/src/orGoal.cpp.o
+[ 50%] Building CXX object CMakeFiles/planner.dir/src/oldDecision.cpp.o
+[ 51%] Building CXX object CMakeFiles/planner.dir/src/papi.cpp.o
+[ 52%] Building CXX object CMakeFiles/planner.dir/src/primitivetask.cpp.o
 [ 54%] Building CXX object CMakeFiles/planner.dir/src/parameterContainer.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 55%] Building CXX object CMakeFiles/planner.dir/src/primitivetask.cpp.o
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 55%] Building CXX object CMakeFiles/planner.dir/src/plan.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 [ 57%] Building CXX object CMakeFiles/planner.dir/src/problem.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 58%] Building CXX object CMakeFiles/planner.dir/src/pyAPI.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 58%] Building CXX object CMakeFiles/planner.dir/src/pyDefFunction.cpp.o
-[ 60%] Building CXX object CMakeFiles/planner.dir/src/pyAPI.cpp.o
-[ 61%] Building CXX object CMakeFiles/planner.dir/src/pyLiteral.cpp.o
-[ 62%] Building CXX object CMakeFiles/planner.dir/src/pyUTable.cpp.o
-[ 64%] Building CXX object CMakeFiles/planner.dir/src/pyTerm.cpp.o
-[ 65%] Building CXX object CMakeFiles/planner.dir/src/pythonWrapper.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 60%] Building CXX object CMakeFiles/planner.dir/src/pyDefFunction.cpp.o
+[ 61%] Building CXX object CMakeFiles/planner.dir/src/pythonWrapper.cpp.o
+[ 62%] Building CXX object CMakeFiles/planner.dir/src/pyLiteral.cpp.o
+[ 64%] Building CXX object CMakeFiles/planner.dir/src/pyUTable.cpp.o
+[ 65%] Building CXX object CMakeFiles/planner.dir/src/pyTerm.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 [ 67%] Building CXX object CMakeFiles/planner.dir/src/replan.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 68%] Building CXX object CMakeFiles/planner.dir/src/stacknode.cpp.o
-[ 70%] Building CXX object CMakeFiles/planner.dir/src/selector.cpp.o
+[ 68%] Building CXX object CMakeFiles/planner.dir/src/selector.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 70%] Building CXX object CMakeFiles/planner.dir/src/stacknode.cpp.o
 [ 71%] Building CXX object CMakeFiles/planner.dir/src/state.cpp.o
 [ 72%] Building CXX object CMakeFiles/planner.dir/src/taskheader.cpp.o
-[ 74%] Building CXX object CMakeFiles/planner.dir/src/tasknetwork.cpp.o
-[ 75%] Building CXX object CMakeFiles/planner.dir/src/textTag.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 74%] Building CXX object CMakeFiles/planner.dir/src/textTag.cpp.o
+[ 75%] Building CXX object CMakeFiles/planner.dir/src/tasknetwork.cpp.o
 [ 77%] Building CXX object CMakeFiles/planner.dir/src/termTable.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 78%] Building CXX object CMakeFiles/planner.dir/src/timeInterval.cpp.o
-[ 80%] Building CXX object CMakeFiles/planner.dir/src/timeLineLitEffect.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 78%] Building CXX object CMakeFiles/planner.dir/src/timeLineLitEffect.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 80%] Building CXX object CMakeFiles/planner.dir/src/timeInterval.cpp.o
 [ 81%] Building CXX object CMakeFiles/planner.dir/src/type.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 82%] Building CXX object CMakeFiles/planner.dir/src/undoARLiteralState.cpp.o
-[ 84%] Building CXX object CMakeFiles/planner.dir/src/undoChangeValue.cpp.o
-[ 85%] Building CXX object CMakeFiles/planner.dir/src/undoCLinks.cpp.o
-[ 87%] Building CXX object CMakeFiles/planner.dir/src/unifier.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 82%] Building CXX object CMakeFiles/planner.dir/src/undoCLinks.cpp.o
+[ 84%] Building CXX object CMakeFiles/planner.dir/src/wheneffect.cpp.o
+[ 85%] Building CXX object CMakeFiles/planner.dir/src/undoChangeValue.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 87%] Building CXX object CMakeFiles/planner.dir/src/undoARLiteralState.cpp.o
 [ 88%] Building CXX object CMakeFiles/planner.dir/src/unifierTable.cpp.o
-[ 90%] Building CXX object CMakeFiles/planner.dir/src/variablesymbol.cpp.o
-[ 91%] Building CXX object CMakeFiles/planner.dir/src/wheneffect.cpp.o
+[ 90%] Building CXX object CMakeFiles/planner.dir/src/unifier.cpp.o
+[ 91%] Building CXX object CMakeFiles/planner.dir/src/xmlwriter.cpp.o
+[ 92%] Building CXX object CMakeFiles/planner.dir/src/tcnm-ac3.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 92%] Building CXX object CMakeFiles/planner.dir/src/unify.cpp.o
-[ 94%] Building CXX object CMakeFiles/planner.dir/src/xmlwriter.cpp.o
+[ 94%] Building CXX object CMakeFiles/planner.dir/src/variablesymbol.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 95%] Building CXX object CMakeFiles/planner.dir/src/tcnm-ac3.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 95%] Building CXX object CMakeFiles/planner.dir/src/unify.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
@@ -837,9 +857,10 @@ In function 'char* strncpy(char*, const char*, size_t)',
 /usr/include/x86_64-linux-gnu/bits/string_fortified.h:106:34: warning: 'char* __builtin_strncpy(char*, const char*, long unsigned int)' specified bound 5 equals destination size [-Wstringop-truncation]
   106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
       |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+/planner/planner/src/expansiontree.cpp: In constructor 'ExpansionTree::ExpansionTree(const TPlan*, const TaskNetwork*)':
+/planner/planner/src/expansiontree.cpp:8:20: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+    8 |     tasklistcit i, e= tn->getEndTask();
+      |                    ^
 In file included from yacc/parser.yy:35:
 /planner/planner/include/sortgoal.hh: In member function 'bool CriteriaF::operator()(Unifier*, Unifier*) const':
 /planner/planner/include/sortgoal.hh:37:30: warning: variable 'e' set but not used [-Wunused-but-set-variable]
@@ -857,10 +878,13 @@ In file included from yacc/parser.yy:35:
 /planner/planner/src/debugger.cpp:684:9: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
   684 |     int ret = system(command.c_str());
       |         ^~~
-/planner/planner/src/expansiontree.cpp: In constructor 'ExpansionTree::ExpansionTree(const TPlan*, const TaskNetwork*)':
-/planner/planner/src/expansiontree.cpp:8:20: warning: variable 'e' set but not used [-Wunused-but-set-variable]
-    8 |     tasklistcit i, e= tn->getEndTask();
-      |                    ^
+/planner/planner/src/pyUTable.cpp:234:13: warning: 'void SdxUTable_initModule(PyObject*)' defined but not used [-Wunused-function]
+  234 | static void SdxUTable_initModule(PyObject * m){
+      |             ^~~~~~~~~~~~~~~~~~~~
+In file included from /planner/planner/src/pyUTable.cpp:9:
+/planner/planner/src/pyTerm.cpp:221:13: warning: 'void SdxTerm_initModule(PyObject*)' defined but not used [-Wunused-function]
+  221 | static void SdxTerm_initModule(PyObject * m){
+      |             ^~~~~~~~~~~~~~~~~~
 /planner/planner/src/controlrules.cpp: In member function 'int Controlrules::selectMethod(StackNode*)':
 /planner/planner/src/controlrules.cpp:58:6: warning: variable 'mcount' set but not used [-Wunused-but-set-variable]
    58 |  int mcount;
@@ -869,6 +893,9 @@ In file included from yacc/parser.yy:35:
 /planner/planner/src/controlrules.cpp:75:6: warning: variable 'ucount' set but not used [-Wunused-but-set-variable]
    75 |  int ucount;
       |      ^~~~~~
+/planner/planner/src/pyTerm.cpp:221:13: warning: 'void SdxTerm_initModule(PyObject*)' defined but not used [-Wunused-function]
+  221 | static void SdxTerm_initModule(PyObject * m){
+      |             ^~~~~~~~~~~~~~~~~~
 /planner/planner/src/method.cpp: In member function 'void Method::print(std::ostream*, int) const':
 /planner/planner/src/method.cpp:83:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
    83 |     if(tasknetwork)
@@ -876,6 +903,34 @@ In file included from yacc/parser.yy:35:
 /planner/planner/src/method.cpp:86:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
    86 |  *os << s << ")";
       |  ^
+/planner/planner/src/pyAPI.cpp:189:20: warning: 'SiadexMethods' defined but not used [-Wunused-variable]
+  189 | static PyMethodDef SiadexMethods[] = {
+      |                    ^~~~~~~~~~~~~
+In file included from /planner/planner/src/pyAPI.cpp:15:
+/planner/planner/src/pyLiteral.cpp:358:13: warning: 'void SdxLiteral_initModule(PyObject*)' defined but not used [-Wunused-function]
+  358 | static void SdxLiteral_initModule(PyObject * m){
+      |             ^~~~~~~~~~~~~~~~~~~~~
+In file included from /planner/planner/src/pyLiteral.cpp:14,
+                 from /planner/planner/src/pyAPI.cpp:15:
+/planner/planner/src/pyUTable.cpp:234:13: warning: 'void SdxUTable_initModule(PyObject*)' defined but not used [-Wunused-function]
+  234 | static void SdxUTable_initModule(PyObject * m){
+      |             ^~~~~~~~~~~~~~~~~~~~
+In file included from /planner/planner/src/pyUTable.cpp:9,
+                 from /planner/planner/src/pyLiteral.cpp:14,
+                 from /planner/planner/src/pyAPI.cpp:15:
+/planner/planner/src/pyTerm.cpp:221:13: warning: 'void SdxTerm_initModule(PyObject*)' defined but not used [-Wunused-function]
+  221 | static void SdxTerm_initModule(PyObject * m){
+      |             ^~~~~~~~~~~~~~~~~~
+/planner/planner/src/plan.cpp: In member function 'bool Plan::solve()':
+/planner/planner/src/plan.cpp:373:24: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<StackNode*>::size_type' {aka 'long unsigned int'} [-Wsign-compare]
+  373 |         for (int i=0; i<stack_copy.size(); i++) {
+      |                       ~^~~~~~~~~~~~~~~~~~
+/planner/planner/src/plan.cpp:396:24: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<StackNode*>::size_type' {aka 'long unsigned int'} [-Wsign-compare]
+  396 |         for (int i=0; i<stack_copy.size(); i++) {
+      |                       ~^~~~~~~~~~~~~~~~~~
+/planner/planner/src/plan.cpp:397:17: warning: unused variable 'mpos' [-Wunused-variable]
+  397 |             int mpos = stack_copy.at(i)->mpos;
+      |                 ^~~~
 /planner/planner/src/interface.cpp: In function 'char* getName()':
 /planner/planner/src/interface.cpp:63:10: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
    63 |   return "";
@@ -959,16 +1014,6 @@ In file included from yacc/parser.yy:35:
 /planner/planner/src/interface.cpp:1163:9: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
  1163 |  return "Not Implemented";
       |         ^~~~~~~~~~~~~~~~~
-/planner/planner/src/plan.cpp: In member function 'bool Plan::solve()':
-/planner/planner/src/plan.cpp:373:24: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<StackNode*>::size_type' {aka 'long unsigned int'} [-Wsign-compare]
-  373 |         for (int i=0; i<stack_copy.size(); i++) {
-      |                       ~^~~~~~~~~~~~~~~~~~
-/planner/planner/src/plan.cpp:396:24: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<StackNode*>::size_type' {aka 'long unsigned int'} [-Wsign-compare]
-  396 |         for (int i=0; i<stack_copy.size(); i++) {
-      |                       ~^~~~~~~~~~~~~~~~~~
-/planner/planner/src/plan.cpp:397:17: warning: unused variable 'mpos' [-Wunused-variable]
-  397 |             int mpos = stack_copy.at(i)->mpos;
-      |                 ^~~~
 /planner/planner/src/timeLineLitEffect.cpp: In member function 'void TimeLineLiteralEffect::generateNIntervals(int, int)':
 /planner/planner/src/timeLineLitEffect.cpp:112:2: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
   112 |  if(max > nmax || nmax == -1)
@@ -1008,9 +1053,6 @@ In file included from yacc/parser.yy:35:
 /planner/planner/src/interface.cpp:435:8: warning: ignoring return value of 'char* gcvt(double, int, char*)', declared with attribute warn_unused_result [-Wunused-result]
   435 |    gcvt((int)(*b).second->getId(), NUM_MAX_AXIOMS ,id);
       |    ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/planner/planner/src/pyLiteral.cpp:358:13: warning: 'void SdxLiteral_initModule(PyObject*)' defined but not used [-Wunused-function]
-  358 | static void SdxLiteral_initModule(PyObject * m){
-      |             ^~~~~~~~~~~~~~~~~~~~~
 /planner/planner/src/interface.cpp: In function 'const char* getAxiomArgsList(int)':
 /planner/planner/src/interface.cpp:502:9: warning: ignoring return value of 'char* gcvt(double, int, char*)', declared with attribute warn_unused_result [-Wunused-result]
   502 |     gcvt((int)(tt)->getId(), NUM_MAX_PREDICATES ,id);
@@ -1019,15 +1061,6 @@ In file included from yacc/parser.yy:35:
 /planner/planner/src/interface.cpp:538:8: warning: ignoring return value of 'char* gcvt(double, int, char*)', declared with attribute warn_unused_result [-Wunused-result]
   538 |    gcvt((int)(*b).second->getId(), NUM_MAX_PREDICATES ,id);
       |    ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from /planner/planner/src/pyLiteral.cpp:14:
-/planner/planner/src/pyUTable.cpp:234:13: warning: 'void SdxUTable_initModule(PyObject*)' defined but not used [-Wunused-function]
-  234 | static void SdxUTable_initModule(PyObject * m){
-      |             ^~~~~~~~~~~~~~~~~~~~
-In file included from /planner/planner/src/pyUTable.cpp:9,
-                 from /planner/planner/src/pyLiteral.cpp:14:
-/planner/planner/src/pyTerm.cpp:221:13: warning: 'void SdxTerm_initModule(PyObject*)' defined but not used [-Wunused-function]
-  221 | static void SdxTerm_initModule(PyObject * m){
-      |             ^~~~~~~~~~~~~~~~~~
 /planner/planner/src/interface.cpp: In function 'const char* getTasksNames()':
 /planner/planner/src/interface.cpp:631:7: warning: ignoring return value of 'char* gcvt(double, int, char*)', declared with attribute warn_unused_result [-Wunused-result]
   631 |   gcvt((int)(*b).second->getId(), NUM_MAX_TASK ,id);
@@ -1076,31 +1109,15 @@ In file included from /planner/planner/src/pyUTable.cpp:9,
 /planner/planner/src/interface.cpp:972:8: warning: ignoring return value of 'char* gcvt(double, int, char*)', declared with attribute warn_unused_result [-Wunused-result]
   972 |    gcvt(m_metaid, NUM_MAX_TASK ,mm_metaid);
       |    ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/planner/planner/src/pyTerm.cpp:221:13: warning: 'void SdxTerm_initModule(PyObject*)' defined but not used [-Wunused-function]
-  221 | static void SdxTerm_initModule(PyObject * m){
-      |             ^~~~~~~~~~~~~~~~~~
-/planner/planner/src/pyUTable.cpp:234:13: warning: 'void SdxUTable_initModule(PyObject*)' defined but not used [-Wunused-function]
-  234 | static void SdxUTable_initModule(PyObject * m){
-      |             ^~~~~~~~~~~~~~~~~~~~
-In file included from /planner/planner/src/pyUTable.cpp:9:
-/planner/planner/src/pyTerm.cpp:221:13: warning: 'void SdxTerm_initModule(PyObject*)' defined but not used [-Wunused-function]
-  221 | static void SdxTerm_initModule(PyObject * m){
-      |             ^~~~~~~~~~~~~~~~~~
-/planner/planner/src/pyAPI.cpp:189:20: warning: 'SiadexMethods' defined but not used [-Wunused-variable]
-  189 | static PyMethodDef SiadexMethods[] = {
-      |                    ^~~~~~~~~~~~~
-In file included from /planner/planner/src/pyAPI.cpp:15:
 /planner/planner/src/pyLiteral.cpp:358:13: warning: 'void SdxLiteral_initModule(PyObject*)' defined but not used [-Wunused-function]
   358 | static void SdxLiteral_initModule(PyObject * m){
       |             ^~~~~~~~~~~~~~~~~~~~~
-In file included from /planner/planner/src/pyLiteral.cpp:14,
-                 from /planner/planner/src/pyAPI.cpp:15:
+In file included from /planner/planner/src/pyLiteral.cpp:14:
 /planner/planner/src/pyUTable.cpp:234:13: warning: 'void SdxUTable_initModule(PyObject*)' defined but not used [-Wunused-function]
   234 | static void SdxUTable_initModule(PyObject * m){
       |             ^~~~~~~~~~~~~~~~~~~~
 In file included from /planner/planner/src/pyUTable.cpp:9,
-                 from /planner/planner/src/pyLiteral.cpp:14,
-                 from /planner/planner/src/pyAPI.cpp:15:
+                 from /planner/planner/src/pyLiteral.cpp:14:
 /planner/planner/src/pyTerm.cpp:221:13: warning: 'void SdxTerm_initModule(PyObject*)' defined but not used [-Wunused-function]
   221 | static void SdxTerm_initModule(PyObject * m){
       |             ^~~~~~~~~~~~~~~~~~
@@ -1138,19 +1155,19 @@ g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -Wno-unused-parameter  -o src/p
 g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -Wno-unused-parameter  -o src/verify.o -c src/verify.cpp
 g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -Wno-unused-parameter  -o src/properties.o -c src/properties.cpp
 g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -Wno-unused-parameter  -o src/hddl-token.o -c src/hddl-token.cpp
+src/hddl-token.cpp:1544:17: warning: 'void yyunput(int, char*)' defined but not used [-Wunused-function]
+ 1544 |     static void yyunput (int c, char * yy_bp )
+      |                 ^~~~~~~
 In file included from /usr/include/c++/9/cassert:44,
                  from src/output.cpp:5:
 src/output.cpp: In function 'void simple_hddl_output(std::ostream&)':
 src/output.cpp:236:24: warning: comparison of integer expressions of different signedness: 'std::vector<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >::size_type' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
   236 |   assert(t.vars.size() >= t.number_of_original_vars);
       |          ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-src/hddl-token.cpp:1544:17: warning: 'void yyunput(int, char*)' defined but not used [-Wunused-function]
- 1544 |     static void yyunput (int c, char * yy_bp )
-      |                 ^~~~~~~
 g++ -O3 -lm -flto -static -static-libgcc src/hddl-token.o src/hddl.o src/main.o src/sortexpansion.o src/parsetree.o src/util.o src/domain.o src/output.o src/parametersplitting.o src/cwa.o src/typeof.o src/shopWriter.o src/hpdlWriter.o src/hddlWriter.o src/orderingDecomposition.o src/plan.o src/verify.o src/properties.o -o pandaPIparser 
 INFO:    Adding labels
 INFO:    Adding runscript
 INFO:    Creating SIF file...
 INFO:    Build complete: ../SIADEX.sif
-%TIME 1:55.01 733788
+%TIME 1:32.29 743588
 %EXIT 0

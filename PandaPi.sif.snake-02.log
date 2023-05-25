@@ -16,7 +16,7 @@ TUUP sort_for_px1y2
 TUUP sort_for_px2y0
 TUUP sort_for_px2y1
 TUUP sort_for_px2y2
-%TIME 0:00.17 38096
+%TIME 0:00.27 37048
 %EXIT 0
 pandaPIparser is configured as follows
   Colors in output: false

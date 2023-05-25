@@ -1,0 +1,5 @@
+FATAL:   could not open image /home/gregor/Workspace/IPC2023/LiftedTreePath.sif: failed to retrieve path for /home/gregor/Workspace/IPC2023/LiftedTreePath.sif: lstat /home/gregor/Workspace/IPC2023/LiftedTreePath.sif: no such file or directory
+Command exited with non-zero status 255
+%TIME 0:00.01 38320
+%EXIT 255
+NO OUTPUT
