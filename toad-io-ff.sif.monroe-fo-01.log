@@ -1,0 +1,13 @@
+INFO:    underlay of /etc/localtime required more than 50 (80) bind mounts
+pandaPIparser is configured as follows
+  Colors in output: true
+  Mode: parsing mode
+  Parameter splitting: true
+  Conditional effects: exponential encoding
+  Disjunctive preconditions as HTN: false
+  Replace goal with action: false
+  Output: pandaPI format
+Command exited with non-zero status 124
+%TIME 0:02.00 37820
+%EXIT 124
+NO OUTPUT

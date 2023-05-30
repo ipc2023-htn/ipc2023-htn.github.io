@@ -1,0 +1,119 @@
+INFO:    underlay of /etc/localtime required more than 50 (86) bind mounts
+===== Preprocessing ======
+Removed 17 unusable effects
+Substitution from predicate to state variable:
+ - capacity
+ - capacity_predecessor
+Transforming static state functions as table constraints:
+ - road
+ - capacity_predecessor
+==========================
+0 Solving with depth 0
+  [0.000s] Populated
+  [0.000s] Solved
+1 Solving with depth 1
+  [0.000s] Populated
+  [0.000s] Solved
+2 Solving with depth 2
+  [0.000s] Populated
+  [0.000s] Solved
+3 Solving with depth 3
+  [0.000s] Populated
+
+**** Decomposition ****
+
+==>
+19 (drive truck_0 city_loc_2 city_loc_1)
+21 (pick_up truck_0 city_loc_1 package_0 capacity_0 capacity_1)
+22 (drive truck_0 city_loc_1 city_loc_0)
+24 (drop truck_0 city_loc_0 package_0 capacity_0 capacity_1)
+25 (drive truck_0 city_loc_0 city_loc_1)
+27 (pick_up truck_0 city_loc_1 package_1 capacity_0 capacity_1)
+28 (drive truck_0 city_loc_1 city_loc_2)
+30 (drop truck_0 city_loc_2 package_1 capacity_0 capacity_1)
+root 1 2
+1 (deliver package_0 city_loc_0) -> m_deliver_ordering_0 4 6 7 10
+4 (get_to truck_0 city_loc_1) -> m_drive_to_ordering_0 19
+6 (load truck_0 city_loc_1 package_0) -> m_load_ordering_0 21
+7 (get_to truck_0 city_loc_0) -> m_drive_to_ordering_0 22
+10 (unload truck_0 city_loc_0 package_0) -> m_unload_ordering_0 24
+2 (deliver package_1 city_loc_2) -> m_deliver_ordering_0 11 14 17 18
+11 (get_to truck_0 city_loc_1) -> m_drive_to_ordering_0 25
+14 (load truck_0 city_loc_1 package_1) -> m_load_ordering_0 27
+17 (get_to truck_0 city_loc_2) -> m_drive_to_ordering_0 28
+18 (unload truck_0 city_loc_2 package_1) -> m_unload_ordering_0 30
+<==
+
+
+**** Plan ****
+
+ 0: (drive truck_0 city_loc_2 city_loc_1) [0.000]
+0.1: (pick_up truck_0 city_loc_1 package_0 capacity_0 capacity_1) [0.000]
+0.2: (drive truck_0 city_loc_1 city_loc_0) [0.000]
+0.3: (drop truck_0 city_loc_0 package_0 capacity_0 capacity_1) [0.000]
+0.4: (drive truck_0 city_loc_0 city_loc_1) [0.000]
+0.5: (pick_up truck_0 city_loc_1 package_1 capacity_0 capacity_1) [0.000]
+0.6: (drive truck_0 city_loc_1 city_loc_2) [0.000]
+0.7: (drop truck_0 city_loc_2 package_1 capacity_0 capacity_1) [0.000]
+
+
+==== Worker 1
+Solver is running
+
+==== Worker 2
+solutions           : 1           
+restarts            : 0           
+decisions           : 36           (5667 /sec)
+conflicts           : 10           (1574 /sec)
+================= 
+Solvers             :             SAT        DiffLog             CP
+% propagation cycles:          5.08 %        94.05 %         0.82 %
+# propagation loops :              85             79             75
+# conflicts         :               6              4              0
+================= 
+Init time           : 0.001227 s
+Solve time          : 0.006352 s
+
+====== SAT =====
+DB size              : 1793
+Num unit propagations: 413
+====== DiffLog =====
+# nodes: 275
+# propagators: 2820
+# propagations: 148
+# domain updates: 156
+====== CP =====
+
+==== Worker 3
+Solver is running
+  [0.014s] Solved
+4 Solving with depth 4
+  [0.015s] Populated
+  [0.042s] Solved
+5 Solving with depth 5
+  [0.043s] Populated
+  [0.092s] Solved
+6 Solving with depth 6
+  [0.093s] Populated
+  [0.169s] Solved
+7 Solving with depth 7
+  [0.170s] Populated
+  [0.288s] Solved
+8 Solving with depth 8
+  [0.289s] Populated
+  [0.442s] Solved
+9 Solving with depth 9
+  [0.443s] Populated
+  [0.672s] Solved
+10 Solving with depth 10
+  [0.673s] Populated
+  [0.975s] Solved
+11 Solving with depth 11
+  [0.977s] Populated
+  [1.361s] Solved
+12 Solving with depth 12
+  [1.362s] Populated
+Command exited with non-zero status 124
+%TIME 0:02.01 245752
+%EXIT 124
+NO OUTPUT

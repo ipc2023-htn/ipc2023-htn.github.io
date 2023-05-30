@@ -1,0 +1,165 @@
+INFO:    underlay of /etc/localtime required more than 50 (86) bind mounts
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+===== Preprocessing ======
+Removed 5639 unusable effects
+Substitution from predicate to state variable:
+ - has_condition
+ - in_town
+ - powerco_of
+ - road_snowy
+ - tree_blocking_road
+ - waterco_of
+ - wrecked_vehicle
+Transforming static state functions as table constraints:
+ - can_drive
+ - can_lift
+ - fit_in
+ - has_condition
+ - hazard_seriousness
+ - hospital_doesnt_treat
+ - in_town
+ - no_electricity
+ - powerco_of
+ - road_snowy
+ - serious_condition
+ - tree_blocking_road
+ - waterco_of
+ - wrecked_vehicle
+==========================
+0 Solving with depth 0
+  [0.000s] Populated
+  [0.000s] Solved
+1 Solving with depth 1
+  [0.001s] Populated
+  [0.001s] Solved
+2 Solving with depth 2
+  [0.001s] Populated
+  [0.002s] Solved
+3 Solving with depth 3
+[2m   0.037105594s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.038618596s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+  [0.004s] Populated
+  [0.005s] Solved
+4 Solving with depth 4
+[2m   0.039978150s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.040014259s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.040158962s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+  [0.005s] Populated
+
+**** Decomposition ****
+
+==>
+53 (SHOP_methodm_quell_riot_precondition strong rochester)
+99 (call ebs)
+100 (call police_chief)
+102 (SHOP_methodm_get_to_already_there_precondition pu2 strong)
+108 (SHOP_methodm_get_to_already_there_precondition pu1 strong)
+51 (set_up_barricades pu2)
+52 (set_up_barricades pu1)
+root 5
+5 (tlt) -> m_tlt_quell_riot 16
+16 (quell_riot strong) -> m_quell_riot 53 42 44 50 51 52
+42 (declare_curfew rochester) -> m_declare_curfew 99 100
+44 (get_to pu2 strong) -> m_get_to_already_there 102
+50 (get_to pu1 strong) -> m_get_to_already_there 108
+<==
+
+
+**** Plan ****
+
+ 0: (SHOP_methodm_quell_riot_precondition strong rochester) [0.000]
+0.1: (call ebs) [0.000]
+0.2: (call police_chief) [0.000]
+0.3: (SHOP_methodm_get_to_already_there_precondition pu2 strong) [0.000]
+0.4: (SHOP_methodm_get_to_already_there_precondition pu1 strong) [0.000]
+0.5: (set_up_barricades pu2) [0.000]
+0.6: (set_up_barricades pu1) [0.000]
+
+
+==== Worker 1
+solutions           : 1           
+restarts            : 0           
+decisions           : 1079         (231136 /sec)
+conflicts           : 4            (857 /sec)
+================= 
+Solvers             :             SAT        DiffLog             CP
+% propagation cycles:          6.20 %        49.10 %        43.65 %
+# propagation loops :            1103           1099           1099
+# conflicts         :               4              0              0
+================= 
+Init time           : 0.000695 s
+Solve time          : 0.004668 s
+
+====== SAT =====
+DB size              : 2849
+Num unit propagations: 116
+====== DiffLog =====
+# nodes: 2670
+# propagators: 596
+# propagations: 1104
+# domain updates: 144
+====== CP =====
+
+==== Worker 2
+Solver is running
+
+==== Worker 3
+Solver is running
+  [0.050s] Solved
+5 Solving with depth 5
+[2m   0.085949895s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.086031383s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.086373749s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.086831115s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.086839389s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.087184945s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+  [0.053s] Populated
+  [0.276s] Solved
+6 Solving with depth 6
+[2m   0.312168198s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.312194592s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.312455200s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.313277591s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.313286688s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.313361982s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.313393552s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.315144140s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+[2m   0.315149084s[0m [33m WARN[0m ThreadId(01) [2maries_planners::encode[0m[2m:[0m Chronicle parameter with no label.
+WARNING: workaround for empty domain of optional vars (Github Issue #28)
+  [0.281s] Populated
+Command exited with non-zero status 124
+%TIME 0:02.01 659768
+%EXIT 124
+NO OUTPUT

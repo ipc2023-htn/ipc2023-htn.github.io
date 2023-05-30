@@ -260,7 +260,7 @@ root 0
 13 move viper px0y1 px0y1 -> move-base 
 3 hunt -> hunt_done 
 <==
-%TIME 0:00.28 37484
+%TIME 0:00.27 38484
 %EXIT 0
 pandaPIparser is configured as follows
   Colors in output: false

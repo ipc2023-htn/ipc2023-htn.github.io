@@ -1,0 +1,173 @@
+INFO:    underlay of /etc/localtime required more than 50 (86) bind mounts
+===== Preprocessing ======
+Removed 5 unusable effects
+Substitution from predicate to state variable:
+ - rloc
+ - door
+Transforming static state functions as table constraints:
+ - door
+ - goal_in
+==========================
+0 Solving with depth 0
+  [0.000s] Populated
+  [0.000s] Solved
+1 Solving with depth 1
+  [0.000s] Populated
+
+**** Decomposition ****
+
+==>
+root 1
+1 (achieve-goals) -> finished
+<==
+
+
+**** Plan ****
+
+
+
+==== Worker 1
+Solver is running
+
+==== Worker 2
+Solver is running
+
+==== Worker 3
+solutions           : 1           
+restarts            : 0           
+decisions           : 21           (314028 /sec)
+conflicts           : 1            (14954 /sec)
+================= 
+Solvers             :             SAT        DiffLog             CP
+% propagation cycles:         34.58 %        60.77 %         1.73 %
+# propagation loops :              26             25             25
+# conflicts         :               1              0              0
+================= 
+Init time           : 0.000022 s
+Solve time          : 0.000067 s
+
+====== SAT =====
+DB size              : 32
+Num unit propagations: 1
+====== DiffLog =====
+# nodes: 107
+# propagators: 32
+# propagations: 21
+# domain updates: 3
+====== CP =====
+  [0.004s] Solved
+2 Solving with depth 2
+  [0.004s] Populated
+  [0.005s] Solved
+3 Solving with depth 3
+  [0.005s] Populated
+  [0.006s] Solved
+4 Solving with depth 4
+  [0.007s] Populated
+  [0.011s] Solved
+5 Solving with depth 5
+  [0.011s] Populated
+  [0.023s] Solved
+6 Solving with depth 6
+  [0.024s] Populated
+  [0.070s] Solved
+7 Solving with depth 7
+  [0.071s] Populated
+  [0.279s] Solved
+8 Solving with depth 8
+  [0.285s] Populated
+  [1.470s] Solved
+9 Solving with depth 9
+  [1.477s] Populated
+Command exited with non-zero status 124
+%TIME 0:02.00 219216
+%EXIT 124
+pandaPIparser is configured as follows
+  Colors in output: false
+  Mode: plan verification
+  Verbosity: 1
+  Lenient mode: false
+  Ignore given order: false
+Reading plan given as input
+Size of primitive plan: 0
+Reading list of integers from " 1"
+Root tasks (1): 1
+Reading plan given as input
+Parse instantiated task from "  (achieve-goals)" ... done
+Parsed abstract task id=1 achieve-goals
+Parsed method name: finished
+Subtasks:
+
+Reached end of plan (marked).
+
+Checking the given plan ...
+IDs of subtasks used in the plan exist: true
+Tasks declared in plan actually exist and can be instantiated as given: true
+Methods don't contain duplicate subtasks: true
+Methods don't contain orphaned tasks: true
+Generating Matchings for task with id=0
+ Matching Task 1 Curpos=0 #sources=1
+ Task is: achieve-goals
+ Attempting matching with source task0
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=0
+Generating Matchings for task with id=1
+ Found compatible linearisation.
+  Checking constants are in variable type ... 
+  Checking method's constraint formula ... 
+  Checking variable constraints in method's precondition ... 
+  Matching is ok.
+Found 1 matchings for task with id=1
+Methods can be instantiated: true
+Check whether primitive plan is a linearisation of the orderings resulting from applied decomposition methods.
+ Abstract Task id=0 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=1 matching still unique: true (1)
+  Attempting matching
+  Ordering OK.
+  Root Task, checking primitive executability ...
+  Running exponential top-sort.
+  The current state is:
+     armempty
+     closed d01
+     door c r1 d01
+     door r1 c d01
+     goal_in o1 r1
+     in o1 r1
+     rloc c
+   Executing plan time=1 #sources=1
+    Source 0 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 1 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -2 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -1 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=0
+   Executed the whole plan ... checking whether we reached the goal state.
+   The current state is:
+      armempty
+      closed d01
+      door c r1 d01
+      door r1 c d01
+      goal_in o1 r1
+      in o1 r1
+      rloc c
+  Executable linearisation found.
+  Ordering OK.
+Result true true
+Order induced by methods is present in plan: true
+Plan is executable: true
+Plan verification result: true

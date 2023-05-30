@@ -1,0 +1,85 @@
+INFO:    underlay of /etc/localtime required more than 50 (86) bind mounts
+===== Preprocessing ======
+Removed 5 unusable effects
+Substitution from predicate to state variable:
+ - rloc
+ - door
+Transforming static state functions as table constraints:
+ - door
+ - goal_in
+==========================
+0 Solving with depth 0
+  [0.000s] Populated
+  [0.000s] Solved
+1 Solving with depth 1
+  [0.000s] Populated
+
+**** Decomposition ****
+
+==>
+root 1
+1 (achieve-goals) -> finished
+<==
+
+
+**** Plan ****
+
+
+
+==== Worker 1
+solutions           : 1           
+restarts            : 0           
+decisions           : 22           (438142 /sec)
+conflicts           : 1            (19916 /sec)
+================= 
+Solvers             :             SAT        DiffLog             CP
+% propagation cycles:         35.78 %        58.76 %         1.89 %
+# propagation loops :              27             26             26
+# conflicts         :               1              0              0
+================= 
+Init time           : 0.000015 s
+Solve time          : 0.000050 s
+
+====== SAT =====
+DB size              : 32
+Num unit propagations: 1
+====== DiffLog =====
+# nodes: 107
+# propagators: 32
+# propagations: 22
+# domain updates: 2
+====== CP =====
+
+==== Worker 2
+Solver is running
+
+==== Worker 3
+Solver is running
+  [0.003s] Solved
+2 Solving with depth 2
+  [0.004s] Populated
+  [0.004s] Solved
+3 Solving with depth 3
+  [0.004s] Populated
+  [0.006s] Solved
+4 Solving with depth 4
+  [0.006s] Populated
+  [0.009s] Solved
+5 Solving with depth 5
+  [0.010s] Populated
+  [0.021s] Solved
+6 Solving with depth 6
+  [0.021s] Populated
+  [0.057s] Solved
+7 Solving with depth 7
+  [0.058s] Populated
+  [0.221s] Solved
+8 Solving with depth 8
+  [0.223s] Populated
+  [1.172s] Solved
+9 Solving with depth 9
+  [1.176s] Populated
+Command exited with non-zero status 124
+%TIME 0:02.00 216516
+%EXIT 124
+NO OUTPUT

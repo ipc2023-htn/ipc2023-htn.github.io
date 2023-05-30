@@ -1,0 +1,100 @@
+INFO:    underlay of /etc/localtime required more than 50 (86) bind mounts
+===== Preprocessing ======
+Removed 156 unusable effects
+Substitution from predicate to state variable:
+ - head
+ - tail
+Transforming static state functions as table constraints:
+ - adjacent
+==========================
+0 Solving with depth 0
+  [0.000s] Populated
+  [0.000s] Solved
+1 Solving with depth 1
+  [0.000s] Populated
+  [0.000s] Solved
+2 Solving with depth 2
+  [0.000s] Populated
+  [0.001s] Solved
+3 Solving with depth 3
+  [0.001s] Populated
+  [0.007s] Solved
+4 Solving with depth 4
+  [0.007s] Populated
+  [0.026s] Solved
+5 Solving with depth 5
+  [0.026s] Populated
+
+**** Decomposition ****
+
+==>
+9 (move-long viper px1y2 px2y2 px2y2 px2y1)
+20 (move-long viper px1y1 px1y2 px1y2 px2y2)
+38 (move-long viper px1y0 px1y1 px1y1 px1y2)
+6 (strike viper px1y0 px0y0)
+root 2
+2 (hunt) -> hunt_all 3 6 7
+3 (move viper px2y2 px1y0) -> move-long-snake 9 10
+10 (move viper px1y2 px1y0) -> move-long-snake 20 22
+22 (move viper px1y1 px1y0) -> move-long-snake 38 37
+37 (move viper px1y0 px1y0) -> move-base
+7 (hunt) -> hunt_done
+<==
+
+
+**** Plan ****
+
+ 0: (move-long viper px1y2 px2y2 px2y2 px2y1) [0.000]
+0.1: (move-long viper px1y1 px1y2 px1y2 px2y2) [0.000]
+0.2: (move-long viper px1y0 px1y1 px1y1 px1y2) [0.000]
+0.4: (strike viper px1y0 px0y0) [0.000]
+
+
+==== Worker 1
+solutions           : 1           
+restarts            : 0           
+decisions           : 30           (2813 /sec)
+conflicts           : 17           (1594 /sec)
+================= 
+Solvers             :             SAT        DiffLog             CP
+% propagation cycles:         13.96 %        85.25 %         0.75 %
+# propagation loops :              95             81             78
+# conflicts         :              14              3              0
+================= 
+Init time           : 0.003149 s
+Solve time          : 0.010663 s
+
+====== SAT =====
+DB size              : 6497
+Num unit propagations: 1666
+====== DiffLog =====
+# nodes: 405
+# propagators: 4576
+# propagations: 259
+# domain updates: 660
+====== CP =====
+
+==== Worker 2
+Solver is running
+
+==== Worker 3
+Solver is running
+  [0.072s] Solved
+6 Solving with depth 6
+  [0.072s] Populated
+  [0.181s] Solved
+7 Solving with depth 7
+  [0.182s] Populated
+  [0.399s] Solved
+8 Solving with depth 8
+  [0.399s] Populated
+  [0.800s] Solved
+9 Solving with depth 9
+  [0.801s] Populated
+  [1.469s] Solved
+10 Solving with depth 10
+  [1.470s] Populated
+Command exited with non-zero status 124
+%TIME 0:02.01 342668
+%EXIT 124
+NO OUTPUT

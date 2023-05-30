@@ -1,0 +1,40 @@
+INFO:    underlay of /etc/localtime required more than 50 (86) bind mounts
+===== Preprocessing ======
+Removed 53 unusable effects
+Substitution from predicate to state variable:
+ - rloc
+ - door
+Transforming static state functions as table constraints:
+ - door
+ - goal_in
+==========================
+0 Solving with depth 0
+  [0.001s] Populated
+  [0.001s] Solved
+1 Solving with depth 1
+  [0.001s] Populated
+  [0.001s] Solved
+2 Solving with depth 2
+  [0.001s] Populated
+  [0.002s] Solved
+3 Solving with depth 3
+  [0.002s] Populated
+  [0.003s] Solved
+4 Solving with depth 4
+  [0.003s] Populated
+  [0.005s] Solved
+5 Solving with depth 5
+  [0.006s] Populated
+  [0.019s] Solved
+6 Solving with depth 6
+  [0.020s] Populated
+  [0.076s] Solved
+7 Solving with depth 7
+  [0.077s] Populated
+  [0.357s] Solved
+8 Solving with depth 8
+  [0.360s] Populated
+Command exited with non-zero status 124
+%TIME 0:02.01 659040
+%EXIT 124
+NO OUTPUT

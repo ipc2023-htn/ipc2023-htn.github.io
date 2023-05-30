@@ -1,0 +1,1651 @@
+INFO:    underlay of /etc/localtime required more than 50 (76) bind mounts
+pandaPIparser is configured as follows
+  Colors in output: true
+  Mode: parsing mode
+  Parameter splitting: true
+  Conditional effects: exponential encoding
+  Disjunctive preconditions as HTN: false
+  Replace goal with action: false
+  Output: pandaPI format
+pandaPIparser is configured as follows
+  Colors in output: true
+  Mode: convert pandaPI plan
+%TIME 0:00.23 38376
+%EXIT 0
+pandaPIparser is configured as follows
+  Colors in output: false
+  Mode: plan verification
+  Verbosity: 1
+  Lenient mode: false
+  Ignore given order: false
+Reading plan given as input
+Parse instantiated task from " i-LOCK-LIFT-AT F0" ... done
+Parsed action id=20 i-LOCK-LIFT-AT F0
+Parse instantiated task from " i-UNLOCK-LIFT-AT F0" ... done
+Parsed action id=25 i-UNLOCK-LIFT-AT F0
+Parse instantiated task from " BOARD F0 P1" ... done
+Parsed action id=26 BOARD F0 P1
+Parse instantiated task from " i-LOCK-BOARDED P1" ... done
+Parsed action id=29 i-LOCK-BOARDED P1
+Parse instantiated task from " UP F0 F2" ... done
+Parsed action id=48 UP F0 F2
+Parse instantiated task from " i-LOCK-LIFT-AT F2" ... done
+Parsed action id=60 i-LOCK-LIFT-AT F2
+Parse instantiated task from " i-UNLOCK-LIFT-AT F2" ... done
+Parsed action id=71 i-UNLOCK-LIFT-AT F2
+Parse instantiated task from " i-UNLOCK-BOARDED P1" ... done
+Parsed action id=80 i-UNLOCK-BOARDED P1
+Parse instantiated task from " DEPART F2 P1" ... done
+Parsed action id=81 DEPART F2 P1
+Parse instantiated task from " i-LOCK-SERVED P1" ... done
+Parsed action id=90 i-LOCK-SERVED P1
+Parse instantiated task from " UP F2 F3" ... done
+Parsed action id=150 UP F2 F3
+Parse instantiated task from " i-LOCK-LIFT-AT F3" ... done
+Parsed action id=167 i-LOCK-LIFT-AT F3
+Parse instantiated task from " i-UNLOCK-LIFT-AT F3" ... done
+Parsed action id=178 i-UNLOCK-LIFT-AT F3
+Parse instantiated task from " BOARD F3 P0" ... done
+Parsed action id=179 BOARD F3 P0
+Parse instantiated task from " i-LOCK-BOARDED P0" ... done
+Parsed action id=187 i-LOCK-BOARDED P0
+Parse instantiated task from " DOWN F3 F0" ... done
+Parsed action id=230 DOWN F3 F0
+Parse instantiated task from " i-LOCK-LIFT-AT F0" ... done
+Parsed action id=248 i-LOCK-LIFT-AT F0
+Parse instantiated task from " i-UNLOCK-LIFT-AT F0" ... done
+Parsed action id=254 i-UNLOCK-LIFT-AT F0
+Parse instantiated task from " i-UNLOCK-BOARDED P0" ... done
+Parsed action id=258 i-UNLOCK-BOARDED P0
+Parse instantiated task from " DEPART F0 P0" ... done
+Parsed action id=259 DEPART F0 P0
+Parse instantiated task from " i-LOCK-SERVED P0" ... done
+Parsed action id=262 i-LOCK-SERVED P0
+Size of primitive plan: 21
+Reading list of integers from " 3 106"
+Root tasks (2): 3 106
+Reading plan given as input
+Parse instantiated task from "  ACHIEVE-SERVED P1" ... done
+Parsed abstract task id=3 ACHIEVE-SERVED P1
+Parsed method name: M22-ACHIEVE-SERVED
+Subtasks: 6 90
+
+Parse instantiated task from "  ACHIEVE-SERVED2 P1" ... done
+Parsed abstract task id=6 ACHIEVE-SERVED2 P1
+Parsed method name: M24-ACHIEVE-SERVED2
+Subtasks: 263 88
+
+Parse instantiated task from "  ACHIEVE-BOARDED P1" ... done
+Parsed abstract task id=11 ACHIEVE-BOARDED P1
+Parsed method name: M17-ACHIEVE-BOARDED
+Subtasks: 14 29
+
+Parse instantiated task from "  ACHIEVE-BOARDED1 P1" ... done
+Parsed abstract task id=14 ACHIEVE-BOARDED1 P1
+Parsed method name: M19-ACHIEVE-BOARDED1
+Subtasks: 265 27
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT F0" ... done
+Parsed abstract task id=18 ACHIEVE-LIFT-AT F0
+Parsed method name: M10-ACHIEVE-LIFT-AT
+Subtasks: 20
+
+Parse instantiated task from "  IFUNLOCK-LIFT-AT F0" ... done
+Parsed abstract task id=23 IFUNLOCK-LIFT-AT F0
+Parsed method name: IFUNLOCK5-LIFT-AT
+Subtasks: 25
+
+Parse instantiated task from "  ACHIEVE-BOARDED1 P1" ... done
+Parsed abstract task id=27 ACHIEVE-BOARDED1 P1
+Parsed method name: M18-ACHIEVE-BOARDED1
+Subtasks:
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT F2" ... done
+Parsed abstract task id=33 ACHIEVE-LIFT-AT F2
+Parsed method name: M11-ACHIEVE-LIFT-AT
+Subtasks: 36 60
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT0 F2" ... done
+Parsed abstract task id=36 ACHIEVE-LIFT-AT0 F2
+Parsed method name: M13-ACHIEVE-LIFT-AT0
+Subtasks: 48 58
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT0 F2" ... done
+Parsed abstract task id=58 ACHIEVE-LIFT-AT0 F2
+Parsed method name: M12-ACHIEVE-LIFT-AT0
+Subtasks:
+
+Parse instantiated task from "  IFUNLOCK-LIFT-AT F2" ... done
+Parsed abstract task id=69 IFUNLOCK-LIFT-AT F2
+Parsed method name: IFUNLOCK5-LIFT-AT
+Subtasks: 71
+
+Parse instantiated task from "  IFUNLOCK-BOARDED P1" ... done
+Parsed abstract task id=78 IFUNLOCK-BOARDED P1
+Parsed method name: IFUNLOCK1-BOARDED
+Subtasks: 80
+
+Parse instantiated task from "  ACHIEVE-SERVED2 P1" ... done
+Parsed abstract task id=88 ACHIEVE-SERVED2 P1
+Parsed method name: M23-ACHIEVE-SERVED2
+Subtasks:
+
+Parse instantiated task from "  ACHIEVE-SERVED P0" ... done
+Parsed abstract task id=106 ACHIEVE-SERVED P0
+Parsed method name: M22-ACHIEVE-SERVED
+Subtasks: 119 262
+
+Parse instantiated task from "  ACHIEVE-SERVED2 P0" ... done
+Parsed abstract task id=119 ACHIEVE-SERVED2 P0
+Parsed method name: M24-ACHIEVE-SERVED2
+Subtasks: 267 260
+
+Parse instantiated task from "  ACHIEVE-BOARDED P0" ... done
+Parsed abstract task id=132 ACHIEVE-BOARDED P0
+Parsed method name: M17-ACHIEVE-BOARDED
+Subtasks: 135 187
+
+Parse instantiated task from "  ACHIEVE-BOARDED1 P0" ... done
+Parsed abstract task id=135 ACHIEVE-BOARDED1 P0
+Parsed method name: M19-ACHIEVE-BOARDED1
+Subtasks: 269 185
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT F3" ... done
+Parsed abstract task id=140 ACHIEVE-LIFT-AT F3
+Parsed method name: M11-ACHIEVE-LIFT-AT
+Subtasks: 143 167
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT0 F3" ... done
+Parsed abstract task id=143 ACHIEVE-LIFT-AT0 F3
+Parsed method name: M13-ACHIEVE-LIFT-AT0
+Subtasks: 150 165
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT0 F3" ... done
+Parsed abstract task id=165 ACHIEVE-LIFT-AT0 F3
+Parsed method name: M12-ACHIEVE-LIFT-AT0
+Subtasks:
+
+Parse instantiated task from "  IFUNLOCK-LIFT-AT F3" ... done
+Parsed abstract task id=176 IFUNLOCK-LIFT-AT F3
+Parsed method name: IFUNLOCK5-LIFT-AT
+Subtasks: 178
+
+Parse instantiated task from "  ACHIEVE-BOARDED1 P0" ... done
+Parsed abstract task id=185 ACHIEVE-BOARDED1 P0
+Parsed method name: M18-ACHIEVE-BOARDED1
+Subtasks:
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT F0" ... done
+Parsed abstract task id=201 ACHIEVE-LIFT-AT F0
+Parsed method name: M11-ACHIEVE-LIFT-AT
+Subtasks: 214 248
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT0 F0" ... done
+Parsed abstract task id=214 ACHIEVE-LIFT-AT0 F0
+Parsed method name: M14-ACHIEVE-LIFT-AT0
+Subtasks: 230 246
+
+Parse instantiated task from "  ACHIEVE-LIFT-AT0 F0" ... done
+Parsed abstract task id=246 ACHIEVE-LIFT-AT0 F0
+Parsed method name: M12-ACHIEVE-LIFT-AT0
+Subtasks:
+
+Parse instantiated task from "  IFUNLOCK-LIFT-AT F0" ... done
+Parsed abstract task id=252 IFUNLOCK-LIFT-AT F0
+Parsed method name: IFUNLOCK5-LIFT-AT
+Subtasks: 254
+
+Parse instantiated task from "  IFUNLOCK-BOARDED P0" ... done
+Parsed abstract task id=256 IFUNLOCK-BOARDED P0
+Parsed method name: IFUNLOCK1-BOARDED
+Subtasks: 258
+
+Parse instantiated task from "  ACHIEVE-SERVED2 P0" ... done
+Parsed abstract task id=260 ACHIEVE-SERVED2 P0
+Parsed method name: M23-ACHIEVE-SERVED2
+Subtasks:
+
+Parse instantiated task from "  DO-SERVED-DEPART2 F2 P1" ... done
+Parsed abstract task id=263 DO-SERVED-DEPART2 F2 P1
+Parsed method name: M8-DO-SERVED-DEPART2
+Subtasks: 11 33 69 78 81
+
+Parse instantiated task from "  DO-BOARDED-BOARD1 F0 P1" ... done
+Parsed abstract task id=265 DO-BOARDED-BOARD1 F0 P1
+Parsed method name: M7-DO-BOARDED-BOARD1
+Subtasks: 18 23 26
+
+Parse instantiated task from "  DO-SERVED-DEPART2 F0 P0" ... done
+Parsed abstract task id=267 DO-SERVED-DEPART2 F0 P0
+Parsed method name: M8-DO-SERVED-DEPART2
+Subtasks: 132 201 252 256 259
+
+Parse instantiated task from "  DO-BOARDED-BOARD1 F3 P0" ... done
+Parsed abstract task id=269 DO-BOARDED-BOARD1 F3 P0
+Parsed method name: M7-DO-BOARDED-BOARD1
+Subtasks: 140 176 179
+
+Reached end of input.
+
+Checking the given plan ...
+IDs of subtasks used in the plan exist: true
+Tasks declared in plan actually exist and can be instantiated as given: true
+Methods don't contain duplicate subtasks: true
+Methods don't contain orphaned tasks: true
+Generating Matchings for task with id=0
+ Matching Task 3 Curpos=0 #sources=1
+ Task is: ACHIEVE-SERVED P1
+ Attempting matching with source task1
+  Setting ?var_for_P1 = P1
+   Matching Task 106 Curpos=1 #sources=1
+   Task is: ACHIEVE-SERVED P0
+   Attempting matching with source task0
+    Setting ?var_for_P0 = P0
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=0
+Generating Matchings for task with id=3
+ Matching Task 6 Curpos=0 #sources=1
+ Task is: ACHIEVE-SERVED2 P1
+ Attempting matching with source __t_id_33
+  Setting ?PASSENGER0 = P1
+   Matching Task 90 Curpos=1 #sources=1
+   Task is: i-LOCK-SERVED P1
+   Attempting matching with source __t_id_34
+    Setting ?PASSENGER0 = P1
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=3
+Generating Matchings for task with id=6
+ Matching Task 263 Curpos=0 #sources=1
+ Task is: DO-SERVED-DEPART2 F2 P1
+ Attempting matching with source __t_id_35
+  Setting ?FLOOR2 = F2
+  Setting ?PASSENGER0 = P1
+   Matching Task 88 Curpos=1 #sources=1
+   Task is: ACHIEVE-SERVED2 P1
+   Attempting matching with source __t_id_36
+    Setting ?PASSENGER0 = P1
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=6
+Generating Matchings for task with id=11
+ Matching Task 14 Curpos=0 #sources=1
+ Task is: ACHIEVE-BOARDED1 P1
+ Attempting matching with source __t_id_27
+  Setting ?PASSENGER0 = P1
+   Matching Task 29 Curpos=1 #sources=1
+   Task is: i-LOCK-BOARDED P1
+   Attempting matching with source __t_id_28
+    Setting ?PASSENGER0 = P1
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=11
+Generating Matchings for task with id=14
+ Matching Task 265 Curpos=0 #sources=1
+ Task is: DO-BOARDED-BOARD1 F0 P1
+ Attempting matching with source __t_id_29
+  Setting ?FLOOR2 = F0
+  Setting ?PASSENGER0 = P1
+   Matching Task 27 Curpos=1 #sources=1
+   Task is: ACHIEVE-BOARDED1 P1
+   Attempting matching with source __t_id_30
+    Setting ?PASSENGER0 = P1
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=14
+Generating Matchings for task with id=18
+ Matching Task 20 Curpos=0 #sources=1
+ Task is: i-LOCK-LIFT-AT F0
+ Attempting matching with source __t_id_18
+  Setting ?FLOOR0 = F0
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=18
+Generating Matchings for task with id=23
+ Matching Task 25 Curpos=0 #sources=1
+ Task is: i-UNLOCK-LIFT-AT F0
+ Attempting matching with source __t_id_5
+  Setting ?FLOOR0 = F0
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=23
+Generating Matchings for task with id=27
+ Found compatible linearisation.
+  Checking constants are in variable type ... 
+  Checking method's constraint formula ... 
+  Checking variable constraints in method's precondition ... 
+  Matching is ok.
+Found 1 matchings for task with id=27
+Generating Matchings for task with id=33
+ Matching Task 36 Curpos=0 #sources=1
+ Task is: ACHIEVE-LIFT-AT0 F2
+ Attempting matching with source __t_id_19
+  Setting ?FLOOR0 = F2
+   Matching Task 60 Curpos=1 #sources=1
+   Task is: i-LOCK-LIFT-AT F2
+   Attempting matching with source __t_id_20
+    Setting ?FLOOR0 = F2
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=33
+Generating Matchings for task with id=36
+ Matching Task 48 Curpos=0 #sources=1
+ Task is: UP F0 F2
+ Attempting matching with source __t_id_21
+  Setting ?FLOOR1 = F0
+  Setting ?FLOOR3 = F2
+   Matching Task 58 Curpos=1 #sources=1
+   Task is: ACHIEVE-LIFT-AT0 F2
+   Attempting matching with source __t_id_22
+    Setting ?FLOOR0 = F2
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=36
+Generating Matchings for task with id=58
+ Found compatible linearisation.
+  Checking constants are in variable type ... 
+  Checking method's constraint formula ... 
+  Checking variable constraints in method's precondition ... 
+  Matching is ok.
+Found 1 matchings for task with id=58
+Generating Matchings for task with id=69
+ Matching Task 71 Curpos=0 #sources=1
+ Task is: i-UNLOCK-LIFT-AT F2
+ Attempting matching with source __t_id_5
+  Setting ?FLOOR0 = F2
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=69
+Generating Matchings for task with id=78
+ Matching Task 80 Curpos=0 #sources=1
+ Task is: i-UNLOCK-BOARDED P1
+ Attempting matching with source __t_id_1
+  Setting ?PASSENGER0 = P1
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=78
+Generating Matchings for task with id=88
+ Found compatible linearisation.
+  Checking constants are in variable type ... 
+  Checking method's constraint formula ... 
+  Checking variable constraints in method's precondition ... 
+  Matching is ok.
+Found 1 matchings for task with id=88
+Generating Matchings for task with id=106
+ Matching Task 119 Curpos=0 #sources=1
+ Task is: ACHIEVE-SERVED2 P0
+ Attempting matching with source __t_id_33
+  Setting ?PASSENGER0 = P0
+   Matching Task 262 Curpos=1 #sources=1
+   Task is: i-LOCK-SERVED P0
+   Attempting matching with source __t_id_34
+    Setting ?PASSENGER0 = P0
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=106
+Generating Matchings for task with id=119
+ Matching Task 267 Curpos=0 #sources=1
+ Task is: DO-SERVED-DEPART2 F0 P0
+ Attempting matching with source __t_id_35
+  Setting ?FLOOR2 = F0
+  Setting ?PASSENGER0 = P0
+   Matching Task 260 Curpos=1 #sources=1
+   Task is: ACHIEVE-SERVED2 P0
+   Attempting matching with source __t_id_36
+    Setting ?PASSENGER0 = P0
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=119
+Generating Matchings for task with id=132
+ Matching Task 135 Curpos=0 #sources=1
+ Task is: ACHIEVE-BOARDED1 P0
+ Attempting matching with source __t_id_27
+  Setting ?PASSENGER0 = P0
+   Matching Task 187 Curpos=1 #sources=1
+   Task is: i-LOCK-BOARDED P0
+   Attempting matching with source __t_id_28
+    Setting ?PASSENGER0 = P0
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=132
+Generating Matchings for task with id=135
+ Matching Task 269 Curpos=0 #sources=1
+ Task is: DO-BOARDED-BOARD1 F3 P0
+ Attempting matching with source __t_id_29
+  Setting ?FLOOR2 = F3
+  Setting ?PASSENGER0 = P0
+   Matching Task 185 Curpos=1 #sources=1
+   Task is: ACHIEVE-BOARDED1 P0
+   Attempting matching with source __t_id_30
+    Setting ?PASSENGER0 = P0
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=135
+Generating Matchings for task with id=140
+ Matching Task 143 Curpos=0 #sources=1
+ Task is: ACHIEVE-LIFT-AT0 F3
+ Attempting matching with source __t_id_19
+  Setting ?FLOOR0 = F3
+   Matching Task 167 Curpos=1 #sources=1
+   Task is: i-LOCK-LIFT-AT F3
+   Attempting matching with source __t_id_20
+    Setting ?FLOOR0 = F3
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=140
+Generating Matchings for task with id=143
+ Matching Task 150 Curpos=0 #sources=1
+ Task is: UP F2 F3
+ Attempting matching with source __t_id_21
+  Setting ?FLOOR1 = F2
+  Setting ?FLOOR3 = F3
+   Matching Task 165 Curpos=1 #sources=1
+   Task is: ACHIEVE-LIFT-AT0 F3
+   Attempting matching with source __t_id_22
+    Setting ?FLOOR0 = F3
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=143
+Generating Matchings for task with id=165
+ Found compatible linearisation.
+  Checking constants are in variable type ... 
+  Checking method's constraint formula ... 
+  Checking variable constraints in method's precondition ... 
+  Matching is ok.
+Found 1 matchings for task with id=165
+Generating Matchings for task with id=176
+ Matching Task 178 Curpos=0 #sources=1
+ Task is: i-UNLOCK-LIFT-AT F3
+ Attempting matching with source __t_id_5
+  Setting ?FLOOR0 = F3
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=176
+Generating Matchings for task with id=185
+ Found compatible linearisation.
+  Checking constants are in variable type ... 
+  Checking method's constraint formula ... 
+  Checking variable constraints in method's precondition ... 
+  Matching is ok.
+Found 1 matchings for task with id=185
+Generating Matchings for task with id=201
+ Matching Task 214 Curpos=0 #sources=1
+ Task is: ACHIEVE-LIFT-AT0 F0
+ Attempting matching with source __t_id_19
+  Setting ?FLOOR0 = F0
+   Matching Task 248 Curpos=1 #sources=1
+   Task is: i-LOCK-LIFT-AT F0
+   Attempting matching with source __t_id_20
+    Setting ?FLOOR0 = F0
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=201
+Generating Matchings for task with id=214
+ Matching Task 230 Curpos=0 #sources=1
+ Task is: DOWN F3 F0
+ Attempting matching with source __t_id_23
+  Setting ?FLOOR1 = F3
+  Setting ?FLOOR3 = F0
+   Matching Task 246 Curpos=1 #sources=1
+   Task is: ACHIEVE-LIFT-AT0 F0
+   Attempting matching with source __t_id_24
+    Setting ?FLOOR0 = F0
+     Found compatible linearisation.
+      Checking constants are in variable type ... 
+      Checking method's constraint formula ... 
+      Checking variable constraints in method's precondition ... 
+      Matching is ok.
+Found 1 matchings for task with id=214
+Generating Matchings for task with id=246
+ Found compatible linearisation.
+  Checking constants are in variable type ... 
+  Checking method's constraint formula ... 
+  Checking variable constraints in method's precondition ... 
+  Matching is ok.
+Found 1 matchings for task with id=246
+Generating Matchings for task with id=252
+ Matching Task 254 Curpos=0 #sources=1
+ Task is: i-UNLOCK-LIFT-AT F0
+ Attempting matching with source __t_id_5
+  Setting ?FLOOR0 = F0
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=252
+Generating Matchings for task with id=256
+ Matching Task 258 Curpos=0 #sources=1
+ Task is: i-UNLOCK-BOARDED P0
+ Attempting matching with source __t_id_1
+  Setting ?PASSENGER0 = P0
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=256
+Generating Matchings for task with id=260
+ Found compatible linearisation.
+  Checking constants are in variable type ... 
+  Checking method's constraint formula ... 
+  Checking variable constraints in method's precondition ... 
+  Matching is ok.
+Found 1 matchings for task with id=260
+Generating Matchings for task with id=263
+ Matching Task 11 Curpos=0 #sources=1
+ Task is: ACHIEVE-BOARDED P1
+ Attempting matching with source __t_id_12
+  Setting ?PASSENGER1 = P1
+   Matching Task 33 Curpos=1 #sources=1
+   Task is: ACHIEVE-LIFT-AT F2
+   Attempting matching with source __t_id_13
+    Setting ?FLOOR0 = F2
+     Matching Task 69 Curpos=2 #sources=1
+     Task is: IFUNLOCK-LIFT-AT F2
+     Attempting matching with source __t_id_14
+      Setting ?FLOOR0 = F2
+       Matching Task 78 Curpos=3 #sources=1
+       Task is: IFUNLOCK-BOARDED P1
+       Attempting matching with source __t_id_15
+        Setting ?PASSENGER1 = P1
+         Matching Task 81 Curpos=4 #sources=1
+         Task is: DEPART F2 P1
+         Attempting matching with source __t_id_16
+          Setting ?FLOOR0 = F2
+          Setting ?PASSENGER1 = P1
+           Found compatible linearisation.
+            Checking constants are in variable type ... 
+            Checking method's constraint formula ... 
+            Checking variable constraints in method's precondition ... 
+            Matching is ok.
+Found 1 matchings for task with id=263
+Generating Matchings for task with id=265
+ Matching Task 18 Curpos=0 #sources=1
+ Task is: ACHIEVE-LIFT-AT F0
+ Attempting matching with source __t_id_9
+  Setting ?FLOOR0 = F0
+   Matching Task 23 Curpos=1 #sources=1
+   Task is: IFUNLOCK-LIFT-AT F0
+   Attempting matching with source __t_id_10
+    Setting ?FLOOR0 = F0
+     Matching Task 26 Curpos=2 #sources=1
+     Task is: BOARD F0 P1
+     Attempting matching with source __t_id_11
+      Setting ?FLOOR0 = F0
+      Setting ?PASSENGER1 = P1
+       Found compatible linearisation.
+        Checking constants are in variable type ... 
+        Checking method's constraint formula ... 
+        Checking variable constraints in method's precondition ... 
+        Matching is ok.
+Found 1 matchings for task with id=265
+Generating Matchings for task with id=267
+ Matching Task 132 Curpos=0 #sources=1
+ Task is: ACHIEVE-BOARDED P0
+ Attempting matching with source __t_id_12
+  Setting ?PASSENGER1 = P0
+   Matching Task 201 Curpos=1 #sources=1
+   Task is: ACHIEVE-LIFT-AT F0
+   Attempting matching with source __t_id_13
+    Setting ?FLOOR0 = F0
+     Matching Task 252 Curpos=2 #sources=1
+     Task is: IFUNLOCK-LIFT-AT F0
+     Attempting matching with source __t_id_14
+      Setting ?FLOOR0 = F0
+       Matching Task 256 Curpos=3 #sources=1
+       Task is: IFUNLOCK-BOARDED P0
+       Attempting matching with source __t_id_15
+        Setting ?PASSENGER1 = P0
+         Matching Task 259 Curpos=4 #sources=1
+         Task is: DEPART F0 P0
+         Attempting matching with source __t_id_16
+          Setting ?FLOOR0 = F0
+          Setting ?PASSENGER1 = P0
+           Found compatible linearisation.
+            Checking constants are in variable type ... 
+            Checking method's constraint formula ... 
+            Checking variable constraints in method's precondition ... 
+            Matching is ok.
+Found 1 matchings for task with id=267
+Generating Matchings for task with id=269
+ Matching Task 140 Curpos=0 #sources=1
+ Task is: ACHIEVE-LIFT-AT F3
+ Attempting matching with source __t_id_9
+  Setting ?FLOOR0 = F3
+   Matching Task 176 Curpos=1 #sources=1
+   Task is: IFUNLOCK-LIFT-AT F3
+   Attempting matching with source __t_id_10
+    Setting ?FLOOR0 = F3
+     Matching Task 179 Curpos=2 #sources=1
+     Task is: BOARD F3 P0
+     Attempting matching with source __t_id_11
+      Setting ?FLOOR0 = F3
+      Setting ?PASSENGER1 = P0
+       Found compatible linearisation.
+        Checking constants are in variable type ... 
+        Checking method's constraint formula ... 
+        Checking variable constraints in method's precondition ... 
+        Matching is ok.
+Found 1 matchings for task with id=269
+Methods can be instantiated: true
+Check whether primitive plan is a linearisation of the orderings resulting from applied decomposition methods.
+ Abstract Task id=0 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=3 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=6 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=263 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=11 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=14 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=265 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=18 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=20
+  Ordering OK.
+ Abstract Task id=23 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=25
+  Ordering OK.
+ Primitive Task id=26
+  Ordering OK.
+ Abstract Task id=27 matching still unique: true (1)
+  Attempting matching
+  Ordering OK.
+  Ordering OK.
+ Primitive Task id=29
+  Ordering OK.
+ Abstract Task id=33 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=36 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=48
+ Abstract Task id=58 matching still unique: true (1)
+  Attempting matching
+  Ordering OK.
+  Ordering OK.
+ Primitive Task id=60
+  Ordering OK.
+ Abstract Task id=69 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=71
+  Ordering OK.
+ Abstract Task id=78 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=80
+  Ordering OK.
+ Primitive Task id=81
+  Ordering OK.
+ Abstract Task id=88 matching still unique: true (1)
+  Attempting matching
+  Ordering OK.
+  Ordering OK.
+ Primitive Task id=90
+  Ordering OK.
+ Abstract Task id=106 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=119 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=267 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=132 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=135 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=269 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=140 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=143 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=150
+ Abstract Task id=165 matching still unique: true (1)
+  Attempting matching
+  Ordering OK.
+  Ordering OK.
+ Primitive Task id=167
+  Ordering OK.
+ Abstract Task id=176 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=178
+  Ordering OK.
+ Primitive Task id=179
+  Ordering OK.
+ Abstract Task id=185 matching still unique: true (1)
+  Attempting matching
+  Ordering OK.
+  Ordering OK.
+ Primitive Task id=187
+  Ordering OK.
+ Abstract Task id=201 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=214 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=230
+ Abstract Task id=246 matching still unique: true (1)
+  Attempting matching
+  Ordering OK.
+  Ordering OK.
+ Primitive Task id=248
+  Ordering OK.
+ Abstract Task id=252 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=254
+  Ordering OK.
+ Abstract Task id=256 matching still unique: true (1)
+  Attempting matching
+ Primitive Task id=258
+  Ordering OK.
+ Primitive Task id=259
+  Ordering OK.
+ Abstract Task id=260 matching still unique: true (1)
+  Attempting matching
+  Ordering OK.
+  Ordering OK.
+ Primitive Task id=262
+  Ordering OK.
+  Root Task, checking primitive executability ...
+  Running exponential top-sort.
+  The current state is:
+     ABOVE F0 F1
+     ABOVE F0 F2
+     ABOVE F0 F3
+     ABOVE F1 F2
+     ABOVE F1 F3
+     ABOVE F2 F3
+     DESTIN P0 F0
+     DESTIN P1 F2
+     LIFT-AT F0
+     ORIGIN P0 F3
+     ORIGIN P1 F0
+   Executing plan time=1 #sources=1
+    Source 0 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 3 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 6 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 263 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 11 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 14 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 265 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 18 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 20 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 20
+    Task is: i-LOCK-LIFT-AT F0
+    Applying effects of the action.
+     Adding fact to state: LOCKED-LIFT-AT F0
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F0
+      LOCKED-LIFT-AT F0
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+   Executing plan time=1 #sources=1
+    Source -21 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -19 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 23 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 25 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 25
+    Task is: i-UNLOCK-LIFT-AT F0
+    Applying effects of the action.
+     Removing fact from state: LOCKED-LIFT-AT F0
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F0
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+   Executing plan time=1 #sources=1
+    Source -26 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -24 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 26 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 26
+    Task is: BOARD F0 P1
+    Applying effects of the action.
+     Adding fact to state: BOARDED P1
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      BOARDED P1
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F0
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+   Executing plan time=1 #sources=1
+    Source -27 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -266 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 27 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -28 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -15 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 29 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 29
+    Task is: i-LOCK-BOARDED P1
+    Applying effects of the action.
+     Adding fact to state: LOCKED-BOARDED P1
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      BOARDED P1
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F0
+      LOCKED-BOARDED P1
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+   Executing plan time=1 #sources=1
+    Source -30 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -12 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 33 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 36 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 48 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 48
+    Task is: UP F0 F2
+    Applying effects of the action.
+     Removing fact from state: LIFT-AT F0
+     Adding fact to state: LIFT-AT F2
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      BOARDED P1
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F2
+      LOCKED-BOARDED P1
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+   Executing plan time=1 #sources=1
+    Source -49 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 58 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -59 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -37 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 60 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 60
+    Task is: i-LOCK-LIFT-AT F2
+    Applying effects of the action.
+     Adding fact to state: LOCKED-LIFT-AT F2
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      BOARDED P1
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F2
+      LOCKED-BOARDED P1
+      LOCKED-LIFT-AT F2
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+   Executing plan time=1 #sources=1
+    Source -61 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -34 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 69 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 71 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 71
+    Task is: i-UNLOCK-LIFT-AT F2
+    Applying effects of the action.
+     Removing fact from state: LOCKED-LIFT-AT F2
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      BOARDED P1
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F2
+      LOCKED-BOARDED P1
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+   Executing plan time=1 #sources=1
+    Source -72 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -70 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 78 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 80 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 80
+    Task is: i-UNLOCK-BOARDED P1
+    Applying effects of the action.
+     Removing fact from state: LOCKED-BOARDED P1
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      BOARDED P1
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F2
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+   Executing plan time=1 #sources=1
+    Source -81 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -79 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 81 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 81
+    Task is: DEPART F2 P1
+    Applying effects of the action.
+     Removing fact from state: BOARDED P1
+     Adding fact to state: SERVED P1
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F2
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+      SERVED P1
+   Executing plan time=1 #sources=1
+    Source -82 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -264 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 88 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -89 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -7 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 90 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 90
+    Task is: i-LOCK-SERVED P1
+    Applying effects of the action.
+     Adding fact to state: LOCKED-SERVED P1
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F2
+      LOCKED-SERVED P1
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+      SERVED P1
+   Executing plan time=1 #sources=1
+    Source -91 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -4 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 106 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 119 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 267 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 132 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 135 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 269 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 140 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 143 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 150 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 150
+    Task is: UP F2 F3
+    Applying effects of the action.
+     Removing fact from state: LIFT-AT F2
+     Adding fact to state: LIFT-AT F3
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F3
+      LOCKED-SERVED P1
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+      SERVED P1
+   Executing plan time=1 #sources=1
+    Source -151 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 165 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -166 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -144 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 167 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 167
+    Task is: i-LOCK-LIFT-AT F3
+    Applying effects of the action.
+     Adding fact to state: LOCKED-LIFT-AT F3
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F3
+      LOCKED-LIFT-AT F3
+      LOCKED-SERVED P1
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+      SERVED P1
+   Executing plan time=1 #sources=1
+    Source -168 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -141 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 176 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 178 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 178
+    Task is: i-UNLOCK-LIFT-AT F3
+    Applying effects of the action.
+     Removing fact from state: LOCKED-LIFT-AT F3
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F3
+      LOCKED-SERVED P1
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+      SERVED P1
+   Executing plan time=1 #sources=1
+    Source -179 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -177 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 179 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 179
+    Task is: BOARD F3 P0
+    Applying effects of the action.
+     Adding fact to state: BOARDED P0
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      BOARDED P0
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F3
+      LOCKED-SERVED P1
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+      SERVED P1
+   Executing plan time=1 #sources=1
+    Source -180 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -270 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 185 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -186 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -136 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 187 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 187
+    Task is: i-LOCK-BOARDED P0
+    Applying effects of the action.
+     Adding fact to state: LOCKED-BOARDED P0
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      BOARDED P0
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F3
+      LOCKED-BOARDED P0
+      LOCKED-SERVED P1
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+      SERVED P1
+   Executing plan time=1 #sources=1
+    Source -188 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -133 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 201 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 214 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 230 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 230
+    Task is: DOWN F3 F0
+    Applying effects of the action.
+     Removing fact from state: LIFT-AT F3
+     Adding fact to state: LIFT-AT F0
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      BOARDED P0
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F0
+      LOCKED-BOARDED P0
+      LOCKED-SERVED P1
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+      SERVED P1
+   Executing plan time=1 #sources=1
+    Source -231 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 246 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -247 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -215 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 248 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 248
+    Task is: i-LOCK-LIFT-AT F0
+    Applying effects of the action.
+     Adding fact to state: LOCKED-LIFT-AT F0
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      BOARDED P0
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F0
+      LOCKED-BOARDED P0
+      LOCKED-LIFT-AT F0
+      LOCKED-SERVED P1
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+      SERVED P1
+   Executing plan time=1 #sources=1
+    Source -249 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -202 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 252 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 254 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 254
+    Task is: i-UNLOCK-LIFT-AT F0
+    Applying effects of the action.
+     Removing fact from state: LOCKED-LIFT-AT F0
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      BOARDED P0
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F0
+      LOCKED-BOARDED P0
+      LOCKED-SERVED P1
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+      SERVED P1
+   Executing plan time=1 #sources=1
+    Source -255 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -253 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 256 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 258 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 258
+    Task is: i-UNLOCK-BOARDED P0
+    Applying effects of the action.
+     Removing fact from state: LOCKED-BOARDED P0
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      BOARDED P0
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F0
+      LOCKED-SERVED P1
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+      SERVED P1
+   Executing plan time=1 #sources=1
+    Source -259 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -257 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 259 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 259
+    Task is: DEPART F0 P0
+    Applying effects of the action.
+     Removing fact from state: BOARDED P0
+     Adding fact to state: SERVED P0
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F0
+      LOCKED-SERVED P1
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+      SERVED P0
+      SERVED P1
+   Executing plan time=1 #sources=1
+    Source -260 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -268 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 260 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -261 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -120 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 262 is a primitive action.
+    Action has an effect.
+    Performed all sources that can be taken greedily. 1 sources remain. unique=true
+    Attempting to progress through source 262
+    Task is: i-LOCK-SERVED P0
+    Applying effects of the action.
+     Adding fact to state: LOCKED-SERVED P0
+    The new state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F0
+      LOCKED-SERVED P0
+      LOCKED-SERVED P1
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+      SERVED P0
+      SERVED P1
+   Executing plan time=1 #sources=1
+    Source -263 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -107 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -1 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=0
+   Executed the whole plan ... checking whether we reached the goal state.
+   The current state is:
+      ABOVE F0 F1
+      ABOVE F0 F2
+      ABOVE F0 F3
+      ABOVE F1 F2
+      ABOVE F1 F3
+      ABOVE F2 F3
+      DESTIN P0 F0
+      DESTIN P1 F2
+      LIFT-AT F0
+      LOCKED-SERVED P0
+      LOCKED-SERVED P1
+      ORIGIN P0 F3
+      ORIGIN P1 F0
+      SERVED P0
+      SERVED P1
+  Executable linearisation found.
+  Ordering OK.
+Result true true
+Order induced by methods is present in plan: true
+Plan is executable: true
+Plan verification result: true

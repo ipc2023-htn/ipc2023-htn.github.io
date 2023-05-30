@@ -1,0 +1,100 @@
+INFO:    underlay of /etc/localtime required more than 50 (86) bind mounts
+===== Preprocessing ======
+Removed 156 unusable effects
+Substitution from predicate to state variable:
+ - head
+ - tail
+Transforming static state functions as table constraints:
+ - adjacent
+==========================
+0 Solving with depth 0
+  [0.000s] Populated
+  [0.000s] Solved
+1 Solving with depth 1
+  [0.000s] Populated
+  [0.000s] Solved
+2 Solving with depth 2
+  [0.000s] Populated
+  [0.001s] Solved
+3 Solving with depth 3
+  [0.001s] Populated
+  [0.008s] Solved
+4 Solving with depth 4
+  [0.008s] Populated
+  [0.025s] Solved
+5 Solving with depth 5
+  [0.026s] Populated
+
+**** Decomposition ****
+
+==>
+13 (move-short viper px2y1 px2y2)
+24 (move-short viper px2y0 px2y1)
+36 (move-short viper px1y0 px2y0)
+6 (strike viper px1y0 px0y0)
+root 1
+1 (hunt) -> hunt_all 4 6 8
+4 (move viper px2y2 px1y0) -> move-short-snake 13 11
+11 (move viper px2y1 px1y0) -> move-short-snake 24 21
+21 (move viper px2y0 px1y0) -> move-short-snake 36 37
+37 (move viper px1y0 px1y0) -> move-base
+8 (hunt) -> hunt_done
+<==
+
+
+**** Plan ****
+
+ 0: (move-short viper px2y1 px2y2) [0.000]
+0.1: (move-short viper px2y0 px2y1) [0.000]
+0.2: (move-short viper px1y0 px2y0) [0.000]
+0.4: (strike viper px1y0 px0y0) [0.000]
+
+
+==== Worker 1
+Solver is running
+
+==== Worker 2
+solutions           : 1           
+restarts            : 0           
+decisions           : 58           (5240 /sec)
+conflicts           : 19           (1716 /sec)
+================= 
+Solvers             :             SAT        DiffLog             CP
+% propagation cycles:         16.83 %        82.03 %         1.07 %
+# propagation loops :             142            130            123
+# conflicts         :              12              7              0
+================= 
+Init time           : 0.003462 s
+Solve time          : 0.011070 s
+
+====== SAT =====
+DB size              : 6526
+Num unit propagations: 1811
+====== DiffLog =====
+# nodes: 405
+# propagators: 4608
+# propagations: 260
+# domain updates: 877
+====== CP =====
+
+==== Worker 3
+Solver is running
+  [0.076s] Solved
+6 Solving with depth 6
+  [0.076s] Populated
+  [0.185s] Solved
+7 Solving with depth 7
+  [0.185s] Populated
+  [0.402s] Solved
+8 Solving with depth 8
+  [0.403s] Populated
+  [0.807s] Solved
+9 Solving with depth 9
+  [0.807s] Populated
+  [1.463s] Solved
+10 Solving with depth 10
+  [1.464s] Populated
+Command exited with non-zero status 124
+%TIME 0:02.01 353300
+%EXIT 124
+NO OUTPUT

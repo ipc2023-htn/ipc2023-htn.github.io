@@ -1,0 +1,14 @@
+INFO:    underlay of /etc/localtime required more than 50 (76) bind mounts
+pandaPIparser is configured as follows
+  Colors in output: true
+  Mode: parsing mode
+  Parameter splitting: true
+  Conditional effects: exponential encoding
+  Disjunctive preconditions as HTN: false
+  Replace goal with action: false
+  Output: pandaPI format
+/.singularity.d/runscript: 27: Syntax error: "(" unexpected
+Command exited with non-zero status 2
+%TIME 0:00.18 39196
+%EXIT 2
+NO OUTPUT

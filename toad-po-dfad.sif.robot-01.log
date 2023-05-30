@@ -1,0 +1,198 @@
+INFO:    underlay of /etc/localtime required more than 50 (80) bind mounts
+pandaPIparser is configured as follows
+  Colors in output: true
+  Mode: parsing mode
+  Parameter splitting: true
+  Conditional effects: exponential encoding
+  Disjunctive preconditions as HTN: false
+  Replace goal with action: false
+  Output: pandaPI format
+TOAD - Total Order HTN Approximation with DFA.
+You have compiled TOAD without setting the NDEBUG flag. This will make it slow and should only be done for debug.
+Reading HTN model from file "domain-problem.psas" ... 
+- State has 4 bits divided into 2 mutex groups. [statebits=4] [statevars=2]
+- Domain contains 5 actions. [numActions=5]
+- Domain contains 9 tasks. [numTasks=9]
+- Domain contains 8 methods. [numMethods=8]
+- The initial state contains 2 set bits.
+- The initial task is "__top[]".
+- State-based goal contains 0 bits.
+- [timePrepareModel=2]
+Starting translation
+- adding methods as grammar rules
+Analysing rules
+- starting grammar simplification
+- 0 rules are not bottom-up reachable.
+- sorting rules...(done)
+- calculating SCCs...
+- number of SCCs: 9 [numSCCs=9]
+- number of cyclic SCCs: 1. [cyclicSCCs=1]
+- self-loops: 1. [sccSelfLoops=1]
+- collecting SCC data
+- analysing recursion...(done)
+- partitions of recursive tasks:
+- recursive structure: [rrec=yes] [lrec=no] [srec=no] [crec=no]
+- instance properties:
+  - the instance is recursive, but not self-embedding, i.e. it is regular. [rec=nonSelfEmbedding]
+  - using exact translation. [alg=exact]
+- [timeHtnToGrammar=1]
+Building DFA
+- Using top down algorithm [algo=td]
+- inplace threshold [ipt=-1]
+- ALL tasks handled inplace
+- not using intermediate optimization
+- building sub-FAs
+  - [numSubFAs=1]
+  - [timeBuildingSubFAs=0]
+- combining sub-FAs.
+  -> is not necessary
+ [timeCombiningSubFAs=0]
+- [numStatesRAW=3]
+- [usePostOpt=true]
+- [roundsOfSuccOpt=1]
+- [postOptimization=1]
+- [numStatesFinal=2]
+- [buildingDFA=2]
+- counting actions...
+- [timeCountingActions=0]
+- [numActions=5]
+- writing FA distance for each state (used in special FD heuristic)
+Creating heuristic lookup table
+- [writingHfaLookUpTable=0]
+[t=7.1979e-05s, 10164 KB] reading input...
+[t=0.000253289s, 10164 KB] done reading input!
+[t=0.00116497s, 10420 KB] Simplifying 5 unary operators... done! [5 unary operators]
+[t=0.00121155s, 10420 KB] time to simplify: 5.8718e-05s
+[t=0.00122396s, 10420 KB] Initializing additive heuristic...
+[t=0.00123172s, 10420 KB] Initializing FF heuristic...
+[t=0.00125821s, 10420 KB] Initializing DFA distance heuristic...
+[t=0.00131438s, 10420 KB] Building successor generator...done!
+[t=0.00134815s, 10420 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00135621s, 10420 KB] time for successor generation creation: 7.382e-06s
+[t=0.00136621s, 10420 KB] Variables: 3
+[t=0.00137427s, 10420 KB] FactPairs: 6
+[t=0.00138204s, 10420 KB] Bytes per state: 4
+[t=0.00145598s, 10420 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.00149782s, 10420 KB] New best heuristic value for ff: 1
+[t=0.00150713s, 10420 KB] New best heuristic value for dfad: 1
+[t=0.00151508s, 10420 KB] g=0, 1 evaluated, 0 expanded
+[t=0.00152697s, 10420 KB] Initial heuristic value for ff: 1
+[t=0.00153513s, 10420 KB] Initial heuristic value for dfad: 1
+[t=0.00154832s, 10420 KB] Solution found!
+__noop (1)
+[t=0.00160163s, 10420 KB] Plan length: 1 step(s).
+[t=0.00161201s, 10420 KB] Plan cost: 1
+Reading HTN model from file "sas_plan.verify" ... 
+TOAD: verification successful.
+[t=0.00168415s, 10456 KB] verification successful
+Actual search time: 0.000258179s
+__noop (1)
+[t=0.00175349s, 10456 KB] Plan length: 1 step(s).
+[t=0.00175349s, 10456 KB] Plan cost: 1
+[t=0.00175349s, 10456 KB] Expanded 2 state(s).
+[t=0.00175349s, 10456 KB] Reopened 0 state(s).
+[t=0.00175349s, 10456 KB] Evaluated 3 state(s).
+[t=0.00175349s, 10456 KB] Evaluations: 6
+[t=0.00175349s, 10456 KB] Generated 4 state(s).
+[t=0.00175349s, 10456 KB] Dead ends: 0 state(s).
+[t=0.00175349s, 10456 KB] Number of registered states: 3
+[t=0.00175349s, 10456 KB] Int hash set load factor: 3/4 = 0.75
+[t=0.00175349s, 10456 KB] Int hash set resizes: 2
+[t=0.00175349s, 10456 KB] Search time: 0.000297924s
+[t=0.00175349s, 10456 KB] Total time: 0.00175349s
+Solution found.
+Peak memory: 10456 KB
+pandaPIparser is configured as follows
+  Colors in output: true
+  Mode: convert pandaPI plan
+%TIME 0:00.32 38620
+%EXIT 0
+pandaPIparser is configured as follows
+  Colors in output: false
+  Mode: plan verification
+  Verbosity: 1
+  Lenient mode: false
+  Ignore given order: false
+Reading plan given as input
+Size of primitive plan: 0
+Reading list of integers from " 1"
+Root tasks (1): 1
+Reading plan given as input
+Parse instantiated task from "  achieve-goals" ... done
+Parsed abstract task id=1 achieve-goals
+Parsed method name: finished
+Subtasks:
+
+Reached end of input.
+
+Checking the given plan ...
+IDs of subtasks used in the plan exist: true
+Tasks declared in plan actually exist and can be instantiated as given: true
+Methods don't contain duplicate subtasks: true
+Methods don't contain orphaned tasks: true
+Generating Matchings for task with id=0
+ Matching Task 1 Curpos=0 #sources=1
+ Task is: achieve-goals
+ Attempting matching with source task0
+   Found compatible linearisation.
+    Checking constants are in variable type ... 
+    Checking method's constraint formula ... 
+    Checking variable constraints in method's precondition ... 
+    Matching is ok.
+Found 1 matchings for task with id=0
+Generating Matchings for task with id=1
+ Found compatible linearisation.
+  Checking constants are in variable type ... 
+  Checking method's constraint formula ... 
+  Checking variable constraints in method's precondition ... 
+  Matching is ok.
+Found 1 matchings for task with id=1
+Methods can be instantiated: true
+Check whether primitive plan is a linearisation of the orderings resulting from applied decomposition methods.
+ Abstract Task id=0 matching still unique: true (1)
+  Attempting matching
+ Abstract Task id=1 matching still unique: true (1)
+  Attempting matching
+  Ordering OK.
+  Root Task, checking primitive executability ...
+  Running exponential top-sort.
+  The current state is:
+     armempty
+     closed d01
+     door c r1 d01
+     door r1 c d01
+     goal_in o1 r1
+     in o1 r1
+     rloc c
+   Executing plan time=1 #sources=1
+    Source 0 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source 1 is the begin of an abstract task.
+    Evaluating the method precondition
+    Method has no effect.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -2 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=1
+    Source -1 is a dummy for the end of a task.
+    I can greedily take this source without making any mistake.
+   Executing plan time=1 #sources=0
+   Executed the whole plan ... checking whether we reached the goal state.
+   The current state is:
+      armempty
+      closed d01
+      door c r1 d01
+      door r1 c d01
+      goal_in o1 r1
+      in o1 r1
+      rloc c
+  Executable linearisation found.
+  Ordering OK.
+Result true true
+Order induced by methods is present in plan: true
+Plan is executable: true
+Plan verification result: true

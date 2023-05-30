@@ -1,0 +1,31 @@
+INFO:    underlay of /etc/localtime required more than 50 (86) bind mounts
+===== Preprocessing ======
+Removed 44 unusable effects
+Substitution from predicate to state variable:
+ - capacity
+ - capacity_predecessor
+Transforming static state functions as table constraints:
+ - road
+ - capacity_predecessor
+==========================
+0 Solving with depth 0
+  [0.000s] Populated
+  [0.000s] Solved
+1 Solving with depth 1
+  [0.000s] Populated
+  [0.000s] Solved
+2 Solving with depth 2
+  [0.000s] Populated
+  [0.000s] Solved
+3 Solving with depth 3
+  [0.001s] Populated
+  [0.065s] Solved
+4 Solving with depth 4
+  [0.066s] Populated
+  [0.745s] Solved
+5 Solving with depth 5
+  [0.747s] Populated
+Command exited with non-zero status 124
+%TIME 0:02.01 116860
+%EXIT 124
+NO OUTPUT

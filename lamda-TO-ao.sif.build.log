@@ -1,0 +1,1168 @@
+WARNING: 'nodev' mount option set on /tmp, it could be a source of failure during build process
+INFO:    Starting build...
+Getting image source signatures
+Copying blob sha256:dbf6a9befcdeecbb8813406afbd62ce81394e3869d84599f19f941aa5c74f3d1
+Copying config sha256:3b418d7b466ac6275a6bfcb0c86fbe4422ff6ea0af444a294f82d3bf5173ce74
+Writing manifest to image destination
+Storing signatures
+2023/05/30 18:43:33  info unpack layer: sha256:dbf6a9befcdeecbb8813406afbd62ce81394e3869d84599f19f941aa5c74f3d1
+INFO:    Running setup scriptlet
+INFO:    Copying . to /planner
+INFO:    Running post scriptlet
++ apt-get update
+Get:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:2 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [36.3 kB]
+Get:3 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [512 kB]
+Get:4 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [918 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
+Get:6 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [360 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:8 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [108 kB]
+Get:9 http://archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages [164 kB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [266 kB]
+Get:11 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1792 kB]
+Get:12 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [17.5 MB]
+Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [794 kB]
+Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [360 kB]
+Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [42.2 kB]
+Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1157 kB]
+Get:17 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [49.4 kB]
+Get:18 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [27.0 kB]
+Fetched 24.6 MB in 3s (8236 kB/s)
+Reading package lists...
++ apt-get -y install make g++ bison cmake gengetopt flex unzip patch
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu ca-certificates
+  cmake-data cpp cpp-11 dh-elpa-helper emacsen-common fontconfig-config
+  fonts-dejavu-core g++-11 gcc gcc-11 gcc-11-base libarchive13 libasan6
+  libatomic1 libbinutils libbrotli1 libbsd0 libc-dev-bin libc-devtools
+  libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0 libctf0 libcurl4 libdeflate0
+  libexpat1 libfl-dev libfl2 libfontconfig1 libfreetype6 libgcc-11-dev libgd3
+  libgomp1 libicu70 libisl23 libitm1 libjbig0 libjpeg-turbo8 libjpeg8
+  libjsoncpp25 libldap-2.5-0 libldap-common liblsan0 libmd0 libmpc3 libmpfr6
+  libnghttp2-14 libnsl-dev libpng16-16 libpsl5 libquadmath0 librhash0 librtmp1
+  libsasl2-2 libsasl2-modules libsasl2-modules-db libsigsegv2 libssh-4
+  libstdc++-11-dev libtiff5 libtirpc-dev libtsan0 libubsan1 libuv1 libwebp7
+  libx11-6 libx11-data libxau6 libxcb1 libxdmcp6 libxml2 libxpm4
+  linux-libc-dev m4 manpages manpages-dev openssl publicsuffix rpcsvc-proto
+  ucf
+Suggested packages:
+  binutils-doc bison-doc cmake-doc ninja-build cmake-format cpp-doc
+  gcc-11-locales build-essential flex-doc g++-multilib g++-11-multilib
+  gcc-11-doc gcc-multilib autoconf automake libtool gdb gcc-doc
+  gcc-11-multilib lrzip glibc-doc libgd-tools libsasl2-modules-gssapi-mit
+  | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp
+  libsasl2-modules-sql libstdc++-11-doc m4-doc make-doc man-browser ed
+  diffutils-doc zip
+The following NEW packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu bison ca-certificates
+  cmake cmake-data cpp cpp-11 dh-elpa-helper emacsen-common flex
+  fontconfig-config fonts-dejavu-core g++ g++-11 gcc gcc-11 gcc-11-base
+  gengetopt libarchive13 libasan6 libatomic1 libbinutils libbrotli1 libbsd0
+  libc-dev-bin libc-devtools libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0
+  libctf0 libcurl4 libdeflate0 libexpat1 libfl-dev libfl2 libfontconfig1
+  libfreetype6 libgcc-11-dev libgd3 libgomp1 libicu70 libisl23 libitm1
+  libjbig0 libjpeg-turbo8 libjpeg8 libjsoncpp25 libldap-2.5-0 libldap-common
+  liblsan0 libmd0 libmpc3 libmpfr6 libnghttp2-14 libnsl-dev libpng16-16
+  libpsl5 libquadmath0 librhash0 librtmp1 libsasl2-2 libsasl2-modules
+  libsasl2-modules-db libsigsegv2 libssh-4 libstdc++-11-dev libtiff5
+  libtirpc-dev libtsan0 libubsan1 libuv1 libwebp7 libx11-6 libx11-data libxau6
+  libxcb1 libxdmcp6 libxml2 libxpm4 linux-libc-dev m4 make manpages
+  manpages-dev openssl patch publicsuffix rpcsvc-proto ucf unzip
+0 upgraded, 93 newly installed, 0 to remove and 11 not upgraded.
+Need to get 93.6 MB of archives.
+After this operation, 309 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsigsegv2 amd64 2.13-1ubuntu3 [14.6 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/main amd64 m4 amd64 1.4.18-5ubuntu2 [199 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy/main amd64 flex amd64 2.6.4-8build2 [307 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 openssl amd64 3.0.2-0ubuntu1.10 [1183 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 ca-certificates all 20230311ubuntu0.22.04.1 [155 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy/main amd64 libmd0 amd64 1.0.4-1build1 [23.0 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy/main amd64 libbsd0 amd64 0.11.5-1 [44.8 kB]
+Get:8 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libexpat1 amd64 2.4.7-1ubuntu0.2 [91.0 kB]
+Get:9 http://archive.ubuntu.com/ubuntu jammy/main amd64 libicu70 amd64 70.1-2 [10.6 MB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libxml2 amd64 2.9.13+dfsg-1ubuntu0.3 [763 kB]
+Get:11 http://archive.ubuntu.com/ubuntu jammy/main amd64 ucf all 3.0043 [56.1 kB]
+Get:12 http://archive.ubuntu.com/ubuntu jammy/main amd64 libnghttp2-14 amd64 1.43.0-1build3 [76.3 kB]
+Get:13 http://archive.ubuntu.com/ubuntu jammy/main amd64 libpng16-16 amd64 1.6.37-3build5 [191 kB]
+Get:14 http://archive.ubuntu.com/ubuntu jammy/main amd64 libpsl5 amd64 0.21.0-1.2build2 [58.4 kB]
+Get:15 http://archive.ubuntu.com/ubuntu jammy/main amd64 libuv1 amd64 1.43.0-1 [93.1 kB]
+Get:16 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxau6 amd64 1:1.0.9-1build5 [7634 B]
+Get:17 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxdmcp6 amd64 1:1.1.3-0ubuntu5 [10.9 kB]
+Get:18 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb1 amd64 1.14-3ubuntu3 [49.0 kB]
+Get:19 http://archive.ubuntu.com/ubuntu jammy/main amd64 libx11-data all 2:1.7.5-1 [119 kB]
+Get:20 http://archive.ubuntu.com/ubuntu jammy/main amd64 libx11-6 amd64 2:1.7.5-1 [666 kB]
+Get:21 http://archive.ubuntu.com/ubuntu jammy/main amd64 manpages all 5.10-1ubuntu1 [1375 kB]
+Get:22 http://archive.ubuntu.com/ubuntu jammy/main amd64 publicsuffix all 20211207.1025-1 [129 kB]
+Get:23 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 binutils-common amd64 2.38-4ubuntu2.2 [222 kB]
+Get:24 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libbinutils amd64 2.38-4ubuntu2.2 [660 kB]
+Get:25 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libctf-nobfd0 amd64 2.38-4ubuntu2.2 [107 kB]
+Get:26 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libctf0 amd64 2.38-4ubuntu2.2 [103 kB]
+Get:27 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.38-4ubuntu2.2 [2328 kB]
+Get:28 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 binutils amd64 2.38-4ubuntu2.2 [3186 B]
+Get:29 http://archive.ubuntu.com/ubuntu jammy/main amd64 bison amd64 2:3.8.2+dfsg-1build1 [748 kB]
+Get:30 http://archive.ubuntu.com/ubuntu jammy/main amd64 libarchive13 amd64 3.6.0-1ubuntu1 [368 kB]
+Get:31 http://archive.ubuntu.com/ubuntu jammy/main amd64 libbrotli1 amd64 1.0.9-2build6 [315 kB]
+Get:32 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsasl2-modules-db amd64 2.1.27+dfsg2-3ubuntu1.2 [20.5 kB]
+Get:33 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsasl2-2 amd64 2.1.27+dfsg2-3ubuntu1.2 [53.8 kB]
+Get:34 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libldap-2.5-0 amd64 2.5.14+dfsg-0ubuntu0.22.04.2 [183 kB]
+Get:35 http://archive.ubuntu.com/ubuntu jammy/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2build4 [58.2 kB]
+Get:36 http://archive.ubuntu.com/ubuntu jammy/main amd64 libssh-4 amd64 0.9.6-2build1 [184 kB]
+Get:37 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcurl4 amd64 7.81.0-1ubuntu1.10 [290 kB]
+Get:38 http://archive.ubuntu.com/ubuntu jammy/main amd64 libjsoncpp25 amd64 1.9.5-3 [80.0 kB]
+Get:39 http://archive.ubuntu.com/ubuntu jammy/main amd64 librhash0 amd64 1.4.2-1ubuntu1 [125 kB]
+Get:40 http://archive.ubuntu.com/ubuntu jammy/main amd64 dh-elpa-helper all 2.0.9ubuntu1 [7610 B]
+Get:41 http://archive.ubuntu.com/ubuntu jammy/main amd64 emacsen-common all 3.0.4 [14.9 kB]
+Get:42 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 cmake-data all 3.22.1-1ubuntu1.22.04.1 [1913 kB]
+Get:43 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 cmake amd64 3.22.1-1ubuntu1.22.04.1 [5013 kB]
+Get:44 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11-base amd64 11.3.0-1ubuntu1~22.04.1 [20.9 kB]
+Get:45 http://archive.ubuntu.com/ubuntu jammy/main amd64 libisl23 amd64 0.24-2build1 [727 kB]
+Get:46 http://archive.ubuntu.com/ubuntu jammy/main amd64 libmpfr6 amd64 4.1.0-3build3 [1425 kB]
+Get:47 http://archive.ubuntu.com/ubuntu jammy/main amd64 libmpc3 amd64 1.2.1-2build1 [46.9 kB]
+Get:48 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 cpp-11 amd64 11.3.0-1ubuntu1~22.04.1 [9968 kB]
+Get:49 http://archive.ubuntu.com/ubuntu jammy/main amd64 cpp amd64 4:11.2.0-1ubuntu1 [27.7 kB]
+Get:50 http://archive.ubuntu.com/ubuntu jammy/main amd64 fonts-dejavu-core all 2.37-2build1 [1041 kB]
+Get:51 http://archive.ubuntu.com/ubuntu jammy/main amd64 fontconfig-config all 2.13.1-4.2ubuntu5 [29.1 kB]
+Get:52 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcc1-0 amd64 12.1.0-2ubuntu1~22.04 [47.4 kB]
+Get:53 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgomp1 amd64 12.1.0-2ubuntu1~22.04 [126 kB]
+Get:54 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libitm1 amd64 12.1.0-2ubuntu1~22.04 [30.2 kB]
+Get:55 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libatomic1 amd64 12.1.0-2ubuntu1~22.04 [10.4 kB]
+Get:56 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libasan6 amd64 11.3.0-1ubuntu1~22.04.1 [2284 kB]
+Get:57 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 liblsan0 amd64 12.1.0-2ubuntu1~22.04 [1069 kB]
+Get:58 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libtsan0 amd64 11.3.0-1ubuntu1~22.04.1 [2260 kB]
+Get:59 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libubsan1 amd64 12.1.0-2ubuntu1~22.04 [976 kB]
+Get:60 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libquadmath0 amd64 12.1.0-2ubuntu1~22.04 [154 kB]
+Get:61 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgcc-11-dev amd64 11.3.0-1ubuntu1~22.04.1 [2516 kB]
+Get:62 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11 amd64 11.3.0-1ubuntu1~22.04.1 [20.1 MB]
+Get:63 http://archive.ubuntu.com/ubuntu jammy/main amd64 gcc amd64 4:11.2.0-1ubuntu1 [5112 B]
+Get:64 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc-dev-bin amd64 2.35-0ubuntu3.1 [20.4 kB]
+Get:65 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 linux-libc-dev amd64 5.15.0-72.79 [1331 kB]
+Get:66 http://archive.ubuntu.com/ubuntu jammy/main amd64 libcrypt-dev amd64 1:4.4.27-1 [112 kB]
+Get:67 http://archive.ubuntu.com/ubuntu jammy/main amd64 rpcsvc-proto amd64 1.4.2-0ubuntu6 [68.5 kB]
+Get:68 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libtirpc-dev amd64 1.3.2-2ubuntu0.1 [192 kB]
+Get:69 http://archive.ubuntu.com/ubuntu jammy/main amd64 libnsl-dev amd64 1.3.0-2build2 [71.3 kB]
+Get:70 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc6-dev amd64 2.35-0ubuntu3.1 [2099 kB]
+Get:71 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libstdc++-11-dev amd64 11.3.0-1ubuntu1~22.04.1 [2087 kB]
+Get:72 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 g++-11 amd64 11.3.0-1ubuntu1~22.04.1 [11.4 MB]
+Get:73 http://archive.ubuntu.com/ubuntu jammy/main amd64 g++ amd64 4:11.2.0-1ubuntu1 [1412 B]
+Get:74 http://archive.ubuntu.com/ubuntu jammy/universe amd64 gengetopt amd64 2.23+dfsg1-1 [159 kB]
+Get:75 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libfreetype6 amd64 2.11.1+dfsg-1ubuntu0.2 [389 kB]
+Get:76 http://archive.ubuntu.com/ubuntu jammy/main amd64 libfontconfig1 amd64 2.13.1-4.2ubuntu5 [131 kB]
+Get:77 http://archive.ubuntu.com/ubuntu jammy/main amd64 libjpeg-turbo8 amd64 2.1.2-0ubuntu1 [134 kB]
+Get:78 http://archive.ubuntu.com/ubuntu jammy/main amd64 libjpeg8 amd64 8c-2ubuntu10 [2264 B]
+Get:79 http://archive.ubuntu.com/ubuntu jammy/main amd64 libdeflate0 amd64 1.10-2 [70.9 kB]
+Get:80 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libjbig0 amd64 2.1-3.1ubuntu0.22.04.1 [29.2 kB]
+Get:81 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libwebp7 amd64 1.2.2-2ubuntu0.22.04.1 [206 kB]
+Get:82 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libtiff5 amd64 4.3.0-6ubuntu0.4 [183 kB]
+Get:83 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libxpm4 amd64 1:3.5.12-1ubuntu0.22.04.1 [36.4 kB]
+Get:84 http://archive.ubuntu.com/ubuntu jammy/main amd64 libgd3 amd64 2.3.0-2ubuntu2 [129 kB]
+Get:85 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc-devtools amd64 2.35-0ubuntu3.1 [28.9 kB]
+Get:86 http://archive.ubuntu.com/ubuntu jammy/main amd64 libfl2 amd64 2.6.4-8build2 [10.7 kB]
+Get:87 http://archive.ubuntu.com/ubuntu jammy/main amd64 libfl-dev amd64 2.6.4-8build2 [6236 B]
+Get:88 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libldap-common all 2.5.14+dfsg-0ubuntu0.22.04.2 [15.8 kB]
+Get:89 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsasl2-modules amd64 2.1.27+dfsg2-3ubuntu1.2 [68.8 kB]
+Get:90 http://archive.ubuntu.com/ubuntu jammy/main amd64 make amd64 4.3-4.1build1 [180 kB]
+Get:91 http://archive.ubuntu.com/ubuntu jammy/main amd64 manpages-dev all 5.10-1ubuntu1 [2309 kB]
+Get:92 http://archive.ubuntu.com/ubuntu jammy/main amd64 patch amd64 2.7.6-7build2 [109 kB]
+Get:93 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 unzip amd64 6.0-26ubuntu3.1 [174 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 93.6 MB in 10s (9555 kB/s)
+Selecting previously unselected package libsigsegv2:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4395 files and directories currently installed.)
+Preparing to unpack .../00-libsigsegv2_2.13-1ubuntu3_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.13-1ubuntu3) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../01-m4_1.4.18-5ubuntu2_amd64.deb ...
+Unpacking m4 (1.4.18-5ubuntu2) ...
+Selecting previously unselected package flex.
+Preparing to unpack .../02-flex_2.6.4-8build2_amd64.deb ...
+Unpacking flex (2.6.4-8build2) ...
+Selecting previously unselected package openssl.
+Preparing to unpack .../03-openssl_3.0.2-0ubuntu1.10_amd64.deb ...
+Unpacking openssl (3.0.2-0ubuntu1.10) ...
+Selecting previously unselected package ca-certificates.
+Preparing to unpack .../04-ca-certificates_20230311ubuntu0.22.04.1_all.deb ...
+Unpacking ca-certificates (20230311ubuntu0.22.04.1) ...
+Selecting previously unselected package libmd0:amd64.
+Preparing to unpack .../05-libmd0_1.0.4-1build1_amd64.deb ...
+Unpacking libmd0:amd64 (1.0.4-1build1) ...
+Selecting previously unselected package libbsd0:amd64.
+Preparing to unpack .../06-libbsd0_0.11.5-1_amd64.deb ...
+Unpacking libbsd0:amd64 (0.11.5-1) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../07-libexpat1_2.4.7-1ubuntu0.2_amd64.deb ...
+Unpacking libexpat1:amd64 (2.4.7-1ubuntu0.2) ...
+Selecting previously unselected package libicu70:amd64.
+Preparing to unpack .../08-libicu70_70.1-2_amd64.deb ...
+Unpacking libicu70:amd64 (70.1-2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../09-libxml2_2.9.13+dfsg-1ubuntu0.3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.13+dfsg-1ubuntu0.3) ...
+Selecting previously unselected package ucf.
+Preparing to unpack .../10-ucf_3.0043_all.deb ...
+Moving old data out of the way
+Unpacking ucf (3.0043) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../11-libnghttp2-14_1.43.0-1build3_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.43.0-1build3) ...
+Selecting previously unselected package libpng16-16:amd64.
+Preparing to unpack .../12-libpng16-16_1.6.37-3build5_amd64.deb ...
+Unpacking libpng16-16:amd64 (1.6.37-3build5) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../13-libpsl5_0.21.0-1.2build2_amd64.deb ...
+Unpacking libpsl5:amd64 (0.21.0-1.2build2) ...
+Selecting previously unselected package libuv1:amd64.
+Preparing to unpack .../14-libuv1_1.43.0-1_amd64.deb ...
+Unpacking libuv1:amd64 (1.43.0-1) ...
+Selecting previously unselected package libxau6:amd64.
+Preparing to unpack .../15-libxau6_1%3a1.0.9-1build5_amd64.deb ...
+Unpacking libxau6:amd64 (1:1.0.9-1build5) ...
+Selecting previously unselected package libxdmcp6:amd64.
+Preparing to unpack .../16-libxdmcp6_1%3a1.1.3-0ubuntu5_amd64.deb ...
+Unpacking libxdmcp6:amd64 (1:1.1.3-0ubuntu5) ...
+Selecting previously unselected package libxcb1:amd64.
+Preparing to unpack .../17-libxcb1_1.14-3ubuntu3_amd64.deb ...
+Unpacking libxcb1:amd64 (1.14-3ubuntu3) ...
+Selecting previously unselected package libx11-data.
+Preparing to unpack .../18-libx11-data_2%3a1.7.5-1_all.deb ...
+Unpacking libx11-data (2:1.7.5-1) ...
+Selecting previously unselected package libx11-6:amd64.
+Preparing to unpack .../19-libx11-6_2%3a1.7.5-1_amd64.deb ...
+Unpacking libx11-6:amd64 (2:1.7.5-1) ...
+Selecting previously unselected package manpages.
+Preparing to unpack .../20-manpages_5.10-1ubuntu1_all.deb ...
+Unpacking manpages (5.10-1ubuntu1) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../21-publicsuffix_20211207.1025-1_all.deb ...
+Unpacking publicsuffix (20211207.1025-1) ...
+Selecting previously unselected package binutils-common:amd64.
+Preparing to unpack .../22-binutils-common_2.38-4ubuntu2.2_amd64.deb ...
+Unpacking binutils-common:amd64 (2.38-4ubuntu2.2) ...
+Selecting previously unselected package libbinutils:amd64.
+Preparing to unpack .../23-libbinutils_2.38-4ubuntu2.2_amd64.deb ...
+Unpacking libbinutils:amd64 (2.38-4ubuntu2.2) ...
+Selecting previously unselected package libctf-nobfd0:amd64.
+Preparing to unpack .../24-libctf-nobfd0_2.38-4ubuntu2.2_amd64.deb ...
+Unpacking libctf-nobfd0:amd64 (2.38-4ubuntu2.2) ...
+Selecting previously unselected package libctf0:amd64.
+Preparing to unpack .../25-libctf0_2.38-4ubuntu2.2_amd64.deb ...
+Unpacking libctf0:amd64 (2.38-4ubuntu2.2) ...
+Selecting previously unselected package binutils-x86-64-linux-gnu.
+Preparing to unpack .../26-binutils-x86-64-linux-gnu_2.38-4ubuntu2.2_amd64.deb ...
+Unpacking binutils-x86-64-linux-gnu (2.38-4ubuntu2.2) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../27-binutils_2.38-4ubuntu2.2_amd64.deb ...
+Unpacking binutils (2.38-4ubuntu2.2) ...
+Selecting previously unselected package bison.
+Preparing to unpack .../28-bison_2%3a3.8.2+dfsg-1build1_amd64.deb ...
+Unpacking bison (2:3.8.2+dfsg-1build1) ...
+Selecting previously unselected package libarchive13:amd64.
+Preparing to unpack .../29-libarchive13_3.6.0-1ubuntu1_amd64.deb ...
+Unpacking libarchive13:amd64 (3.6.0-1ubuntu1) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../30-libbrotli1_1.0.9-2build6_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.0.9-2build6) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../31-libsasl2-modules-db_2.1.27+dfsg2-3ubuntu1.2_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../32-libsasl2-2_2.1.27+dfsg2-3ubuntu1.2_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Selecting previously unselected package libldap-2.5-0:amd64.
+Preparing to unpack .../33-libldap-2.5-0_2.5.14+dfsg-0ubuntu0.22.04.2_amd64.deb ...
+Unpacking libldap-2.5-0:amd64 (2.5.14+dfsg-0ubuntu0.22.04.2) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../34-librtmp1_2.4+20151223.gitfa8646d.1-2build4_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build4) ...
+Selecting previously unselected package libssh-4:amd64.
+Preparing to unpack .../35-libssh-4_0.9.6-2build1_amd64.deb ...
+Unpacking libssh-4:amd64 (0.9.6-2build1) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../36-libcurl4_7.81.0-1ubuntu1.10_amd64.deb ...
+Unpacking libcurl4:amd64 (7.81.0-1ubuntu1.10) ...
+Selecting previously unselected package libjsoncpp25:amd64.
+Preparing to unpack .../37-libjsoncpp25_1.9.5-3_amd64.deb ...
+Unpacking libjsoncpp25:amd64 (1.9.5-3) ...
+Selecting previously unselected package librhash0:amd64.
+Preparing to unpack .../38-librhash0_1.4.2-1ubuntu1_amd64.deb ...
+Unpacking librhash0:amd64 (1.4.2-1ubuntu1) ...
+Selecting previously unselected package dh-elpa-helper.
+Preparing to unpack .../39-dh-elpa-helper_2.0.9ubuntu1_all.deb ...
+Unpacking dh-elpa-helper (2.0.9ubuntu1) ...
+Selecting previously unselected package emacsen-common.
+Preparing to unpack .../40-emacsen-common_3.0.4_all.deb ...
+Unpacking emacsen-common (3.0.4) ...
+Selecting previously unselected package cmake-data.
+Preparing to unpack .../41-cmake-data_3.22.1-1ubuntu1.22.04.1_all.deb ...
+Unpacking cmake-data (3.22.1-1ubuntu1.22.04.1) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../42-cmake_3.22.1-1ubuntu1.22.04.1_amd64.deb ...
+Unpacking cmake (3.22.1-1ubuntu1.22.04.1) ...
+Selecting previously unselected package gcc-11-base:amd64.
+Preparing to unpack .../43-gcc-11-base_11.3.0-1ubuntu1~22.04.1_amd64.deb ...
+Unpacking gcc-11-base:amd64 (11.3.0-1ubuntu1~22.04.1) ...
+Selecting previously unselected package libisl23:amd64.
+Preparing to unpack .../44-libisl23_0.24-2build1_amd64.deb ...
+Unpacking libisl23:amd64 (0.24-2build1) ...
+Selecting previously unselected package libmpfr6:amd64.
+Preparing to unpack .../45-libmpfr6_4.1.0-3build3_amd64.deb ...
+Unpacking libmpfr6:amd64 (4.1.0-3build3) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../46-libmpc3_1.2.1-2build1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.2.1-2build1) ...
+Selecting previously unselected package cpp-11.
+Preparing to unpack .../47-cpp-11_11.3.0-1ubuntu1~22.04.1_amd64.deb ...
+Unpacking cpp-11 (11.3.0-1ubuntu1~22.04.1) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../48-cpp_4%3a11.2.0-1ubuntu1_amd64.deb ...
+Unpacking cpp (4:11.2.0-1ubuntu1) ...
+Selecting previously unselected package fonts-dejavu-core.
+Preparing to unpack .../49-fonts-dejavu-core_2.37-2build1_all.deb ...
+Unpacking fonts-dejavu-core (2.37-2build1) ...
+Selecting previously unselected package fontconfig-config.
+Preparing to unpack .../50-fontconfig-config_2.13.1-4.2ubuntu5_all.deb ...
+Unpacking fontconfig-config (2.13.1-4.2ubuntu5) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../51-libcc1-0_12.1.0-2ubuntu1~22.04_amd64.deb ...
+Unpacking libcc1-0:amd64 (12.1.0-2ubuntu1~22.04) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../52-libgomp1_12.1.0-2ubuntu1~22.04_amd64.deb ...
+Unpacking libgomp1:amd64 (12.1.0-2ubuntu1~22.04) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../53-libitm1_12.1.0-2ubuntu1~22.04_amd64.deb ...
+Unpacking libitm1:amd64 (12.1.0-2ubuntu1~22.04) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../54-libatomic1_12.1.0-2ubuntu1~22.04_amd64.deb ...
+Unpacking libatomic1:amd64 (12.1.0-2ubuntu1~22.04) ...
+Selecting previously unselected package libasan6:amd64.
+Preparing to unpack .../55-libasan6_11.3.0-1ubuntu1~22.04.1_amd64.deb ...
+Unpacking libasan6:amd64 (11.3.0-1ubuntu1~22.04.1) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../56-liblsan0_12.1.0-2ubuntu1~22.04_amd64.deb ...
+Unpacking liblsan0:amd64 (12.1.0-2ubuntu1~22.04) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../57-libtsan0_11.3.0-1ubuntu1~22.04.1_amd64.deb ...
+Unpacking libtsan0:amd64 (11.3.0-1ubuntu1~22.04.1) ...
+Selecting previously unselected package libubsan1:amd64.
+Preparing to unpack .../58-libubsan1_12.1.0-2ubuntu1~22.04_amd64.deb ...
+Unpacking libubsan1:amd64 (12.1.0-2ubuntu1~22.04) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../59-libquadmath0_12.1.0-2ubuntu1~22.04_amd64.deb ...
+Unpacking libquadmath0:amd64 (12.1.0-2ubuntu1~22.04) ...
+Selecting previously unselected package libgcc-11-dev:amd64.
+Preparing to unpack .../60-libgcc-11-dev_11.3.0-1ubuntu1~22.04.1_amd64.deb ...
+Unpacking libgcc-11-dev:amd64 (11.3.0-1ubuntu1~22.04.1) ...
+Selecting previously unselected package gcc-11.
+Preparing to unpack .../61-gcc-11_11.3.0-1ubuntu1~22.04.1_amd64.deb ...
+Unpacking gcc-11 (11.3.0-1ubuntu1~22.04.1) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../62-gcc_4%3a11.2.0-1ubuntu1_amd64.deb ...
+Unpacking gcc (4:11.2.0-1ubuntu1) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../63-libc-dev-bin_2.35-0ubuntu3.1_amd64.deb ...
+Unpacking libc-dev-bin (2.35-0ubuntu3.1) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../64-linux-libc-dev_5.15.0-72.79_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (5.15.0-72.79) ...
+Selecting previously unselected package libcrypt-dev:amd64.
+Preparing to unpack .../65-libcrypt-dev_1%3a4.4.27-1_amd64.deb ...
+Unpacking libcrypt-dev:amd64 (1:4.4.27-1) ...
+Selecting previously unselected package rpcsvc-proto.
+Preparing to unpack .../66-rpcsvc-proto_1.4.2-0ubuntu6_amd64.deb ...
+Unpacking rpcsvc-proto (1.4.2-0ubuntu6) ...
+Selecting previously unselected package libtirpc-dev:amd64.
+Preparing to unpack .../67-libtirpc-dev_1.3.2-2ubuntu0.1_amd64.deb ...
+Unpacking libtirpc-dev:amd64 (1.3.2-2ubuntu0.1) ...
+Selecting previously unselected package libnsl-dev:amd64.
+Preparing to unpack .../68-libnsl-dev_1.3.0-2build2_amd64.deb ...
+Unpacking libnsl-dev:amd64 (1.3.0-2build2) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../69-libc6-dev_2.35-0ubuntu3.1_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.35-0ubuntu3.1) ...
+Selecting previously unselected package libstdc++-11-dev:amd64.
+Preparing to unpack .../70-libstdc++-11-dev_11.3.0-1ubuntu1~22.04.1_amd64.deb ...
+Unpacking libstdc++-11-dev:amd64 (11.3.0-1ubuntu1~22.04.1) ...
+Selecting previously unselected package g++-11.
+Preparing to unpack .../71-g++-11_11.3.0-1ubuntu1~22.04.1_amd64.deb ...
+Unpacking g++-11 (11.3.0-1ubuntu1~22.04.1) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../72-g++_4%3a11.2.0-1ubuntu1_amd64.deb ...
+Unpacking g++ (4:11.2.0-1ubuntu1) ...
+Selecting previously unselected package gengetopt.
+Preparing to unpack .../73-gengetopt_2.23+dfsg1-1_amd64.deb ...
+Unpacking gengetopt (2.23+dfsg1-1) ...
+Selecting previously unselected package libfreetype6:amd64.
+Preparing to unpack .../74-libfreetype6_2.11.1+dfsg-1ubuntu0.2_amd64.deb ...
+Unpacking libfreetype6:amd64 (2.11.1+dfsg-1ubuntu0.2) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Preparing to unpack .../75-libfontconfig1_2.13.1-4.2ubuntu5_amd64.deb ...
+Unpacking libfontconfig1:amd64 (2.13.1-4.2ubuntu5) ...
+Selecting previously unselected package libjpeg-turbo8:amd64.
+Preparing to unpack .../76-libjpeg-turbo8_2.1.2-0ubuntu1_amd64.deb ...
+Unpacking libjpeg-turbo8:amd64 (2.1.2-0ubuntu1) ...
+Selecting previously unselected package libjpeg8:amd64.
+Preparing to unpack .../77-libjpeg8_8c-2ubuntu10_amd64.deb ...
+Unpacking libjpeg8:amd64 (8c-2ubuntu10) ...
+Selecting previously unselected package libdeflate0:amd64.
+Preparing to unpack .../78-libdeflate0_1.10-2_amd64.deb ...
+Unpacking libdeflate0:amd64 (1.10-2) ...
+Selecting previously unselected package libjbig0:amd64.
+Preparing to unpack .../79-libjbig0_2.1-3.1ubuntu0.22.04.1_amd64.deb ...
+Unpacking libjbig0:amd64 (2.1-3.1ubuntu0.22.04.1) ...
+Selecting previously unselected package libwebp7:amd64.
+Preparing to unpack .../80-libwebp7_1.2.2-2ubuntu0.22.04.1_amd64.deb ...
+Unpacking libwebp7:amd64 (1.2.2-2ubuntu0.22.04.1) ...
+Selecting previously unselected package libtiff5:amd64.
+Preparing to unpack .../81-libtiff5_4.3.0-6ubuntu0.4_amd64.deb ...
+Unpacking libtiff5:amd64 (4.3.0-6ubuntu0.4) ...
+Selecting previously unselected package libxpm4:amd64.
+Preparing to unpack .../82-libxpm4_1%3a3.5.12-1ubuntu0.22.04.1_amd64.deb ...
+Unpacking libxpm4:amd64 (1:3.5.12-1ubuntu0.22.04.1) ...
+Selecting previously unselected package libgd3:amd64.
+Preparing to unpack .../83-libgd3_2.3.0-2ubuntu2_amd64.deb ...
+Unpacking libgd3:amd64 (2.3.0-2ubuntu2) ...
+Selecting previously unselected package libc-devtools.
+Preparing to unpack .../84-libc-devtools_2.35-0ubuntu3.1_amd64.deb ...
+Unpacking libc-devtools (2.35-0ubuntu3.1) ...
+Selecting previously unselected package libfl2:amd64.
+Preparing to unpack .../85-libfl2_2.6.4-8build2_amd64.deb ...
+Unpacking libfl2:amd64 (2.6.4-8build2) ...
+Selecting previously unselected package libfl-dev:amd64.
+Preparing to unpack .../86-libfl-dev_2.6.4-8build2_amd64.deb ...
+Unpacking libfl-dev:amd64 (2.6.4-8build2) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../87-libldap-common_2.5.14+dfsg-0ubuntu0.22.04.2_all.deb ...
+Unpacking libldap-common (2.5.14+dfsg-0ubuntu0.22.04.2) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../88-libsasl2-modules_2.1.27+dfsg2-3ubuntu1.2_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Selecting previously unselected package make.
+Preparing to unpack .../89-make_4.3-4.1build1_amd64.deb ...
+Unpacking make (4.3-4.1build1) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../90-manpages-dev_5.10-1ubuntu1_all.deb ...
+Unpacking manpages-dev (5.10-1ubuntu1) ...
+Selecting previously unselected package patch.
+Preparing to unpack .../91-patch_2.7.6-7build2_amd64.deb ...
+Unpacking patch (2.7.6-7build2) ...
+Selecting previously unselected package unzip.
+Preparing to unpack .../92-unzip_6.0-26ubuntu3.1_amd64.deb ...
+Unpacking unzip (6.0-26ubuntu3.1) ...
+Setting up libexpat1:amd64 (2.4.7-1ubuntu0.2) ...
+Setting up gcc-11-base:amd64 (11.3.0-1ubuntu1~22.04.1) ...
+Setting up libxau6:amd64 (1:1.0.9-1build5) ...
+Setting up libpsl5:amd64 (0.21.0-1.2build2) ...
+Setting up gengetopt (2.23+dfsg1-1) ...
+Setting up manpages (5.10-1ubuntu1) ...
+Setting up unzip (6.0-26ubuntu3.1) ...
+Setting up libbrotli1:amd64 (1.0.9-2build6) ...
+Setting up libsasl2-modules:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Setting up binutils-common:amd64 (2.38-4ubuntu2.2) ...
+Setting up libnghttp2-14:amd64 (1.43.0-1build3) ...
+Setting up libdeflate0:amd64 (1.10-2) ...
+Setting up linux-libc-dev:amd64 (5.15.0-72.79) ...
+Setting up libctf-nobfd0:amd64 (2.38-4ubuntu2.2) ...
+Setting up libgomp1:amd64 (12.1.0-2ubuntu1~22.04) ...
+Setting up libldap-common (2.5.14+dfsg-0ubuntu0.22.04.2) ...
+Setting up libjbig0:amd64 (2.1-3.1ubuntu0.22.04.1) ...
+Setting up libasan6:amd64 (11.3.0-1ubuntu1~22.04.1) ...
+Setting up libsasl2-modules-db:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Setting up libtirpc-dev:amd64 (1.3.2-2ubuntu0.1) ...
+Setting up libuv1:amd64 (1.43.0-1) ...
+Setting up rpcsvc-proto (1.4.2-0ubuntu6) ...
+Setting up emacsen-common (3.0.4) ...
+Setting up libx11-data (2:1.7.5-1) ...
+Setting up make (4.3-4.1build1) ...
+Setting up libmpfr6:amd64 (4.1.0-3build3) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build4) ...
+Setting up dh-elpa-helper (2.0.9ubuntu1) ...
+Setting up libsigsegv2:amd64 (2.13-1ubuntu3) ...
+Setting up libquadmath0:amd64 (12.1.0-2ubuntu1~22.04) ...
+Setting up libpng16-16:amd64 (1.6.37-3build5) ...
+Setting up libmpc3:amd64 (1.2.1-2build1) ...
+Setting up libatomic1:amd64 (12.1.0-2ubuntu1~22.04) ...
+Setting up patch (2.7.6-7build2) ...
+Setting up libjsoncpp25:amd64 (1.9.5-3) ...
+Setting up fonts-dejavu-core (2.37-2build1) ...
+Setting up libfl2:amd64 (2.6.4-8build2) ...
+Setting up ucf (3.0043) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.34.0 /usr/local/share/perl/5.34.0 /usr/lib/x86_64-linux-gnu/perl5/5.34 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.34 /usr/share/perl/5.34 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up libjpeg-turbo8:amd64 (2.1.2-0ubuntu1) ...
+Setting up libsasl2-2:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Setting up libssh-4:amd64 (0.9.6-2build1) ...
+Setting up libwebp7:amd64 (1.2.2-2ubuntu0.22.04.1) ...
+Setting up libubsan1:amd64 (12.1.0-2ubuntu1~22.04) ...
+Setting up libmd0:amd64 (1.0.4-1build1) ...
+Setting up libnsl-dev:amd64 (1.3.0-2build2) ...
+Setting up librhash0:amd64 (1.4.2-1ubuntu1) ...
+Setting up libcrypt-dev:amd64 (1:4.4.27-1) ...
+Setting up cmake-data (3.22.1-1ubuntu1.22.04.1) ...
+Setting up libbinutils:amd64 (2.38-4ubuntu2.2) ...
+Setting up libisl23:amd64 (0.24-2build1) ...
+Setting up libc-dev-bin (2.35-0ubuntu3.1) ...
+Setting up openssl (3.0.2-0ubuntu1.10) ...
+Setting up libbsd0:amd64 (0.11.5-1) ...
+Setting up publicsuffix (20211207.1025-1) ...
+Setting up libcc1-0:amd64 (12.1.0-2ubuntu1~22.04) ...
+Setting up liblsan0:amd64 (12.1.0-2ubuntu1~22.04) ...
+Setting up libitm1:amd64 (12.1.0-2ubuntu1~22.04) ...
+Setting up libicu70:amd64 (70.1-2) ...
+Setting up libtsan0:amd64 (11.3.0-1ubuntu1~22.04.1) ...
+Setting up libctf0:amd64 (2.38-4ubuntu2.2) ...
+Setting up libjpeg8:amd64 (8c-2ubuntu10) ...
+Setting up cpp-11 (11.3.0-1ubuntu1~22.04.1) ...
+Setting up manpages-dev (5.10-1ubuntu1) ...
+Setting up libxdmcp6:amd64 (1:1.1.3-0ubuntu5) ...
+Setting up libxcb1:amd64 (1.14-3ubuntu3) ...
+Setting up fontconfig-config (2.13.1-4.2ubuntu5) ...
+Setting up m4 (1.4.18-5ubuntu2) ...
+Setting up libldap-2.5-0:amd64 (2.5.14+dfsg-0ubuntu0.22.04.2) ...
+Setting up ca-certificates (20230311ubuntu0.22.04.1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.34.0 /usr/local/share/perl/5.34.0 /usr/lib/x86_64-linux-gnu/perl5/5.34 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.34 /usr/share/perl/5.34 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Updating certificates in /etc/ssl/certs...
+137 added, 0 removed; done.
+Setting up libfreetype6:amd64 (2.11.1+dfsg-1ubuntu0.2) ...
+Setting up libgcc-11-dev:amd64 (11.3.0-1ubuntu1~22.04.1) ...
+Setting up cpp (4:11.2.0-1ubuntu1) ...
+Setting up bison (2:3.8.2+dfsg-1build1) ...
+update-alternatives: using /usr/bin/bison.yacc to provide /usr/bin/yacc (yacc) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/yacc.1.gz because associated file /usr/share/man/man1/bison.yacc.1.gz (of link group yacc) doesn't exist
+Setting up libcurl4:amd64 (7.81.0-1ubuntu1.10) ...
+Setting up libc6-dev:amd64 (2.35-0ubuntu3.1) ...
+Setting up libx11-6:amd64 (2:1.7.5-1) ...
+Setting up libtiff5:amd64 (4.3.0-6ubuntu0.4) ...
+Setting up libfontconfig1:amd64 (2.13.1-4.2ubuntu5) ...
+Setting up libxml2:amd64 (2.9.13+dfsg-1ubuntu0.3) ...
+Setting up binutils-x86-64-linux-gnu (2.38-4ubuntu2.2) ...
+Setting up flex (2.6.4-8build2) ...
+Setting up libxpm4:amd64 (1:3.5.12-1ubuntu0.22.04.1) ...
+Setting up libarchive13:amd64 (3.6.0-1ubuntu1) ...
+Setting up binutils (2.38-4ubuntu2.2) ...
+Setting up libfl-dev:amd64 (2.6.4-8build2) ...
+Setting up libgd3:amd64 (2.3.0-2ubuntu2) ...
+Setting up libstdc++-11-dev:amd64 (11.3.0-1ubuntu1~22.04.1) ...
+Setting up gcc-11 (11.3.0-1ubuntu1~22.04.1) ...
+Setting up cmake (3.22.1-1ubuntu1.22.04.1) ...
+Setting up libc-devtools (2.35-0ubuntu3.1) ...
+Setting up g++-11 (11.3.0-1ubuntu1~22.04.1) ...
+Setting up gcc (4:11.2.0-1ubuntu1) ...
+Setting up g++ (4:11.2.0-1ubuntu1) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/c++.1.gz because associated file /usr/share/man/man1/g++.1.gz (of link group c++) doesn't exist
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+Processing triggers for ca-certificates (20230311ubuntu0.22.04.1) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
++ cd /planner
++ cd 00-parser/
++ make
+bison -v -d -o src/hddl.cpp src/hddl.y
+flex --yylineno -o src/hddl-token.cpp src/hddl-token.l
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/hddl-token.o -c src/hddl-token.cpp
+src/hddl-token.cpp:1559:17: warning: 'void yyunput(int, char*)' defined but not used [-Wunused-function]
+ 1559 |     static void yyunput (int c, char * yy_bp )
+      |                 ^~~~~~~
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/hddl.o -c src/hddl.cpp
+gengetopt --include-getopt --default-optional --unamed-opts --output-dir=src -i src/options.ggo
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/main.o -c src/main.cpp
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/sortexpansion.o -c src/sortexpansion.cpp
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/parsetree.o -c src/parsetree.cpp
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/util.o -c src/util.cpp
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/domain.o -c src/domain.cpp
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/output.o -c src/output.cpp
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/parametersplitting.o -c src/parametersplitting.cpp
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/cwa.o -c src/cwa.cpp
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/typeof.o -c src/typeof.cpp
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/shopWriter.o -c src/shopWriter.cpp
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/hpdlWriter.o -c src/hpdlWriter.cpp
+src/hpdlWriter.cpp: In function 'void write_instance_as_HPDL(std::ostream&, std::ostream&)':
+src/hpdlWriter.cpp:254:14: warning: variable 'lastSorts' set but not used [-Wunused-but-set-variable]
+  254 |         bool lastSorts = false;
+      |              ^~~~~~~~~
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/hddlWriter.o -c src/hddlWriter.cpp
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/htn2stripsWriter.o -c src/htn2stripsWriter.cpp
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/orderingDecomposition.o -c src/orderingDecomposition.cpp
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/plan.o -c src/plan.cpp
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/verify.o -c src/verify.cpp
+src/verify.cpp: In function 'bool verify_plan(std::istream&, bool, bool, int)':
+src/verify.cpp:1464:67: warning: loop variable 'c' creates a copy from type 'const string' {aka 'const std::__cxx11::basic_string<char>'} [-Wrange-loop-construct]
+ 1464 |                                                 for (const string c : s.second){
+      |                                                                   ^
+src/verify.cpp:1464:67: note: use reference type to prevent copying
+ 1464 |                                                 for (const string c : s.second){
+      |                                                                   ^
+      |                                                                   &
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/properties.o -c src/properties.cpp
+g++ -O3 -pipe -Wall -Wextra -pedantic -std=c++17 -DNDEBUG -Wno-unused-parameter  -o src/verification_encoding.o -c src/verification_encoding.cpp
+cc    -c -o src/cmdline.o src/cmdline.c
+g++ -O3 -lm -flto -static -static-libgcc -DNDEBUG src/hddl-token.o src/hddl.o src/main.o src/sortexpansion.o src/parsetree.o src/util.o src/domain.o src/output.o src/parametersplitting.o src/cwa.o src/typeof.o src/shopWriter.o src/hpdlWriter.o src/hddlWriter.o src/htn2stripsWriter.o src/orderingDecomposition.o src/plan.o src/verify.o src/properties.o src/verification_encoding.o src/cmdline.o -o pandaPIparser 
++ mv pandaPIparser ..
++ cd ..
++ cd 01-grounder
++ cd cpddl
++ make boruvka opts bliss lpsolve
+make CC="cc" DEBUG=no -C third-party/boruvka all
+make[1]: Entering directory '/planner/01-grounder/cpddl/third-party/boruvka'
+/bin/sh: 1: pkg-config: not found
+/bin/sh: 1: pkg-config: not found
+echo 'int main(int argc, char *arvg[]) { int x = 1; return *(char *)&x; }' >__end.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -o __end __end.c
+echo "#ifndef __BOR_CONFIG_ENDIAN_H__" >boruvka/config_endian.h
+echo "#define __BOR_CONFIG_ENDIAN_H__" >>boruvka/config_endian.h
+if ./__end; then \
+        echo "#define BOR_BIG_ENDIAN" >>boruvka/config_endian.h; \
+    else \
+        echo "#define BOR_LITTLE_ENDIAN" >>boruvka/config_endian.h; \
+fi
+echo "#endif /* __BOR_CONFIG_ENDIAN_H__ */" >>boruvka/config_endian.h
+rm -f __end.c __end
+/bin/sh: 1: pkg-config: not found
+echo "#ifndef __BOR_CONFIG_H__" >boruvka/config.h
+echo "#define __BOR_CONFIG_H__" >>boruvka/config.h
+echo "" >>boruvka/config.h
+echo "#include <boruvka/config_endian.h>" >>boruvka/config.h
+echo "" >>boruvka/config.h
+if [ "no" = "yes" ]; then echo "#define BOR_DEBUG" >>boruvka/config.h; fi
+if [ "yes" = "yes" ]; then echo "#define BOR_SINGLE" >>boruvka/config.h; fi
+if [ "no" = "yes" ]; then echo "#define BOR_DOUBLE" >>boruvka/config.h; fi
+if [ "no" = "yes" ]; then \
+        echo "#define BOR_MEMCHECK" >>boruvka/config.h; \
+        echo "#define BOR_MEMCHECK_REPORT_THRESHOLD" 1048576 >>boruvka/config.h; \
+fi
+if [ "no" = "yes" ]; then \
+        echo "#define BOR_SSE" >>boruvka/config.h; \
+        if [ "yes" ]; then \
+            echo "#define BOR_SSE_SINGLE" >>boruvka/config.h; \
+        else \
+            echo "#define BOR_SSE_DOUBLE" >>boruvka/config.h; \
+        fi; \
+    fi
+if [ "no" = "yes" ]; then echo "#define BOR_OPENCL" >>boruvka/config.h; fi
+if [ "no" = "yes" ]; then echo "#define BOR_HDF5" >>boruvka/config.h; fi
+if [ "no" = "yes" ]; then echo "#define BOR_GSL" >>boruvka/config.h; fi
+if [ "yes" = "yes" ]; then echo "#define BOR_TIMSORT" >>boruvka/config.h; fi
+if [ "" = "yes" ]; then echo "#define BOR_CPLEX" >>boruvka/config.h; fi
+if [ "" = "yes" ]; then echo "#define BOR_GUROBI" >>boruvka/config.h; fi
+if [ "" = "yes" ]; then echo "#define BOR_LPSOLVE" >>boruvka/config.h; fi
+echo "" >>boruvka/config.h
+echo "#endif /* __BOR_CONFIG_H__ */" >>boruvka/config.h
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/alloc.o src/alloc.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/varr.o src/varr.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/quat.o src/quat.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/vec4.o src/vec4.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/vec3.o src/vec3.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/vec2.o src/vec2.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/vec.o src/vec.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/mat4.o src/mat4.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/mat3.o src/mat3.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/poly2.o src/poly2.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/predicates.o src/predicates.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/sort.o src/sort.c
+In function 'radixSortZeroizeCounter',
+    inlined from 'radixSortCount' at src/sort.c:50:5,
+    inlined from 'borRadixSort' at src/sort.c:143:9:
+src/sort.c:40:20: warning: '__builtin_memset' forming offset [1020, 1023] is out of the bounds [0, 1020] of object 'counter' with type 'uint32_t[255]' {aka 'unsigned int[255]'} [-Warray-bounds]
+   40 |         counter[i] = 0;
+      |         ~~~~~~~~~~~^~~
+src/sort.c: In function 'borRadixSort':
+src/sort.c:135:14: note: 'counter' declared here
+  135 |     uint32_t counter[RADIX_SORT_MASK], negative;
+      |              ^~~~~~~
+In function 'radixSortZeroizeCounter',
+    inlined from 'radixSortCountFinal' at src/sort.c:66:5,
+    inlined from 'borRadixSort' at src/sort.c:151:5:
+src/sort.c:40:20: warning: '__builtin_memset' forming offset [1020, 1023] is out of the bounds [0, 1020] of object 'counter' with type 'uint32_t[255]' {aka 'unsigned int[255]'} [-Warray-bounds]
+   40 |         counter[i] = 0;
+      |         ~~~~~~~~~~~^~~
+src/sort.c: In function 'borRadixSort':
+src/sort.c:135:14: note: 'counter' declared here
+  135 |     uint32_t counter[RADIX_SORT_MASK], negative;
+      |              ^~~~~~~
+In function 'radixSortPtrZeroizeCounter',
+    inlined from 'radixSortPtrCount' at src/sort.c:190:5,
+    inlined from 'borRadixSortPtr' at src/sort.c:289:9:
+src/sort.c:180:20: warning: '__builtin_memset' forming offset [1020, 1023] is out of the bounds [0, 1020] of object 'counter' with type 'uint32_t[255]' {aka 'unsigned int[255]'} [-Warray-bounds]
+  180 |         counter[i] = 0;
+      |         ~~~~~~~~~~~^~~
+src/sort.c: In function 'borRadixSortPtr':
+src/sort.c:281:14: note: 'counter' declared here
+  281 |     uint32_t counter[RADIX_SORT_MASK], negative;
+      |              ^~~~~~~
+In function 'radixSortPtrZeroizeCounter',
+    inlined from 'radixSortPtrCountFinal' at src/sort.c:207:5,
+    inlined from 'borRadixSortPtr' at src/sort.c:298:5:
+src/sort.c:180:20: warning: '__builtin_memset' forming offset [1020, 1023] is out of the bounds [0, 1020] of object 'counter' with type 'uint32_t[255]' {aka 'unsigned int[255]'} [-Warray-bounds]
+  180 |         counter[i] = 0;
+      |         ~~~~~~~~~~~^~~
+src/sort.c: In function 'borRadixSortPtr':
+src/sort.c:281:14: note: 'counter' declared here
+  281 |     uint32_t counter[RADIX_SORT_MASK], negative;
+      |              ^~~~~~~
+In function 'radixSortPtrZeroizeCounter',
+    inlined from 'radixSortPtrCount' at src/sort.c:190:5,
+    inlined from 'borRadixSortPtr' at src/sort.c:290:9:
+src/sort.c:180:20: warning: '__builtin_memset' forming offset [1020, 1023] is out of the bounds [0, 1020] of object 'counter' with type 'uint32_t[255]' {aka 'unsigned int[255]'} [-Warray-bounds]
+  180 |         counter[i] = 0;
+      |         ~~~~~~~~~~~^~~
+src/sort.c: In function 'borRadixSortPtr':
+src/sort.c:281:14: note: 'counter' declared here
+  281 |     uint32_t counter[RADIX_SORT_MASK], negative;
+      |              ^~~~~~~
+In function 'radixSortPtrZeroizeCounter',
+    inlined from 'radixSortPtrCount' at src/sort.c:190:5,
+    inlined from 'borRadixSortPtr' at src/sort.c:290:9:
+src/sort.c:180:20: warning: '__builtin_memset' forming offset [1020, 1023] is out of the bounds [0, 1020] of object 'counter' with type 'uint32_t[255]' {aka 'unsigned int[255]'} [-Warray-bounds]
+  180 |         counter[i] = 0;
+      |         ~~~~~~~~~~~^~~
+src/sort.c: In function 'borRadixSortPtr':
+src/sort.c:281:14: note: 'counter' declared here
+  281 |     uint32_t counter[RADIX_SORT_MASK], negative;
+      |              ^~~~~~~
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/heapsort.o src/heapsort.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/mergesort.o src/mergesort.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/qsort.o src/qsort.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/listsort.o src/listsort.c
+sed 's/comparator/bor_sort_cmp/g' <src/timsort/timsort-impl.h >src/timsort-impl.h
+echo "#define IS_TIMSORT_R" >src/timsort.c
+sed 's/^#define TIMSORT timsort_r$/#define TIMSORT borTimSort/' <src/timsort/timsort.c \
+	| sed 's/^typedef int (\*comparator.*//' \
+	| sed 's|#include "timsort.h"|#include "boruvka/sort.h"|' \
+	| sed 's/comparator/bor_sort_cmp/g' >>src/timsort.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/timsort.o src/timsort.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/pc.o src/pc.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/pc-internal.o src/pc-internal.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/gug.o src/gug.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/nearest-linear.o src/nearest-linear.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/vptree.o src/vptree.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/vptree-hamming.o src/vptree-hamming.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/nn-linear.o src/nn-linear.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/mesh3.o src/mesh3.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/net.o src/net.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/qhull.o src/qhull.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/chull3.o src/chull3.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/fibo.o src/fibo.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/pairheap.o src/pairheap.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/dij.o src/dij.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/pairheap_nonintrusive_int.o src/pairheap_nonintrusive_int.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/bucketheap.o src/bucketheap.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/tasks.o src/tasks.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/task-pool.o src/task-pool.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/hfunc.o src/hfunc.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/htable.o src/htable.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/google-city-hash.o src/google-city-hash.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/barrier.o src/barrier.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/rand-mt.o src/rand-mt.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/rand-mt-parallel.o src/rand-mt-parallel.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/timer.o src/timer.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/parse.o src/parse.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/image.o src/image.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/segmarr.o src/segmarr.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/extarr.o src/extarr.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/rbtree.o src/rbtree.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/rbtree_int.o src/rbtree_int.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/splaytree.o src/splaytree.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/splaytree_int.o src/splaytree_int.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/multimap_int.o src/multimap_int.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/fifo.o src/fifo.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/fifo-sem.o src/fifo-sem.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/lifo.o src/lifo.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/ring_queue.o src/ring_queue.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/scc.o src/scc.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/msg-schema.o src/msg-schema.c
+bash fmt.sh set Set int i <boruvka/_set_arr.h >boruvka/iset.h
+bash fmt.sh set Set int i <src/_set_arr.c >src/iset.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/iset.o src/iset.c
+bash fmt.sh set Set long l <boruvka/_set_arr.h >boruvka/lset.h
+bash fmt.sh set Set long l <src/_set_arr.c >src/lset.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/lset.o src/lset.c
+bash fmt.sh set Set char c <boruvka/_set_arr.h >boruvka/cset.h
+bash fmt.sh set Set char c <src/_set_arr.c >src/cset.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/cset.o src/cset.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/hashset.o src/hashset.c
+bash fmt.sh bucketq BucketQ int i <boruvka/_bucketq.h >boruvka/ibucketq.h
+bash fmt.sh bucketq BucketQ int i <src/_bucketq.c >src/ibucketq.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/ibucketq.o src/ibucketq.c
+bash fmt.sh bucketq BucketQ long l <boruvka/_bucketq.h >boruvka/lbucketq.h
+bash fmt.sh bucketq BucketQ long l <src/_bucketq.c >src/lbucketq.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/lbucketq.o src/lbucketq.c
+bash fmt.sh bucketq BucketQ "void *" p <boruvka/_bucketq.h >boruvka/pbucketq.h
+bash fmt.sh bucketq BucketQ "void *" p <src/_bucketq.c >src/pbucketq.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/pbucketq.o src/pbucketq.c
+bash fmt.sh bucketq BucketQ int i <boruvka/_adaq.h \
+	| bash fmt.sh adaq AdaQ int i >boruvka/iadaq.h
+bash fmt.sh bucketq BucketQ int i <src/_adaq.c \
+	| bash fmt.sh adaq AdaQ int i >src/iadaq.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/iadaq.o src/iadaq.c
+bash fmt.sh bucketq BucketQ long l <boruvka/_adaq.h \
+	| bash fmt.sh adaq AdaQ long l >boruvka/ladaq.h
+bash fmt.sh bucketq BucketQ long l <src/_adaq.c \
+	| bash fmt.sh adaq AdaQ long l >src/ladaq.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/ladaq.o src/ladaq.c
+bash fmt.sh bucketq BucketQ "void *" p <boruvka/_adaq.h \
+	| bash fmt.sh adaq AdaQ "void *" p >boruvka/padaq.h
+bash fmt.sh bucketq BucketQ "void *" p <src/_adaq.c \
+	| bash fmt.sh adaq AdaQ "void *" p >src/padaq.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/padaq.o src/padaq.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/apq.o src/apq.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/lp.o src/lp.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/lp-cplex.o src/lp-cplex.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/lp-lpsolve.o src/lp-lpsolve.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/lp-gurobi.o src/lp-gurobi.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/digraph.o src/digraph.c
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o .objs/err.o src/err.c
+bash fmt.sh arr Arr int i <boruvka/_arr.h >boruvka/iarr.h
+bash fmt.sh arr Arr long l <boruvka/_arr.h >boruvka/larr.h
+bash fmt.sh arr Arr char c <boruvka/_arr.h >boruvka/carr.h
+ar cr libboruvka.a .objs/alloc.o .objs/varr.o .objs/quat.o .objs/vec4.o .objs/vec3.o .objs/vec2.o .objs/vec.o .objs/mat4.o .objs/mat3.o .objs/poly2.o .objs/predicates.o .objs/sort.o .objs/heapsort.o .objs/mergesort.o .objs/qsort.o .objs/listsort.o .objs/timsort.o .objs/pc.o .objs/pc-internal.o .objs/gug.o .objs/nearest-linear.o .objs/vptree.o .objs/vptree-hamming.o .objs/nn-linear.o .objs/mesh3.o .objs/net.o .objs/qhull.o .objs/chull3.o .objs/fibo.o .objs/pairheap.o .objs/dij.o .objs/pairheap_nonintrusive_int.o .objs/bucketheap.o .objs/tasks.o .objs/task-pool.o .objs/hfunc.o .objs/htable.o .objs/google-city-hash.o .objs/barrier.o .objs/rand-mt.o .objs/rand-mt-parallel.o .objs/timer.o .objs/parse.o .objs/image.o .objs/segmarr.o .objs/extarr.o .objs/rbtree.o .objs/rbtree_int.o .objs/splaytree.o .objs/splaytree_int.o .objs/multimap_int.o .objs/fifo.o .objs/fifo-sem.o .objs/lifo.o .objs/ring_queue.o .objs/scc.o .objs/msg-schema.o .objs/iset.o .objs/lset.o .objs/cset.o .objs/hashset.o .objs/ibucketq.o .objs/lbucketq.o .objs/pbucketq.o .objs/iadaq.o .objs/ladaq.o .objs/padaq.o .objs/apq.o .objs/lp.o .objs/lp-cplex.o .objs/lp-lpsolve.o .objs/lp-gurobi.o .objs/digraph.o .objs/err.o
+ranlib libboruvka.a
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -o bin/bor-qdelaunay bin/qdelaunay-main.c -pthread  -L. -lboruvka -lm -lrt
+make[1]: Leaving directory '/planner/01-grounder/cpddl/third-party/boruvka'
+make -C third-party/opts all
+make[1]: Entering directory '/planner/01-grounder/cpddl/third-party/opts'
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -c -o opts.o opts.c
+ar cr libopts.a opts.o
+ranlib libopts.a
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -o test test.c  -L. -lopts -lm
+cc -O3 -Wall -pedantic -std=gnu99 -ffast-math -I. -o test2 test2.c  -L. -lopts -lm
+make[1]: Leaving directory '/planner/01-grounder/cpddl/third-party/opts'
+rm -rf third-party/bliss
+cd third-party && unzip bliss-0.73.zip
+Archive:  bliss-0.73.zip
+   creating: bliss-0.73/
+  inflating: bliss-0.73/Doxyfile     
+  inflating: bliss-0.73/Makefile     
+  inflating: bliss-0.73/bliss.cc     
+  inflating: bliss-0.73/bliss_C.h    
+  inflating: bliss-0.73/bliss_C.cc   
+  inflating: bliss-0.73/graph.hh     
+  inflating: bliss-0.73/graph.cc     
+  inflating: bliss-0.73/orbit.hh     
+  inflating: bliss-0.73/orbit.cc     
+  inflating: bliss-0.73/uintseqhash.hh  
+  inflating: bliss-0.73/uintseqhash.cc  
+  inflating: bliss-0.73/partition.hh  
+  inflating: bliss-0.73/partition.cc  
+  inflating: bliss-0.73/utils.hh     
+  inflating: bliss-0.73/utils.cc     
+  inflating: bliss-0.73/heap.hh      
+  inflating: bliss-0.73/heap.cc      
+  inflating: bliss-0.73/timer.hh     
+  inflating: bliss-0.73/timer.cc     
+  inflating: bliss-0.73/kstack.hh    
+  inflating: bliss-0.73/kqueue.hh    
+  inflating: bliss-0.73/defs.hh      
+  inflating: bliss-0.73/defs.cc      
+  inflating: bliss-0.73/bignum.hh    
+  inflating: bliss-0.73/COPYING      
+  inflating: bliss-0.73/COPYING.LESSER  
+mv third-party/bliss-0.73 third-party/bliss
+cd third-party/bliss && patch -p1 <../bliss-0.73-memleak.patch
+patching file graph.cc
+make CC=g++ -C third-party/bliss
+make[1]: Entering directory '/planner/01-grounder/cpddl/third-party/bliss'
+g++ -I. -g -Wall --pedantic -O9 -fPIC -c -o bliss.o bliss.cc
+bliss.cc:62:15: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+   62 |   fprintf(fp, "bliss version %s (compiled "__DATE__")\n", bliss::version);
+      |               ^
+g++ -I. -g -Wall --pedantic -O9 -fPIC -c -o defs.o defs.cc
+g++ -I. -g -Wall --pedantic -O9 -fPIC -c -o graph.o graph.cc
+g++ -I. -g -Wall --pedantic -O9 -fPIC -c -o partition.o partition.cc
+g++ -I. -g -Wall --pedantic -O9 -fPIC -c -o orbit.o orbit.cc
+g++ -I. -g -Wall --pedantic -O9 -fPIC -c -o uintseqhash.o uintseqhash.cc
+g++ -I. -g -Wall --pedantic -O9 -fPIC -c -o heap.o heap.cc
+g++ -I. -g -Wall --pedantic -O9 -fPIC -c -o timer.o timer.cc
+g++ -I. -g -Wall --pedantic -O9 -fPIC -c -o utils.o utils.cc
+g++ -I. -g -Wall --pedantic -O9 -fPIC -c -o bliss_C.o bliss_C.cc
+rm -f libbliss.a
+ar cr libbliss.a defs.o graph.o partition.o orbit.o uintseqhash.o heap.o timer.o utils.o bliss_C.o
+ranlib libbliss.a
+g++ -I. -g -Wall --pedantic -O9 -fPIC -o bliss bliss.o defs.o graph.o partition.o orbit.o uintseqhash.o heap.o timer.o utils.o bliss_C.o 
+make[1]: Leaving directory '/planner/01-grounder/cpddl/third-party/bliss'
+make -C third-party/lpsolve
+make[1]: Entering directory '/planner/01-grounder/cpddl/third-party/lpsolve'
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_MDO.o lp_MDO.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o shared/commonlib.o shared/commonlib.c
+shared/commonlib.c: In function 'timeNow':
+shared/commonlib.c:849:3: warning: 'ftime' is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  849 |   ftime(&buf);
+      |   ^~~~~
+In file included from shared/commonlib.c:9:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o shared/mmio.o shared/mmio.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o shared/myblas.o shared/myblas.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o ini.o ini.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o fortify.o fortify.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o colamd/colamd.o colamd/colamd.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_rlp.o lp_rlp.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_crash.o lp_crash.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o bfp/bfp_LUSOL/lp_LUSOL.o bfp/bfp_LUSOL/lp_LUSOL.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o bfp/bfp_LUSOL/LUSOL/lusol.o bfp/bfp_LUSOL/LUSOL/lusol.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_Hash.o lp_Hash.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_lib.o lp_lib.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_wlp.o lp_wlp.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_matrix.o lp_matrix.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_mipbb.o lp_mipbb.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_MPS.o lp_MPS.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_params.o lp_params.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_presolve.o lp_presolve.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_price.o lp_price.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_pricePSE.o lp_pricePSE.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_report.o lp_report.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_scale.o lp_scale.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_simplex.o lp_simplex.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_SOS.o lp_SOS.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o lp_utils.o lp_utils.c
+cc -O3 -pipe -march=native -I. -Ishared -Ibfp -Ibfp/bfp_LUSOL -Ibfp/bfp_LUSOL/LUSOL -Icolamd -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c -o yacc_read.o yacc_read.c
+ar cr liblpsolve.a lp_MDO.o shared/commonlib.o shared/mmio.o shared/myblas.o ini.o fortify.o colamd/colamd.o lp_rlp.o lp_crash.o bfp/bfp_LUSOL/lp_LUSOL.o bfp/bfp_LUSOL/LUSOL/lusol.o lp_Hash.o lp_lib.o lp_wlp.o lp_matrix.o lp_mipbb.o lp_MPS.o lp_params.o lp_presolve.o lp_price.o lp_pricePSE.o lp_report.o lp_scale.o lp_simplex.o lp_SOS.o lp_utils.o yacc_read.o
+ranlib liblpsolve.a
+make[1]: Leaving directory '/planner/01-grounder/cpddl/third-party/lpsolve'
++ make
+echo "#ifndef __PDDL_CONFIG_H__" >pddl/config.h
+echo "#define __PDDL_CONFIG_H__" >>pddl/config.h
+echo "" >>pddl/config.h
+if [ "no" = "yes" ]; then echo "#define PDDL_DEBUG" >>pddl/config.h; fi
+echo '#include <boruvka/lp.h>' >__lp.c
+echo 'int main(int argc, char *arvg[]) { return borLPSolverAvailable(BOR_LP_DEFAULT); }' >>__lp.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -o __lp __lp.c -L/planner/01-grounder/cpddl//third-party/boruvka -lboruvka   -L/planner/01-grounder/cpddl//third-party/lpsolve -llpsolve -ldl -pthread -lrt -lm
+if ! ./__lp; then echo "#define PDDL_LP" >>pddl/config.h; fi
+rm -f __lp.c __lp
+echo "" >>pddl/config.h
+echo "#endif /* __PDDL_CONFIG_H__ */" >>pddl/config.h
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/lisp.o src/lisp.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/require.o src/require.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/type.o src/type.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/param.o src/param.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/obj.o src/obj.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/pred.o src/pred.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/fact.o src/fact.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/action.o src/action.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/prep_action.o src/prep_action.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/pddl.o src/pddl.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/cond.o src/cond.c
+src/cond.c: In function 'instantiateQuant':
+src/cond.c:2011:35: warning: array subscript 'pddl_params_t {aka const struct pddl_params}[0]' is partly outside array bounds of 'instantiate_cond_t[1]' {aka 'struct instantiate_cond[1]'} [-Warray-bounds]
+ 2011 |         for (int i = 0; i < params->param_size; ++i){
+      |                             ~~~~~~^~~~~~~~~~~~
+src/cond.c:2064:24: note: while referencing 'set'
+ 2064 |     instantiate_cond_t set;
+      |                        ^~~
+src/cond.c:2012:23: warning: array subscript 'pddl_params_t {aka const struct pddl_params}[0]' is partly outside array bounds of 'instantiate_cond_t[1]' {aka 'struct instantiate_cond[1]'} [-Warray-bounds]
+ 2012 |             if (params->param[i].inherit < 0)
+      |                 ~~~~~~^~~~~~~
+src/cond.c:2064:24: note: while referencing 'set'
+ 2064 |     instantiate_cond_t set;
+      |                        ^~~
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/cond_arr.o src/cond_arr.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/strips.o src/strips.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/strips_op.o src/strips_op.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/strips_fact_cross_ref.o src/strips_fact_cross_ref.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/strips_ground_tree.o src/strips_ground_tree.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/strips_ground.o src/strips_ground.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/action_args.o src/action_args.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/ground_atom.o src/ground_atom.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/profile.o src/profile.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/helper.o src/helper.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/lifted_mgroup.o src/lifted_mgroup.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/lifted_mgroup_infer.o src/lifted_mgroup_infer.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/lifted_mgroup_htable.o src/lifted_mgroup_htable.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/mgroup.o src/mgroup.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/mutex_pair.o src/mutex_pair.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/pddl_file.o src/pddl_file.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/irrelevance.o src/irrelevance.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/h2.o src/h2.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/disambiguation.o src/disambiguation.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/bitset.o src/bitset.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/fdr_var.o src/fdr_var.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/fdr.o src/fdr.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/sym.o src/sym.c
+cc -O3 -Wall -pedantic --std=gnu99 -Wno-missing-braces -I. -I/planner/01-grounder/cpddl//third-party/boruvka -I/planner/01-grounder/cpddl//third-party -c -o .objs/famgroup.o src/famgroup.c
+ar cr libpddl.a .objs/lisp.o .objs/require.o .objs/type.o .objs/param.o .objs/obj.o .objs/pred.o .objs/fact.o .objs/action.o .objs/prep_action.o .objs/pddl.o .objs/cond.o .objs/cond_arr.o .objs/strips.o .objs/strips_op.o .objs/strips_fact_cross_ref.o .objs/strips_ground_tree.o .objs/strips_ground.o .objs/action_args.o .objs/ground_atom.o .objs/profile.o .objs/helper.o .objs/lifted_mgroup.o .objs/lifted_mgroup_infer.o .objs/lifted_mgroup_htable.o .objs/mgroup.o .objs/mutex_pair.o .objs/pddl_file.o .objs/irrelevance.o .objs/h2.o .objs/disambiguation.o .objs/bitset.o .objs/fdr_var.o .objs/fdr.o .objs/sym.o .objs/famgroup.o
+ranlib libpddl.a
++ cd ../src
++ make
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o FAMmutexes.o FAMmutexes.cpp
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o conditional_effects.o conditional_effects.cpp
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o debug.o debug.cpp
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o duplicate.o duplicate.cpp
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o givenPlan.o givenPlan.cpp
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o gpg.o gpg.cpp
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o groundedGPG.o groundedGPG.cpp
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o grounding.o grounding.cpp
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o h2mutexes.o h2mutexes.cpp
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o hierarchy-typing.o hierarchy-typing.cpp
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o liftedGPG.o liftedGPG.cpp
+gengetopt --include-getopt --default-optional --unamed-opts -i options.ggo
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o main.o main.cpp
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o model.o model.cpp
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o naiveGrounding.o naiveGrounding.cpp
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o output.o output.cpp
+output.cpp: In function 'void write_grounded_HTN(std::ostream&, const Domain&, const Problem&, std::vector<Fact>&, std::vector<GroundedTask>&, std::vector<GroundedMethod>&, std::vector<bool>&, std::vector<bool>&, std::vector<bool>&, std::unordered_set<int>, std::unordered_set<int>, std::unordered_set<Fact>, std::vector<std::unordered_set<int> >, std::vector<std::unordered_set<int> >, std::vector<std::unordered_set<int> >, std::vector<std::unordered_set<int> >, std::vector<bool>&, grounding_configuration&)':
+output.cpp:860:47: warning: unused variable '_cover_assignment' [-Wunused-variable]
+  860 |                 for (const std::vector<int> & _cover_assignment : instances){
+      |                                               ^~~~~~~~~~~~~~~~~
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o parser.o parser.cpp
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o postprocessing.o postprocessing.cpp
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o sasinvariants.o sasinvariants.cpp
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o sasplus.o sasplus.cpp
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o util.o util.cpp
+gcc -c -pipe -Wall -Wextra -pedantic  -Wno-unused-parameter -Wno-sign-compare    -O3 -g -DNDEBUG -flto -o rss.o rss.c
+gcc -c -pipe -Wall -Wextra -pedantic  -Wno-unused-parameter -Wno-sign-compare    -O3 -g -DNDEBUG -flto -o cmdline.o cmdline.c
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o ../h2-fd-preprocessor/src/axiom.cc.o ../h2-fd-preprocessor/src/axiom.cc
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o ../h2-fd-preprocessor/src/causal_graph.cc.o ../h2-fd-preprocessor/src/causal_graph.cc
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o ../h2-fd-preprocessor/src/domain_transition_graph.cc.o ../h2-fd-preprocessor/src/domain_transition_graph.cc
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o ../h2-fd-preprocessor/src/h2_mutexes.cc.o ../h2-fd-preprocessor/src/h2_mutexes.cc
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o ../h2-fd-preprocessor/src/helper_functions.cc.o ../h2-fd-preprocessor/src/helper_functions.cc
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o ../h2-fd-preprocessor/src/max_dag.cc.o ../h2-fd-preprocessor/src/max_dag.cc
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o ../h2-fd-preprocessor/src/mutex_group.cc.o ../h2-fd-preprocessor/src/mutex_group.cc
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o ../h2-fd-preprocessor/src/operator.cc.o ../h2-fd-preprocessor/src/operator.cc
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o ../h2-fd-preprocessor/src/scc.cc.o ../h2-fd-preprocessor/src/scc.cc
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o ../h2-fd-preprocessor/src/state.cc.o ../h2-fd-preprocessor/src/state.cc
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o ../h2-fd-preprocessor/src/successor_generator.cc.o ../h2-fd-preprocessor/src/successor_generator.cc
+g++ -c -pipe -Wall -Wextra -pedantic -std=gnu++17  -Wno-unused-parameter -Wno-sign-compare   -fconcepts -I../cpddl/ -I../cpddl/third-party/boruvka/ -O3 -g -DNDEBUG -flto -o ../h2-fd-preprocessor/src/variable.cc.o ../h2-fd-preprocessor/src/variable.cc
+g++  -O3 -flto -static -static-libgcc -o ../pandaPIgrounder FAMmutexes.o conditional_effects.o debug.o duplicate.o givenPlan.o gpg.o groundedGPG.o grounding.o h2mutexes.o hierarchy-typing.o liftedGPG.o main.o model.o naiveGrounding.o output.o parser.o postprocessing.o sasinvariants.o sasplus.o util.o rss.o cmdline.o ../h2-fd-preprocessor/src/axiom.cc.o ../h2-fd-preprocessor/src/causal_graph.cc.o ../h2-fd-preprocessor/src/domain_transition_graph.cc.o ../h2-fd-preprocessor/src/h2_mutexes.cc.o ../h2-fd-preprocessor/src/helper_functions.cc.o ../h2-fd-preprocessor/src/max_dag.cc.o ../h2-fd-preprocessor/src/mutex_group.cc.o ../h2-fd-preprocessor/src/operator.cc.o ../h2-fd-preprocessor/src/scc.cc.o ../h2-fd-preprocessor/src/state.cc.o ../h2-fd-preprocessor/src/successor_generator.cc.o ../h2-fd-preprocessor/src/variable.cc.o ../cpddl/libpddl.a ../cpddl/third-party/boruvka/libboruvka.a 
++ cd ..
++ mv pandaPIgrounder ..
++ cd ..
++ cd 02-planner/src
++ mkdir bin
++ cd bin
++ cmake ..
+-- The C compiler identification is GNU 11.3.0
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /planner/02-planner/src/bin
++ make
+[  1%] Building CXX object intDataStructures/CMakeFiles/intDataStructures.dir/bIntSet.cpp.o
+[  3%] Building CXX object intDataStructures/CMakeFiles/intDataStructures.dir/bucketSet.cpp.o
+[  4%] Building CXX object intDataStructures/CMakeFiles/intDataStructures.dir/delIterIntSet.cpp.o
+[  6%] Building CXX object intDataStructures/CMakeFiles/intDataStructures.dir/FlexIntStack.cpp.o
+[  8%] Building CXX object intDataStructures/CMakeFiles/intDataStructures.dir/IntStack.cpp.o
+[  9%] Building CXX object intDataStructures/CMakeFiles/intDataStructures.dir/IntUtil.cpp.o
+[ 11%] Building CXX object intDataStructures/CMakeFiles/intDataStructures.dir/noDelIntSet.cpp.o
+[ 13%] Building CXX object intDataStructures/CMakeFiles/intDataStructures.dir/StringUtil.cpp.o
+[ 14%] Building CXX object intDataStructures/CMakeFiles/intDataStructures.dir/HashTable.cpp.o
+[ 16%] Building CXX object intDataStructures/CMakeFiles/intDataStructures.dir/SequenceSet.cpp.o
+[ 18%] Building CXX object intDataStructures/CMakeFiles/intDataStructures.dir/CompressedSequenceSet.cpp.o
+[ 19%] Linking CXX static library libintDataStructures.a
+[ 19%] Built target intDataStructures
+[ 21%] Building CXX object search/CMakeFiles/search.dir/PriorityQueueSearch.cpp.o
+[ 22%] Building CXX object search/CMakeFiles/search.dir/QueueFringe.cpp.o
+[ 24%] Building CXX object search/CMakeFiles/search.dir/StackFringe.cpp.o
+[ 26%] Building CXX object search/CMakeFiles/search.dir/UnsortedFringe.cpp.o
+[ 27%] Building CXX object search/CMakeFiles/search.dir/UnsrtFringeContainer.cpp.o
+[ 29%] Building CXX object search/CMakeFiles/search.dir/fringes/LamaFringe.cpp.o
+[ 31%] Building CXX object search/CMakeFiles/search.dir/fringes/OneQueueWAStarFringe.cpp.o
+[ 32%] Linking CXX static library libsearch.a
+[ 32%] Built target search
+[ 34%] Building CXX object symbolic_search/CMakeFiles/symbolic_search.dir/automaton.cpp.o
+/planner/02-planner/src/symbolic_search/automaton.cpp: In function 'reconstructed_plan extract2From(int, int, int, int, BDD, std::deque<int>, std::deque<int>, std::deque<BDD>, progression::Model*, symbolic::SymVariables&)':
+/planner/02-planner/src/symbolic_search/automaton.cpp:582:37: warning: unused variable 'costCarriedByTheEdge' [-Wunused-variable]
+  582 |                                 int costCarriedByTheEdge = cost;
+      |                                     ^~~~~~~~~~~~~~~~~~~~
+[ 36%] Building CXX object symbolic_search/CMakeFiles/symbolic_search.dir/sym_variables.cpp.o
+[ 37%] Building CXX object symbolic_search/CMakeFiles/symbolic_search.dir/transition_relation.cpp.o
+[ 39%] Linking CXX static library libsymbolic_search.a
+[ 39%] Built target symbolic_search
+[ 40%] Building CXX object heuristics/CMakeFiles/heuristics.dir/Heuristic.cpp.o
+[ 42%] Building CXX object heuristics/CMakeFiles/heuristics.dir/HeuristicPayload.cpp.o
+[ 44%] Building CXX object heuristics/CMakeFiles/heuristics.dir/hhZero.cpp.o
+[ 45%] Building CXX object heuristics/CMakeFiles/heuristics.dir/planningGraph.cpp.o
+[ 47%] Linking CXX static library libheuristics.a
+[ 47%] Built target heuristics
+[ 49%] Building CXX object heuristics/rcHeuristics/CMakeFiles/hrc.dir/LMCutLandmark.cpp.o
+[ 50%] Building CXX object heuristics/rcHeuristics/CMakeFiles/hrc.dir/RCModelFactory.cpp.o
+[ 52%] Building CXX object heuristics/rcHeuristics/CMakeFiles/hrc.dir/hhRC.cpp.o
+[ 54%] Building CXX object heuristics/rcHeuristics/CMakeFiles/hrc.dir/hsAddFF-2.cpp.o
+[ 55%] Building CXX object heuristics/rcHeuristics/CMakeFiles/hrc.dir/hsAddFF.cpp.o
+[ 57%] Building CXX object heuristics/rcHeuristics/CMakeFiles/hrc.dir/hsFilter.cpp.o
+[ 59%] Building CXX object heuristics/rcHeuristics/CMakeFiles/hrc.dir/hsLmCut.cpp.o
+[ 60%] Linking CXX static library libhrc.a
+[ 60%] Built target hrc
+[ 62%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/lmDataStructures/LmMap.cpp.o
+[ 63%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/lmDataStructures/landmark.cpp.o
+[ 65%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/lmDataStructures/lookUpTab.cpp.o
+[ 67%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/lmExtraction/LMsInAndOrGraphs.cpp.o
+[ 68%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/lmExtraction/LmAoNode.cpp.o
+[ 70%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/lmExtraction/LmCausal.cpp.o
+[ 72%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/lmExtraction/LmFdConnector.cpp.o
+/planner/02-planner/src/heuristics/landmarks/lmExtraction/LmFdConnector.cpp: In member function 'lmGraph* progression::LmFdConnector::createLMs(progression::Model*, progression::lmFactoryType, bool)':
+/planner/02-planner/src/heuristics/landmarks/lmExtraction/LmFdConnector.cpp:39:15: warning: ignoring return value of 'int system(const char*)' declared with attribute 'warn_unused_result' [-Wunused-result]
+   39 |         system("\"callFDfromPANDA.sh\" \"rhw\"");
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/planner/02-planner/src/heuristics/landmarks/lmExtraction/LmFdConnector.cpp:41:15: warning: ignoring return value of 'int system(const char*)' declared with attribute 'warn_unused_result' [-Wunused-result]
+   41 |         system("\"callFDfromPANDA.sh\" \"ao1\"");
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/planner/02-planner/src/heuristics/landmarks/lmExtraction/LmFdConnector.cpp:43:15: warning: ignoring return value of 'int system(const char*)' declared with attribute 'warn_unused_result' [-Wunused-result]
+   43 |         system("\"callFDfromPANDA.sh\" \"ao2\"");
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/planner/02-planner/src/heuristics/landmarks/lmExtraction/LmFdConnector.cpp: In member function 'void progression::LmFdConnector::printDOT(progression::Model*, lmGraph*)':
+/planner/02-planner/src/heuristics/landmarks/lmExtraction/LmFdConnector.cpp:376:11: warning: ignoring return value of 'int system(const char*)' declared with attribute 'warn_unused_result' [-Wunused-result]
+  376 |     system("xdot graph.dot");
+      |     ~~~~~~^~~~~~~~~~~~~~~~~~
+[ 73%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/lmExtraction/LmLocalLMs.cpp.o
+[ 75%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/lmExtraction/lmGraph.cpp.o
+/planner/02-planner/src/heuristics/landmarks/lmExtraction/lmGraph.cpp: In member function 'void lmGraph::showDot(hhLMPayload*)':
+/planner/02-planner/src/heuristics/landmarks/lmExtraction/lmGraph.cpp:147:11: warning: ignoring return value of 'int system(const char*)' declared with attribute 'warn_unused_result' [-Wunused-result]
+  147 |     system("xdot graph.dot");
+      |     ~~~~~~^~~~~~~~~~~~~~~~~~
+[ 77%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/lmExtraction/lmNode.cpp.o
+[ 78%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/hhLMCount.cpp.o
+[ 80%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/hhLMPayload.cpp.o
+[ 81%] Building CXX object heuristics/landmarks/CMakeFiles/hlm.dir/hhLmOrdered.cpp.o
+[ 83%] Linking CXX static library libhlm.a
+[ 83%] Built target hlm
+[ 85%] Building CXX object CMakeFiles/pandaPIengine.dir/Debug.cpp.o
+[ 86%] Building CXX object CMakeFiles/pandaPIengine.dir/Invariants.cpp.o
+[ 88%] Building CXX object CMakeFiles/pandaPIengine.dir/Model.cpp.o
+[ 90%] Building CXX object CMakeFiles/pandaPIengine.dir/ProgressionNetwork.cpp.o
+[ 91%] Building CXX object CMakeFiles/pandaPIengine.dir/SearchEngine.cpp.o
+/planner/02-planner/src/SearchEngine.cpp: In function 'int main(int, char**)':
+/planner/02-planner/src/SearchEngine.cpp:498:100: warning: 'lmType' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  498 |                         heuristics[ihLM] = new hhLmOrdered(htn, ihLM, lmType, useLMOrderings, false);
+      |                                                                                                    ^
+[ 93%] Building CXX object CMakeFiles/pandaPIengine.dir/Util.cpp.o
+[ 95%] Building CXX object CMakeFiles/pandaPIengine.dir/VisitedList.cpp.o
+/planner/02-planner/src/VisitedList.cpp: In member function 'bool VisitedList::insertVisi(progression::searchNode*)':
+/planner/02-planner/src/VisitedList.cpp:549:36: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  549 |                         *payload = (void*) costOfInsertedNode; // now the hash is known at the given cost
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 96%] Building C object CMakeFiles/pandaPIengine.dir/cmdline.c.o
+[ 98%] Building CXX object CMakeFiles/pandaPIengine.dir/interactivePlanner.cpp.o
+[100%] Linking CXX executable pandaPIengine
+[100%] Built target pandaPIengine
++ mv pandaPIengine ../../..
++ cd ..
+INFO:    Adding labels
+INFO:    Adding runscript
+INFO:    Creating SIF file...
+INFO:    Build complete: ../lamda-TO-ao.sif
+%TIME 3:18.37 739212
+%EXIT 0

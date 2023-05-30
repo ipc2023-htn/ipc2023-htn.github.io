@@ -5,30 +5,30 @@ Copying blob sha256:ca1778b6935686ad781c27472c4668fc61ec3aeb85494f72deb1921892b9
 Copying config sha256:88bd6891718934e63638d9ca0ecee018e69b638270fe04990a310e5c78ab4a92
 Writing manifest to image destination
 Storing signatures
-2023/05/25 18:41:21  info unpack layer: sha256:ca1778b6935686ad781c27472c4668fc61ec3aeb85494f72deb1921892b9d39e
+2023/05/30 19:09:12  info unpack layer: sha256:ca1778b6935686ad781c27472c4668fc61ec3aeb85494f72deb1921892b9d39e
 INFO:    Running setup scriptlet
 INFO:    Copying . to /planner
 INFO:    Running post scriptlet
 + apt-get update
-Get:1 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
-Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
-Get:3 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [1051 kB]
-Get:4 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
-Get:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
-Get:6 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [33.4 kB]
-Get:7 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [177 kB]
-Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [1275 kB]
-Get:9 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [2726 kB]
-Get:10 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [11.3 MB]
-Get:11 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [28.5 kB]
-Get:12 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [2270 kB]
-Get:13 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [31.2 kB]
-Get:14 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [2408 kB]
-Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3202 kB]
-Get:16 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1345 kB]
+Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:2 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [28.5 kB]
+Get:3 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [1053 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+Get:5 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [2274 kB]
+Get:6 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [2731 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:9 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [33.4 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [1275 kB]
+Get:11 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [11.3 MB]
+Get:12 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [177 kB]
+Get:13 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3207 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1348 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [2412 kB]
+Get:16 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [31.2 kB]
 Get:17 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [28.6 kB]
 Get:18 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [55.2 kB]
-Fetched 26.6 MB in 3s (8613 kB/s)
+Fetched 26.6 MB in 3s (7903 kB/s)
 Reading package lists...
 + apt-get -y install make cmake flex bison python-dev libreadline-dev g++
 Reading package lists...
@@ -94,7 +94,7 @@ Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 flex amd64 2.6.4-6.2 [31
 Get:4 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libpython2.7-minimal amd64 2.7.18-1~20.04.3 [336 kB]
 Get:5 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python2.7-minimal amd64 2.7.18-1~20.04.3 [1280 kB]
 Get:6 http://archive.ubuntu.com/ubuntu focal/universe amd64 python2-minimal amd64 2.7.17-2ubuntu4 [27.5 kB]
-Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libssl1.1 amd64 1.1.1f-1ubuntu2.18 [1322 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libssl1.1 amd64 1.1.1f-1ubuntu2.19 [1321 kB]
 Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 mime-support all 3.64ubuntu1 [30.6 kB]
 Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libexpat1 amd64 2.2.9-1ubuntu0.6 [74.6 kB]
 Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libncurses6 amd64 6.2-0ubuntu2.1 [101 kB]
@@ -107,7 +107,7 @@ Get:16 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libpython2.
 Get:17 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python2.7 amd64 2.7.18-1~20.04.3 [248 kB]
 Get:18 http://archive.ubuntu.com/ubuntu focal/universe amd64 libpython2-stdlib amd64 2.7.17-2ubuntu4 [7072 B]
 Get:19 http://archive.ubuntu.com/ubuntu focal/universe amd64 python2 amd64 2.7.17-2ubuntu4 [26.5 kB]
-Get:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openssl amd64 1.1.1f-1ubuntu2.18 [621 kB]
+Get:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openssl amd64 1.1.1f-1ubuntu2.19 [621 kB]
 Get:21 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 ca-certificates all 20230311ubuntu0.20.04.1 [152 kB]
 Get:22 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
 Get:23 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
@@ -197,7 +197,7 @@ Get:106 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python2.7-
 Get:107 http://archive.ubuntu.com/ubuntu focal/universe amd64 python2-dev amd64 2.7.17-2ubuntu4 [1268 B]
 Get:108 http://archive.ubuntu.com/ubuntu focal/universe amd64 python-dev-is-python2 all 2.7.17-4 [1396 B]
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 76.9 MB in 4s (20.4 MB/s)
+Fetched 76.9 MB in 15s (5266 kB/s)
 Selecting previously unselected package libsigsegv2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4126 files and directories currently installed.)
 Preparing to unpack .../00-libsigsegv2_2.12-2_amd64.deb ...
@@ -218,8 +218,8 @@ Selecting previously unselected package python2-minimal.
 Preparing to unpack .../05-python2-minimal_2.7.17-2ubuntu4_amd64.deb ...
 Unpacking python2-minimal (2.7.17-2ubuntu4) ...
 Selecting previously unselected package libssl1.1:amd64.
-Preparing to unpack .../06-libssl1.1_1.1.1f-1ubuntu2.18_amd64.deb ...
-Unpacking libssl1.1:amd64 (1.1.1f-1ubuntu2.18) ...
+Preparing to unpack .../06-libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb ...
+Unpacking libssl1.1:amd64 (1.1.1f-1ubuntu2.19) ...
 Selecting previously unselected package mime-support.
 Preparing to unpack .../07-mime-support_3.64ubuntu1_all.deb ...
 Unpacking mime-support (3.64ubuntu1) ...
@@ -261,8 +261,8 @@ Selecting previously unselected package python2.
 Preparing to unpack .../00-python2_2.7.17-2ubuntu4_amd64.deb ...
 Unpacking python2 (2.7.17-2ubuntu4) ...
 Selecting previously unselected package openssl.
-Preparing to unpack .../01-openssl_1.1.1f-1ubuntu2.18_amd64.deb ...
-Unpacking openssl (1.1.1f-1ubuntu2.18) ...
+Preparing to unpack .../01-openssl_1.1.1f-1ubuntu2.19_amd64.deb ...
+Unpacking openssl (1.1.1f-1ubuntu2.19) ...
 Selecting previously unselected package ca-certificates.
 Preparing to unpack .../02-ca-certificates_20230311ubuntu0.20.04.1_all.deb ...
 Unpacking ca-certificates (20230311ubuntu0.20.04.1) ...
@@ -533,7 +533,7 @@ Setting up libpsl5:amd64 (0.21.0-1ubuntu1) ...
 Setting up mime-support (3.64ubuntu1) ...
 Setting up libmagic-mgc (1:5.38-4) ...
 Setting up manpages (5.05-1) ...
-Setting up libssl1.1:amd64 (1.1.1f-1ubuntu2.18) ...
+Setting up libssl1.1:amd64 (1.1.1f-1ubuntu2.19) ...
 debconf: unable to initialize frontend: Dialog
 debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
 debconf: falling back to frontend: Readline
@@ -575,8 +575,8 @@ Geographic area:
 Use of uninitialized value $_[1] in join or string at /usr/share/perl5/Debconf/DbDriver/Stack.pm line 111.
 
 Current default time zone: '/UTC'
-Local time is now:      Thu May 25 16:41:39 UTC 2023.
-Universal Time is now:  Thu May 25 16:41:39 UTC 2023.
+Local time is now:      Tue May 30 17:09:38 UTC 2023.
+Universal Time is now:  Tue May 30 17:09:38 UTC 2023.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Use of uninitialized value $val in substitution (s///) at /usr/share/perl5/Debconf/Format/822.pm line 83, <GEN6> line 4.
@@ -615,7 +615,7 @@ Setting up cmake-data (3.16.3-1ubuntu1.20.04.1) ...
 Setting up libkrb5-3:amd64 (1.17-6ubuntu4.3) ...
 Setting up libbinutils:amd64 (2.34-6ubuntu1.5) ...
 Setting up libc-dev-bin (2.31-0ubuntu9.9) ...
-Setting up openssl (1.1.1f-1ubuntu2.18) ...
+Setting up openssl (1.1.1f-1ubuntu2.19) ...
 Setting up readline-common (8.0-4) ...
 Setting up publicsuffix (20200303.0012-1) ...
 Setting up libcc1-0:amd64 (10.3.0-1ubuntu1~20.04) ...
@@ -715,140 +715,141 @@ done.
 -- Generating done
 -- Build files have been written to: /planner/planner
 + make -j
-[  1%] [BISON][parser] Building parser with bison 3.5.1
+[  2%] [BISON][parser] Building parser with bison 3.5.1
+[  2%] [FLEX][lexer] Building scanner with flex 2.6.4
 Scanning dependencies of target planner
 [  4%] Building CXX object CMakeFiles/planner.dir/nodes/iactive_planner.cpp.o
-[  5%] Building CXX object CMakeFiles/planner.dir/src/parser.cpp.o
-[  4%] Building CXX object CMakeFiles/planner.dir/src/lexer.cpp.o
-[  7%] Building CXX object CMakeFiles/planner.dir/src/andEffect.cpp.o
-[  8%] Building CXX object CMakeFiles/planner.dir/src/comparationGoal.cpp.o
-[ 10%] Building CXX object CMakeFiles/planner.dir/src/domain.cpp.o
-[ 11%] Building CXX object CMakeFiles/planner.dir/src/boundGoal.cpp.o
-[ 12%] Building CXX object CMakeFiles/planner.dir/src/andGoal.cpp.o
-[ 14%] Building CXX object CMakeFiles/planner.dir/src/axiom.cpp.o
+[  5%] Building CXX object CMakeFiles/planner.dir/src/lexer.cpp.o
+[  7%] Building CXX object CMakeFiles/planner.dir/src/parser.cpp.o
+[ 10%] Building CXX object CMakeFiles/planner.dir/src/andEffect.cpp.o
+[ 10%] Building CXX object CMakeFiles/planner.dir/src/MyLexer.cpp.o
+[ 11%] Building CXX object CMakeFiles/planner.dir/src/andGoal.cpp.o
+[ 12%] Building CXX object CMakeFiles/planner.dir/src/axiom.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 15%] Building CXX object CMakeFiles/planner.dir/src/boundGoal.cpp.o
 [ 15%] Building CXX object CMakeFiles/planner.dir/src/causal.cpp.o
-[ 17%] Building CXX object CMakeFiles/planner.dir/src/compoundtask.cpp.o
-[ 18%] Building CXX object CMakeFiles/planner.dir/src/constantsymbol.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 17%] Building CXX object CMakeFiles/planner.dir/src/causalTable.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 18%] Building CXX object CMakeFiles/planner.dir/src/check.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 [ 20%] Building CXX object CMakeFiles/planner.dir/src/clock.cpp.o
-[ 21%] Building CXX object CMakeFiles/planner.dir/src/causalTable.cpp.o
-[ 22%] Building CXX object CMakeFiles/planner.dir/src/MyLexer.cpp.o
-[ 24%] Building CXX object CMakeFiles/planner.dir/src/debugger.cpp.o
-[ 25%] Building CXX object CMakeFiles/planner.dir/src/check.cpp.o
+[ 21%] Building CXX object CMakeFiles/planner.dir/src/comparationGoal.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 27%] Building CXX object CMakeFiles/planner.dir/src/existsgoal.cpp.o
-[ 28%] Building CXX object CMakeFiles/planner.dir/src/controlrules.cpp.o
+[ 22%] Building CXX object CMakeFiles/planner.dir/src/compoundtask.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 24%] Building CXX object CMakeFiles/planner.dir/src/constantsymbol.cpp.o
+[ 25%] Building CXX object CMakeFiles/planner.dir/src/controlrules.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 27%] Building CXX object CMakeFiles/planner.dir/src/debugger.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 28%] Building CXX object CMakeFiles/planner.dir/src/domain.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 30%] Building CXX object CMakeFiles/planner.dir/src/existsgoal.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 31%] Building CXX object CMakeFiles/planner.dir/src/expansiontree.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 32%] Building CXX object CMakeFiles/planner.dir/src/fluentEffect.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 30%] Building CXX object CMakeFiles/planner.dir/src/expansiontree.cpp.o
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 31%] Building CXX object CMakeFiles/planner.dir/src/foralleffect.cpp.o
-[ 32%] Building CXX object CMakeFiles/planner.dir/src/function.cpp.o
-[ 34%] Building CXX object CMakeFiles/planner.dir/src/fluentEffect.cpp.o
-[ 35%] Building CXX object CMakeFiles/planner.dir/src/fluentLiteral.cpp.o
-[ 37%] Building CXX object CMakeFiles/planner.dir/src/fluentOperator.cpp.o
+[ 34%] Building CXX object CMakeFiles/planner.dir/src/fluentLiteral.cpp.o
+[ 35%] Building CXX object CMakeFiles/planner.dir/src/fluentOperator.cpp.o
+[ 37%] Building CXX object CMakeFiles/planner.dir/src/foralleffect.cpp.o
 [ 38%] Building CXX object CMakeFiles/planner.dir/src/forallgoal.cpp.o
+[ 40%] Building CXX object CMakeFiles/planner.dir/src/function.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 40%] Building CXX object CMakeFiles/planner.dir/src/implyGoal.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 [ 41%] Building CXX object CMakeFiles/planner.dir/src/header.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 42%] Building CXX object CMakeFiles/planner.dir/src/implyGoal.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 42%] Building CXX object CMakeFiles/planner.dir/src/literaleffect.cpp.o
 [ 44%] Building CXX object CMakeFiles/planner.dir/src/interface.cpp.o
-[ 45%] Building CXX object CMakeFiles/planner.dir/src/literalgoal.cpp.o
-[ 47%] Building CXX object CMakeFiles/planner.dir/src/literal.cpp.o
-[ 48%] Building CXX object CMakeFiles/planner.dir/src/method.cpp.o
-[ 50%] Building CXX object CMakeFiles/planner.dir/src/oldDecision.cpp.o
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 51%] Building CXX object CMakeFiles/planner.dir/src/orGoal.cpp.o
+[ 45%] Building CXX object CMakeFiles/planner.dir/src/literal.cpp.o
+[ 47%] Building CXX object CMakeFiles/planner.dir/src/literaleffect.cpp.o
+[ 48%] Building CXX object CMakeFiles/planner.dir/src/literalgoal.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 52%] Building CXX object CMakeFiles/planner.dir/src/papi.cpp.o
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 54%] Building CXX object CMakeFiles/planner.dir/src/parameterContainer.cpp.o
+[ 50%] Building CXX object CMakeFiles/planner.dir/src/method.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 51%] Building CXX object CMakeFiles/planner.dir/src/oldDecision.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 52%] Building CXX object CMakeFiles/planner.dir/src/orGoal.cpp.o
+[ 54%] Building CXX object CMakeFiles/planner.dir/src/papi.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 55%] Building CXX object CMakeFiles/planner.dir/src/primitivetask.cpp.o
-[ 57%] Building CXX object CMakeFiles/planner.dir/src/plan.cpp.o
-[ 58%] Building CXX object CMakeFiles/planner.dir/src/problem.cpp.o
+[ 55%] Building CXX object CMakeFiles/planner.dir/src/plan.cpp.o
+[ 57%] Building CXX object CMakeFiles/planner.dir/src/parameterContainer.cpp.o
+[ 58%] Building CXX object CMakeFiles/planner.dir/src/primitivetask.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 60%] Building CXX object CMakeFiles/planner.dir/src/pyDefFunction.cpp.o
+[ 60%] Building CXX object CMakeFiles/planner.dir/src/problem.cpp.o
 [ 61%] Building CXX object CMakeFiles/planner.dir/src/pyAPI.cpp.o
-[ 62%] Building CXX object CMakeFiles/planner.dir/src/pyTerm.cpp.o
-[ 64%] Building CXX object CMakeFiles/planner.dir/src/pythonWrapper.cpp.o
-[ 65%] Building CXX object CMakeFiles/planner.dir/src/pyLiteral.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 62%] Building CXX object CMakeFiles/planner.dir/src/pyLiteral.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 64%] Building CXX object CMakeFiles/planner.dir/src/pyDefFunction.cpp.o
+[ 65%] Building CXX object CMakeFiles/planner.dir/src/pyTerm.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 [ 67%] Building CXX object CMakeFiles/planner.dir/src/pyUTable.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 68%] Building CXX object CMakeFiles/planner.dir/src/replan.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 68%] Building CXX object CMakeFiles/planner.dir/src/pythonWrapper.cpp.o
+[ 70%] Building CXX object CMakeFiles/planner.dir/src/replan.cpp.o
+[ 71%] Building CXX object CMakeFiles/planner.dir/src/tasknetwork.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 70%] Building CXX object CMakeFiles/planner.dir/src/selector.cpp.o
-[ 71%] Building CXX object CMakeFiles/planner.dir/src/taskheader.cpp.o
-[ 72%] Building CXX object CMakeFiles/planner.dir/src/stacknode.cpp.o
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 74%] Building CXX object CMakeFiles/planner.dir/src/state.cpp.o
-[ 75%] Building CXX object CMakeFiles/planner.dir/src/tasknetwork.cpp.o
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 74%] Building CXX object CMakeFiles/planner.dir/src/selector.cpp.o
+[ 74%] Building CXX object CMakeFiles/planner.dir/src/stacknode.cpp.o
+[ 75%] Building CXX object CMakeFiles/planner.dir/src/state.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 [ 77%] Building CXX object CMakeFiles/planner.dir/src/termTable.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 78%] Building CXX object CMakeFiles/planner.dir/src/textTag.cpp.o
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 80%] Building CXX object CMakeFiles/planner.dir/src/timeInterval.cpp.o
+[ 78%] Building CXX object CMakeFiles/planner.dir/src/taskheader.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 81%] Building CXX object CMakeFiles/planner.dir/src/timeLineLitEffect.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 80%] Building CXX object CMakeFiles/planner.dir/src/textTag.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 82%] Building CXX object CMakeFiles/planner.dir/src/type.cpp.o
-[ 84%] Building CXX object CMakeFiles/planner.dir/src/undoARLiteralState.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 81%] Building CXX object CMakeFiles/planner.dir/src/timeInterval.cpp.o
+[ 82%] Building CXX object CMakeFiles/planner.dir/src/timeLineLitEffect.cpp.o
+[ 84%] Building CXX object CMakeFiles/planner.dir/src/type.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 85%] Building CXX object CMakeFiles/planner.dir/src/undoARLiteralState.cpp.o
+[ 87%] Building CXX object CMakeFiles/planner.dir/src/undoCLinks.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 88%] Building CXX object CMakeFiles/planner.dir/src/undoChangeValue.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[ 87%] Building CXX object CMakeFiles/planner.dir/src/unify.cpp.o
-[ 85%] Building CXX object CMakeFiles/planner.dir/src/undoChangeValue.cpp.o
-[ 88%] Building CXX object CMakeFiles/planner.dir/src/unifier.cpp.o
-[ 91%] Building CXX object CMakeFiles/planner.dir/src/undoCLinks.cpp.o
-[ 91%] Building CXX object CMakeFiles/planner.dir/src/xmlwriter.cpp.o
-[ 92%] Building CXX object CMakeFiles/planner.dir/src/unifierTable.cpp.o
+[ 90%] Building CXX object CMakeFiles/planner.dir/src/unifier.cpp.o
+[ 91%] Building CXX object CMakeFiles/planner.dir/src/unifierTable.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 92%] Building CXX object CMakeFiles/planner.dir/src/unify.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 [ 94%] Building CXX object CMakeFiles/planner.dir/src/variablesymbol.cpp.o
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 [ 95%] Building CXX object CMakeFiles/planner.dir/src/wheneffect.cpp.o
-[ 97%] Building CXX object CMakeFiles/planner.dir/src/tcnm-ac3.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 97%] Building CXX object CMakeFiles/planner.dir/src/xmlwriter.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+[ 98%] Building CXX object CMakeFiles/planner.dir/src/tcnm-ac3.cpp.o
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
 In file included from /usr/include/string.h:495,
@@ -858,76 +859,11 @@ In function 'char* strncpy(char*, const char*, size_t)',
 /usr/include/x86_64-linux-gnu/bits/string_fortified.h:106:34: warning: 'char* __builtin_strncpy(char*, const char*, long unsigned int)' specified bound 5 equals destination size [-Wstringop-truncation]
   106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
       |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/planner/planner/src/controlrules.cpp: In member function 'int Controlrules::selectMethod(StackNode*)':
-/planner/planner/src/controlrules.cpp:58:6: warning: variable 'mcount' set but not used [-Wunused-but-set-variable]
-   58 |  int mcount;
-      |      ^~~~~~
-/planner/planner/src/controlrules.cpp: In member function 'int Controlrules::selectUnification(StackNode*)':
-/planner/planner/src/controlrules.cpp:75:6: warning: variable 'ucount' set but not used [-Wunused-but-set-variable]
-   75 |  int ucount;
-      |      ^~~~~~
-/planner/planner/src/pyLiteral.cpp:358:13: warning: 'void SdxLiteral_initModule(PyObject*)' defined but not used [-Wunused-function]
-  358 | static void SdxLiteral_initModule(PyObject * m){
-      |             ^~~~~~~~~~~~~~~~~~~~~
-In file included from /planner/planner/src/pyLiteral.cpp:14:
-/planner/planner/src/pyUTable.cpp:234:13: warning: 'void SdxUTable_initModule(PyObject*)' defined but not used [-Wunused-function]
-  234 | static void SdxUTable_initModule(PyObject * m){
-      |             ^~~~~~~~~~~~~~~~~~~~
-In file included from /planner/planner/src/pyUTable.cpp:9,
-                 from /planner/planner/src/pyLiteral.cpp:14:
-/planner/planner/src/pyTerm.cpp:221:13: warning: 'void SdxTerm_initModule(PyObject*)' defined but not used [-Wunused-function]
-  221 | static void SdxTerm_initModule(PyObject * m){
-      |             ^~~~~~~~~~~~~~~~~~
-In file included from /usr/include/string.h:495,
-                 from /usr/include/python2.7/Python.h:38,
-                 from /planner/planner/include/constants.hh:5,
-                 from /planner/planner/include/primitivetask.hh:3,
-                 from /planner/planner/src/primitivetask.cpp:1:
-In function 'char* strncpy(char*, const char*, size_t)',
-    inlined from 'const char* PrimitiveTask::replaceVars(std::string, const std::pair<unsigned int, unsigned int>*, const std::vector<std::pair<long int, long int> >*) const' at /planner/planner/src/primitivetask.cpp:559:24:
-/usr/include/x86_64-linux-gnu/bits/string_fortified.h:106:34: warning: 'char* __builtin_strncpy(char*, const char*, long unsigned int)' output may be truncated copying 123 bytes from a string of length 123 [-Wstringop-truncation]
-  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
-      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from yacc/parser.yy:31:
 /planner/planner/include/sortgoal.hh: In member function 'bool CriteriaF::operator()(Unifier*, Unifier*) const':
 /planner/planner/include/sortgoal.hh:37:30: warning: variable 'e' set but not used [-Wunused-but-set-variable]
    37 |  criteriacit i = f->begin(), e = f->end();
       |                              ^
-/planner/planner/src/timeLineLitEffect.cpp: In member function 'void TimeLineLiteralEffect::generateNIntervals(int, int)':
-/planner/planner/src/timeLineLitEffect.cpp:112:2: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
-  112 |  if(max > nmax || nmax == -1)
-      |  ^~
-/planner/planner/src/timeLineLitEffect.cpp:115:6: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
-  115 |      for(int i = nmax; i < max; i++){
-      |      ^~~
-/planner/planner/src/plan.cpp: In member function 'bool Plan::solve()':
-/planner/planner/src/plan.cpp:373:24: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<StackNode*>::size_type' {aka 'long unsigned int'} [-Wsign-compare]
-  373 |         for (int i=0; i<stack_copy.size(); i++) {
-      |                       ~^~~~~~~~~~~~~~~~~~
-/planner/planner/src/plan.cpp:396:24: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<StackNode*>::size_type' {aka 'long unsigned int'} [-Wsign-compare]
-  396 |         for (int i=0; i<stack_copy.size(); i++) {
-      |                       ~^~~~~~~~~~~~~~~~~~
-/planner/planner/src/plan.cpp:397:17: warning: unused variable 'mpos' [-Wunused-variable]
-  397 |             int mpos = stack_copy.at(i)->mpos;
-      |                 ^~~~
-/planner/planner/src/pyAPI.cpp:189:20: warning: 'SiadexMethods' defined but not used [-Wunused-variable]
-  189 | static PyMethodDef SiadexMethods[] = {
-      |                    ^~~~~~~~~~~~~
-In file included from /planner/planner/src/pyAPI.cpp:15:
-/planner/planner/src/pyLiteral.cpp:358:13: warning: 'void SdxLiteral_initModule(PyObject*)' defined but not used [-Wunused-function]
-  358 | static void SdxLiteral_initModule(PyObject * m){
-      |             ^~~~~~~~~~~~~~~~~~~~~
-In file included from /planner/planner/src/pyLiteral.cpp:14,
-                 from /planner/planner/src/pyAPI.cpp:15:
-/planner/planner/src/pyUTable.cpp:234:13: warning: 'void SdxUTable_initModule(PyObject*)' defined but not used [-Wunused-function]
-  234 | static void SdxUTable_initModule(PyObject * m){
-      |             ^~~~~~~~~~~~~~~~~~~~
-In file included from /planner/planner/src/pyUTable.cpp:9,
-                 from /planner/planner/src/pyLiteral.cpp:14,
-                 from /planner/planner/src/pyAPI.cpp:15:
-/planner/planner/src/pyTerm.cpp:221:13: warning: 'void SdxTerm_initModule(PyObject*)' defined but not used [-Wunused-function]
-  221 | static void SdxTerm_initModule(PyObject * m){
-      |             ^~~~~~~~~~~~~~~~~~
 /planner/planner/src/debugger.cpp: In member function 'void Debugger::printLiteral(const LiteralGoal*) const':
 /planner/planner/src/debugger.cpp:260:10: warning: variable 'matching' set but not used [-Wunused-but-set-variable]
   260 |     bool matching=false;
@@ -940,13 +876,18 @@ In file included from /planner/planner/src/pyUTable.cpp:9,
 /planner/planner/src/debugger.cpp:684:9: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
   684 |     int ret = system(command.c_str());
       |         ^~~
-/planner/planner/src/pyUTable.cpp:234:13: warning: 'void SdxUTable_initModule(PyObject*)' defined but not used [-Wunused-function]
-  234 | static void SdxUTable_initModule(PyObject * m){
-      |             ^~~~~~~~~~~~~~~~~~~~
-In file included from /planner/planner/src/pyUTable.cpp:9:
-/planner/planner/src/pyTerm.cpp:221:13: warning: 'void SdxTerm_initModule(PyObject*)' defined but not used [-Wunused-function]
-  221 | static void SdxTerm_initModule(PyObject * m){
-      |             ^~~~~~~~~~~~~~~~~~
+/planner/planner/src/controlrules.cpp: In member function 'int Controlrules::selectMethod(StackNode*)':
+/planner/planner/src/controlrules.cpp:58:6: warning: variable 'mcount' set but not used [-Wunused-but-set-variable]
+   58 |  int mcount;
+      |      ^~~~~~
+/planner/planner/src/controlrules.cpp: In member function 'int Controlrules::selectUnification(StackNode*)':
+/planner/planner/src/controlrules.cpp:75:6: warning: variable 'ucount' set but not used [-Wunused-but-set-variable]
+   75 |  int ucount;
+      |      ^~~~~~
+/planner/planner/src/expansiontree.cpp: In constructor 'ExpansionTree::ExpansionTree(const TPlan*, const TaskNetwork*)':
+/planner/planner/src/expansiontree.cpp:8:20: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+    8 |     tasklistcit i, e= tn->getEndTask();
+      |                    ^
 /planner/planner/src/method.cpp: In member function 'void Method::print(std::ostream*, int) const':
 /planner/planner/src/method.cpp:83:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
    83 |     if(tasknetwork)
@@ -954,13 +895,16 @@ In file included from /planner/planner/src/pyUTable.cpp:9:
 /planner/planner/src/method.cpp:86:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
    86 |  *os << s << ")";
       |  ^
-/planner/planner/src/expansiontree.cpp: In constructor 'ExpansionTree::ExpansionTree(const TPlan*, const TaskNetwork*)':
-/planner/planner/src/expansiontree.cpp:8:20: warning: variable 'e' set but not used [-Wunused-but-set-variable]
-    8 |     tasklistcit i, e= tn->getEndTask();
-      |                    ^
-/planner/planner/src/pyTerm.cpp:221:13: warning: 'void SdxTerm_initModule(PyObject*)' defined but not used [-Wunused-function]
-  221 | static void SdxTerm_initModule(PyObject * m){
-      |             ^~~~~~~~~~~~~~~~~~
+/planner/planner/src/plan.cpp: In member function 'bool Plan::solve()':
+/planner/planner/src/plan.cpp:373:24: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<StackNode*>::size_type' {aka 'long unsigned int'} [-Wsign-compare]
+  373 |         for (int i=0; i<stack_copy.size(); i++) {
+      |                       ~^~~~~~~~~~~~~~~~~~
+/planner/planner/src/plan.cpp:396:24: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<StackNode*>::size_type' {aka 'long unsigned int'} [-Wsign-compare]
+  396 |         for (int i=0; i<stack_copy.size(); i++) {
+      |                       ~^~~~~~~~~~~~~~~~~~
+/planner/planner/src/plan.cpp:397:17: warning: unused variable 'mpos' [-Wunused-variable]
+  397 |             int mpos = stack_copy.at(i)->mpos;
+      |                 ^~~~
 /planner/planner/src/interface.cpp: In function 'char* getName()':
 /planner/planner/src/interface.cpp:63:10: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
    63 |   return "";
@@ -1044,6 +988,23 @@ In file included from /planner/planner/src/pyUTable.cpp:9:
 /planner/planner/src/interface.cpp:1163:9: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
  1163 |  return "Not Implemented";
       |         ^~~~~~~~~~~~~~~~~
+/planner/planner/src/timeLineLitEffect.cpp: In member function 'void TimeLineLiteralEffect::generateNIntervals(int, int)':
+/planner/planner/src/timeLineLitEffect.cpp:112:2: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  112 |  if(max > nmax || nmax == -1)
+      |  ^~
+/planner/planner/src/timeLineLitEffect.cpp:115:6: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  115 |      for(int i = nmax; i < max; i++){
+      |      ^~~
+/planner/planner/src/pyTerm.cpp:221:13: warning: 'void SdxTerm_initModule(PyObject*)' defined but not used [-Wunused-function]
+  221 | static void SdxTerm_initModule(PyObject * m){
+      |             ^~~~~~~~~~~~~~~~~~
+/planner/planner/src/pyUTable.cpp:234:13: warning: 'void SdxUTable_initModule(PyObject*)' defined but not used [-Wunused-function]
+  234 | static void SdxUTable_initModule(PyObject * m){
+      |             ^~~~~~~~~~~~~~~~~~~~
+In file included from /planner/planner/src/pyUTable.cpp:9:
+/planner/planner/src/pyTerm.cpp:221:13: warning: 'void SdxTerm_initModule(PyObject*)' defined but not used [-Wunused-function]
+  221 | static void SdxTerm_initModule(PyObject * m){
+      |             ^~~~~~~~~~~~~~~~~~
 /planner/planner/src/interface.cpp: In function 'const char* getTypes()':
 /planner/planner/src/interface.cpp:89:7: warning: ignoring return value of 'char* gcvt(double, int, char*)', declared with attribute warn_unused_result [-Wunused-result]
    89 |   gcvt((int)(*b)->getId(), NUM_MAX_TYPES ,id);
@@ -1132,7 +1093,47 @@ In file included from /planner/planner/src/pyUTable.cpp:9:
 /planner/planner/src/interface.cpp:972:8: warning: ignoring return value of 'char* gcvt(double, int, char*)', declared with attribute warn_unused_result [-Wunused-result]
   972 |    gcvt(m_metaid, NUM_MAX_TASK ,mm_metaid);
       |    ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[ 98%] Linking CXX executable planner
+/planner/planner/src/pyLiteral.cpp:358:13: warning: 'void SdxLiteral_initModule(PyObject*)' defined but not used [-Wunused-function]
+  358 | static void SdxLiteral_initModule(PyObject * m){
+      |             ^~~~~~~~~~~~~~~~~~~~~
+In file included from /planner/planner/src/pyLiteral.cpp:14:
+/planner/planner/src/pyUTable.cpp:234:13: warning: 'void SdxUTable_initModule(PyObject*)' defined but not used [-Wunused-function]
+  234 | static void SdxUTable_initModule(PyObject * m){
+      |             ^~~~~~~~~~~~~~~~~~~~
+In file included from /planner/planner/src/pyUTable.cpp:9,
+                 from /planner/planner/src/pyLiteral.cpp:14:
+/planner/planner/src/pyTerm.cpp:221:13: warning: 'void SdxTerm_initModule(PyObject*)' defined but not used [-Wunused-function]
+  221 | static void SdxTerm_initModule(PyObject * m){
+      |             ^~~~~~~~~~~~~~~~~~
+/planner/planner/src/pyAPI.cpp:189:20: warning: 'SiadexMethods' defined but not used [-Wunused-variable]
+  189 | static PyMethodDef SiadexMethods[] = {
+      |                    ^~~~~~~~~~~~~
+In file included from /planner/planner/src/pyAPI.cpp:15:
+/planner/planner/src/pyLiteral.cpp:358:13: warning: 'void SdxLiteral_initModule(PyObject*)' defined but not used [-Wunused-function]
+  358 | static void SdxLiteral_initModule(PyObject * m){
+      |             ^~~~~~~~~~~~~~~~~~~~~
+In file included from /planner/planner/src/pyLiteral.cpp:14,
+                 from /planner/planner/src/pyAPI.cpp:15:
+/planner/planner/src/pyUTable.cpp:234:13: warning: 'void SdxUTable_initModule(PyObject*)' defined but not used [-Wunused-function]
+  234 | static void SdxUTable_initModule(PyObject * m){
+      |             ^~~~~~~~~~~~~~~~~~~~
+In file included from /planner/planner/src/pyUTable.cpp:9,
+                 from /planner/planner/src/pyLiteral.cpp:14,
+                 from /planner/planner/src/pyAPI.cpp:15:
+/planner/planner/src/pyTerm.cpp:221:13: warning: 'void SdxTerm_initModule(PyObject*)' defined but not used [-Wunused-function]
+  221 | static void SdxTerm_initModule(PyObject * m){
+      |             ^~~~~~~~~~~~~~~~~~
+In file included from /usr/include/string.h:495,
+                 from /usr/include/python2.7/Python.h:38,
+                 from /planner/planner/include/constants.hh:5,
+                 from /planner/planner/include/primitivetask.hh:3,
+                 from /planner/planner/src/primitivetask.cpp:1:
+In function 'char* strncpy(char*, const char*, size_t)',
+    inlined from 'const char* PrimitiveTask::replaceVars(std::string, const std::pair<unsigned int, unsigned int>*, const std::vector<std::pair<long int, long int> >*) const' at /planner/planner/src/primitivetask.cpp:559:24:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:106:34: warning: 'char* __builtin_strncpy(char*, const char*, long unsigned int)' output may be truncated copying 123 bytes from a string of length 123 [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[100%] Linking CXX executable planner
 [100%] Built target planner
 + cd /planner/parser
 + make -j
@@ -1170,5 +1171,5 @@ INFO:    Adding labels
 INFO:    Adding runscript
 INFO:    Creating SIF file...
 INFO:    Build complete: ../SIADEX.sif
-%TIME 1:51.80 747232
+%TIME 1:47.42 736460
 %EXIT 0

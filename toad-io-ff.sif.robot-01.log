@@ -1,0 +1,82 @@
+INFO:    underlay of /etc/localtime required more than 50 (80) bind mounts
+pandaPIparser is configured as follows
+  Colors in output: true
+  Mode: parsing mode
+  Parameter splitting: true
+  Conditional effects: exponential encoding
+  Disjunctive preconditions as HTN: false
+  Replace goal with action: false
+  Output: pandaPI format
+TOAD - Total Order HTN Approximation with DFA.
+You have compiled TOAD without setting the NDEBUG flag. This will make it slow and should only be done for debug.
+Reading HTN model from file "domain-problem.psas" ... 
+- State has 4 bits divided into 2 mutex groups. [statebits=4] [statevars=2]
+- Domain contains 5 actions. [numActions=5]
+- Domain contains 9 tasks. [numTasks=9]
+- Domain contains 8 methods. [numMethods=8]
+- The initial state contains 2 set bits.
+- The initial task is "__top[]".
+- State-based goal contains 0 bits.
+- [timePrepareModel=1]
+Starting translation
+- adding methods as grammar rules
+Analysing rules
+- starting grammar simplification
+- 0 rules are not bottom-up reachable.
+- sorting rules...(done)
+- calculating SCCs...
+- number of SCCs: 9 [numSCCs=9]
+- number of cyclic SCCs: 1. [cyclicSCCs=1]
+- self-loops: 1. [sccSelfLoops=1]
+- collecting SCC data
+- analysing recursion...(done)
+- partitions of recursive tasks:
+- recursive structure: [rrec=yes] [lrec=no] [srec=no] [crec=no]
+- instance properties:
+  - the instance is recursive, but not self-embedding, i.e. it is regular. [rec=nonSelfEmbedding]
+  - using exact translation. [alg=exact]
+- [timeHtnToGrammar=2]
+Building DFA
+- Using bottom-up algorithm [algo=bu]
+- inplace threshold [ipt=15]
+- building sub-automata...
+  0%
+ 25% [0]
+ 50% [0]
+ 75% [0]
+100% [timeBuildFA=2]
+final automaton has 2 states [faFinalStates=2].
+- [usePostOpt=true]
+- [roundsOfSuccOpt=0]
+- [postOptimization=0]
+- [numStatesFinal=2]
+- [buildingDFA=2]
+- counting actions...
+- [timeCountingActions=0]
+- [numActions=5]
+- writing FA distance for each state (used in special FD heuristic)
+Creating heuristic lookup table
+- [writingHfaLookUpTable=0]
+[t=7.19e-05s, 10164 KB] reading input...
+[t=0.000266108s, 10164 KB] done reading input!
+argument error: unknown option -evaluator
+Usage error occurred.
+Peak memory: 10420 KB
+pandaPIparser is configured as follows
+  Colors in output: true
+  Mode: convert pandaPI plan
+%TIME 0:00.25 35984
+%EXIT 0
+pandaPIparser is configured as follows
+  Colors in output: false
+  Mode: plan verification
+  Verbosity: 1
+  Lenient mode: false
+  Ignore given order: false
+Reading plan given as input
+Size of primitive plan: 0
+Reading list of integers from ""
+Root tasks (0):
+Reading plan given as input
+Reached end of input.
+No plan provided

@@ -1,0 +1,68 @@
+INFO:    underlay of /etc/localtime required more than 50 (86) bind mounts
+===== Preprocessing ======
+Removed 98 unusable effects
+Substitution from predicate to state variable:
+ - ORIGIN
+ - LOCKED-ORIGIN
+ - FLAGGED-ORIGIN
+ - DESTIN
+ - LOCKED-DESTIN
+ - FLAGGED-DESTIN
+ - LOCKED-ABOVE
+ - FLAGGED-ABOVE
+ - NOT-BOARDED
+ - LOCKED-NOT-BOARDED
+ - FLAGGED-NOT-BOARDED
+ - NOT-SERVED
+ - LOCKED-NOT-SERVED
+ - FLAGGED-NOT-SERVED
+Transforming static state functions as table constraints:
+ - ORIGIN
+ - LOCKED-ORIGIN
+ - FLAGGED-ORIGIN
+ - DESTIN
+ - LOCKED-DESTIN
+ - FLAGGED-DESTIN
+ - ABOVE
+ - LOCKED-ABOVE
+ - FLAGGED-ABOVE
+ - NOT-BOARDED
+ - LOCKED-NOT-BOARDED
+ - FLAGGED-NOT-BOARDED
+ - NOT-SERVED
+ - LOCKED-NOT-SERVED
+ - FLAGGED-NOT-SERVED
+==========================
+0 Solving with depth 0
+  [0.000s] Populated
+  [0.001s] Solved
+1 Solving with depth 1
+  [0.001s] Populated
+  [0.001s] Solved
+2 Solving with depth 2
+  [0.001s] Populated
+  [0.002s] Solved
+3 Solving with depth 3
+  [0.002s] Populated
+  [0.003s] Solved
+4 Solving with depth 4
+  [0.003s] Populated
+  [0.004s] Solved
+5 Solving with depth 5
+  [0.004s] Populated
+  [0.009s] Solved
+6 Solving with depth 6
+  [0.009s] Populated
+  [0.023s] Solved
+7 Solving with depth 7
+  [0.023s] Populated
+  [0.063s] Solved
+8 Solving with depth 8
+  [0.064s] Populated
+  [1.124s] Solved
+9 Solving with depth 9
+  [1.126s] Populated
+Command exited with non-zero status 124
+%TIME 0:02.01 508700
+%EXIT 124
+NO OUTPUT
