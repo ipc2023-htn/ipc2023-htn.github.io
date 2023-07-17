@@ -70,7 +70,7 @@ strong {
 }
 
 .wrapper {
-  width:1600px;
+  width:90%;
   margin:0 auto;
   position:relative;
 }
@@ -288,10 +288,11 @@ header {
 }
 
 section {
-  width:1590px;
+  width:70%;
   padding: 30px 30px 50px 30px;
   margin: 20px 0;
   margin-top: 190px;
+  margin-left:190px;
   position:relative;
   background: #fbfbfb;
   border-radius: 3px;
@@ -308,7 +309,7 @@ nav {
   position: fixed;
   top: 220px;
   left:50%;
-  margin-left:-1580px;
+  margin-left:-50%;
   text-align: left;
 
   ul {
@@ -362,7 +363,7 @@ footer {
   width:180px;
   position: fixed;
   left:50%;
-  margin-left:-530px;
+  margin-left:-45%;
   bottom:20px;
   text-align: right;
   line-height: 16px;
