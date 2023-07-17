@@ -5,6 +5,8 @@
 ## Total Order Tracks
 
 ### Satisficing Track
+
+
 |planner|total|Assembly|Barman BDI|Blocksworld HPDDL|Depots|Factories simple|Freecell Learned|Hiking|Logistics Learned|Minecraft Player|Minecraft Regular|Monroe Fully|Monroe Partially|Multiarm Blocksworld|Robot|Rover GTOHP|Satellite GTOHP|Towers|Transport|Woodworking|SharpSAT|lamps|Snake|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |PandaDealer-agile-lama|15.28808|0.89|0.78|0.77|0.90|0.67|0.13|0.83|0.98|0.20|0.71|0.94|0.68|0.95|0.92|0.88|0.92|0.65|0.73|0.69|0.46|0.48|0.14|
