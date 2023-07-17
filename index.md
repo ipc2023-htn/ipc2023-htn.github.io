@@ -114,9 +114,32 @@ For each planning system submitted, a maximum of **three** different configurati
 
 A modification of somebody else's HTN planning system is a valid submission if and only if the original author(s) have been made aware of the submission and are consenting.
 
-## Current Status of Planner Submissions
+
+## Participants
+
+The following planning systems participated in the HTN track of the IPC 2023.
+In this table, you can find the link to the repositories for each competitior as well as links to the apptainer containers we build based on them.
+
+### Current Status of Planner Submissions
 
 See [status page](https://ipc2023-htn.github.io/plannerStatus.html).
+
+
+
+## Results
+The IPC 2023 has concluded and the results have been presented at [ICAPS 2023 in Prague](https://icaps23.icaps-conference.org/).
+
+The winners are:
+
+
+| Track | Winner | Runner-Up | 
+|---|---|---|
+|Total-Order Satisficing | PandaDealer-agile-lama <br> *Conny Olz, Daniel Höller, Pascal Bercher* | PANDApro $\lambda$ AO <br> *Daniel Höller* |
+|Total-Order Agile | PandaDealer-agile-1 and PandaDealer-agile-lama <br> *Conny Olz, Daniel Höller, Pascal Bercher* | PANDApro $\lambda$ lm-cut <br> *Daniel Höller* |
+|Total-Order Optimal | PandaDealer-optimal <br> *Conny Olz, Daniel Höller, Pascal Bercher* | PANDApro lm-cut and PANDApro DOF <br> *Daniel Höller* |
+|Partial-Order Satisficing | Grounded-Linear-Satisficing <br> *Ying Xian Wu, Conny Olz, Songtuan Lin, Pascal Bercher* | PANDApro $\lambda$ AO and lm-cut <br> *Daniel Höller* |
+|Partial-Order Agile | Grounded-Linear-Agile <br> *Ying Xian Wu, Conny Olz, Songtuan Lin, Pascal Bercher* | PANDApro $\lambda$ AO and lm-cut <br> *Daniel Höller* |
+|Partial-Order Optimal | PANDApro lm-cut <br> *Daniel Höller* | Aries <br> *Arthur Bit-Monnot* |
 
 ## Organizers
  - [Ron Alford](ronwalf@volus.net) (MITRE)
