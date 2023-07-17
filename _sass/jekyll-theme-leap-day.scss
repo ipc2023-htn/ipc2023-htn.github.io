@@ -16,10 +16,6 @@ body {
   background: url(../images/body-background.png) #eae6d1;
 }
 
-.inner {
-  max-width: 85%;
-}
-
 h1, h2, h3, h4, h5, h6 {
   color:#333;
   margin:0 0 10px;
@@ -39,7 +35,7 @@ h1 {
 
 h2 {
   font-size: 24px;
-  color:#ff0000;
+  color:#393939;
 }
 
 h3, h4, h5, h6 {
@@ -74,7 +70,7 @@ strong {
 }
 
 .wrapper {
-  width:650px;
+  width:80%;
   margin:0 auto;
   position:relative;
 }
