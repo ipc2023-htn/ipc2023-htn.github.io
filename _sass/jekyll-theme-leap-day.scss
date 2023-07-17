@@ -128,6 +128,8 @@ kbd {
 table {
   width:100%;
   border-collapse:collapse;
+  display: block;
+  white-space: nowrap;
   overflow-x: auto;
 }
 
