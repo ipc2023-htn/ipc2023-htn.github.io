@@ -16,6 +16,10 @@ body {
   background: url(../images/body-background.png) #eae6d1;
 }
 
+.inner {
+  max-width: 85%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color:#333;
   margin:0 0 10px;
