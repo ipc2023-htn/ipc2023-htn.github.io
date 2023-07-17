@@ -120,14 +120,46 @@ A modification of somebody else's HTN planning system is a valid submission if a
 The following planning systems participated in the HTN track of the IPC 2023.
 In this table, you can find the link to the repositories for each competitior as well as links to the apptainer containers we build based on them.
 
+### Participants
+
+In the following table, you can find all participating planners from the HTN track of the IPC 2023. The linked github repositories contain the planners as used in the IPC evaluation.
+We also provide the apptainer images we build for every planner. **Note: these links are currently not available as we have not uploaded the files yet**
+*Note: We cannot provide the apptainer containers for the configurations ppro-xo-opt-as-dof-ao, ppro-xo-opt-as-dof-lmc, and ppro-xo-opt-as-lmc. These require CPLEX to build -- which cannot be provided as public download. If you which to run these planners, you need to obtain your own license for CPLEX and add CPLEX to the build process of the repository.*
+
+| Participant | Authors | Github | Containers | 
+|---|---|---|---|
+| Aries | Arthur Bit-Monnot | [Aries](https://github.com/ipc2023-htn/Aries) | [aries-sat]() <br> [aries-agile]() <br> [aries-opt]() |
+| SIADEX | Ignacio Vellido Expósito, Jorge Soler-Padial, <br> Juan Fernández Olivares, Luis Castillo | [SIADEX](https://github.com/ipc2023-htn/SIADEX) | [SIADEX]() |
+| Lifted Linear | Ying Xian Wu, Conny Olz, <br> Songtuan Lin, Pascal Bercher | [Lifted Linear](https://github.com/ipc2023-htn/lifted-linear) | [LiftedLinear-1]() <br> [LiftedLinear-2]() <br> [LiftedLinear-3]() |
+| Linear Simple | Ying Xian Wu, Conny Olz, <br> Songtuan Lin, Pascal Bercher | [Linear Simple](https://github.com/ipc2023-htn/Linear-Simple) | [LinearSimple-agile-1]() <br> [LinearSimple-agile-2]() <br> [LinearSimple-agile-3]() <br> [LinearSimple-sat-1]() <br> [LinearSimple-sat-2]() <br> [LinearSimple-sat-3]() |
+| Linear Complex | Ying Xian Wu, Conny Olz, <br> Songtuan Lin, Pascal Bercher | [Linear Complex](https://github.com/ipc2023-htn/Linear-Complex/) | [LinearComplex-agile-1]() <br> [LinearComplex-agile-2]() <br> [LinearComplex-agile-3]() <br> [LinearComplex-sat-1]() <br> [LinearComplex-sat-2]() <br> [LinearComplex-sat-3]()|
+| PANDApro | Daniel Höller | [PANDApro](https://github.com/ipc2023-htn/pandaPi) | [lamda-po-agl-gas-ao]()<br> [lamda-po-agl-gas-lmc]()<br> [lamda-to-agl-gbfs-ao]()<br> [lamda-to-agl-gbfs-lmc]()<br> [ppro-po-agl-gas-ff]()<br> [ppro-po-sat-gas-ff]()<br> [ppro-to-agl-gbfs-add]()<br> [ppro-to-sat-gbfs-add]()<br> *ppro-xo-opt-as-dof-ao* (requires CPLEX)<br> *ppro-xo-opt-as-dof-lmc* (requires CPLEX) <br> *ppro-xo-opt-as-lmc* (requires CPLEX) |
+| TOAD | Daniel Höller | [TOAD](https://github.com/ipc2023-htn/toad) | [toad-io-dfad]()<br> [toad-io-ff]() <br> [toad-po-dfad]()  |
+| PandaDealer | Conny Olz, Daniel Höller, <br> Pascal Bercher | [PandaDealer](https://github.com/ipc2023-htn/PandaDealer) | [PandaDealer-agile-1]()<br> [PandaDealer-agile-2]()<br> [PandaDealer-agile-lama]()<br> [PandaDealer-optimal]()<br> [PandaDealer-sat-1]()     <br> [PandaDealer-sat-2]() |
+| PDDL4J | Gaspard Quenard, Oleksandr Firsov, <br> Damien Pellier, Humbert Fiorino | [PDDL4J](https://github.com/ipc2023-htn/PDDL4J) | [LiftedTreePath]()<br>[OptiPlan]()|
+
 ### Current Status of Planner Submissions
 
 See [status page](https://ipc2023-htn.github.io/plannerStatus.html).
 
 
+## Benchmark Set
+We have used most of the domain from the previous IPC 2020. For both the Total-Order and the Partial-Order Tracks, we have added two new domains:
+ - SharpSAT (total-order, by Dominik Schreiber)
+ - Lamps (total-order, by Gregor Behnke)
+ - Ultralight-Cockpit (partial-order, by Jane Jean Kiam)
+ - Colouring (partial-order, by Gregor Behnke)
+
+The full set of instances used for the HTN Track of the IPC 2023 is available on [github](https://github.com/ipc2023-htn/ipc2023-domains).
+
+
+
 
 ## Results
 The IPC 2023 has concluded and the results have been presented at [ICAPS 2023 in Prague](https://icaps23.icaps-conference.org/).
+The results presentation can be found [here](https://ipc2023-htn.github.io/results-presentation.pdf).
+The full results tables can be found [here](https://ipc2023-htn.github.io/results).
+You can download the raw log files of the planners and the per-instances scores for the TO Track (*not yet available*) and the [PO Track](https://ipc2023-htn.github.io/ipc2023-po-raw-data.zip).
 
 The winners are:
 
