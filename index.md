@@ -2,7 +2,7 @@
 
 This is the website for the hierarchical (HTN) tracks of the
 [IPC 2023](https://ipc2023.github.io).
-It is the 2nd IPC containing hierarchical tracks, after its first occurance in [2020](https://ipc.hierarchical-task.net).
+It is the 2nd IPC containing hierarchical tracks, after its first occurance in [2020](https://ipc2020.hierarchical-task.net/).
 
 
 ## Calls
@@ -30,7 +30,7 @@ Please forward the following calls to all interested parties.
 
 
 ## Tracks
-There will be (up to, provided sufficient interesst) six tracks in IPC's HTN track. These are:
+There will be (up to, provided sufficient interest) six tracks in IPC's HTN track. These are:
  - Total-Order Agile
  - Total-Order Satisficing
  - Total-Order Optimal
@@ -77,7 +77,7 @@ The semantics of these tracks is explained in the following.
 
 
 ## HDDL Fragment
-We will use the same input language as the previous [HTN IPC 2020](https://ipc.hierarchical-task.net/benchmarks/input-language)
+We will use the same input language as the previous [HTN IPC 2020](https://ipc2020.hierarchical-task.net/benchmarks/input-language)
 
 ## Technical Issues.
 Competitors are required to submit their code via a github repository that was set up by the track's organisers. At the time of submission, these repositories will be private and will be made public after the competition results have been announced.
