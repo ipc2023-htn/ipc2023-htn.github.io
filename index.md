@@ -173,6 +173,28 @@ The winners are:
 |Partial-Order Agile | Grounded-Linear-Agile <br> *Ying Xian Wu, Conny Olz, Songtuan Lin, Pascal Bercher* | PANDApro $\lambda$ AO and lm-cut <br> *Daniel Höller* |
 |Partial-Order Optimal | PANDApro lm-cut <br> *Daniel Höller* | Aries <br> *Arthur Bit-Monnot* |
 
+## Proceedings and Planner Abstracts
+
+The preliminary versions of the planner abstracts can be found here.
+The participants can still submit a final version, which can also include an analysis of the behaviour of their planner in the IPC.
+We will publish these proceedings once we have them.
+
+
+| Participant | Planner Abstract | 
+|---|---|---|---|
+| Aries | [Aries](https://ipc2023-htn.github.io/proceedings/Bit-Monnot-2023-IPC-Aries.pdf) |
+| SIADEX | SIADEX |
+| Lifted Linear | Lifted Linear |
+| Linear Simple | Linear Simple |
+| Linear Complex | Linear Complex |
+| PANDApro | [PANDApro](https://ipc2023-htn.github.io/proceedings/Hoeller-2023-IPC-PandaPro.pdf) <br> [PANDApro $\lambda$](https://ipc2023-htn.github.io/proceedings/Hoeller-2023-IPC-Lambda.pdf)  |
+| TOAD |[TOAD](https://ipc2023-htn.github.io/proceedings/Hoeller-2023-IPC-Toad.pdf) |
+| PandaDealer |  |
+| PDDL4J | [LiftedTreePath](https://ipc2023-htn.github.io/proceedings/Quenard-2023-IPC-LiftedTreePath.pdf) <br> [OptiPlan](https://ipc2023-htn.github.io/proceedings/Firsov-2023-IPC-OptiPlan.pdf)|
+
+
+The full results tables can be found [here](https://ipc2023-htn.github.io/results).
+
 ## Organizers
  - [Ron Alford](ronwalf@volus.net) (MITRE)
  - [Dominik Schreiber](dominik.schreiber@kit.edu) (Karlsruhe Institute of Technology)
