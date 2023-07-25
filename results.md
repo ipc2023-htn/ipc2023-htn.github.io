@@ -83,6 +83,10 @@ aries-opt|0.15000|DNS|0.15|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|D
 |lamda-po-agl-gas-lmc|6.28603|0.15|0.95|0.66|0.82|0.37|0.99|0.29|1.00|0.39|0.66|
 |aries-sat|4.73026|0.15|0.44|0.52|0.59|0.79|1.00|0.32|0.66|0.00|0.27|
 |SIADEX|2.17641|0.62|0.26|0.04|0.00|0.31|0.83|0.03|0.00|0.09|0.00|
+|OptiPlan|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|
+
+
+**Note:** OptiPlan was disqualified as it produced invalid plans in two domains (Satellite [instance 1obs-2sat-1mod.hddl] and Woodworking [instances 01--p01-complete.hddl and 02--p02-part1.hddl])
 
 
 
@@ -93,21 +97,23 @@ aries-opt|0.15000|DNS|0.15|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|D
 
 |planner|total|Barman BDI|Monroe Fully|Monroe Partially|PCP|Rover|Satellite|Transport|Ultralight Cockpit|Woodworking|colouring|
 |---|---|---|---|---|---|---|---|---|---|---|---|
-LinearSimple-agile-2|7.03533|0.81|0.57|0.44|0.82|1.00|1.00|0.52|0.93|0.63|0.30|
-LinearComplex-agile-2|7.01996|0.85|0.50|0.43|0.82|1.00|1.00|0.54|0.93|0.64|0.31|
-LinearComplex-agile-1|6.89761|0.75|0.49|0.34|0.82|1.00|1.00|0.63|0.93|0.62|0.31|
-LinearComplex-agile-3|6.89485|0.75|0.49|0.32|0.82|1.00|1.00|0.66|0.93|0.61|0.31|
-LinearSimple-agile-1|6.81972|0.70|0.57|0.35|0.82|0.99|1.00|0.54|0.93|0.61|0.30|
-LinearSimple-agile-3|6.64191|0.51|0.57|0.33|0.82|1.00|1.00|0.57|0.93|0.60|0.30|
-LiftedLinear-1|6.44606|0.70|0.51|0.60|0.00|0.97|1.00|0.78|0.97|0.91|0.00|
-LiftedLinear-2|6.24541|0.75|0.43|0.48|0.00|0.99|1.00|0.88|0.98|0.74|0.00|
-LiftedLinear-3|5.20113|0.74|0.38|0.40|0.00|0.58|1.00|0.64|0.85|0.60|0.00|
-lamda-po-agl-gas-ao|5.01524|0.08|0.50|0.36|0.82|0.36|0.99|0.34|0.92|0.36|0.29|
-ppro-po-agl-gas-ff|5.00565|0.10|0.53|0.36|0.82|0.32|1.00|0.30|0.91|0.36|0.30|
-lamda-po-agl-gas-lmc|4.95080|0.08|0.50|0.34|0.82|0.38|1.00|0.26|0.90|0.39|0.29|
-aries-agile|3.22657|0.05|0.21|0.26|0.38|0.44|1.00|0.20|0.58|0.00|0.12|
-SIADEX|3.03256|0.92|0.24|0.05|0.00|0.70|1.00|0.03|0.00|0.10|0.00|
+|LinearSimple-agile-2|7.03533|0.81|0.57|0.44|0.82|1.00|1.00|0.52|0.93|0.63|0.30|
+|LinearComplex-agile-2|7.01996|0.85|0.50|0.43|0.82|1.00|1.00|0.54|0.93|0.64|0.31|
+|LinearComplex-agile-1|6.89761|0.75|0.49|0.34|0.82|1.00|1.00|0.63|0.93|0.62|0.31|
+|LinearComplex-agile-3|6.89485|0.75|0.49|0.32|0.82|1.00|1.00|0.66|0.93|0.61|0.31|
+|LinearSimple-agile-1|6.81972|0.70|0.57|0.35|0.82|0.99|1.00|0.54|0.93|0.61|0.30|
+|LinearSimple-agile-3|6.64191|0.51|0.57|0.33|0.82|1.00|1.00|0.57|0.93|0.60|0.30|
+|LiftedLinear-1|6.44606|0.70|0.51|0.60|0.00|0.97|1.00|0.78|0.97|0.91|0.00|
+|LiftedLinear-2|6.24541|0.75|0.43|0.48|0.00|0.99|1.00|0.88|0.98|0.74|0.00|
+|LiftedLinear-3|5.20113|0.74|0.38|0.40|0.00|0.58|1.00|0.64|0.85|0.60|0.00|
+|lamda-po-agl-gas-ao|5.01524|0.08|0.50|0.36|0.82|0.36|0.99|0.34|0.92|0.36|0.29|
+|ppro-po-agl-gas-ff|5.00565|0.10|0.53|0.36|0.82|0.32|1.00|0.30|0.91|0.36|0.30|
+|lamda-po-agl-gas-lmc|4.95080|0.08|0.50|0.34|0.82|0.38|1.00|0.26|0.90|0.39|0.29|
+|aries-agile|3.22657|0.05|0.21|0.26|0.38|0.44|1.00|0.20|0.58|0.00|0.12|
+|SIADEX|3.03256|0.92|0.24|0.05|0.00|0.70|1.00|0.03|0.00|0.10|0.00|
+|OptiPlan|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|
 
+**Note:** OptiPlan was disqualified as it produced invalid plans in two domains (Satellite [instance 1obs-2sat-1mod.hddl] and Woodworking [instances 01--p01-complete.hddl and 02--p02-part1.hddl])
 
 
 
@@ -117,10 +123,10 @@ SIADEX|3.03256|0.92|0.24|0.05|0.00|0.70|1.00|0.03|0.00|0.10|0.00|
 
 |planner|total|Barman BDI|Monroe Fully|Monroe Partially|PCP|Rover|Satellite|Transport|Ultralight Cockpit|Woodworking|colouring|
 |---|---|---|---|---|---|---|---|---|---|---|---|
-ppro-xo-opt-as-lmc|5.30353|0.10|0.72|0.60|0.82|0.30|0.96|0.10|1.00|0.43|0.27|
-ppro-xo-opt-as-dof-lmc|3.89560|0.05|0.00|0.00|0.82|0.30|0.96|0.30|0.86|0.43|0.17|
-ppro-xo-opt-as-dof-ao|3.74560|0.05|0.00|0.00|0.82|0.25|0.96|0.30|0.86|0.33|0.17|
-aries-opt|2.10517|0.05|DNS|DNS|DNS|0.40|1.00|DNS|0.66|0.00|DNS|
+|ppro-xo-opt-as-lmc|5.30353|0.10|0.72|0.60|0.82|0.30|0.96|0.10|1.00|0.43|0.27|
+|ppro-xo-opt-as-dof-lmc|3.89560|0.05|0.00|0.00|0.82|0.30|0.96|0.30|0.86|0.43|0.17|
+|ppro-xo-opt-as-dof-ao|3.74560|0.05|0.00|0.00|0.82|0.25|0.96|0.30|0.86|0.33|0.17|
+|aries-opt|2.10517|0.05|DNS|DNS|DNS|0.40|1.00|DNS|0.66|0.00|DNS|
 
 
 **Note:** aries-opt does not support domains that contain recursive decomposition methods. It thus only participated on the acyclic domains in the benchmark set.
