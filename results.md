@@ -83,7 +83,7 @@ aries-opt|0.15000|DNS|0.15|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|D
 |lamda-po-agl-gas-lmc|6.28603|0.15|0.95|0.66|0.82|0.37|0.99|0.29|1.00|0.39|0.66|
 |aries-sat|4.73026|0.15|0.44|0.52|0.59|0.79|1.00|0.32|0.66|0.00|0.27|
 |SIADEX|2.17641|0.62|0.26|0.04|0.00|0.31|0.83|0.03|0.00|0.09|0.00|
-|OptiPlan|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|
+|OptiPlan|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|
 
 
 **Note:** OptiPlan was disqualified as it produced invalid plans in two domains (Satellite [instance 1obs-2sat-1mod.hddl] and Woodworking [instances 01--p01-complete.hddl and 02--p02-part1.hddl])
@@ -111,7 +111,7 @@ aries-opt|0.15000|DNS|0.15|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|D
 |lamda-po-agl-gas-lmc|4.95080|0.08|0.50|0.34|0.82|0.38|1.00|0.26|0.90|0.39|0.29|
 |aries-agile|3.22657|0.05|0.21|0.26|0.38|0.44|1.00|0.20|0.58|0.00|0.12|
 |SIADEX|3.03256|0.92|0.24|0.05|0.00|0.70|1.00|0.03|0.00|0.10|0.00|
-|OptiPlan|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|
+|OptiPlan|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|DSQ|
 
 **Note:** OptiPlan was disqualified as it produced invalid plans in two domains (Satellite [instance 1obs-2sat-1mod.hddl] and Woodworking [instances 01--p01-complete.hddl and 02--p02-part1.hddl])
 
