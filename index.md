@@ -194,7 +194,7 @@ We will publish these proceedings once we have them.
 | Linear Complex | Linear Complex |
 | PANDApro | [PANDApro](https://ipc2023-htn.github.io/proceedings/Hoeller-2023-IPC-PandaPro.pdf) <br> [PANDApro $\lambda$](https://ipc2023-htn.github.io/proceedings/Hoeller-2023-IPC-Lambda.pdf)  |
 | TOAD |[TOAD](https://ipc2023-htn.github.io/proceedings/Hoeller-2023-IPC-Toad.pdf) |
-| PandaDealer |  PandaDealer |
+| PandaDealer |  [PandaDealer](https://ipc2023-htn.github.io/proceedings/Olz-2023-IPC-PandaDealer.pdf) |
 | PDDL4J | [LiftedTreePath](https://ipc2023-htn.github.io/proceedings/Quenard-2023-IPC-LiftedTreePath.pdf) <br> [OptiPlan](https://ipc2023-htn.github.io/proceedings/Firsov-2023-IPC-OptiPlan.pdf)|
 
 
