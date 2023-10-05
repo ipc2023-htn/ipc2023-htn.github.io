@@ -1,0 +1,5 @@
+planner,total,Barman BDI,Monroe Fully,Monroe Partially,PCP,Rover,Satellite,Transport,Ultralight Cockpit,Woodworking,colouring
+ppro-xo-opt-as-lmc,5.30353,0.10,0.72,0.60,0.82,0.30,0.96,0.10,1.00,0.43,0.27
+ppro-xo-opt-as-dof-lmc,3.89560,0.05,0.00,0.00,0.82,0.30,0.96,0.30,0.86,0.43,0.17
+ppro-xo-opt-as-dof-ao,3.74560,0.05,0.00,0.00,0.82,0.25,0.96,0.30,0.86,0.33,0.17
+aries-opt,2.10517,0.05,0.00,0.00,0.00,0.40,1.00,0.00,0.66,0.00,0.00

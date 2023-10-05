@@ -1,0 +1,7 @@
+planner,total,AssemblyHierarchical,Barman BDI,Blocksworld HPDDL,Depots,Factories simple,Freecell Learned,Hiking,Logistics Learned,Minecraft Player,Minecraft Regular,Monroe Fully,Monroe Partially,Multiarm Blocksworld,Robot,Rover GTOHP,Satellite GTOHP,Towers,Transport,Woodworking,SharpSAT,lamps,Snake
+PandaDealer-optimal,8.33212,0.13,0.50,0.17,0.60,0.30,0.00,0.23,0.35,0.10,0.63,0.95,0.60,0.15,0.55,0.27,0.30,0.65,0.25,0.57,0.43,0.50,0.11
+ppro-xo-opt-as-lmc,7.82008,0.13,0.50,0.17,0.60,0.25,0.00,0.23,0.35,0.05,0.63,0.70,0.50,0.15,0.55,0.27,0.30,0.65,0.23,0.57,0.43,0.50,0.07
+ppro-xo-opt-as-dof-lmc,6.76565,0.10,0.40,0.17,0.60,0.25,0.00,0.57,0.28,0.05,0.51,0.00,0.00,0.19,0.55,0.27,0.50,0.55,0.38,0.53,0.38,0.47,0.04
+ppro-xo-opt-as-dof-ao,6.27969,0.10,0.35,0.00,0.60,0.20,0.00,0.60,0.28,0.05,0.56,0.00,0.00,0.00,0.55,0.27,0.50,0.55,0.38,0.50,0.33,0.43,0.04
+aries-opt,0.15000,0.00,0.15,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+
