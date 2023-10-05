@@ -6,6 +6,7 @@
 
 ### Satisficing Track
 
+**CSV**: [here](https://ipc2023-htn.github.io/results/TO-TABLE-satisficing.csv)
 
 |planner|total|Assembly|Barman BDI|Blocksworld HPDDL|Depots|Factories simple|Freecell Learned|Hiking|Logistics Learned|Minecraft Player|Minecraft Regular|Monroe Fully|Monroe Partially|Multiarm Blocksworld|Robot|Rover GTOHP|Satellite GTOHP|Towers|Transport|Woodworking|SharpSAT|lamps|Snake|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -29,6 +30,7 @@
 
 ### Agile Track
 
+**CSV**: [here](https://ipc2023-htn.github.io/results/TO-TABLE-agile.csv)
 
 |planner|total|AssemblyHierarchical|Barman BDI|Blocksworld HPDDL|Depots|Factories simple|Freecell Learned|Hiking|Logistics Learned|Minecraft Player|Minecraft Regular|Monroe Fully|Monroe Partially|Multiarm Blocksworld|Robot|Rover GTOHP|Satellite GTOHP|Towers|Transport|Woodworking|SharpSAT|lamps|Snake|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -52,6 +54,7 @@ OptiPlan|0.40067|0.00|0.00|0.00|0.02|0.04|0.00|0.00|0.00|0.00|0.01|0.00|0.00|0.0
 
 ### Optimal Track
 
+**CSV**: [here](https://ipc2023-htn.github.io/results/TO-TABLE-optimal.csv)
 
 |planner|total|AssemblyHierarchical|Barman BDI|Blocksworld HPDDL|Depots|Factories simple|Freecell Learned|Hiking|Logistics Learned|Minecraft Player|Minecraft Regular|Monroe Fully|Monroe Partially|Multiarm Blocksworld|Robot|Rover GTOHP|Satellite GTOHP|Towers|Transport|Woodworking|SharpSAT|lamps|Snake|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -63,12 +66,16 @@ aries-opt|0.15000|DNS|0.15|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|D
 
 **Note:** aries-opt does not support domains that contain recursive decomposition methods. It thus only participated on the acyclic domains in the benchmark set.
 
+### Raw Coverage
+
+**CSV**: [here](https://ipc2023-htn.github.io/results/TO-TABLE-coverage.csv)
 
 ## Partial Order Tracks
 
 
 ### Satisficing Track
 
+**CSV**: [here](https://ipc2023-htn.github.io/results/PO-TABLE-satisficing.csv)
 
 |planner|total|Barman BDI|Monroe Fully|Monroe Partially|PCP|Rover|Satellite|Transport|Ultralight Cockpit|Woodworking|colouring|
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -94,6 +101,7 @@ aries-opt|0.15000|DNS|0.15|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|D
 
 ### Agile Track
 
+**CSV**: [here](https://ipc2023-htn.github.io/results/PO-TABLE-agile.csv)
 
 |planner|total|Barman BDI|Monroe Fully|Monroe Partially|PCP|Rover|Satellite|Transport|Ultralight Cockpit|Woodworking|colouring|
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -120,6 +128,7 @@ aries-opt|0.15000|DNS|0.15|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|D
 
 ### Optimal Track
 
+**CSV**: [here](https://ipc2023-htn.github.io/results/PO-TABLE-optimal.csv)
 
 |planner|total|Barman BDI|Monroe Fully|Monroe Partially|PCP|Rover|Satellite|Transport|Ultralight Cockpit|Woodworking|colouring|
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -130,4 +139,8 @@ aries-opt|0.15000|DNS|0.15|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|DNS|D
 
 
 **Note:** aries-opt does not support domains that contain recursive decomposition methods. It thus only participated on the acyclic domains in the benchmark set.
+
+### Raw Coverage
+
+**CSV**: [here](https://ipc2023-htn.github.io/results/PO-TABLE-coverage.csv)
 

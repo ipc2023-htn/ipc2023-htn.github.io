@@ -159,6 +159,8 @@ The full set of instances used for the HTN Track of the IPC 2023 is available on
 The IPC 2023 has concluded and the results have been presented at [ICAPS 2023 in Prague](https://icaps23.icaps-conference.org/).
 The results presentation can be found [here](https://ipc2023-htn.github.io/results-presentation.pdf).
 The full results tables can be found [here](https://ipc2023-htn.github.io/results).
+The results website also contains links to CSV files of the results (and additionally coverage data).
+
 You can download the raw log files of the planners and the per-instances scores for the TO Track (*not yet available*) and the [PO Track](https://ipc2023-htn.github.io/ipc2023-po-raw-data.zip).
 
 The winners are:
