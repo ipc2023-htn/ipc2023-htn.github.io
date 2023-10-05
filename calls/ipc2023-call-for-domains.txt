@@ -37,6 +37,9 @@ would be a problem generator. But this is optional, of course. If a
 domain-dependent (optimal) planner for the submitted domain is available, 
 please include it in the submission.
 
+The deadline for domain submissions is February 28th 2023. We kindly request
+that people planning to submit domains express their interest to do so
+by December 31st 2022.
 
 We will consider all submissions and select the highest quality subset to be
 included. We are aware that participants that submit a domain that is used
