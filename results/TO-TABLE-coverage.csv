@@ -1,4 +1,4 @@
-planner,total,AssemblyHierarchical ;30,Barman,Blocksworld,Depots ;30,Factories,Freecell,Hiking ;30,Logistics,Minecraft,Minecraft,Monroe,Monroe,Multiarm,Robot ;20,Rover,Satellite,Towers ;20,Transport ;40,Woodworking ;30,SharpSAT ;21,lamps ;30,Snake ;27
+planner,total,AssemblyHierarchical ;30,Barman-BDI ;20,Blocksworld-HPDDL ;30,Depots ;30,Factories-simple ;20,Freecell-Learned-ECAI-16 ;60,Hiking ;30,Logistics-Learned-ECAI-16 ;80,Minecraft-Player ;20,Minecraft-Regular ;59,Monroe-Fully-Observable ;20,Monroe-Partially-Observable ;20,Multiarm-Blocksworld ;74,Robot ;20,Rover-GTOHP ;30,Satellite-GTOHP ;20,Towers ;20,Transport ;40,Woodworking ;30,SharpSAT ;21,lamps ;30,Snake ;27
 PandaDealer-agile-1,545,30,16,29,22,12,14,26,80,4,42,20,13,73,20,28,19,13,22,30,10,18,4
 PandaDealer-sat-1,544,30,16,30,22,10,14,26,80,4,42,20,13,74,20,27,19,13,22,30,10,18,4
 PandaDealer-agile-lama,543,30,16,24,27,14,9,25,80,4,42,20,14,73,20,28,19,13,30,24,10,17,4

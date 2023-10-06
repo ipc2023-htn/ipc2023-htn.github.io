@@ -1,4 +1,4 @@
-planner,total,Barman,Monroe,Monroe,PCP ;17,Rover ;20,Satellite ;25,Transport ;40,Ultralight,Woodworking ;30,colouring ;30
+planner,total,Barman-BDI ;20,Monroe-Fully-Observable ;25,Monroe-Partially-Observable ;25,PCP ;17,Rover ;20,Satellite ;25,Transport ;40,Ultralight-Cockpit ;29,Woodworking ;30,colouring ;30
 complex-config-agile-2,222,18,24,21,14,20,25,24,29,26,21
 config-agile-2,218,18,24,21,14,20,25,23,29,24,20
 complex-config-agile-3,217,16,24,17,14,20,25,28,29,23,21
@@ -25,3 +25,4 @@ ppro-xo-opt-as-dof-lmc,100,1,0,0,14,6,24,12,25,13,5
 ppro-xo-opt-as-dof-ao,96,1,0,0,14,5,24,12,25,10,5
 SIADEX,73,20,8,2,0,14,25,1,0,3,0
 aries-opt,53,1,0,0,0,8,25,0,19,0,0
+
