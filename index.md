@@ -190,10 +190,10 @@ We will publish these proceedings once we have them.
 | Participant | Planner Abstract | 
 |---|---|---|---|
 | Aries | [Aries](https://ipc2023-htn.github.io/proceedings/Bit-Monnot-2023-IPC-Aries.pdf) |
-| SIADEX | SIADEX |
-| Lifted Linear | Lifted Linear |
-| Linear Simple | Linear Simple |
-| Linear Complex | Linear Complex |
+| SIADEX | SIADEX <br> SIADEX is the only planner that participated with exactly the same version as in the IPC2020. We thus refer to the [paper from the IPC2020](https://ipc2020.hierarchical-task.net/publications/proceedings_p10-p13.pdf) |
+| Lifted Linear | [Lifted Linear](https://ipc2023-htn.github.io/proceedings/Wu-2023-IPC-Linearizer.pdf) |
+| Linear Simple | [Linear Simple](https://ipc2023-htn.github.io/proceedings/Wu-2023-IPC-Linearizer.pdf) |
+| Linear Complex | [Linear Complex](https://ipc2023-htn.github.io/proceedings/Wu-2023-IPC-Linearizer.pdf) |
 | PANDApro | [PANDApro](https://ipc2023-htn.github.io/proceedings/Hoeller-2023-IPC-PandaPro.pdf) <br> [PANDApro $\lambda$](https://ipc2023-htn.github.io/proceedings/Hoeller-2023-IPC-Lambda.pdf)  |
 | TOAD |[TOAD](https://ipc2023-htn.github.io/proceedings/Hoeller-2023-IPC-Toad.pdf) |
 | PandaDealer |  [PandaDealer](https://ipc2023-htn.github.io/proceedings/Olz-2023-IPC-PandaDealer.pdf) |
