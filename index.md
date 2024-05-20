@@ -190,7 +190,7 @@ We will publish these proceedings once we have them.
 | Participant | Planner Abstract | 
 |---|---|---|---|
 | Aries | [Aries](https://ipc2023-htn.github.io/proceedings/Bit-Monnot-2023-IPC-Aries.pdf) |
-| SIADEX | SIADEX <br> SIADEX is the only planner that participated with exactly the same version as in the IPC2020. We thus refer to the [paper from the IPC2020](https://ipc2020.hierarchical-task.net/publications/proceedings_p10-p13.pdf) |
+| SIADEX | SIADEX <br> SIADEX is the only planner that participated with exactly the same version as in the IPC2020. <br> We thus refer to the [paper from the IPC2020](https://ipc2020.hierarchical-task.net/publications/proceedings_p10-p13.pdf) |
 | Lifted Linear | [Lifted Linear](https://ipc2023-htn.github.io/proceedings/Wu-2023-IPC-Linearizer.pdf) |
 | Linear Simple | [Linear Simple](https://ipc2023-htn.github.io/proceedings/Wu-2023-IPC-Linearizer.pdf) |
 | Linear Complex | [Linear Complex](https://ipc2023-htn.github.io/proceedings/Wu-2023-IPC-Linearizer.pdf) |
