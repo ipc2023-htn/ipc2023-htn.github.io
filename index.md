@@ -182,10 +182,9 @@ The __*full results*__ tables can be found [here](https://ipc2023-htn.github.io/
 
 ## Proceedings and Planner Abstracts
 
-The preliminary versions of the planner abstracts can be found here.
-The participants can still submit a final version, which can also include an analysis of the behaviour of their planner in the IPC.
-We will publish these proceedings once we have them.
+The proceedings of the IPC 2023 HTN track, featuring all planner abstracts and new domain descriptions, are [available here](https://ipc2023-htn.github.io/proceedings/ipc2023htn-proceedings.pdf).
 
+The standalone planner abstracts are listed here:
 
 | Participant | Planner Abstract | 
 |---|---|---|---|
@@ -199,7 +198,7 @@ We will publish these proceedings once we have them.
 | PandaDealer |  [PandaDealer](https://ipc2023-htn.github.io/proceedings/Olz-2023-IPC-PandaDealer.pdf) |
 | PDDL4J | [LiftedTreePath](https://ipc2023-htn.github.io/proceedings/Quenard-2023-IPC-LiftedTreePath.pdf) <br> [OptiPlan](https://ipc2023-htn.github.io/proceedings/Firsov-2023-IPC-OptiPlan.pdf)|
 
-
+The standalone description of new HTN domains is [available here](https://ipc2023-htn.github.io/proceedings/Behnke-2023-IPC-NewDomains.pdf).
 
 ## Organizers
  - [Ron Alford](ronwalf@volus.net) (MITRE)
