@@ -182,10 +182,7 @@ The __*full results*__ tables can be found [here](https://ipc2023-htn.github.io/
 
 ## Proceedings and Planner Abstracts
 
-The preliminary versions of the planner abstracts can be found here.
-The participants can still submit a final version, which can also include an analysis of the behaviour of their planner in the IPC.
-We will publish these proceedings once we have them.
-
+The proceedings of the IPC 2023 HTN track, featuring all planner abstracts and new domain descriptions, are [available here](https://ipc2023-htn.github.io/proceedings/ipc2023htn-proceedings.pdf).
 
 | Participant | Planner Abstract | 
 |---|---|---|---|
