@@ -183,6 +183,21 @@ The __*full results*__ tables can be found [here](https://ipc2023-htn.github.io/
 ## Proceedings and Planner Abstracts
 
 The proceedings of the IPC 2023 HTN track, featuring all planner abstracts and new domain descriptions, are [available here](https://ipc2023-htn.github.io/proceedings/ipc2023htn-proceedings.pdf).
+You can cite the proceedings as follows, using the DOI [10.5445/IR/1000177594](https://doi.org/10.5445/IR/1000177594) (provided by the institutional repository KITOpen).
+
+```
+@proceedings{ipc2023htnproceedings,
+    editor       = {Alford, Ron and Behnke, Gregor and Schreiber, Dominik},
+    year         = {2024},
+    title        = {{IPC} 2023 - Proceedings of the Hierarchical Task Network ({HTN}) Track of the 11th International Planning Competition: Planner and Domain Abstracts},
+    eventtitle   = {33rd International Conference on Automated Planning and Scheduling},
+    eventtitleaddon = {ICAPS 2023},
+    venue        = {Prague, Czech Republic},
+    pagetotal    = {31},
+    language     = {english},
+    doi          = {10.5445/IR/1000177594}
+}
+```
 
 The standalone planner abstracts are listed here:
 
