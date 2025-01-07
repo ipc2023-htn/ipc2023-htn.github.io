@@ -189,7 +189,7 @@ You can cite the proceedings as follows, using the DOI [10.5445/IR/1000177594](h
 @proceedings{ipc2023htnproceedings,
     editor       = {Alford, Ron and Behnke, Gregor and Schreiber, Dominik},
     year         = {2024},
-    title        = {{IPC} 2023 - Proceedings of the Hierarchical Task Network ({HTN}) Track of the 11th International Planning Competition: Planner and Domain Abstracts},
+    title        = { {IPC} 2023 - Proceedings of the Hierarchical Task Network ({HTN}) Track of the 11th International Planning Competition: Planner and Domain Abstracts },
     eventtitle   = {33rd International Conference on Automated Planning and Scheduling},
     eventtitleaddon = {ICAPS 2023},
     venue        = {Prague, Czech Republic},
