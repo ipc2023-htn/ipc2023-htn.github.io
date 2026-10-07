@@ -182,8 +182,9 @@ The __*full results*__ tables can be found [here](https://ipc2023-htn.github.io/
 
 ## Proceedings and Planner Abstracts
 
-The proceedings of the IPC 2023 HTN track, featuring all planner abstracts and new domain descriptions, are [available here](https://ipc2023-htn.github.io/proceedings/ipc2023htn-proceedings.pdf).
-You can cite the proceedings as follows, using the DOI [10.5445/IR/1000177594](https://doi.org/10.5445/IR/1000177594) (provided by the institutional repository KITOpen).
+The proceedings of the IPC 2023 HTN track, featuring all planner abstracts and new domain descriptions, are [available here](https://ipc2023-htn.github.io/proceedings/IPC2023-proceedings-v2.pdf).
+You can cite the proceedings as follows, using the DOI [10.5445/IR/1000177594/v2](https://doi.org/10.5445/IR/1000177594/v2) (provided by the institutional repository KITOpen).
+Note that the originally published proceedings included by accident an older version of the planner description by Olz et al. This older version should not be cited.
 
 ```
 @proceedings{ipc2023htnproceedings,
@@ -195,7 +196,7 @@ You can cite the proceedings as follows, using the DOI [10.5445/IR/1000177594](h
     venue        = {Prague, Czech Republic},
     pagetotal    = {31},
     language     = {english},
-    doi          = {10.5445/IR/1000177594}
+    doi          = {10.5445/IR/1000177594/v2}
 }
 ```
 
